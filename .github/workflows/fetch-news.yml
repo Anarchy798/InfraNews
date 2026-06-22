@@ -2,11 +2,11 @@ name: Daily Infrastructure News Digest
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # 06:00 UTC every day
-  workflow_dispatch:        # manual trigger from Actions tab
+    - cron: "0 6 * * *"
+  workflow_dispatch:
 
 permissions:
-  contents: write           # needed to commit news.json back to the repo
+  contents: write
 
 jobs:
   fetch:
@@ -17,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: main          # always update the branch GitHub Pages serves from
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
