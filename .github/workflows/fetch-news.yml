@@ -1,0 +1,42 @@
+name: Daily Infrastructure News Digest
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # 06:00 UTC every day
+  workflow_dispatch:        # manual trigger from Actions tab
+
+permissions:
+  contents: write           # needed to commit news.json back to the repo
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main          # always update the branch GitHub Pages serves from
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch and analyse news
+        run: python scripts/fetch_news.py
+        env:
+          CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
+
+      - name: Commit updated news digest
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: daily infrastructure news update"
+          file_pattern: "data/news.json"
+          commit_user_name: "InfraNews Bot"
+          commit_user_email: "actions@github.com"
