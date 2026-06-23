@@ -14,92 +14,63 @@
     color: #1a2a3a;
   }
 
-  #three-canvas {
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-  }
+  #three-canvas { position: fixed; inset: 0; z-index: 0; }
 
-  /* ── Loading Screen ── */
   #loading {
     position: fixed; inset: 0;
     background: #eef3f8;
     display: flex; align-items: center; justify-content: center;
-    z-index: 200;
-    transition: opacity 0.6s ease;
+    z-index: 200; transition: opacity 0.6s ease;
   }
   #loading.fade-out { opacity: 0; pointer-events: none; }
   .loader-inner { text-align: center; }
   .loader-ring {
     width: 56px; height: 56px;
-    border: 2px solid rgba(26,58,100,0.2);
-    border-top-color: #1a3a64;
+    border: 2px solid rgba(26,48,80,0.18);
+    border-top-color: #1a3050;
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin: 0 auto 18px;
   }
-  .loader-label { color: #1a3a64; font-size: 0.72rem; letter-spacing: 0.25em; text-transform: uppercase; }
+  .loader-label { color: #1a3050; font-size: 0.72rem; letter-spacing: 0.25em; text-transform: uppercase; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* ── UI Overlay ── */
-  #ui {
-    position: fixed; inset: 0;
-    z-index: 10;
-    pointer-events: none;
-    display: flex; flex-direction: column;
-  }
+  #ui { position: fixed; inset: 0; z-index: 10; pointer-events: none; display: flex; flex-direction: column; }
 
-  /* Header */
   #header {
     display: flex; justify-content: space-between; align-items: center;
     padding: 18px 28px;
-    background: linear-gradient(to bottom, rgba(18,36,72,0.88) 0%, transparent 100%);
+    background: linear-gradient(to bottom, rgba(15,30,60,0.85) 0%, transparent 100%);
   }
   .brand { display: flex; align-items: center; gap: 14px; }
   .brand-icon {
     width: 42px; height: 42px;
-    border: 1.5px solid rgba(245,158,11,0.7);
-    border-radius: 9px;
+    border: 1.5px solid rgba(245,158,11,0.7); border-radius: 9px;
     display: flex; align-items: center; justify-content: center;
     background: rgba(245,158,11,0.10);
   }
   .brand-text h1 { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.1em; color: #fff; }
   .brand-text p  { font-size: 0.62rem; color: #f59e0b; letter-spacing: 0.22em; text-transform: uppercase; margin-top: 1px; }
-
   .header-stats { display: flex; gap: 32px; }
   .stat { text-align: right; }
   .stat-value { font-size: 1.1rem; font-weight: 700; color: #f59e0b; }
-  .stat-label { font-size: 0.6rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.12em; margin-top: 1px; }
+  .stat-label { font-size: 0.6rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.12em; margin-top: 1px; }
 
-  /* Main content area */
   #content {
-    flex: 1;
-    display: flex;
-    align-items: stretch;
-    padding: 0 28px 22px;
-    gap: 20px;
-    overflow: hidden;
-    min-height: 0;
+    flex: 1; display: flex; align-items: stretch;
+    padding: 0 28px 22px; gap: 20px; overflow: hidden; min-height: 0;
   }
 
-  /* News panel */
   #news-panel {
-    width: 370px;
-    flex-shrink: 0;
-    background: rgba(12,26,52,0.88);
-    border: 1px solid rgba(245,158,11,0.28);
-    border-radius: 14px;
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    display: flex; flex-direction: column;
-    pointer-events: all;
-    overflow: hidden;
+    width: 370px; flex-shrink: 0;
+    background: rgba(10,22,48,0.90);
+    border: 1px solid rgba(245,158,11,0.28); border-radius: 14px;
+    backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+    display: flex; flex-direction: column; pointer-events: all; overflow: hidden;
   }
   .panel-head {
-    padding: 14px 18px;
-    border-bottom: 1px solid rgba(245,158,11,0.14);
-    display: flex; align-items: center; justify-content: space-between;
-    flex-shrink: 0;
+    padding: 14px 18px; border-bottom: 1px solid rgba(245,158,11,0.14);
+    display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
   }
   .panel-title { font-size: 0.68rem; font-weight: 600; color: #f59e0b; letter-spacing: 0.18em; text-transform: uppercase; }
   .panel-badge {
@@ -107,50 +78,35 @@
     background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.3);
     padding: 3px 9px; border-radius: 99px;
   }
-
   #news-list {
-    overflow-y: auto;
-    flex: 1;
-    padding: 10px;
-    display: flex; flex-direction: column; gap: 8px;
-    min-height: 0;
+    overflow-y: auto; flex: 1; padding: 10px;
+    display: flex; flex-direction: column; gap: 8px; min-height: 0;
   }
   #news-list::-webkit-scrollbar { width: 3px; }
   #news-list::-webkit-scrollbar-track { background: transparent; }
   #news-list::-webkit-scrollbar-thumb { background: rgba(245,158,11,0.3); border-radius: 2px; }
 
   .news-card {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.09);
-    border-radius: 10px;
-    padding: 13px;
-    cursor: pointer;
-    transition: background 0.2s, border-color 0.2s, transform 0.15s;
-    flex-shrink: 0;
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 10px; padding: 13px; cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, transform 0.15s; flex-shrink: 0;
   }
   .news-card:hover {
-    background: rgba(245,158,11,0.09);
-    border-color: rgba(245,158,11,0.38);
-    transform: translateX(2px);
+    background: rgba(245,158,11,0.09); border-color: rgba(245,158,11,0.38); transform: translateX(2px);
   }
-
   .card-meta { display: flex; align-items: center; gap: 7px; margin-bottom: 7px; flex-wrap: wrap; }
   .card-source { font-size: 0.6rem; color: #8a97a8; text-transform: uppercase; letter-spacing: 0.08em; }
   .card-dot { width: 2px; height: 2px; background: #4a5a6a; border-radius: 50%; }
   .card-time { font-size: 0.6rem; color: #4a5a6a; }
   .card-sector {
-    font-size: 0.58rem; font-weight: 600;
-    padding: 2px 7px; border-radius: 99px;
-    text-transform: uppercase; letter-spacing: 0.06em;
-    margin-left: auto;
+    font-size: 0.58rem; font-weight: 600; padding: 2px 7px; border-radius: 99px;
+    text-transform: uppercase; letter-spacing: 0.06em; margin-left: auto;
   }
-
   .card-title { font-size: 0.82rem; font-weight: 600; color: #f0f4ff; line-height: 1.4; margin-bottom: 7px; }
   .card-summary {
     font-size: 0.73rem; color: #8a97a8; line-height: 1.55;
     display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
   }
-
   .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
   .pe-row { display: flex; align-items: center; gap: 6px; }
   .pe-lbl { font-size: 0.58rem; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.08em; }
@@ -165,18 +121,11 @@
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
   }
 
-  /* Legend */
   #legend {
-    margin-top: auto;
-    margin-left: auto;
-    align-self: flex-end;
-    background: rgba(12,26,52,0.88);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 11px;
-    padding: 13px 16px;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    pointer-events: all;
+    margin-top: auto; margin-left: auto; align-self: flex-end;
+    background: rgba(10,22,48,0.90); border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 11px; padding: 13px 16px;
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); pointer-events: all;
   }
   .legend-title { font-size: 0.58rem; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.16em; margin-bottom: 10px; }
   .legend-items { display: flex; flex-direction: column; gap: 7px; }
@@ -184,22 +133,16 @@
   .legend-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
   .legend-text { font-size: 0.68rem; color: #b8c4d0; }
 
-  /* Tooltip */
   #tooltip {
-    position: fixed;
-    background: rgba(12,26,52,0.96);
-    border: 1px solid rgba(245,158,11,0.45);
-    border-radius: 9px; padding: 10px 14px;
-    backdrop-filter: blur(10px);
-    pointer-events: none; z-index: 50;
-    opacity: 0; transition: opacity 0.15s;
-    transform: translateY(-4px);
+    position: fixed; background: rgba(10,22,48,0.96);
+    border: 1px solid rgba(245,158,11,0.45); border-radius: 9px; padding: 10px 14px;
+    backdrop-filter: blur(10px); pointer-events: none; z-index: 50;
+    opacity: 0; transition: opacity 0.15s; transform: translateY(-4px);
   }
   #tooltip.show { opacity: 1; transform: translateY(0); }
   #tt-name { font-size: 0.82rem; font-weight: 700; color: #f59e0b; margin-bottom: 3px; }
   #tt-sector { font-size: 0.65rem; color: #b8c4d0; }
 
-  /* ── Responsive ── */
   @media (max-width: 768px) {
     #news-panel { width: 100%; position: fixed; bottom: 0; left: 0; right: 0; height: 55vh; border-radius: 14px 14px 0 0; }
     #legend { display: none; }
@@ -209,7 +152,6 @@
 </head>
 <body>
 
-<!-- Loading screen -->
 <div id="loading">
   <div class="loader-inner">
     <div class="loader-ring"></div>
@@ -217,16 +159,10 @@
   </div>
 </div>
 
-<!-- Three.js canvas -->
 <canvas id="three-canvas"></canvas>
 
-<!-- Tooltip -->
-<div id="tooltip">
-  <div id="tt-name"></div>
-  <div id="tt-sector"></div>
-</div>
+<div id="tooltip"><div id="tt-name"></div><div id="tt-sector"></div></div>
 
-<!-- UI overlay -->
 <div id="ui">
   <div id="header">
     <div class="brand">
@@ -241,18 +177,9 @@
       </div>
     </div>
     <div class="header-stats">
-      <div class="stat">
-        <div class="stat-value" id="stat-articles">—</div>
-        <div class="stat-label">Today's Stories</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">27</div>
-        <div class="stat-label">Markets Tracked</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value" id="stat-updated">—</div>
-        <div class="stat-label">Last Updated</div>
-      </div>
+      <div class="stat"><div class="stat-value" id="stat-articles">—</div><div class="stat-label">Today's Stories</div></div>
+      <div class="stat"><div class="stat-value">27</div><div class="stat-label">Markets Tracked</div></div>
+      <div class="stat"><div class="stat-value" id="stat-updated">—</div><div class="stat-label">Last Updated</div></div>
     </div>
   </div>
 
@@ -293,16 +220,22 @@
 <script>
 var NEWS_JSON_URL = 'https://anarchy798.github.io/infranews/data/news.json';
 
-// ─── Scene ───────────────────────────────────────────────────────────────────
+// ── Palette ──────────────────────────────────────────────────────────────────
+var C_STRUCT    = 0x1a3050;
+var C_ENERGY    = 0xe07b00;
+var C_TRANSPORT = 0x1a5fd4;
+var C_UTILITIES = 0x0088aa;
+
+// ── Scene ────────────────────────────────────────────────────────────────────
 var canvas = document.getElementById('three-canvas');
 var W = window.innerWidth, H = window.innerHeight;
 
 var scene = new THREE.Scene();
 scene.background = new THREE.Color(0xeef3f8);
-scene.fog = new THREE.FogExp2(0xe8f0f8, 0.012);
+scene.fog = new THREE.Fog(0xe8f0f8, 40, 90);
 
 var camera = new THREE.PerspectiveCamera(48, W / H, 0.1, 200);
-camera.position.set(20, 16, 26);
+camera.position.set(22, 18, 28);
 camera.lookAt(0, 2, -2);
 
 var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
@@ -316,279 +249,221 @@ window.addEventListener('resize', function () {
   renderer.setSize(W, H);
 });
 
-// ─── Lights ──────────────────────────────────────────────────────────────────
+// ── Lights ───────────────────────────────────────────────────────────────────
 scene.add(new THREE.AmbientLight(0xffffff, 3.5));
 var sun = new THREE.DirectionalLight(0xfff8f0, 2.2);
 sun.position.set(15, 25, 12);
 scene.add(sun);
-var sky = new THREE.DirectionalLight(0xd0e8ff, 1.0);
+var sky = new THREE.DirectionalLight(0xd0e8ff, 0.9);
 sky.position.set(-10, 12, -8);
 scene.add(sky);
 
-// ─── Palette ─────────────────────────────────────────────────────────────────
-var C_STRUCT    = 0x1a3050;   // dark navy  — steelwork
-var C_ENERGY    = 0xe07b00;   // amber      — energy recovery
-var C_TRANSPORT = 0x1a5fd4;   // blue       — conveyors / vehicles
-var C_UTILITIES = 0x0088aa;   // teal       — water / utilities pipework
-
-// ─── Helper: clean wireframe edges object ────────────────────────────────────
+// ── Helpers ──────────────────────────────────────────────────────────────────
+// Wireframe edges object
 function wf(geo, color, opacity) {
   var mat = new THREE.LineBasicMaterial({ color: color });
-  if (opacity !== undefined && opacity < 1) {
-    mat.transparent = true;
-    mat.opacity = opacity;
-  }
-  return new THREE.LineSegments(new THREE.EdgesGeometry(geo), mat);
+  if (opacity !== undefined) { mat.transparent = true; mat.opacity = opacity; }
+  var obj = new THREE.LineSegments(new THREE.EdgesGeometry(geo), mat);
+  return obj;
 }
 
-// ─── Helper: line between two points ─────────────────────────────────────────
-function lineSeg(ax, ay, az, bx, by, bz, color, opacity) {
-  var pts = [new THREE.Vector3(ax,ay,az), new THREE.Vector3(bx,by,bz)];
+// Single line segment between two points
+function seg(ax, ay, az, bx, by, bz, color, opacity) {
   var mat = new THREE.LineBasicMaterial({ color: color });
-  if (opacity !== undefined && opacity < 1) { mat.transparent = true; mat.opacity = opacity; }
-  return new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), mat);
+  if (opacity !== undefined) { mat.transparent = true; mat.opacity = opacity; }
+  var geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute([ax,ay,az, bx,by,bz], 3));
+  return new THREE.Line(geo, mat);
 }
 
-// ─── Facility group (slow-rotates for 3D model presentation) ─────────────────
-var facility = new THREE.Group();
-scene.add(facility);
+// Add wireframe to parent at given position
+function addWF(parent, geo, color, opacity, x, y, z) {
+  var obj = wf(geo, color, opacity);
+  obj.position.set(x, y, z);
+  parent.add(obj);
+  return obj;
+}
 
-// ─── Ground — blueprint grid ─────────────────────────────────────────────────
-facility.add(new THREE.GridHelper(60, 30, 0x7aaac8, 0xc4d8e8));
-facility.add(new THREE.GridHelper(60, 120, 0xddeaf2, 0xe8f2f8)); // fine sub-grid
+// ── Facility group ───────────────────────────────────────────────────────────
+var fac = new THREE.Group();
+scene.add(fac);
 
-// Site slab outline
-var slab = wf(new THREE.BoxGeometry(38, 0.04, 22), 0x7aaccf, 0.45);
-slab.position.set(-1, 0.02, 0);
-facility.add(slab);
+// ── Ground grid (blueprint style) ────────────────────────────────────────────
+var gMaj = new THREE.GridHelper(60, 30, 0x7aaac8, 0xbdd5e5);
+fac.add(gMaj);
+var gMin = new THREE.GridHelper(60, 120, 0xddeaf2, 0xe8f2f8);
+gMin.position.y = 0.001;
+fac.add(gMin);
 
-// ─── MAIN SORTING HALL ───────────────────────────────────────────────────────
-var hall = wf(new THREE.BoxGeometry(12, 5, 8), C_STRUCT);
-hall.position.set(0, 2.5, 0);
-facility.add(hall);
+// Site pad outline
+addWF(fac, new THREE.BoxGeometry(38, 0.04, 22), 0x7aaccf, 0.4, -1, 0.02, 0);
 
-// Pitched roof — rafter lines
-(function () {
-  // Box spans x: -6..6, z: -4..4, eave y=5, ridge y=7 at z=0
-  var segs = [
-    // Main rafters front & back
-    [-6,5,-4, -6,7,0],  [-6,5,4, -6,7,0],
-    [-3,5,-4, -3,7,0],  [-3,5,4, -3,7,0],
-    [ 0,5,-4,  0,7,0],  [ 0,5,4,  0,7,0],
-    [ 3,5,-4,  3,7,0],  [ 3,5,4,  3,7,0],
-    [ 6,5,-4,  6,7,0],  [ 6,5,4,  6,7,0],
-    // Ridge purlin
-    [-6,7,0, 6,7,0],
-    // Eave ties
-    [-6,5,-4, 6,5,-4],  [-6,5,4, 6,5,4],
-    // Purlins along slope (front)
-    [-6,6,-2, 6,6,-2],  [-6,6,2, 6,6,2],
-  ];
-  var verts = [];
-  segs.forEach(function(s) {
-    verts.push(s[0],s[1],s[2], s[3],s[4],s[5]);
-  });
-  var geo = new THREE.BufferGeometry();
-  geo.setAttribute('position', new THREE.Float32BufferAttribute(verts, 3));
-  facility.add(new THREE.LineSegments(geo, new THREE.LineBasicMaterial({ color: C_STRUCT })));
-})();
+// ── MAIN SORTING HALL ────────────────────────────────────────────────────────
+addWF(fac, new THREE.BoxGeometry(12, 5, 8), C_STRUCT, undefined, 0, 2.5, 0);
 
-// Interior columns at rafter feet
-[-6, -3, 0, 3, 6].forEach(function(x) {
-  facility.add(lineSeg(x,0,-3.9, x,5,-3.9, C_STRUCT, 0.5));
-  facility.add(lineSeg(x,0, 3.9, x,5, 3.9, C_STRUCT, 0.5));
+// Pitched roof rafters (manual line segments)
+var roofVerts = [];
+function rseg(ax,ay,az,bx,by,bz) { roofVerts.push(ax,ay,az,bx,by,bz); }
+// Rafters: eave (-6..6, y=5, z=±4) up to ridge (y=7, z=0)
+[-6,-3,0,3,6].forEach(function(x) {
+  rseg(x,5,-4, x,7,0);
+  rseg(x,5, 4, x,7,0);
+});
+rseg(-6,7,0,  6,7,0);   // ridge
+rseg(-6,5,-4, 6,5,-4);  // eave front
+rseg(-6,5, 4, 6,5, 4);  // eave rear
+rseg(-6,6,-2, 6,6,-2);  // purlin front slope
+rseg(-6,6, 2, 6,6, 2);  // purlin rear slope
+var roofGeo = new THREE.BufferGeometry();
+roofGeo.setAttribute('position', new THREE.Float32BufferAttribute(roofVerts, 3));
+fac.add(new THREE.LineSegments(roofGeo, new THREE.LineBasicMaterial({ color: C_STRUCT })));
+
+// Interior columns
+[-6,-3,0,3,6].forEach(function(x) {
+  fac.add(seg(x,0,-3.9, x,5,-3.9, C_STRUCT, 0.45));
+  fac.add(seg(x,0, 3.9, x,5, 3.9, C_STRUCT, 0.45));
 });
 
-// ─── OVERHEAD CRANE (inside hall) ────────────────────────────────────────────
-// Two rails along X at z=±1.6, y=4.7
-var craneRailL = wf(new THREE.BoxGeometry(10, 0.12, 0.12), C_STRUCT);
-craneRailL.position.set(0, 4.75, -1.6);
-facility.add(craneRailL);
-var craneRailR = craneRailL.clone();
-craneRailR.position.z = 1.6;
-facility.add(craneRailR);
+// ── OVERHEAD CRANE ───────────────────────────────────────────────────────────
+addWF(fac, new THREE.BoxGeometry(10, 0.12, 0.12), C_STRUCT, undefined, 0, 4.75, -1.6);
+addWF(fac, new THREE.BoxGeometry(10, 0.12, 0.12), C_STRUCT, undefined, 0, 4.75,  1.6);
 
-// Crossbeam (animated X position)
+// Crossbeam (animated)
 var craneCross = wf(new THREE.BoxGeometry(0.14, 0.14, 3.32), C_TRANSPORT);
 craneCross.position.set(0, 4.62, 0);
-facility.add(craneCross);
+fac.add(craneCross);
 
-// Hook hanger (line — updated in animate)
+// Hook hanger (line, updated per frame)
+var hangerBuf = new Float32Array([0,4.62,0, 0,3.1,0]);
+var hangerAttr = new THREE.BufferAttribute(hangerBuf, 3);
+hangerAttr.setUsage(THREE.DynamicDrawUsage);
 var hangerGeo = new THREE.BufferGeometry();
-hangerGeo.setAttribute('position', new THREE.Float32BufferAttribute([0,4.62,0, 0,3.1,0], 3));
-var hanger = new THREE.Line(hangerGeo, new THREE.LineBasicMaterial({ color: C_STRUCT }));
-facility.add(hanger);
+hangerGeo.setAttribute('position', hangerAttr);
+fac.add(new THREE.Line(hangerGeo, new THREE.LineBasicMaterial({ color: C_STRUCT })));
 
-// ─── SORTING HOPPERS (inside hall) ───────────────────────────────────────────
-[
-  { x:-3, color: C_ENERGY },
-  { x: 0, color: C_UTILITIES },
-  { x: 3, color: C_ENERGY },
-].forEach(function(h) {
-  // Bin cylinder
-  facility.add(Object.assign(wf(new THREE.CylinderGeometry(0.7, 0.5, 1.8, 8), h.color), { position: new THREE.Vector3(h.x, 3.5, 0) }));
-  // Funnel
-  facility.add(Object.assign(wf(new THREE.ConeGeometry(0.5, 1.0, 8), h.color, 0.8), { position: new THREE.Vector3(h.x, 2.1, 0) }));
-  // Rim cap
-  facility.add(Object.assign(wf(new THREE.CylinderGeometry(0.75, 0.75, 0.12, 8), h.color, 0.5), { position: new THREE.Vector3(h.x, 4.45, 0) }));
-  // Discharge pipe stub
-  facility.add(lineSeg(h.x, 1.55, 0, h.x, 0.85, 0, h.color, 0.7));
+// ── SORTING HOPPERS ──────────────────────────────────────────────────────────
+[-3, 0, 3].forEach(function(x, i) {
+  var c = i === 1 ? C_UTILITIES : C_ENERGY;
+  addWF(fac, new THREE.CylinderGeometry(0.7, 0.52, 1.8, 8), c, undefined, x, 3.5, 0);
+  addWF(fac, new THREE.ConeGeometry(0.52, 1.0, 8),            c, 0.8,     x, 2.1, 0);
+  addWF(fac, new THREE.CylinderGeometry(0.78, 0.78, 0.12, 8), c, 0.5,    x, 4.45, 0);
+  fac.add(seg(x,1.55, 0, x,0.9, 0, c, 0.65));
 });
 
-// ─── INPUT CONVEYOR (left → hall entrance) ───────────────────────────────────
-var inBelt = wf(new THREE.BoxGeometry(10, 0.16, 1.2), C_TRANSPORT);
-inBelt.position.set(-11, 1.35, 0);
-facility.add(inBelt);
+// ── INPUT CONVEYOR (left → hall) ─────────────────────────────────────────────
+addWF(fac, new THREE.BoxGeometry(10, 0.16, 1.2), C_TRANSPORT, undefined, -11, 1.35, 0);
 [-15.5,-13,-10.5,-8].forEach(function(x) {
-  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.6), { position: new THREE.Vector3(x, 0.67, -0.55) }));
-  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.6), { position: new THREE.Vector3(x, 0.67,  0.55) }));
-  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.08, 0.08, 1.1), C_STRUCT, 0.4), { position: new THREE.Vector3(x, 0.3, 0) }));
+  addWF(fac, new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.55, x, 0.67, -0.55);
+  addWF(fac, new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.55, x, 0.67,  0.55);
+  addWF(fac, new THREE.BoxGeometry(0.08, 0.08, 1.1),  C_STRUCT, 0.35, x, 0.28,  0);
 });
 
-// ─── OUTPUT CONVEYOR A (right → energy recovery baler) ───────────────────────
-var outBeltA = wf(new THREE.BoxGeometry(9, 0.16, 1.2), C_ENERGY);
-outBeltA.position.set(10.5, 1.35, -2);
-facility.add(outBeltA);
-[7,9.5,12,14.5].forEach(function(x) {
-  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.6), { position: new THREE.Vector3(x, 0.67, -2.55) }));
-  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.6), { position: new THREE.Vector3(x, 0.67, -1.45) }));
+// ── OUTPUT CONVEYOR A (right → baler) ────────────────────────────────────────
+addWF(fac, new THREE.BoxGeometry(9, 0.16, 1.2), C_ENERGY, undefined, 10.5, 1.35, -2);
+[7.5, 10, 12.5, 15].forEach(function(x) {
+  addWF(fac, new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.55, x, 0.67, -2.55);
+  addWF(fac, new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.55, x, 0.67, -1.45);
 });
 
-// ─── OUTPUT CONVEYOR B (rear → utilities/water treatment) ────────────────────
-var outBeltB = wf(new THREE.BoxGeometry(1.2, 0.16, 9), C_UTILITIES);
-outBeltB.position.set(3.5, 1.35, -8.5);
-facility.add(outBeltB);
+// ── OUTPUT CONVEYOR B (rear → utilities) ─────────────────────────────────────
+addWF(fac, new THREE.BoxGeometry(1.2, 0.16, 9), C_UTILITIES, undefined, 3.5, 1.35, -8.5);
 [-5,-7.5,-10,-12.5].forEach(function(z) {
-  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.6), { position: new THREE.Vector3(3.0, 0.67, z) }));
-  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.6), { position: new THREE.Vector3(4.0, 0.67, z) }));
+  addWF(fac, new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.55, 3.0, 0.67, z);
+  addWF(fac, new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.55, 4.0, 0.67, z);
 });
 
-// ─── STORAGE SILOS (rear) ────────────────────────────────────────────────────
-[{ x:-4, color: C_UTILITIES }, { x:4, color: C_ENERGY }].forEach(function(s) {
-  // Body
-  facility.add(Object.assign(wf(new THREE.CylinderGeometry(1.5, 1.5, 7, 10), s.color), { position: new THREE.Vector3(s.x, 3.5, -10) }));
-  // Cone cap
-  facility.add(Object.assign(wf(new THREE.ConeGeometry(1.5, 2.0, 10), s.color, 0.85), { position: new THREE.Vector3(s.x, 8.5, -10) }));
-  // Ladder rungs on side
+// ── STORAGE SILOS (rear) ─────────────────────────────────────────────────────
+[{ x:-4, c:C_UTILITIES }, { x:4, c:C_ENERGY }].forEach(function(s) {
+  addWF(fac, new THREE.CylinderGeometry(1.5, 1.5, 7, 10), s.c, undefined, s.x, 3.5, -10);
+  addWF(fac, new THREE.ConeGeometry(1.5, 2.0, 10),         s.c, 0.85,     s.x, 8.5, -10);
   for (var r = 0; r < 9; r++) {
-    facility.add(lineSeg(s.x+1.5, 0.4+r*0.78, -10, s.x+1.5, 0.7+r*0.78, -10, s.color, 0.65));
-    facility.add(lineSeg(s.x+1.5, 0.4+r*0.78, -10, s.x+1.8, 0.4+r*0.78, -10, s.color, 0.65));
+    fac.add(seg(s.x+1.5, 0.4+r*0.78, -10, s.x+1.8, 0.4+r*0.78, -10, s.c, 0.6));
+    fac.add(seg(s.x+1.5, 0.4+r*0.78, -10, s.x+1.5, 0.7+r*0.78, -10, s.c, 0.5));
   }
-  // Discharge pipe
-  facility.add(Object.assign(wf(new THREE.CylinderGeometry(0.22, 0.22, 3.5, 6), s.color, 0.6), { position: new THREE.Vector3(s.x, 0.25, -8.5) }));
+  addWF(fac, new THREE.CylinderGeometry(0.22, 0.22, 3.5, 6), s.c, 0.55, s.x, 0.25, -8.5);
 });
 
-// ─── TRUCK LOADING BAYS (left flank) ─────────────────────────────────────────
+// ── TRUCK LOADING BAYS (left flank) ──────────────────────────────────────────
 [-4, 0, 4].forEach(function(z) {
-  facility.add(Object.assign(wf(new THREE.BoxGeometry(4.5, 3.5, 4.5), C_STRUCT, 0.45), { position: new THREE.Vector3(-17, 1.75, z) }));
-  // Door opening
-  facility.add(Object.assign(wf(new THREE.BoxGeometry(2.6, 2.8, 0.08), C_TRANSPORT, 0.35), { position: new THREE.Vector3(-14.79, 1.4, z) }));
+  addWF(fac, new THREE.BoxGeometry(4.5, 3.5, 4.5), C_STRUCT, 0.4, -17, 1.75, z);
+  addWF(fac, new THREE.BoxGeometry(2.6, 2.8, 0.08), C_TRANSPORT, 0.3, -14.79, 1.4, z);
 });
 
-// ─── BALER / COMPACTOR (right — energy recovery) ─────────────────────────────
-var baler = wf(new THREE.BoxGeometry(3.2, 3, 2.8), C_ENERGY);
-baler.position.set(11, 1.5, 2);
-facility.add(baler);
-facility.add(Object.assign(wf(new THREE.BoxGeometry(2, 1.0, 2.8), C_ENERGY, 0.7), { position: new THREE.Vector3(11, 3.5, 2) }));
+// ── BALER / COMPACTOR ────────────────────────────────────────────────────────
+addWF(fac, new THREE.BoxGeometry(3.2, 3.0, 2.8), C_ENERGY, undefined, 11, 1.5,  2);
+addWF(fac, new THREE.BoxGeometry(2.0, 1.0, 2.8), C_ENERGY, 0.65,     11, 3.5,  2);
 
-// ─── SHREDDER (right — utilities processing) ─────────────────────────────────
-var shredder = wf(new THREE.BoxGeometry(2.6, 4, 2.6), C_UTILITIES);
-shredder.position.set(11, 2, -2.5);
-facility.add(shredder);
-facility.add(Object.assign(wf(new THREE.BoxGeometry(1.6, 1.6, 1.6), C_UTILITIES, 0.7), { position: new THREE.Vector3(11, 5.0, -2.5) }));
+// ── SHREDDER ─────────────────────────────────────────────────────────────────
+addWF(fac, new THREE.BoxGeometry(2.6, 4.0, 2.6), C_UTILITIES, undefined, 11, 2.0, -2.5);
+addWF(fac, new THREE.BoxGeometry(1.6, 1.6, 1.6), C_UTILITIES, 0.65,     11, 5.0, -2.5);
 
-// ─── UTILITY PIPEWORK ────────────────────────────────────────────────────────
-// Main header pipe (runs along building south face)
-var mainPipe = wf(new THREE.CylinderGeometry(0.16, 0.16, 22, 6), C_UTILITIES, 0.55);
+// ── UTILITY PIPEWORK ─────────────────────────────────────────────────────────
+var mainPipe = wf(new THREE.CylinderGeometry(0.16, 0.16, 22, 6), C_UTILITIES, 0.5);
 mainPipe.rotation.z = Math.PI / 2;
 mainPipe.position.set(0, 0.5, -4.8);
-facility.add(mainPipe);
-// Branch drops
+fac.add(mainPipe);
 [-5, 0, 5].forEach(function(x) {
-  facility.add(Object.assign(wf(new THREE.CylinderGeometry(0.1, 0.1, 2.8, 6), C_UTILITIES, 0.5), { position: new THREE.Vector3(x, 1.9, -4.8) }));
+  addWF(fac, new THREE.CylinderGeometry(0.1, 0.1, 2.8, 6), C_UTILITIES, 0.45, x, 1.9, -4.8);
 });
-// Elevated return pipe (above conveyor)
-var retPipe = wf(new THREE.CylinderGeometry(0.1, 0.1, 10, 6), C_UTILITIES, 0.4);
-retPipe.rotation.z = Math.PI / 2;
-retPipe.position.set(-11, 2.5, 0.9);
-facility.add(retPipe);
 
-// ─── ANIMATED MATERIAL BOXES ─────────────────────────────────────────────────
+// ── ANIMATED CONVEYOR ITEMS ──────────────────────────────────────────────────
 var convItems = [];
 
-// Input conveyor: 10 boxes x = -16 → -6, y=1.55, z=0
-(function() {
-  var colors = [C_ENERGY, C_UTILITIES, C_TRANSPORT];
-  for (var i = 0; i < 10; i++) {
-    var mesh = new THREE.LineSegments(
-      new THREE.EdgesGeometry(new THREE.BoxGeometry(0.55, 0.55, 0.65)),
-      new THREE.LineBasicMaterial({ color: colors[i % 3] })
-    );
-    facility.add(mesh);
-    convItems.push({ mesh: mesh, type: 'in', t: i / 10 });
-  }
-})();
+function makeBox(color) {
+  var mesh = new THREE.LineSegments(
+    new THREE.EdgesGeometry(new THREE.BoxGeometry(0.55, 0.5, 0.65)),
+    new THREE.LineBasicMaterial({ color: color })
+  );
+  fac.add(mesh);
+  return mesh;
+}
 
-// Output A: 7 boxes x = 6 → 15, y=1.55, z=-2
-(function() {
-  for (var i = 0; i < 7; i++) {
-    var mesh = new THREE.LineSegments(
-      new THREE.EdgesGeometry(new THREE.BoxGeometry(0.55, 0.55, 0.65)),
-      new THREE.LineBasicMaterial({ color: C_ENERGY })
-    );
-    facility.add(mesh);
-    convItems.push({ mesh: mesh, type: 'outA', t: i / 7 });
-  }
-})();
+var cols = [C_ENERGY, C_UTILITIES, C_TRANSPORT];
+for (var i = 0; i < 10; i++) {
+  convItems.push({ mesh: makeBox(cols[i % 3]), type: 0, t: i / 10 });
+}
+for (var j = 0; j < 7; j++) {
+  convItems.push({ mesh: makeBox(C_ENERGY), type: 1, t: j / 7 });
+}
+for (var k = 0; k < 6; k++) {
+  convItems.push({ mesh: makeBox(C_UTILITIES), type: 2, t: k / 6 });
+}
 
-// Output B: 6 boxes z = -4 → -13, y=1.55, x=3.5
-(function() {
-  for (var i = 0; i < 6; i++) {
-    var mesh = new THREE.LineSegments(
-      new THREE.EdgesGeometry(new THREE.BoxGeometry(0.65, 0.55, 0.55)),
-      new THREE.LineBasicMaterial({ color: C_UTILITIES })
-    );
-    facility.add(mesh);
-    convItems.push({ mesh: mesh, type: 'outB', t: i / 6 });
-  }
-})();
-
-// ─── Animation ───────────────────────────────────────────────────────────────
+// ── Animation ────────────────────────────────────────────────────────────────
 var frame = 0;
-var orbitAngle = 0.55; // start at a good viewing angle
-var ORBIT_RADIUS = 30;
-var ORBIT_SPEED  = 0.00025;
+var orbitAngle = 0.55;
+var ORBIT_R = 32;
+var ORBIT_S = 0.00022;
 
 function animate() {
   requestAnimationFrame(animate);
   frame++;
   var t = frame * 0.01;
 
-  // Slow orbital camera — like rotating a model on a turntable
-  orbitAngle += ORBIT_SPEED;
-  camera.position.x = Math.sin(orbitAngle) * ORBIT_RADIUS;
-  camera.position.z = Math.cos(orbitAngle) * ORBIT_RADIUS;
-  camera.position.y = 14 + Math.sin(orbitAngle * 0.22) * 3;
+  // Turntable orbit
+  orbitAngle += ORBIT_S;
+  camera.position.x = Math.sin(orbitAngle) * ORBIT_R;
+  camera.position.z = Math.cos(orbitAngle) * ORBIT_R;
+  camera.position.y = 15 + Math.sin(orbitAngle * 0.22) * 3;
   camera.lookAt(0, 2, -2);
 
-  // Crane crossbeam slides along rails (back and forth)
+  // Crane crossbeam slides along rails
   var cx = Math.sin(t * 0.35) * 4.2;
   craneCross.position.x = cx;
-  // Update hanger geometry to follow crane + bob gently
-  var hp = hangerGeo.attributes.position;
+  // Update hanger to follow crane
   var hookY = 3.1 + Math.sin(t * 0.55) * 0.5;
-  hp.setXYZ(0, cx, 4.62, 0);
-  hp.setXYZ(1, cx, hookY,  0);
-  hp.needsUpdate = true;
+  hangerBuf[0] = cx; hangerBuf[1] = 4.62; hangerBuf[2] = 0;
+  hangerBuf[3] = cx; hangerBuf[4] = hookY; hangerBuf[5] = 0;
+  hangerAttr.needsUpdate = true;
 
-  // Animate conveyor material items
+  // Material boxes flow along conveyors
   convItems.forEach(function(item) {
-    item.t += 0.0016;
+    item.t += 0.0018;
     if (item.t > 1) item.t = 0;
     var p = item.t;
-    if (item.type === 'in') {
+    if (item.type === 0) {
       item.mesh.position.set(-16 + p * 10, 1.55, 0);
-    } else if (item.type === 'outA') {
+    } else if (item.type === 1) {
       item.mesh.position.set(6 + p * 9, 1.55, -2);
     } else {
       item.mesh.position.set(3.5, 1.55, -4 - p * 9);
@@ -599,11 +474,11 @@ function animate() {
 }
 animate();
 
-// ─── News Feed ────────────────────────────────────────────────────────────────
+// ── News feed ────────────────────────────────────────────────────────────────
 var SECTOR_CSS = {
-  energy:    { bg: 'rgba(224,123,0,0.14)',   color: '#e07b00' },
-  transport: { bg: 'rgba(26,95,212,0.14)',   color: '#1a5fd4' },
-  utilities: { bg: 'rgba(0,136,170,0.14)',   color: '#0088aa' },
+  energy:    { bg: 'rgba(224,123,0,0.15)',  color: '#e07b00' },
+  transport: { bg: 'rgba(26,95,212,0.15)',  color: '#1a5fd4' },
+  utilities: { bg: 'rgba(0,136,170,0.15)',  color: '#0088aa' },
 };
 var DEFAULT_CSS = { bg: 'rgba(26,95,212,0.10)', color: '#1a5fd4' };
 
@@ -612,60 +487,45 @@ function peColor(score) {
   if (score >= 6) return '#f59e0b';
   return '#6b7280';
 }
-
 function timeAgo(iso) {
-  var diff = Date.now() - new Date(iso).getTime();
-  var h = Math.floor(diff / 3600000);
+  var h = Math.floor((Date.now() - new Date(iso).getTime()) / 3600000);
   if (h < 1) return 'Just now';
   if (h < 24) return h + 'h ago';
   return Math.floor(h / 24) + 'd ago';
 }
 
 function renderNews(items) {
-  var list    = document.getElementById('news-list');
-  var count   = document.getElementById('panel-count');
-  var statArt = document.getElementById('stat-articles');
-  var statUpd = document.getElementById('stat-updated');
-
-  count.textContent   = items.length + ' stories';
-  statArt.textContent = items.length;
-
+  document.getElementById('panel-count').textContent = items.length + ' stories';
+  document.getElementById('stat-articles').textContent = items.length;
   if (items.length > 0) {
     var d = new Date(items[0].published || items[0].fetched_at);
-    statUpd.textContent = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    document.getElementById('stat-updated').textContent =
+      d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
   }
-
-  list.innerHTML = items.map(function (item) {
-    var sc    = SECTOR_CSS[item.sector] || DEFAULT_CSS;
+  document.getElementById('news-list').innerHTML = items.map(function(item) {
+    var sc = SECTOR_CSS[item.sector] || DEFAULT_CSS;
     var score = parseInt(item.pe_score) || 5;
-    var fill  = peColor(score);
-    var safeTitle   = (item.title   || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    var safeSummary = (item.summary || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    var safeSource  = (item.source  || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    var safeCountry = (item.country || 'Europe').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    var safeAngle   = (item.pe_angle || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    var safeUrl     = encodeURI(item.url || '#');
+    var fill = peColor(score);
+    var T = function(s) { return (s||'').replace(/</g,'&lt;').replace(/>/g,'&gt;'); };
     return [
-      '<div class="news-card" onclick="window.open(\'' + safeUrl + '\',\'_blank\')">',
-      '  <div class="card-meta">',
-      '    <span class="card-source">' + safeSource + '</span>',
-      '    <span class="card-dot"></span>',
-      '    <span class="card-time">' + timeAgo(item.published || item.fetched_at) + '</span>',
-      '    <span class="card-sector" style="background:' + sc.bg + ';color:' + sc.color + '">' + (item.sector || 'infra') + '</span>',
-      '  </div>',
-      '  <div class="card-title">' + safeTitle + '</div>',
-      '  <div class="card-summary">' + safeSummary + '</div>',
-      '  <div class="card-footer">',
-      '    <div class="pe-row">',
-      '      <span class="pe-lbl">PE Score</span>',
-      '      <div class="pe-bar"><div class="pe-fill" style="width:' + (score * 10) + '%;background:' + fill + '"></div></div>',
-      '      <span class="pe-num" style="color:' + fill + '">' + score + '/10</span>',
-      '    </div>',
-      '    <span class="card-country">' + safeCountry + '</span>',
-      '  </div>',
-      safeAngle ? '  <div class="card-angle">' + safeAngle + '</div>' : '',
+      '<div class="news-card" onclick="window.open(\'' + encodeURI(item.url||'#') + '\',\'_blank\')">',
+      '<div class="card-meta">',
+      '<span class="card-source">' + T(item.source) + '</span>',
+      '<span class="card-dot"></span>',
+      '<span class="card-time">' + timeAgo(item.published || item.fetched_at) + '</span>',
+      '<span class="card-sector" style="background:' + sc.bg + ';color:' + sc.color + '">' + T(item.sector||'infra') + '</span>',
       '</div>',
-    ].join('\n');
+      '<div class="card-title">' + T(item.title) + '</div>',
+      '<div class="card-summary">' + T(item.summary) + '</div>',
+      '<div class="card-footer">',
+      '<div class="pe-row"><span class="pe-lbl">PE Score</span>',
+      '<div class="pe-bar"><div class="pe-fill" style="width:' + (score*10) + '%;background:' + fill + '"></div></div>',
+      '<span class="pe-num" style="color:' + fill + '">' + score + '/10</span></div>',
+      '<span class="card-country">' + T(item.country||'Europe') + '</span>',
+      '</div>',
+      item.pe_angle ? '<div class="card-angle">' + T(item.pe_angle) + '</div>' : '',
+      '</div>',
+    ].join('');
   }).join('');
 }
 
@@ -673,28 +533,24 @@ function fetchNews() {
   fetch(NEWS_JSON_URL + '?_=' + Date.now())
     .then(function(r) { return r.json(); })
     .then(function(data) {
-      var items = Array.isArray(data) ? data : (data.articles || data.items || []);
-      renderNews(items);
+      renderNews(Array.isArray(data) ? data : (data.articles || data.items || []));
     })
-    .catch(function(err) {
-      console.warn('InfraNews: news fetch failed —', err);
+    .catch(function() {
       document.getElementById('news-list').innerHTML =
         '<div style="color:#6b7a8d;font-size:0.76rem;padding:30px 18px;text-align:center;line-height:1.7">' +
-        'News digest updating…<br>' +
-        '<span style="font-size:0.68rem;color:#4a5a6a">The GitHub Action runs daily at 06:00 UTC</span>' +
-        '</div>';
+        'News digest updating…<br><span style="font-size:0.68rem;color:#4a5a6a">Runs daily at 06:00 UTC</span></div>';
       document.getElementById('panel-count').textContent = 'Updating';
       document.getElementById('stat-articles').textContent = '—';
-      document.getElementById('stat-updated').textContent  = '—';
+      document.getElementById('stat-updated').textContent = '—';
     });
 }
 
 fetchNews();
 setInterval(fetchNews, 5 * 60 * 1000);
 
-setTimeout(function () {
+setTimeout(function() {
   document.getElementById('loading').classList.add('fade-out');
-  setTimeout(function () { document.getElementById('loading').style.display = 'none'; }, 700);
+  setTimeout(function() { document.getElementById('loading').style.display = 'none'; }, 700);
 }, 900);
 </script>
 </body>
