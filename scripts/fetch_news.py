@@ -11,7 +11,7 @@ import logging
 import os
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import feedparser
@@ -26,6 +26,7 @@ log = logging.getLogger(__name__)
 CLAUDE_MODEL    = "claude-haiku-4-5-20251001"   # fast + cheap for batch work
 MAX_OUTPUT      = 30    # articles kept in news.json
 MAX_TO_ANALYSE  = 50    # cap on Claude API calls per run
+MAX_AGE_DAYS    = 3     # ignore articles older than this many days
 
 # ─── RSS Feeds ────────────────────────────────────────────────────────────────
 
@@ -117,6 +118,7 @@ def strip_html(text: str) -> str:
 def fetch_all() -> list[dict]:
     seen: set[str] = set()
     articles: list[dict] = []
+    cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
 
     for feed_cfg in RSS_FEEDS:
         url    = feed_cfg["url"]
@@ -137,6 +139,14 @@ def fetch_all() -> list[dict]:
                     continue
                 seen.add(aid)
 
+                pub_date = parse_date(entry)
+                try:
+                    parsed_dt = dateutil_parser.parse(pub_date)
+                    if parsed_dt < cutoff:
+                        continue
+                except Exception:
+                    pass
+
                 if not is_relevant(title, snippet):
                     continue
 
@@ -146,7 +156,7 @@ def fetch_all() -> list[dict]:
                     "url":         link,
                     "source":      source,
                     "raw_summary": snippet[:800],
-                    "published":   parse_date(entry),
+                    "published":   pub_date,
                 })
         except Exception as exc:
             log.warning("Failed %s: %s", source, exc)
