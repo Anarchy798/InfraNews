@@ -3,147 +3,223 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>InfraNews Europe — PE Infrastructure Intelligence</title>
+<title>INFRANEWS &lt;GO&gt; — European Infrastructure PE Intelligence</title>
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
+  :root {
+    --orange: #ff6600;
+    --orange-dim: #993d00;
+    --amber: #ffaa00;
+    --green: #00cc44;
+    --red: #ff3333;
+    --blue: #4499ff;
+    --bg: #000000;
+    --bg1: #0d0d0d;
+    --bg2: #111111;
+    --bg3: #161616;
+    --border: #2a2a2a;
+    --border-bright: #444444;
+    --text: #cccccc;
+    --text-dim: #666666;
+    --text-bright: #eeeeee;
+    --mono: 'Courier New', 'Lucida Console', monospace;
+  }
+
   body {
-    background: #f0f5fa;
+    background: var(--bg);
     overflow: hidden;
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    color: #1a2a3a;
+    font-family: var(--mono);
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.4;
   }
 
   #three-canvas { position: fixed; inset: 0; z-index: 0; }
 
+  /* ── Loading ── */
   #loading {
-    position: fixed; inset: 0; background: #f0f5fa;
+    position: fixed; inset: 0; background: #000;
     display: flex; align-items: center; justify-content: center;
-    z-index: 200; transition: opacity 0.6s ease;
+    z-index: 200; transition: opacity 0.4s ease;
   }
   #loading.fade-out { opacity: 0; pointer-events: none; }
   .loader-inner { text-align: center; }
   .loader-ring {
-    width: 52px; height: 52px;
-    border: 2px solid rgba(26,48,80,0.15);
-    border-top-color: #1a3050;
+    width: 40px; height: 40px;
+    border: 1px solid #333;
+    border-top-color: var(--orange);
     border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin: 0 auto 16px;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 12px;
   }
-  .loader-label { color: #1a3050; font-size: 0.7rem; letter-spacing: 0.28em; text-transform: uppercase; }
+  .loader-label { color: var(--orange); font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; font-family: var(--mono); }
   @keyframes spin { to { transform: rotate(360deg); } }
 
+  /* ── Shell ── */
   #ui { position: fixed; inset: 0; z-index: 10; pointer-events: none; display: flex; flex-direction: column; }
 
-  #header {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 18px 28px;
-    background: linear-gradient(to bottom, rgba(14,28,56,0.82) 0%, transparent 100%);
+  /* ── Top bar ── */
+  #topbar {
+    background: var(--orange);
+    padding: 0 8px;
+    height: 22px;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-shrink: 0;
   }
-  .brand { display: flex; align-items: center; gap: 14px; }
-  .brand-icon {
-    width: 42px; height: 42px;
-    border: 1.5px solid rgba(245,158,11,0.7); border-radius: 9px;
-    display: flex; align-items: center; justify-content: center;
-    background: rgba(245,158,11,0.10);
-  }
-  .brand-text h1 { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.1em; color: #fff; }
-  .brand-text p  { font-size: 0.62rem; color: #f59e0b; letter-spacing: 0.22em; text-transform: uppercase; margin-top: 1px; }
-  .header-stats { display: flex; gap: 32px; }
-  .stat { text-align: right; }
-  .stat-value { font-size: 1.1rem; font-weight: 700; color: #f59e0b; }
-  .stat-label { font-size: 0.6rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.12em; margin-top: 1px; }
+  .topbar-left { display: flex; align-items: center; gap: 16px; }
+  .topbar-brand { font-size: 12px; font-weight: bold; color: #000; letter-spacing: 0.12em; }
+  .topbar-cmd { font-size: 11px; color: rgba(0,0,0,0.6); }
+  .topbar-right { display: flex; align-items: center; gap: 16px; }
+  .topbar-item { font-size: 11px; color: rgba(0,0,0,0.75); }
+  .topbar-time { font-size: 11px; color: #000; font-weight: bold; letter-spacing: 0.08em; }
 
+  /* ── Function key bar ── */
+  #fnbar {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 2px 8px;
+    height: 18px;
+    display: flex; align-items: center; gap: 0;
+    flex-shrink: 0;
+  }
+  .fn { font-size: 10px; padding: 0 8px; color: var(--text-dim); border-right: 1px solid var(--border); height: 100%; display: flex; align-items: center; }
+  .fn span { color: var(--amber); margin-right: 3px; }
+  .fn:hover { background: var(--bg3); color: var(--text-bright); cursor: default; }
+
+  /* ── Header stats bar ── */
+  #statbar {
+    background: var(--bg1);
+    border-bottom: 1px solid var(--border-bright);
+    padding: 4px 10px;
+    display: flex; align-items: center; gap: 0;
+    flex-shrink: 0;
+  }
+  .stat-block {
+    padding: 0 14px; border-right: 1px solid var(--border);
+    display: flex; flex-direction: column; align-items: flex-start;
+  }
+  .stat-block:first-child { padding-left: 0; }
+  .stat-v { font-size: 13px; font-weight: bold; color: var(--amber); letter-spacing: 0.05em; }
+  .stat-l { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.15em; margin-top: 1px; }
+  .stat-sep { flex: 1; }
+  .ticker-wrap { overflow: hidden; max-width: 420px; font-size: 10px; color: var(--text-dim); white-space: nowrap; }
+  #ticker-text { display: inline-block; animation: ticker 30s linear infinite; }
+  @keyframes ticker { from { transform: translateX(420px); } to { transform: translateX(-100%); } }
+
+  /* ── Content ── */
   #content {
-    flex: 1; display: flex; align-items: stretch;
-    padding: 0 28px 22px; gap: 20px; overflow: hidden; min-height: 0;
+    flex: 1; display: flex; gap: 0; overflow: hidden; min-height: 0;
   }
 
+  /* ── News panel ── */
   #news-panel {
-    width: 370px; flex-shrink: 0;
-    background: rgba(10,20,46,0.90);
-    border: 1px solid rgba(245,158,11,0.28); border-radius: 14px;
-    backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+    width: 400px; flex-shrink: 0;
+    background: rgba(0,0,0,0.92);
+    border-right: 1px solid var(--border-bright);
     display: flex; flex-direction: column; pointer-events: all; overflow: hidden;
   }
+
   .panel-head {
-    padding: 14px 18px; border-bottom: 1px solid rgba(245,158,11,0.14);
+    background: var(--bg2);
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--border-bright);
     display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
   }
-  .panel-title { font-size: 0.68rem; font-weight: 600; color: #f59e0b; letter-spacing: 0.18em; text-transform: uppercase; }
-  .panel-badge {
-    font-size: 0.62rem; color: #f59e0b;
-    background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.3);
-    padding: 3px 9px; border-radius: 99px;
+  .panel-title { font-size: 11px; font-weight: bold; color: var(--orange); letter-spacing: 0.15em; text-transform: uppercase; }
+  .panel-badge { font-size: 10px; color: var(--text-dim); }
+  .panel-badge b { color: var(--green); }
+
+  /* Column headers */
+  #col-headers {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 3px 10px;
+    display: grid;
+    grid-template-columns: 40px 1fr 50px 36px;
+    gap: 8px;
+    flex-shrink: 0;
   }
+  .col-hdr { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.12em; }
+
   #news-list {
-    overflow-y: auto; flex: 1; padding: 10px;
-    display: flex; flex-direction: column; gap: 8px; min-height: 0;
+    overflow-y: auto; flex: 1;
+    display: flex; flex-direction: column; min-height: 0;
   }
-  #news-list::-webkit-scrollbar { width: 3px; }
-  #news-list::-webkit-scrollbar-track { background: transparent; }
-  #news-list::-webkit-scrollbar-thumb { background: rgba(245,158,11,0.3); border-radius: 2px; }
+  #news-list::-webkit-scrollbar { width: 4px; }
+  #news-list::-webkit-scrollbar-track { background: var(--bg); }
+  #news-list::-webkit-scrollbar-thumb { background: var(--orange-dim); }
 
-  .news-card {
-    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09);
-    border-radius: 10px; padding: 13px; cursor: pointer;
-    transition: background 0.2s, border-color 0.2s, transform 0.15s; flex-shrink: 0;
+  .news-row {
+    border-bottom: 1px solid var(--border);
+    padding: 7px 10px 6px;
+    cursor: pointer;
+    transition: background 0.1s;
+    flex-shrink: 0;
   }
-  .news-card:hover { background: rgba(245,158,11,0.08); border-color: rgba(245,158,11,0.36); transform: translateX(2px); }
-  .card-meta { display: flex; align-items: center; gap: 7px; margin-bottom: 7px; flex-wrap: wrap; }
-  .card-source { font-size: 0.6rem; color: #8a97a8; text-transform: uppercase; letter-spacing: 0.08em; }
-  .card-dot { width: 2px; height: 2px; background: #4a5a6a; border-radius: 50%; }
-  .card-time { font-size: 0.6rem; color: #4a5a6a; }
-  .card-sector {
-    font-size: 0.58rem; font-weight: 600; padding: 2px 7px; border-radius: 99px;
-    text-transform: uppercase; letter-spacing: 0.06em; margin-left: auto;
-  }
-  .card-title { font-size: 0.82rem; font-weight: 600; color: #f0f4ff; line-height: 1.4; margin-bottom: 7px; }
-  .card-summary {
-    font-size: 0.73rem; color: #8a97a8; line-height: 1.55;
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
-  }
-  .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
-  .pe-row { display: flex; align-items: center; gap: 6px; }
-  .pe-lbl { font-size: 0.58rem; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.08em; }
-  .pe-bar { width: 54px; height: 3px; background: rgba(255,255,255,0.12); border-radius: 2px; overflow: hidden; }
-  .pe-fill { height: 100%; border-radius: 2px; transition: width 0.4s; }
-  .pe-num { font-size: 0.68rem; font-weight: 700; }
-  .card-country { font-size: 0.62rem; color: #5a6a7a; }
-  .card-angle {
-    font-size: 0.6rem; color: #6b7a8d;
-    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
-    padding: 2px 7px; border-radius: 99px; margin-top: 6px;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
-  }
+  .news-row:nth-child(even) { background: rgba(255,255,255,0.018); }
+  .news-row:hover { background: rgba(255,102,0,0.07); border-left: 2px solid var(--orange); padding-left: 8px; }
 
+  .row-top {
+    display: grid;
+    grid-template-columns: 40px 1fr 52px 34px;
+    gap: 8px; align-items: baseline; margin-bottom: 4px;
+  }
+  .row-time { font-size: 10px; color: var(--text-dim); white-space: nowrap; }
+  .row-title { font-size: 11px; color: var(--text-bright); line-height: 1.35; font-weight: bold; }
+  .row-sector { font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; text-align: right; white-space: nowrap; }
+  .row-score { font-size: 11px; font-weight: bold; text-align: right; }
+
+  .row-summary { font-size: 10px; color: var(--text-dim); line-height: 1.45; margin-bottom: 4px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+  .row-meta { display: flex; align-items: center; gap: 10px; }
+  .row-source { font-size: 9px; color: var(--orange-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+  .row-angle { font-size: 9px; color: var(--text-dim); }
+  .row-angle::before { content: '▸ '; color: var(--amber); }
+  .row-country { font-size: 9px; color: var(--text-dim); margin-left: auto; }
+
+  /* ── Bottom status bar ── */
+  #statusbar {
+    background: var(--bg2);
+    border-top: 1px solid var(--border-bright);
+    padding: 2px 10px;
+    height: 18px;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-shrink: 0;
+  }
+  .status-left { font-size: 9px; color: var(--text-dim); letter-spacing: 0.1em; }
+  .status-right { font-size: 9px; color: var(--text-dim); }
+  .status-right b { color: var(--green); }
+
+  /* ── Legend ── */
   #legend {
-    margin-top: auto; margin-left: auto; align-self: flex-end;
-    background: rgba(10,20,46,0.90); border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 11px; padding: 13px 16px;
-    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); pointer-events: all;
+    position: absolute; right: 14px; bottom: 30px;
+    background: rgba(0,0,0,0.88);
+    border: 1px solid var(--border-bright);
+    padding: 8px 12px; pointer-events: all;
   }
-  .legend-title { font-size: 0.58rem; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.16em; margin-bottom: 10px; }
-  .legend-items { display: flex; flex-direction: column; gap: 7px; }
-  .legend-item { display: flex; align-items: center; gap: 9px; }
-  .legend-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
-  .legend-text { font-size: 0.68rem; color: #b8c4d0; }
+  .legend-title { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 7px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+  .legend-items { display: flex; flex-direction: column; gap: 5px; }
+  .legend-item { display: flex; align-items: center; gap: 8px; }
+  .legend-dot { width: 6px; height: 6px; flex-shrink: 0; }
+  .legend-text { font-size: 10px; color: var(--text); }
 
+  /* ── Tooltip ── */
   #tooltip {
-    position: fixed; background: rgba(10,20,46,0.96);
-    border: 1px solid rgba(245,158,11,0.45); border-radius: 9px; padding: 10px 14px;
-    backdrop-filter: blur(10px); pointer-events: none; z-index: 50;
-    opacity: 0; transition: opacity 0.15s; transform: translateY(-4px);
+    position: fixed;
+    background: var(--bg2); border: 1px solid var(--orange);
+    padding: 6px 10px; pointer-events: none; z-index: 50;
+    opacity: 0; transition: opacity 0.1s;
   }
-  #tooltip.show { opacity: 1; transform: translateY(0); }
-  #tt-name { font-size: 0.82rem; font-weight: 700; color: #f59e0b; margin-bottom: 3px; }
-  #tt-sector { font-size: 0.65rem; color: #b8c4d0; }
+  #tooltip.show { opacity: 1; }
+  #tt-name { font-size: 11px; font-weight: bold; color: var(--orange); margin-bottom: 2px; }
+  #tt-sector { font-size: 10px; color: var(--text-dim); }
 
   @media (max-width: 768px) {
-    #news-panel { width: 100%; position: fixed; bottom: 0; left: 0; right: 0; height: 55vh; border-radius: 14px 14px 0 0; }
+    #news-panel { width: 100%; position: fixed; bottom: 0; left: 0; right: 0; height: 52vh; }
     #legend { display: none; }
-    #content { padding: 0 0 55vh; }
+    #content { padding-bottom: 52vh; }
   }
 </style>
 </head>
@@ -152,7 +228,7 @@
 <div id="loading">
   <div class="loader-inner">
     <div class="loader-ring"></div>
-    <div class="loader-label">InfraNews Europe</div>
+    <div class="loader-label">INFRANEWS &lt;GO&gt;</div>
   </div>
 </div>
 
@@ -160,69 +236,114 @@
 <div id="tooltip"><div id="tt-name"></div><div id="tt-sector"></div></div>
 
 <div id="ui">
-  <div id="header">
-    <div class="brand">
-      <div class="brand-icon">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M2 20h20M4 20V10l8-8 8 8v10M9 20v-5h6v5"/>
-        </svg>
-      </div>
-      <div class="brand-text">
-        <h1>INFRANEWS</h1>
-        <p>European Infrastructure Intelligence</p>
-      </div>
+
+  <div id="topbar">
+    <div class="topbar-left">
+      <span class="topbar-brand">INFRANEWS &lt;GO&gt;</span>
+      <span class="topbar-cmd">EUROPEAN INFRASTRUCTURE PE INTELLIGENCE</span>
     </div>
-    <div class="header-stats">
-      <div class="stat"><div class="stat-value" id="stat-articles">—</div><div class="stat-label">Today's Stories</div></div>
-      <div class="stat"><div class="stat-value">27</div><div class="stat-label">Markets Tracked</div></div>
-      <div class="stat"><div class="stat-value" id="stat-updated">—</div><div class="stat-label">Last Updated</div></div>
+    <div class="topbar-right">
+      <span class="topbar-item">21 FEEDS ACTIVE</span>
+      <span class="topbar-item">|</span>
+      <span class="topbar-item">ENERGY · TRANSPORT · UTILITIES</span>
+      <span class="topbar-item">|</span>
+      <span class="topbar-time" id="live-time">00:00:00 UTC</span>
     </div>
   </div>
 
-  <div id="content">
+  <div id="fnbar">
+    <div class="fn"><span>F1</span>HELP</div>
+    <div class="fn"><span>F2</span>ENERGY</div>
+    <div class="fn"><span>F3</span>TRANSPORT</div>
+    <div class="fn"><span>F4</span>UTILITIES</div>
+    <div class="fn"><span>F5</span>TOP STORIES</div>
+    <div class="fn"><span>F8</span>PE SCORE</div>
+    <div class="fn"><span>F9</span>COUNTRY</div>
+    <div class="fn" style="border-right:none"><span>F10</span>FEEDS</div>
+  </div>
+
+  <div id="statbar">
+    <div class="stat-block">
+      <div class="stat-v" id="stat-articles">—</div>
+      <div class="stat-l">Stories</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-v">21</div>
+      <div class="stat-l">Feeds</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-v">3</div>
+      <div class="stat-l">Sectors</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-v" id="stat-updated">—</div>
+      <div class="stat-l">Updated</div>
+    </div>
+    <div class="stat-sep"></div>
+    <div class="ticker-wrap">
+      <span id="ticker-text">INFRANEWS EUROPE · POWERED BY CLAUDE AI · DAILY DIGEST AT 06:00 UTC · ENERGY · TRANSPORT · UTILITIES · 21 RSS SOURCES MONITORED</span>
+    </div>
+  </div>
+
+  <div id="content" style="position:relative;">
     <div id="news-panel">
       <div class="panel-head">
-        <span class="panel-title">PE Investment Intelligence</span>
-        <span class="panel-badge" id="panel-count">Loading…</span>
+        <span class="panel-title">PE Investment Monitor</span>
+        <span class="panel-badge">LOADED: <b id="panel-count">…</b></span>
+      </div>
+      <div id="col-headers">
+        <span class="col-hdr">Age</span>
+        <span class="col-hdr">Headline</span>
+        <span class="col-hdr" style="text-align:right">Sector</span>
+        <span class="col-hdr" style="text-align:right">PE</span>
       </div>
       <div id="news-list">
-        <div style="color:#6b7a8d;font-size:0.78rem;text-align:center;padding:50px 20px;line-height:1.7">
-          Fetching infrastructure intelligence…
+        <div style="color:var(--text-dim);font-size:11px;text-align:center;padding:40px 20px;line-height:2;font-family:var(--mono)">
+          FETCHING INFRASTRUCTURE INTELLIGENCE...<br>
+          <span style="font-size:9px;color:#333;letter-spacing:0.2em">PLEASE WAIT</span>
         </div>
       </div>
     </div>
 
     <div id="legend">
-      <div class="legend-title">Sector Line</div>
+      <div class="legend-title">Sector Key</div>
       <div class="legend-items">
-        <div class="legend-item">
-          <div class="legend-dot" style="background:#e07b00;box-shadow:0 0 6px #e07b00aa"></div>
-          <span class="legend-text">Energy</span>
-        </div>
-        <div class="legend-item">
-          <div class="legend-dot" style="background:#1a5fd4;box-shadow:0 0 6px #1a5fd4aa"></div>
-          <span class="legend-text">Transport</span>
-        </div>
-        <div class="legend-item">
-          <div class="legend-dot" style="background:#0095bb;box-shadow:0 0 6px #0095bbaa"></div>
-          <span class="legend-text">Utilities</span>
-        </div>
+        <div class="legend-item"><div class="legend-dot" style="background:#ff8800"></div><span class="legend-text">Energy</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:#4499ff"></div><span class="legend-text">Transport</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:#00bbcc"></div><span class="legend-text">Utilities</span></div>
       </div>
     </div>
   </div>
+
+  <div id="statusbar">
+    <span class="status-left">INFRANEWS v2.0 · EUROPEAN INFRASTRUCTURE PE · anarchy798.github.io/infranews</span>
+    <span class="status-right">NEXT UPDATE: 06:00 UTC · STATUS: <b>LIVE</b></span>
+  </div>
+
 </div>
 
 <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
 <script>
 var NEWS_JSON_URL = 'https://raw.githubusercontent.com/anarchy798/infranews/main/data/news.json';
 
-// ── Sector colours ───────────────────────────────────────────────────────────
+// ── Live clock ────────────────────────────────────────────────────────────────
+function updateClock() {
+  var now = new Date();
+  var h = ('0'+now.getUTCHours()).slice(-2);
+  var m = ('0'+now.getUTCMinutes()).slice(-2);
+  var s = ('0'+now.getUTCSeconds()).slice(-2);
+  document.getElementById('live-time').textContent = h + ':' + m + ':' + s + ' UTC';
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// ── Sector colours ────────────────────────────────────────────────────────────
 var SECTOR_COLORS = {
-  energy:    0xe07b00,
-  transport: 0x1a5fd4,
-  utilities: 0x0095bb,
+  energy:    0xff8800,
+  transport: 0x4499ff,
+  utilities: 0x00bbcc,
 };
-var DEFAULT_COLOR = 0x5588aa;
+var DEFAULT_COLOR = 0x446688;
 
 // ── European infrastructure hubs ─────────────────────────────────────────────
 var NODES = [
@@ -252,12 +373,12 @@ var NODES = [
   { name:'Munich',     pos:[ 1.0, -0.1,  0.9], sector:'transport' },
 ];
 
-// ── Scene ────────────────────────────────────────────────────────────────────
+// ── Scene ─────────────────────────────────────────────────────────────────────
 var canvas = document.getElementById('three-canvas');
 var W = window.innerWidth, H = window.innerHeight;
 var scene = new THREE.Scene();
-scene.background = new THREE.Color(0xf0f5fa);
-scene.fog = new THREE.Fog(0xeaf2f8, 22, 42);
+scene.background = new THREE.Color(0x000000);
+scene.fog = new THREE.FogExp2(0x000000, 0.028);
 
 var camera = new THREE.PerspectiveCamera(55, W / H, 0.1, 150);
 camera.position.set(0, 5.5, 14);
@@ -274,23 +395,23 @@ window.addEventListener('resize', function() {
   renderer.setSize(W, H);
 });
 
-// ── Lights ───────────────────────────────────────────────────────────────────
-scene.add(new THREE.AmbientLight(0xffffff, 4.0));
-var sun = new THREE.DirectionalLight(0xfff8f0, 2.0);
-sun.position.set(8, 16, 10);
-scene.add(sun);
-var fill = new THREE.DirectionalLight(0xd0e8ff, 0.8);
-fill.position.set(-6, 6, -6);
-scene.add(fill);
+// ── Lights ────────────────────────────────────────────────────────────────────
+scene.add(new THREE.AmbientLight(0x111111, 2.0));
+var keyLight = new THREE.DirectionalLight(0xff6600, 1.2);
+keyLight.position.set(6, 10, 8);
+scene.add(keyLight);
+var fillLight = new THREE.DirectionalLight(0x003366, 0.6);
+fillLight.position.set(-8, 4, -6);
+scene.add(fillLight);
 
 // ── Ground grid ───────────────────────────────────────────────────────────────
 var group = new THREE.Group();
 scene.add(group);
 
-var grid = new THREE.GridHelper(32, 32, 0x7aaac8, 0xb8d4e4);
+var grid = new THREE.GridHelper(40, 40, 0x1a1a00, 0x111100);
 grid.position.y = -2.2;
 group.add(grid);
-var gridFine = new THREE.GridHelper(32, 64, 0xcce0ee, 0xdaeaf4);
+var gridFine = new THREE.GridHelper(40, 80, 0x0d0d00, 0x0a0a00);
 gridFine.position.y = -2.19;
 group.add(gridFine);
 
@@ -301,23 +422,22 @@ var nodeData   = [];
 NODES.forEach(function(nd) {
   var color = SECTOR_COLORS[nd.sector] || DEFAULT_COLOR;
 
-  // Core sphere
   var coreMat = new THREE.MeshStandardMaterial({
     color: color, emissive: color,
-    emissiveIntensity: 0.4, metalness: 0.1, roughness: 0.4,
+    emissiveIntensity: 0.8, metalness: 0.3, roughness: 0.3,
   });
-  var core = new THREE.Mesh(new THREE.SphereGeometry(0.13, 16, 16), coreMat);
+  var core = new THREE.Mesh(new THREE.SphereGeometry(0.12, 16, 16), coreMat);
   core.position.set(nd.pos[0], nd.pos[1], nd.pos[2]);
   core.userData = { node: nd };
   group.add(core);
   nodeMeshes.push(core);
 
-  // Halo — softer on bright bg, normal blending so it doesn't wash out
   var haloMat = new THREE.MeshBasicMaterial({
-    color: color, transparent: true, opacity: 0.18,
+    color: color, transparent: true, opacity: 0.06,
     depthWrite: false, side: THREE.BackSide,
+    blending: THREE.AdditiveBlending,
   });
-  var halo = new THREE.Mesh(new THREE.SphereGeometry(0.32, 16, 16), haloMat);
+  var halo = new THREE.Mesh(new THREE.SphereGeometry(0.38, 16, 16), haloMat);
   halo.position.copy(core.position);
   group.add(halo);
 
@@ -338,11 +458,14 @@ for (var i = 0; i < NODES.length; i++) {
     if (a.distanceTo(b) >= MAX_CONN_DIST) continue;
 
     var lineColor = (NODES[i].sector === NODES[j].sector)
-      ? (SECTOR_COLORS[NODES[i].sector] || 0x5588aa)
-      : 0x5588aa;
+      ? (SECTOR_COLORS[NODES[i].sector] || DEFAULT_COLOR)
+      : 0x223344;
 
     var geo = new THREE.BufferGeometry().setFromPoints([a.clone(), b.clone()]);
-    var mat = new THREE.LineBasicMaterial({ color: lineColor, transparent: true, opacity: 0.45 });
+    var mat = new THREE.LineBasicMaterial({
+      color: lineColor, transparent: true, opacity: 0.3,
+      blending: THREE.AdditiveBlending,
+    });
     var line = new THREE.Line(geo, mat);
     group.add(line);
     connections.push({ line: line, from: a.clone(), to: b.clone(), phase: Math.random() * Math.PI * 2 });
@@ -351,13 +474,16 @@ for (var i = 0; i < NODES.length; i++) {
 
 // ── Flowing particles ─────────────────────────────────────────────────────────
 var particles = [];
-for (var p = 0; p < 90; p++) {
+for (var p = 0; p < 60; p++) {
   var ci = Math.floor(Math.random() * connections.length);
   var conn = connections[ci];
   var pColor = SECTOR_COLORS[NODES[Math.floor(Math.random() * NODES.length)].sector] || DEFAULT_COLOR;
   var pMesh = new THREE.Mesh(
-    new THREE.SphereGeometry(0.042, 6, 6),
-    new THREE.MeshBasicMaterial({ color: pColor, transparent: true, opacity: 0.9, depthWrite: false })
+    new THREE.SphereGeometry(0.035, 6, 6),
+    new THREE.MeshBasicMaterial({
+      color: pColor, transparent: true, opacity: 0.85,
+      depthWrite: false, blending: THREE.AdditiveBlending,
+    })
   );
   group.add(pMesh);
   particles.push({ mesh: pMesh, from: conn.from.clone(), to: conn.to.clone(), t: Math.random(), speed: 0.003 + Math.random() * 0.003 });
@@ -374,11 +500,11 @@ window.addEventListener('mousemove', function(e) {
   tooltip.style.top  = (e.clientY - 12) + 'px';
 });
 
-// ── Animation ────────────────────────────────────────────────────────────────
+// ── Animation ─────────────────────────────────────────────────────────────────
 var frame = 0;
 var orbitAngle = 0;
 var ORBIT_R = 14;
-var ORBIT_S = 0.0004;
+var ORBIT_S = 0.0003;
 
 function animate() {
   requestAnimationFrame(animate);
@@ -394,8 +520,8 @@ function animate() {
   nodeData.forEach(function(nd) {
     nd.core.position.y = nd.baseY + Math.sin(t + nd.phase) * 0.09;
     nd.halo.position.copy(nd.core.position);
-    nd.halo.scale.setScalar(1 + Math.sin(t * 2.2 + nd.phase) * 0.2);
-    nd.core.material.emissiveIntensity = 0.3 + Math.sin(t * 3 + nd.phase) * 0.2;
+    nd.halo.scale.setScalar(1 + Math.sin(t * 2.2 + nd.phase) * 0.25);
+    nd.core.material.emissiveIntensity = 0.6 + Math.sin(t * 3 + nd.phase) * 0.35;
   });
 
   particles.forEach(function(p) {
@@ -405,17 +531,17 @@ function animate() {
   });
 
   connections.forEach(function(c) {
-    c.line.material.opacity = 0.35 + Math.sin(t * 1.5 + c.phase) * 0.15;
+    c.line.material.opacity = 0.2 + Math.sin(t * 1.5 + c.phase) * 0.12;
   });
 
   raycaster.setFromCamera(mouse, camera);
   var hits = raycaster.intersectObjects(nodeMeshes);
   if (hits.length) {
     var nd = hits[0].object.userData.node;
-    document.getElementById('tt-name').textContent = nd.name;
-    document.getElementById('tt-sector').textContent = nd.sector.charAt(0).toUpperCase() + nd.sector.slice(1) + ' Hub';
+    document.getElementById('tt-name').textContent = nd.name.toUpperCase();
+    document.getElementById('tt-sector').textContent = nd.sector.toUpperCase() + ' HUB';
     tooltip.classList.add('show');
-    document.body.style.cursor = 'pointer';
+    document.body.style.cursor = 'crosshair';
   } else {
     tooltip.classList.remove('show');
     document.body.style.cursor = 'default';
@@ -425,54 +551,55 @@ function animate() {
 }
 animate();
 
-// ── News feed ────────────────────────────────────────────────────────────────
+// ── News feed ─────────────────────────────────────────────────────────────────
 var SECTOR_CSS = {
-  energy:    { bg: 'rgba(224,123,0,0.15)',  color: '#e07b00' },
-  transport: { bg: 'rgba(26,95,212,0.15)',  color: '#1a5fd4' },
-  utilities: { bg: 'rgba(0,149,187,0.15)',  color: '#0095bb' },
+  energy:    { color: '#ff8800' },
+  transport: { color: '#4499ff' },
+  utilities: { color: '#00bbcc' },
 };
-var DEFAULT_CSS = { bg: 'rgba(26,95,212,0.12)', color: '#1a5fd4' };
 
 function peColor(s) {
-  return s >= 8 ? '#10b981' : s >= 6 ? '#f59e0b' : '#6b7280';
-}
-function timeAgo(iso) {
-  var h = Math.floor((Date.now() - new Date(iso).getTime()) / 3600000);
-  if (h < 1) return 'Just now';
-  if (h < 24) return h + 'h ago';
-  return Math.floor(h / 24) + 'd ago';
+  return s >= 8 ? '#00cc44' : s >= 6 ? '#ffaa00' : '#666666';
 }
 
+function timeAgo(iso) {
+  var h = Math.floor((Date.now() - new Date(iso).getTime()) / 3600000);
+  if (h < 1) return '<1H';
+  if (h < 24) return h + 'H';
+  return Math.floor(h / 24) + 'D';
+}
+
+function T(s) { return (s || '').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
 function renderNews(items) {
-  document.getElementById('panel-count').textContent = items.length + ' stories';
+  document.getElementById('panel-count').textContent = items.length;
   document.getElementById('stat-articles').textContent = items.length;
   if (items.length > 0) {
-    var d = new Date(items[0].published || items[0].fetched_at);
+    var d = new Date(items[0].fetched_at || items[0].published);
+    var h = ('0'+d.getUTCHours()).slice(-2) + ':' + ('0'+d.getUTCMinutes()).slice(-2);
     document.getElementById('stat-updated').textContent =
-      d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+      d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' }).toUpperCase() + ' ' + h;
   }
-  var T = function(s) { return (s || '').replace(/</g,'&lt;').replace(/>/g,'&gt;'); };
-  document.getElementById('news-list').innerHTML = items.map(function(item) {
-    var sc = SECTOR_CSS[item.sector] || DEFAULT_CSS;
+
+  document.getElementById('news-list').innerHTML = items.map(function(item, idx) {
+    var sc = SECTOR_CSS[item.sector] || { color: '#446688' };
     var score = parseInt(item.pe_score) || 5;
-    var fill = peColor(score);
+    var scoreColor = peColor(score);
+    var ago = timeAgo(item.published || item.fetched_at);
     return [
-      '<div class="news-card" onclick="window.open(\'' + encodeURI(item.url||'#') + '\',\'_blank\')">',
-      '<div class="card-meta">',
-      '<span class="card-source">' + T(item.source) + '</span>',
-      '<span class="card-dot"></span>',
-      '<span class="card-time">' + timeAgo(item.published || item.fetched_at) + '</span>',
-      '<span class="card-sector" style="background:' + sc.bg + ';color:' + sc.color + '">' + T(item.sector||'infra') + '</span>',
+      '<div class="news-row" onclick="window.open(\'' + encodeURI(item.url||'#') + '\',\'_blank\')">',
+      '<div class="row-top">',
+      '<span class="row-time">' + ago + '</span>',
+      '<span class="row-title">' + T(item.title) + '</span>',
+      '<span class="row-sector" style="color:' + sc.color + '">' + T((item.sector||'').toUpperCase()) + '</span>',
+      '<span class="row-score" style="color:' + scoreColor + '">' + score + '</span>',
       '</div>',
-      '<div class="card-title">' + T(item.title) + '</div>',
-      '<div class="card-summary">' + T(item.summary) + '</div>',
-      '<div class="card-footer">',
-      '<div class="pe-row"><span class="pe-lbl">PE Score</span>',
-      '<div class="pe-bar"><div class="pe-fill" style="width:' + (score*10) + '%;background:' + fill + '"></div></div>',
-      '<span class="pe-num" style="color:' + fill + '">' + score + '/10</span></div>',
-      '<span class="card-country">' + T(item.country||'Europe') + '</span>',
+      '<div class="row-summary">' + T(item.summary) + '</div>',
+      '<div class="row-meta">',
+      '<span class="row-source">' + T(item.source) + '</span>',
+      item.pe_angle ? '<span class="row-angle">' + T(item.pe_angle) + '</span>' : '',
+      '<span class="row-country">' + T(item.country||'') + '</span>',
       '</div>',
-      item.pe_angle ? '<div class="card-angle">' + T(item.pe_angle) + '</div>' : '',
       '</div>',
     ].join('');
   }).join('');
@@ -486,11 +613,9 @@ function fetchNews() {
     })
     .catch(function() {
       document.getElementById('news-list').innerHTML =
-        '<div style="color:#6b7a8d;font-size:0.76rem;padding:30px 18px;text-align:center;line-height:1.7">' +
-        'News digest updating…<br><span style="font-size:0.68rem;color:#4a5a6a">Runs daily at 06:00 UTC</span></div>';
-      document.getElementById('panel-count').textContent = 'Updating';
-      document.getElementById('stat-articles').textContent = '—';
-      document.getElementById('stat-updated').textContent = '—';
+        '<div style="color:#333;font-size:10px;text-align:center;padding:40px 20px;line-height:2;font-family:var(--mono)">' +
+        'NEWS DIGEST UPDATING...<br><span style="font-size:9px;color:#222">NEXT RUN: 06:00 UTC</span></div>';
+      document.getElementById('panel-count').textContent = '–';
     });
 }
 
@@ -499,7 +624,7 @@ setInterval(fetchNews, 5 * 60 * 1000);
 
 setTimeout(function() {
   document.getElementById('loading').classList.add('fade-out');
-  setTimeout(function() { document.getElementById('loading').style.display = 'none'; }, 700);
+  setTimeout(function() { document.getElementById('loading').style.display = 'none'; }, 500);
 }, 900);
 </script>
 </body>
