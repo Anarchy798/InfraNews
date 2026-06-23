@@ -62,6 +62,7 @@ RSS_FEEDS = [
     {"url": "https://infrastructuremagazine.com.au/feed/",          "source": "Infrastructure Magazine"},
     {"url": "https://www.infrastructure-intelligence.com/feed/",    "source": "Infrastructure Intelligence"},
     {"url": "https://smartinfrastructuremagazine.com/feed/",        "source": "Smart Infrastructure Magazine"},
+    {"url": "https://infrastructurenews.co.za/feed/",               "source": "Infrastructure News"},
 ]
 
 # ─── Keyword Filters ──────────────────────────────────────────────────────────────────────────
