@@ -20,7 +20,6 @@
     z-index: 0;
   }
 
-  /* ── Loading Screen ── */
   #loading {
     position: fixed; inset: 0;
     background: #070b14;
@@ -41,7 +40,6 @@
   .loader-label { color: #f59e0b; font-size: 0.72rem; letter-spacing: 0.25em; text-transform: uppercase; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
-  /* ── UI Overlay ── */
   #ui {
     position: fixed; inset: 0;
     z-index: 10;
@@ -49,7 +47,6 @@
     display: flex; flex-direction: column;
   }
 
-  /* Header */
   #header {
     display: flex; justify-content: space-between; align-items: center;
     padding: 18px 28px;
@@ -71,7 +68,6 @@
   .stat-value { font-size: 1.1rem; font-weight: 700; color: #f59e0b; }
   .stat-label { font-size: 0.6rem; color: #4b5563; text-transform: uppercase; letter-spacing: 0.12em; margin-top: 1px; }
 
-  /* Main content area */
   #content {
     flex: 1;
     display: flex;
@@ -82,7 +78,6 @@
     min-height: 0;
   }
 
-  /* News panel */
   #news-panel {
     width: 370px;
     flex-shrink: 0;
@@ -165,7 +160,6 @@
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
   }
 
-  /* Legend */
   #legend {
     margin-top: auto;
     margin-left: auto;
@@ -184,7 +178,6 @@
   .legend-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
   .legend-text { font-size: 0.68rem; color: #9ca3af; }
 
-  /* Tooltip */
   #tooltip {
     position: fixed;
     background: rgba(7,11,20,0.95);
@@ -199,7 +192,6 @@
   #tt-name { font-size: 0.82rem; font-weight: 700; color: #f59e0b; margin-bottom: 3px; }
   #tt-sector { font-size: 0.65rem; color: #9ca3af; }
 
-  /* Responsive */
   @media (max-width: 768px) {
     #news-panel { width: 100%; position: fixed; bottom: 0; left: 0; right: 0; height: 55vh; border-radius: 14px 14px 0 0; }
     #legend { display: none; }
@@ -281,7 +273,8 @@
 
 <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
 <script>
-var NEWS_JSON_URL = 'https://anarchy798.github.io/infranews/data/news.json';
+// NEWS_JSON_URL uses a relative path so it always matches the GitHub Pages domain
+var NEWS_JSON_URL = './data/news.json';
 
 var SECTOR_COLORS = { energy:0xf59e0b, transport:0x3b82f6, digital:0x10b981, finance:0x8b5cf6, utilities:0x06b6d4, social:0xec4899 };
 var DEFAULT_COLOR = 0x6b7280;
@@ -449,7 +442,8 @@ function fetchNews(){
   fetch(NEWS_JSON_URL+'?_='+Date.now())
     .then(function(r){return r.json();})
     .then(function(data){renderNews(Array.isArray(data)?data:(data.articles||data.items||[]));  })
-    .catch(function(){
+    .catch(function(err){
+      console.warn('InfraNews fetch error:', err);
       document.getElementById('news-list').innerHTML='<div style="color:#4b5563;font-size:0.76rem;padding:30px 18px;text-align:center;line-height:1.7">News digest updating…<br><span style="font-size:0.68rem;color:#374151">GitHub Action runs daily at 06:00 UTC</span></div>';
       document.getElementById('panel-count').textContent='Updating';
       document.getElementById('stat-articles').textContent='—';
