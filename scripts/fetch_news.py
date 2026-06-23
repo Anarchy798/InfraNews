@@ -177,7 +177,7 @@ Content snippet : {snippet}
 Reply with ONLY a JSON object — no markdown fences, no commentary. Fields:
 - "summary"  : 2 sentences, written for a PE investor, highlighting deal/market implications (string)
 - "pe_score" : integer 1–10, how relevant this is to a European infra PE investor (10 = essential reading)
-- "sector"   : exactly one of: energy | transport | digital | utilities | social | finance
+- "sector"   : exactly one of: energy | transport | utilities
 - "country"  : primary European country or region involved, or "Europe" (string)
 - "pe_angle" : 3–5 word phrase describing the investment theme, e.g. "Offshore wind M&A" (string)"""
 
@@ -208,7 +208,7 @@ def analyse_article(art: dict, client: anthropic.Anthropic) -> dict:
             "published":  art["published"],
             "summary":    str(analysis.get("summary", art["raw_summary"][:200])),
             "pe_score":   max(1, min(10, int(analysis.get("pe_score", 5)))),
-            "sector":     str(analysis.get("sector", "finance")),
+            "sector":     str(analysis.get("sector", "energy")),
             "country":    str(analysis.get("country", "Europe")),
             "pe_angle":   str(analysis.get("pe_angle", "")),
             "fetched_at": datetime.now(timezone.utc).isoformat(),
@@ -223,7 +223,7 @@ def analyse_article(art: dict, client: anthropic.Anthropic) -> dict:
             "published":  art["published"],
             "summary":    art["raw_summary"][:200],
             "pe_score":   5,
-            "sector":     "finance",
+            "sector":     "energy",
             "country":    "Europe",
             "pe_angle":   "",
             "fetched_at": datetime.now(timezone.utc).isoformat(),
