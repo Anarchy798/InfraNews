@@ -8,7 +8,7 @@
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    background: #070b14;
+    background: #0c1d38;
     overflow: hidden;
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     color: #e5e7eb;
@@ -23,7 +23,7 @@
   /* ── Loading Screen ── */
   #loading {
     position: fixed; inset: 0;
-    background: #070b14;
+    background: #0c1d38;
     display: flex; align-items: center; justify-content: center;
     z-index: 200;
     transition: opacity 0.6s ease;
@@ -53,7 +53,7 @@
   #header {
     display: flex; justify-content: space-between; align-items: center;
     padding: 18px 28px;
-    background: linear-gradient(to bottom, rgba(7,11,20,0.92) 0%, transparent 100%);
+    background: linear-gradient(to bottom, rgba(10,22,45,0.94) 0%, transparent 100%);
   }
   .brand { display: flex; align-items: center; gap: 14px; }
   .brand-icon {
@@ -69,7 +69,7 @@
   .header-stats { display: flex; gap: 32px; }
   .stat { text-align: right; }
   .stat-value { font-size: 1.1rem; font-weight: 700; color: #f59e0b; }
-  .stat-label { font-size: 0.6rem; color: #4b5563; text-transform: uppercase; letter-spacing: 0.12em; margin-top: 1px; }
+  .stat-label { font-size: 0.6rem; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.12em; margin-top: 1px; }
 
   /* Main content area */
   #content {
@@ -86,8 +86,8 @@
   #news-panel {
     width: 370px;
     flex-shrink: 0;
-    background: rgba(7,11,20,0.78);
-    border: 1px solid rgba(245,158,11,0.18);
+    background: rgba(10,24,50,0.82);
+    border: 1px solid rgba(245,158,11,0.28);
     border-radius: 14px;
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
@@ -120,8 +120,8 @@
   #news-list::-webkit-scrollbar-thumb { background: rgba(245,158,11,0.25); border-radius: 2px; }
 
   .news-card {
-    background: rgba(255,255,255,0.025);
-    border: 1px solid rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.09);
     border-radius: 10px;
     padding: 13px;
     cursor: pointer;
@@ -129,15 +129,15 @@
     flex-shrink: 0;
   }
   .news-card:hover {
-    background: rgba(245,158,11,0.06);
-    border-color: rgba(245,158,11,0.28);
+    background: rgba(245,158,11,0.09);
+    border-color: rgba(245,158,11,0.38);
     transform: translateX(2px);
   }
 
   .card-meta { display: flex; align-items: center; gap: 7px; margin-bottom: 7px; flex-wrap: wrap; }
-  .card-source { font-size: 0.6rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.08em; }
-  .card-dot { width: 2px; height: 2px; background: #374151; border-radius: 50%; }
-  .card-time { font-size: 0.6rem; color: #374151; }
+  .card-source { font-size: 0.6rem; color: #8a97a8; text-transform: uppercase; letter-spacing: 0.08em; }
+  .card-dot { width: 2px; height: 2px; background: #4a5a6a; border-radius: 50%; }
+  .card-time { font-size: 0.6rem; color: #4a5a6a; }
   .card-sector {
     font-size: 0.58rem; font-weight: 600;
     padding: 2px 7px; border-radius: 99px;
@@ -145,22 +145,22 @@
     margin-left: auto;
   }
 
-  .card-title { font-size: 0.82rem; font-weight: 600; color: #e5e7eb; line-height: 1.4; margin-bottom: 7px; }
+  .card-title { font-size: 0.82rem; font-weight: 600; color: #f0f4ff; line-height: 1.4; margin-bottom: 7px; }
   .card-summary {
-    font-size: 0.73rem; color: #6b7280; line-height: 1.55;
+    font-size: 0.73rem; color: #8a97a8; line-height: 1.55;
     display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
   }
 
   .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
   .pe-row { display: flex; align-items: center; gap: 6px; }
-  .pe-lbl { font-size: 0.58rem; color: #4b5563; text-transform: uppercase; letter-spacing: 0.08em; }
-  .pe-bar { width: 54px; height: 3px; background: rgba(255,255,255,0.08); border-radius: 2px; overflow: hidden; }
+  .pe-lbl { font-size: 0.58rem; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.08em; }
+  .pe-bar { width: 54px; height: 3px; background: rgba(255,255,255,0.12); border-radius: 2px; overflow: hidden; }
   .pe-fill { height: 100%; border-radius: 2px; transition: width 0.4s; }
   .pe-num { font-size: 0.68rem; font-weight: 700; }
-  .card-country { font-size: 0.62rem; color: #374151; }
+  .card-country { font-size: 0.62rem; color: #5a6a7a; }
   .card-angle {
-    font-size: 0.6rem; color: #4b5563;
-    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06);
+    font-size: 0.6rem; color: #6b7a8d;
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
     padding: 2px 7px; border-radius: 99px; margin-top: 6px;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
   }
@@ -170,25 +170,25 @@
     margin-top: auto;
     margin-left: auto;
     align-self: flex-end;
-    background: rgba(7,11,20,0.78);
-    border: 1px solid rgba(255,255,255,0.07);
+    background: rgba(10,24,50,0.82);
+    border: 1px solid rgba(255,255,255,0.1);
     border-radius: 11px;
     padding: 13px 16px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     pointer-events: all;
   }
-  .legend-title { font-size: 0.58rem; color: #4b5563; text-transform: uppercase; letter-spacing: 0.16em; margin-bottom: 10px; }
+  .legend-title { font-size: 0.58rem; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.16em; margin-bottom: 10px; }
   .legend-items { display: flex; flex-direction: column; gap: 7px; }
   .legend-item { display: flex; align-items: center; gap: 9px; }
   .legend-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
-  .legend-text { font-size: 0.68rem; color: #9ca3af; }
+  .legend-text { font-size: 0.68rem; color: #b8c4d0; }
 
   /* Tooltip */
   #tooltip {
     position: fixed;
-    background: rgba(7,11,20,0.95);
-    border: 1px solid rgba(245,158,11,0.35);
+    background: rgba(10,24,50,0.96);
+    border: 1px solid rgba(245,158,11,0.45);
     border-radius: 9px; padding: 10px 14px;
     backdrop-filter: blur(10px);
     pointer-events: none; z-index: 50;
@@ -197,7 +197,7 @@
   }
   #tooltip.show { opacity: 1; transform: translateY(0); }
   #tt-name { font-size: 0.82rem; font-weight: 700; color: #f59e0b; margin-bottom: 3px; }
-  #tt-sector { font-size: 0.65rem; color: #9ca3af; }
+  #tt-sector { font-size: 0.65rem; color: #b8c4d0; }
 
   /* ── Responsive ── */
   @media (max-width: 768px) {
@@ -352,8 +352,8 @@ var canvas = document.getElementById('three-canvas');
 var W = window.innerWidth, H = window.innerHeight;
 
 var scene = new THREE.Scene();
-scene.background = new THREE.Color(0x070b14);
-scene.fog = new THREE.FogExp2(0x070b14, 0.028);
+scene.background = new THREE.Color(0x0c1d38);
+scene.fog = new THREE.FogExp2(0x0c1d38, 0.018);
 
 var camera = new THREE.PerspectiveCamera(55, W / H, 0.1, 150);
 camera.position.set(0, 5.5, 14);
@@ -372,19 +372,27 @@ window.addEventListener('resize', function () {
 });
 
 // ─── Lights ──────────────────────────────────────────────────────────────────
-scene.add(new THREE.AmbientLight(0x0d1a33, 3));
-var keyLight = new THREE.DirectionalLight(0x3355ff, 1.2);
-keyLight.position.set(4, 8, 6);
+scene.add(new THREE.AmbientLight(0x2244aa, 4.5));
+var keyLight = new THREE.DirectionalLight(0x88aaff, 2.2);
+keyLight.position.set(4, 10, 6);
 scene.add(keyLight);
+// Warm fill from below to simulate ground-reflected infrastructure glow
+var fillLight = new THREE.DirectionalLight(0xffcc66, 0.6);
+fillLight.position.set(-6, -4, 8);
+scene.add(fillLight);
 
 // ─── Network Group (rotates as one unit) ─────────────────────────────────────
 var group = new THREE.Group();
 scene.add(group);
 
-// ─── Ground Grid ─────────────────────────────────────────────────────────────
-var grid = new THREE.GridHelper(28, 28, 0x0f1e38, 0x0a1428);
+// ─── Ground Grid (topographic map feel) ──────────────────────────────────────
+var grid = new THREE.GridHelper(32, 32, 0x1e4080, 0x122550);
 grid.position.y = -2.2;
 group.add(grid);
+// Secondary finer grid for texture depth
+var gridFine = new THREE.GridHelper(32, 64, 0x0f2a50, 0x0a1e3c);
+gridFine.position.y = -2.19;
+group.add(gridFine);
 
 // ─── Build Node Meshes ───────────────────────────────────────────────────────
 var nodeMeshes = [];
@@ -393,15 +401,15 @@ var nodeData   = [];
 NODES.forEach(function (nd, i) {
   var color = SECTOR_COLORS[nd.sector] || DEFAULT_COLOR;
 
-  // Core sphere
+  // Core sphere — infrastructure node
   var coreMat = new THREE.MeshStandardMaterial({
     color: color,
     emissive: color,
-    emissiveIntensity: 0.9,
-    metalness: 0.2,
-    roughness: 0.5,
+    emissiveIntensity: 1.4,
+    metalness: 0.35,
+    roughness: 0.35,
   });
-  var core = new THREE.Mesh(new THREE.SphereGeometry(0.11, 16, 16), coreMat);
+  var core = new THREE.Mesh(new THREE.SphereGeometry(0.13, 16, 16), coreMat);
   core.position.set(nd.pos[0], nd.pos[1], nd.pos[2]);
   core.userData = { node: nd };
   group.add(core);
@@ -411,26 +419,45 @@ NODES.forEach(function (nd, i) {
   var haloMat = new THREE.MeshBasicMaterial({
     color: color,
     transparent: true,
-    opacity: 0.14,
+    opacity: 0.25,
     depthWrite: false,
     blending: THREE.AdditiveBlending,
     side: THREE.BackSide,
   });
-  var halo = new THREE.Mesh(new THREE.SphereGeometry(0.28, 16, 16), haloMat);
+  var halo = new THREE.Mesh(new THREE.SphereGeometry(0.34, 16, 16), haloMat);
   halo.position.copy(core.position);
   group.add(halo);
+
+  // Pulse ring — like a radar ping emanating from the hub
+  var ringGeo = new THREE.RingGeometry(0.18, 0.22, 32);
+  var ringMat = new THREE.MeshBasicMaterial({
+    color: color,
+    transparent: true,
+    opacity: 0.6,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+    side: THREE.DoubleSide,
+  });
+  var ring = new THREE.Mesh(ringGeo, ringMat);
+  ring.position.copy(core.position);
+  ring.lookAt(camera.position);
+  group.add(ring);
 
   nodeData.push({
     core: core,
     halo: halo,
+    ring: ring,
     baseY: nd.pos[1],
     phase: Math.random() * Math.PI * 2,
+    ringPhase: Math.random() * Math.PI * 2,
   });
 });
 
-// ─── Connection Lines ────────────────────────────────────────────────────────
+// ─── Connection Lines (sector-coded infrastructure corridors) ─────────────────
 var MAX_CONN_DIST = 3.4;
 var connections = [];
+// Neutral corridor color when sectors differ
+var CORRIDOR_COLOR = 0x2255bb;
 
 for (var i = 0; i < NODES.length; i++) {
   for (var j = i + 1; j < NODES.length; j++) {
@@ -439,10 +466,14 @@ for (var i = 0; i < NODES.length; i++) {
     if (a.distanceTo(b) < MAX_CONN_DIST) {
       var pts = [a.clone(), b.clone()];
       var geo = new THREE.BufferGeometry().setFromPoints(pts);
+      // Use sector color if both endpoints share a sector, else a bright corridor blue
+      var lineColor = (NODES[i].sector === NODES[j].sector)
+        ? (SECTOR_COLORS[NODES[i].sector] || CORRIDOR_COLOR)
+        : CORRIDOR_COLOR;
       var mat = new THREE.LineBasicMaterial({
-        color: 0x1a3060,
+        color: lineColor,
         transparent: true,
-        opacity: 0.45,
+        opacity: 0.55,
         depthWrite: false,
       });
       var line = new THREE.Line(geo, mat);
@@ -453,7 +484,7 @@ for (var i = 0; i < NODES.length; i++) {
 }
 
 // ─── Flowing Particles ───────────────────────────────────────────────────────
-var PARTICLE_COUNT = 70;
+var PARTICLE_COUNT = 110;
 var particles = [];
 
 for (var p = 0; p < PARTICLE_COUNT; p++) {
@@ -463,11 +494,11 @@ for (var p = 0; p < PARTICLE_COUNT; p++) {
   var pColor = SECTOR_COLORS[NODES[ni].sector] || DEFAULT_COLOR;
 
   var pMesh = new THREE.Mesh(
-    new THREE.SphereGeometry(0.038, 6, 6),
+    new THREE.SphereGeometry(0.046, 6, 6),
     new THREE.MeshBasicMaterial({
       color: pColor,
       transparent: true,
-      opacity: 0.85,
+      opacity: 0.95,
       blending: THREE.AdditiveBlending,
       depthWrite: false,
     })
@@ -482,18 +513,30 @@ for (var p = 0; p < PARTICLE_COUNT; p++) {
   });
 }
 
-// ─── Starfield ───────────────────────────────────────────────────────────────
+// ─── Starfield (distant monitoring stations / satellite points) ───────────────
 var starPositions = [];
-for (var s = 0; s < 1800; s++) {
+for (var s = 0; s < 2400; s++) {
   starPositions.push(
-    (Math.random() - 0.5) * 120,
-    (Math.random() - 0.5) * 120,
-    (Math.random() - 0.5) * 120
+    (Math.random() - 0.5) * 130,
+    (Math.random() - 0.5) * 130,
+    (Math.random() - 0.5) * 130
   );
 }
 var starGeo = new THREE.BufferGeometry();
 starGeo.setAttribute('position', new THREE.Float32BufferAttribute(starPositions, 3));
-scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({ color: 0x1a2e50, size: 0.07 })));
+scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({ color: 0x4488cc, size: 0.1 })));
+// Accent stars — brighter cluster for depth
+var accentStarPos = [];
+for (var as = 0; as < 300; as++) {
+  accentStarPos.push(
+    (Math.random() - 0.5) * 100,
+    (Math.random() - 0.5) * 100,
+    (Math.random() - 0.5) * 100
+  );
+}
+var accentStarGeo = new THREE.BufferGeometry();
+accentStarGeo.setAttribute('position', new THREE.Float32BufferAttribute(accentStarPos, 3));
+scene.add(new THREE.Points(accentStarGeo, new THREE.PointsMaterial({ color: 0xaaccff, size: 0.14 })));
 
 // ─── Raycaster / Tooltip ─────────────────────────────────────────────────────
 var raycaster = new THREE.Raycaster();
@@ -527,13 +570,21 @@ function animate() {
   camera.position.y = 5 + Math.sin(orbitAngle * 0.3) * 1.5;
   camera.lookAt(0, 0, 0);
 
-  // Float nodes + pulse glow
+  // Float nodes + pulse glow + expanding radar rings
   nodeData.forEach(function (nd) {
     nd.core.position.y = nd.baseY + Math.sin(t + nd.phase) * 0.09;
     nd.halo.position.copy(nd.core.position);
-    var pulseScale = 1 + Math.sin(t * 2.2 + nd.phase) * 0.22;
+    var pulseScale = 1 + Math.sin(t * 2.2 + nd.phase) * 0.25;
     nd.halo.scale.setScalar(pulseScale);
-    nd.core.material.emissiveIntensity = 0.65 + Math.sin(t * 3 + nd.phase) * 0.3;
+    nd.core.material.emissiveIntensity = 1.0 + Math.sin(t * 3 + nd.phase) * 0.4;
+
+    // Radar-ping ring: expand outward then reset
+    var rp = (t * 0.55 + nd.ringPhase) % (Math.PI * 2);
+    var ringScale = 1 + (rp / (Math.PI * 2)) * 6;
+    nd.ring.scale.setScalar(ringScale);
+    nd.ring.material.opacity = Math.max(0, 0.55 * (1 - rp / (Math.PI * 2)));
+    nd.ring.position.copy(nd.core.position);
+    nd.ring.lookAt(camera.position);
   });
 
   // Move flow particles
@@ -543,9 +594,9 @@ function animate() {
     p.mesh.position.lerpVectors(p.from, p.to, p.t);
   });
 
-  // Pulse connection lines
+  // Pulse connection lines (infrastructure corridors breathe)
   connections.forEach(function (c) {
-    c.line.material.opacity = 0.3 + Math.sin(t * 1.5 + c.phase) * 0.15;
+    c.line.material.opacity = 0.42 + Math.sin(t * 1.5 + c.phase) * 0.18;
   });
 
   // Hover detection
