@@ -6,220 +6,182 @@
 <title>INFRANEWS &lt;GO&gt; — European Infrastructure PE Intelligence</title>
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
   :root {
     --orange: #ff6600;
-    --orange-dim: #993d00;
+    --orange-dim: #7a3000;
     --amber: #ffaa00;
     --green: #00cc44;
-    --red: #ff3333;
     --blue: #4499ff;
-    --bg: #000000;
-    --bg1: #0d0d0d;
-    --bg2: #111111;
+    --teal: #00bbcc;
+    --bg: #000;
+    --bg1: #0a0a0a;
+    --bg2: #111;
     --bg3: #161616;
-    --border: #2a2a2a;
-    --border-bright: #444444;
-    --text: #cccccc;
-    --text-dim: #666666;
-    --text-bright: #eeeeee;
+    --border: #222;
+    --border-hi: #333;
+    --text: #aaa;
+    --text-dim: #555;
+    --text-bright: #ddd;
     --mono: 'Courier New', 'Lucida Console', monospace;
   }
+  body { background:#000; overflow:hidden; font-family:var(--mono); color:var(--text); font-size:12px; line-height:1.4; }
 
-  body {
-    background: var(--bg);
-    overflow: hidden;
-    font-family: var(--mono);
-    color: var(--text);
-    font-size: 12px;
-    line-height: 1.4;
+  /* ── Map SVG ── */
+  #map-svg { position:fixed; inset:0; z-index:0; width:100%; height:100%; cursor:default; }
+  .country { transition: fill 0.2s, stroke 0.2s; }
+  .country-europe { cursor:pointer; }
+  .country-europe:hover { filter: brightness(1.8); }
+  .city-pulse {
+    animation: pulse 2.4s ease-in-out infinite;
+    transform-origin: center;
   }
-
-  #three-canvas { position: fixed; inset: 0; z-index: 0; }
+  @keyframes pulse { 0%,100%{opacity:0.7;r:2.5} 50%{opacity:1;r:4} }
 
   /* ── Loading ── */
   #loading {
-    position: fixed; inset: 0; background: #000;
-    display: flex; align-items: center; justify-content: center;
-    z-index: 200; transition: opacity 0.4s ease;
+    position:fixed; inset:0; background:#000;
+    display:flex; align-items:center; justify-content:center;
+    z-index:200; transition:opacity 0.4s;
   }
-  #loading.fade-out { opacity: 0; pointer-events: none; }
-  .loader-inner { text-align: center; }
+  #loading.fade-out { opacity:0; pointer-events:none; }
   .loader-ring {
-    width: 40px; height: 40px;
-    border: 1px solid #333;
-    border-top-color: var(--orange);
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-    margin: 0 auto 12px;
+    width:36px; height:36px; border:1px solid #222; border-top-color:var(--orange);
+    border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 12px;
   }
-  .loader-label { color: var(--orange); font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; font-family: var(--mono); }
-  @keyframes spin { to { transform: rotate(360deg); } }
+  .loader-label { color:var(--orange); font-size:10px; letter-spacing:0.3em; }
+  @keyframes spin { to { transform:rotate(360deg); } }
 
   /* ── Shell ── */
-  #ui { position: fixed; inset: 0; z-index: 10; pointer-events: none; display: flex; flex-direction: column; }
+  #ui { position:fixed; inset:0; z-index:10; pointer-events:none; display:flex; flex-direction:column; }
 
   /* ── Top bar ── */
   #topbar {
-    background: var(--orange);
-    padding: 0 8px;
-    height: 22px;
-    display: flex; align-items: center; justify-content: space-between;
-    flex-shrink: 0;
+    background:var(--orange); height:22px; padding:0 10px;
+    display:flex; align-items:center; justify-content:space-between; flex-shrink:0;
   }
-  .topbar-left { display: flex; align-items: center; gap: 16px; }
-  .topbar-brand { font-size: 12px; font-weight: bold; color: #000; letter-spacing: 0.12em; }
-  .topbar-cmd { font-size: 11px; color: rgba(0,0,0,0.6); }
-  .topbar-right { display: flex; align-items: center; gap: 16px; }
-  .topbar-item { font-size: 11px; color: rgba(0,0,0,0.75); }
-  .topbar-time { font-size: 11px; color: #000; font-weight: bold; letter-spacing: 0.08em; }
+  .topbar-brand { font-size:12px; font-weight:bold; color:#000; letter-spacing:0.1em; }
+  .topbar-cmd { font-size:11px; color:rgba(0,0,0,0.55); }
+  .topbar-right { display:flex; align-items:center; gap:14px; }
+  .topbar-item { font-size:10px; color:rgba(0,0,0,0.65); }
+  .topbar-time { font-size:11px; color:#000; font-weight:bold; }
 
-  /* ── Function key bar ── */
+  /* ── Fn bar ── */
   #fnbar {
-    background: var(--bg2);
-    border-bottom: 1px solid var(--border);
-    padding: 2px 8px;
-    height: 18px;
-    display: flex; align-items: center; gap: 0;
-    flex-shrink: 0;
+    background:var(--bg2); border-bottom:1px solid var(--border); height:18px;
+    padding:0 8px; display:flex; align-items:center; flex-shrink:0;
   }
-  .fn { font-size: 10px; padding: 0 8px; color: var(--text-dim); border-right: 1px solid var(--border); height: 100%; display: flex; align-items: center; }
-  .fn span { color: var(--amber); margin-right: 3px; }
-  .fn:hover { background: var(--bg3); color: var(--text-bright); cursor: default; }
+  .fn { font-size:10px; padding:0 8px; color:var(--text-dim); border-right:1px solid var(--border); height:100%; display:flex; align-items:center; }
+  .fn span { color:var(--amber); margin-right:3px; }
 
-  /* ── Header stats bar ── */
+  /* ── Stat bar ── */
   #statbar {
-    background: var(--bg1);
-    border-bottom: 1px solid var(--border-bright);
-    padding: 4px 10px;
-    display: flex; align-items: center; gap: 0;
-    flex-shrink: 0;
+    background:var(--bg1); border-bottom:1px solid var(--border-hi); height:30px;
+    padding:0 10px; display:flex; align-items:center; flex-shrink:0;
   }
-  .stat-block {
-    padding: 0 14px; border-right: 1px solid var(--border);
-    display: flex; flex-direction: column; align-items: flex-start;
-  }
-  .stat-block:first-child { padding-left: 0; }
-  .stat-v { font-size: 13px; font-weight: bold; color: var(--amber); letter-spacing: 0.05em; }
-  .stat-l { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.15em; margin-top: 1px; }
-  .stat-sep { flex: 1; }
-  .ticker-wrap { overflow: hidden; max-width: 420px; font-size: 10px; color: var(--text-dim); white-space: nowrap; }
-  #ticker-text { display: inline-block; animation: ticker 30s linear infinite; }
-  @keyframes ticker { from { transform: translateX(420px); } to { transform: translateX(-100%); } }
+  .stat-block { padding:0 14px; border-right:1px solid var(--border); display:flex; gap:6px; align-items:baseline; }
+  .stat-block:first-child { padding-left:0; }
+  .stat-v { font-size:13px; font-weight:bold; color:var(--amber); }
+  .stat-l { font-size:9px; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.12em; }
+  .stat-sep { flex:1; }
+  .ticker-wrap { overflow:hidden; max-width:480px; font-size:9px; color:var(--text-dim); white-space:nowrap; }
+  #ticker-text { display:inline-block; animation:ticker 35s linear infinite; }
+  @keyframes ticker { from{transform:translateX(480px)} to{transform:translateX(-100%)} }
 
   /* ── Content ── */
-  #content {
-    flex: 1; display: flex; gap: 0; overflow: hidden; min-height: 0;
-  }
+  #content { flex:1; display:flex; overflow:hidden; min-height:0; }
 
   /* ── News panel ── */
   #news-panel {
-    width: 400px; flex-shrink: 0;
-    background: rgba(0,0,0,0.92);
-    border-right: 1px solid var(--border-bright);
-    display: flex; flex-direction: column; pointer-events: all; overflow: hidden;
+    width:390px; flex-shrink:0;
+    background:rgba(0,0,0,0.93); border-right:1px solid var(--border-hi);
+    display:flex; flex-direction:column; pointer-events:all; overflow:hidden;
   }
-
   .panel-head {
-    background: var(--bg2);
-    padding: 5px 10px;
-    border-bottom: 1px solid var(--border-bright);
-    display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
+    background:var(--bg2); border-bottom:1px solid var(--border-hi);
+    padding:5px 10px; display:flex; align-items:center; justify-content:space-between; flex-shrink:0;
   }
-  .panel-title { font-size: 11px; font-weight: bold; color: var(--orange); letter-spacing: 0.15em; text-transform: uppercase; }
-  .panel-badge { font-size: 10px; color: var(--text-dim); }
-  .panel-badge b { color: var(--green); }
+  .panel-title { font-size:11px; font-weight:bold; color:var(--orange); letter-spacing:0.15em; text-transform:uppercase; }
+  .panel-badge { font-size:10px; color:var(--text-dim); }
+  .panel-badge b { color:var(--green); }
+
+  /* Filter bar */
+  #filter-bar {
+    background:var(--bg3); border-bottom:1px solid var(--border);
+    padding:4px 10px; display:flex; align-items:center; gap:8px; flex-shrink:0;
+  }
+  #filter-label { font-size:9px; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.15em; }
+  #filter-val { font-size:10px; color:var(--amber); font-weight:bold; }
+  #filter-clear {
+    font-size:9px; color:var(--orange); cursor:pointer; margin-left:auto;
+    border:1px solid var(--orange-dim); padding:1px 6px; display:none;
+  }
+  #filter-clear:hover { background:rgba(255,102,0,0.1); }
 
   /* Column headers */
   #col-headers {
-    background: var(--bg2);
-    border-bottom: 1px solid var(--border);
-    padding: 3px 10px;
-    display: grid;
-    grid-template-columns: 40px 1fr 50px 36px;
-    gap: 8px;
-    flex-shrink: 0;
+    background:var(--bg2); border-bottom:1px solid var(--border);
+    padding:3px 10px; display:grid; grid-template-columns:36px 1fr 50px 30px;
+    gap:6px; flex-shrink:0;
   }
-  .col-hdr { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.12em; }
+  .col-hdr { font-size:9px; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.12em; }
 
-  #news-list {
-    overflow-y: auto; flex: 1;
-    display: flex; flex-direction: column; min-height: 0;
-  }
-  #news-list::-webkit-scrollbar { width: 4px; }
-  #news-list::-webkit-scrollbar-track { background: var(--bg); }
-  #news-list::-webkit-scrollbar-thumb { background: var(--orange-dim); }
+  #news-list { overflow-y:auto; flex:1; display:flex; flex-direction:column; min-height:0; }
+  #news-list::-webkit-scrollbar { width:3px; }
+  #news-list::-webkit-scrollbar-track { background:var(--bg); }
+  #news-list::-webkit-scrollbar-thumb { background:var(--orange-dim); }
 
   .news-row {
-    border-bottom: 1px solid var(--border);
-    padding: 7px 10px 6px;
-    cursor: pointer;
-    transition: background 0.1s;
-    flex-shrink: 0;
+    border-bottom:1px solid var(--border); padding:7px 10px 6px;
+    cursor:pointer; transition:background 0.1s; flex-shrink:0;
   }
-  .news-row:nth-child(even) { background: rgba(255,255,255,0.018); }
-  .news-row:hover { background: rgba(255,102,0,0.07); border-left: 2px solid var(--orange); padding-left: 8px; }
+  .news-row:nth-child(even) { background:rgba(255,255,255,0.015); }
+  .news-row:hover { background:rgba(255,102,0,0.07); border-left:2px solid var(--orange); padding-left:8px; }
+  .row-top { display:grid; grid-template-columns:36px 1fr 50px 30px; gap:6px; align-items:baseline; margin-bottom:4px; }
+  .row-time { font-size:10px; color:var(--text-dim); }
+  .row-title { font-size:11px; color:var(--text-bright); font-weight:bold; line-height:1.35; }
+  .row-sector { font-size:9px; text-transform:uppercase; letter-spacing:0.05em; text-align:right; }
+  .row-score { font-size:11px; font-weight:bold; text-align:right; }
+  .row-summary { font-size:10px; color:var(--text-dim); line-height:1.45; margin-bottom:4px;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .row-meta { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .row-source { font-size:9px; color:var(--orange-dim); text-transform:uppercase; letter-spacing:0.07em; }
+  .row-angle { font-size:9px; color:var(--text-dim); }
+  .row-angle::before { content:'▸ '; color:var(--amber); }
+  .row-country { font-size:9px; color:var(--text-dim); margin-left:auto; }
 
-  .row-top {
-    display: grid;
-    grid-template-columns: 40px 1fr 52px 34px;
-    gap: 8px; align-items: baseline; margin-bottom: 4px;
+  /* ── Map tooltip ── */
+  #map-tooltip {
+    position:fixed; background:rgba(0,0,0,0.96); border:1px solid var(--orange);
+    padding:7px 12px; pointer-events:none; z-index:50; opacity:0; transition:opacity 0.1s;
   }
-  .row-time { font-size: 10px; color: var(--text-dim); white-space: nowrap; }
-  .row-title { font-size: 11px; color: var(--text-bright); line-height: 1.35; font-weight: bold; }
-  .row-sector { font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; text-align: right; white-space: nowrap; }
-  .row-score { font-size: 11px; font-weight: bold; text-align: right; }
-
-  .row-summary { font-size: 10px; color: var(--text-dim); line-height: 1.45; margin-bottom: 4px;
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-
-  .row-meta { display: flex; align-items: center; gap: 10px; }
-  .row-source { font-size: 9px; color: var(--orange-dim); text-transform: uppercase; letter-spacing: 0.08em; }
-  .row-angle { font-size: 9px; color: var(--text-dim); }
-  .row-angle::before { content: '▸ '; color: var(--amber); }
-  .row-country { font-size: 9px; color: var(--text-dim); margin-left: auto; }
+  #map-tooltip.show { opacity:1; }
+  #tt-country { font-size:12px; font-weight:bold; color:var(--orange); margin-bottom:3px; letter-spacing:0.08em; }
+  #tt-count { font-size:10px; color:var(--text-dim); }
 
   /* ── Bottom status bar ── */
   #statusbar {
-    background: var(--bg2);
-    border-top: 1px solid var(--border-bright);
-    padding: 2px 10px;
-    height: 18px;
-    display: flex; align-items: center; justify-content: space-between;
-    flex-shrink: 0;
+    background:var(--bg2); border-top:1px solid var(--border-hi); height:18px;
+    padding:0 10px; display:flex; align-items:center; justify-content:space-between; flex-shrink:0;
   }
-  .status-left { font-size: 9px; color: var(--text-dim); letter-spacing: 0.1em; }
-  .status-right { font-size: 9px; color: var(--text-dim); }
-  .status-right b { color: var(--green); }
+  .status-left { font-size:9px; color:var(--text-dim); letter-spacing:0.08em; }
+  .status-right { font-size:9px; color:var(--text-dim); }
+  .status-right b { color:var(--green); }
 
   /* ── Legend ── */
   #legend {
-    position: absolute; right: 14px; bottom: 30px;
-    background: rgba(0,0,0,0.88);
-    border: 1px solid var(--border-bright);
-    padding: 8px 12px; pointer-events: all;
+    position:absolute; right:14px; bottom:30px; z-index:20;
+    background:rgba(0,0,0,0.9); border:1px solid var(--border-hi);
+    padding:8px 12px; pointer-events:all;
   }
-  .legend-title { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 7px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
-  .legend-items { display: flex; flex-direction: column; gap: 5px; }
-  .legend-item { display: flex; align-items: center; gap: 8px; }
-  .legend-dot { width: 6px; height: 6px; flex-shrink: 0; }
-  .legend-text { font-size: 10px; color: var(--text); }
+  .legend-title { font-size:9px; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.2em; margin-bottom:6px; border-bottom:1px solid var(--border); padding-bottom:4px; }
+  .legend-items { display:flex; flex-direction:column; gap:5px; }
+  .legend-item { display:flex; align-items:center; gap:8px; }
+  .legend-dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+  .legend-text { font-size:10px; color:var(--text); }
 
-  /* ── Tooltip ── */
-  #tooltip {
-    position: fixed;
-    background: var(--bg2); border: 1px solid var(--orange);
-    padding: 6px 10px; pointer-events: none; z-index: 50;
-    opacity: 0; transition: opacity 0.1s;
-  }
-  #tooltip.show { opacity: 1; }
-  #tt-name { font-size: 11px; font-weight: bold; color: var(--orange); margin-bottom: 2px; }
-  #tt-sector { font-size: 10px; color: var(--text-dim); }
-
-  @media (max-width: 768px) {
-    #news-panel { width: 100%; position: fixed; bottom: 0; left: 0; right: 0; height: 52vh; }
-    #legend { display: none; }
-    #content { padding-bottom: 52vh; }
+  @media (max-width:768px) {
+    #news-panel { width:100%; position:fixed; bottom:0; left:0; right:0; height:52vh; }
+    #legend { display:none; }
   }
 </style>
 </head>
@@ -232,13 +194,28 @@
   </div>
 </div>
 
-<canvas id="three-canvas"></canvas>
-<div id="tooltip"><div id="tt-name"></div><div id="tt-sector"></div></div>
+<svg id="map-svg">
+  <defs>
+    <filter id="glow-orange" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-city" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-selected" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+</svg>
+
+<div id="map-tooltip"><div id="tt-country"></div><div id="tt-count"></div></div>
 
 <div id="ui">
-
   <div id="topbar">
-    <div class="topbar-left">
+    <div style="display:flex;align-items:center;gap:16px">
       <span class="topbar-brand">INFRANEWS &lt;GO&gt;</span>
       <span class="topbar-cmd">EUROPEAN INFRASTRUCTURE PE INTELLIGENCE</span>
     </div>
@@ -252,44 +229,33 @@
   </div>
 
   <div id="fnbar">
-    <div class="fn"><span>F1</span>HELP</div>
     <div class="fn"><span>F2</span>ENERGY</div>
     <div class="fn"><span>F3</span>TRANSPORT</div>
     <div class="fn"><span>F4</span>UTILITIES</div>
     <div class="fn"><span>F5</span>TOP STORIES</div>
-    <div class="fn"><span>F8</span>PE SCORE</div>
-    <div class="fn"><span>F9</span>COUNTRY</div>
-    <div class="fn" style="border-right:none"><span>F10</span>FEEDS</div>
+    <div class="fn"><span>F8</span>PE SCORE ▼</div>
+    <div class="fn" style="border-right:none"><span>ESC</span>CLEAR FILTER</div>
   </div>
 
   <div id="statbar">
-    <div class="stat-block">
-      <div class="stat-v" id="stat-articles">—</div>
-      <div class="stat-l">Stories</div>
-    </div>
-    <div class="stat-block">
-      <div class="stat-v">21</div>
-      <div class="stat-l">Feeds</div>
-    </div>
-    <div class="stat-block">
-      <div class="stat-v">3</div>
-      <div class="stat-l">Sectors</div>
-    </div>
-    <div class="stat-block">
-      <div class="stat-v" id="stat-updated">—</div>
-      <div class="stat-l">Updated</div>
-    </div>
+    <div class="stat-block"><div class="stat-v" id="stat-articles">—</div><div class="stat-l">Stories</div></div>
+    <div class="stat-block"><div class="stat-v">21</div><div class="stat-l">Feeds</div></div>
+    <div class="stat-block"><div class="stat-v" id="stat-countries">—</div><div class="stat-l">Countries</div></div>
+    <div class="stat-block"><div class="stat-v" id="stat-updated">—</div><div class="stat-l">Updated</div></div>
     <div class="stat-sep"></div>
-    <div class="ticker-wrap">
-      <span id="ticker-text">INFRANEWS EUROPE · POWERED BY CLAUDE AI · DAILY DIGEST AT 06:00 UTC · ENERGY · TRANSPORT · UTILITIES · 21 RSS SOURCES MONITORED</span>
-    </div>
+    <div class="ticker-wrap"><span id="ticker-text">INFRANEWS EUROPE · CLICK A COUNTRY ON THE MAP TO FILTER NEWS · POWERED BY CLAUDE AI · DAILY DIGEST 06:00 UTC · 21 RSS SOURCES · ENERGY · TRANSPORT · UTILITIES</span></div>
   </div>
 
-  <div id="content" style="position:relative;">
+  <div id="content" style="position:relative">
     <div id="news-panel">
       <div class="panel-head">
         <span class="panel-title">PE Investment Monitor</span>
         <span class="panel-badge">LOADED: <b id="panel-count">…</b></span>
+      </div>
+      <div id="filter-bar">
+        <span id="filter-label">REGION:</span>
+        <span id="filter-val">ALL EUROPE</span>
+        <span id="filter-clear" onclick="clearFilter()">✕ CLEAR</span>
       </div>
       <div id="col-headers">
         <span class="col-hdr">Age</span>
@@ -298,15 +264,14 @@
         <span class="col-hdr" style="text-align:right">PE</span>
       </div>
       <div id="news-list">
-        <div style="color:var(--text-dim);font-size:11px;text-align:center;padding:40px 20px;line-height:2;font-family:var(--mono)">
-          FETCHING INFRASTRUCTURE INTELLIGENCE...<br>
-          <span style="font-size:9px;color:#333;letter-spacing:0.2em">PLEASE WAIT</span>
+        <div style="color:var(--text-dim);font-size:10px;text-align:center;padding:40px 20px;line-height:2">
+          FETCHING INTELLIGENCE...<br><span style="font-size:9px;color:#222">PLEASE WAIT</span>
         </div>
       </div>
     </div>
 
     <div id="legend">
-      <div class="legend-title">Sector Key</div>
+      <div class="legend-title">Hub Sector</div>
       <div class="legend-items">
         <div class="legend-item"><div class="legend-dot" style="background:#ff8800"></div><span class="legend-text">Energy</span></div>
         <div class="legend-item"><div class="legend-dot" style="background:#4499ff"></div><span class="legend-text">Transport</span></div>
@@ -316,316 +281,361 @@
   </div>
 
   <div id="statusbar">
-    <span class="status-left">INFRANEWS v2.0 · EUROPEAN INFRASTRUCTURE PE · anarchy798.github.io/infranews</span>
+    <span class="status-left">INFRANEWS v2.1 · CLICK MAP TO FILTER BY COUNTRY · ESC TO RESET</span>
     <span class="status-right">NEXT UPDATE: 06:00 UTC · STATUS: <b>LIVE</b></span>
   </div>
-
 </div>
 
-<script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
 <script>
 var NEWS_JSON_URL = 'https://raw.githubusercontent.com/anarchy798/infranews/main/data/news.json';
 
-// ── Live clock ────────────────────────────────────────────────────────────────
+// ── Clock ─────────────────────────────────────────────────────────────────────
 function updateClock() {
-  var now = new Date();
-  var h = ('0'+now.getUTCHours()).slice(-2);
-  var m = ('0'+now.getUTCMinutes()).slice(-2);
-  var s = ('0'+now.getUTCSeconds()).slice(-2);
-  document.getElementById('live-time').textContent = h + ':' + m + ':' + s + ' UTC';
+  var n = new Date();
+  document.getElementById('live-time').textContent =
+    ('0'+n.getUTCHours()).slice(-2)+':'+('0'+n.getUTCMinutes()).slice(-2)+':'+('0'+n.getUTCSeconds()).slice(-2)+' UTC';
 }
-setInterval(updateClock, 1000);
-updateClock();
+setInterval(updateClock, 1000); updateClock();
 
-// ── Sector colours ────────────────────────────────────────────────────────────
-var SECTOR_COLORS = {
-  energy:    0xff8800,
-  transport: 0x4499ff,
-  utilities: 0x00bbcc,
+// ── Country lookups ───────────────────────────────────────────────────────────
+var ISO_TO_NAME = {
+  8:'Albania', 20:'Andorra', 40:'Austria', 56:'Belgium', 70:'Bosnia and Herzegovina',
+  100:'Bulgaria', 191:'Croatia', 196:'Cyprus', 203:'Czech Republic', 208:'Denmark',
+  233:'Estonia', 246:'Finland', 250:'France', 276:'Germany', 300:'Greece',
+  348:'Hungary', 352:'Iceland', 372:'Ireland', 380:'Italy', 428:'Latvia',
+  440:'Lithuania', 442:'Luxembourg', 470:'Malta', 492:'Monaco', 498:'Moldova',
+  499:'Montenegro', 528:'Netherlands', 578:'Norway', 616:'Poland', 620:'Portugal',
+  642:'Romania', 674:'San Marino', 688:'Serbia', 703:'Slovakia', 705:'Slovenia',
+  724:'Spain', 752:'Sweden', 756:'Switzerland', 792:'Turkey', 804:'Ukraine',
+  807:'North Macedonia', 826:'United Kingdom', 112:'Belarus',
 };
-var DEFAULT_COLOR = 0x446688;
+var EUROPE_IDS = new Set(Object.keys(ISO_TO_NAME).map(Number));
 
-// ── European infrastructure hubs ─────────────────────────────────────────────
-var NODES = [
-  { name:'London',     pos:[-2.8,  0.6,  0.0], sector:'utilities' },
-  { name:'Paris',      pos:[-1.2,  0.0,  0.4], sector:'energy'    },
-  { name:'Frankfurt',  pos:[ 0.5,  0.4,  0.6], sector:'energy'    },
-  { name:'Amsterdam',  pos:[-0.4,  1.0,  0.2], sector:'utilities' },
-  { name:'Brussels',   pos:[-0.8,  0.5,  0.5], sector:'utilities' },
-  { name:'Madrid',     pos:[-2.2, -1.6,  0.4], sector:'transport' },
-  { name:'Barcelona',  pos:[-1.0, -1.2,  0.7], sector:'transport' },
-  { name:'Milan',      pos:[ 0.8, -0.7,  0.9], sector:'transport' },
-  { name:'Rome',       pos:[ 1.2, -1.5,  0.7], sector:'utilities' },
-  { name:'Warsaw',     pos:[ 2.5,  0.7,  0.3], sector:'energy'    },
-  { name:'Stockholm',  pos:[ 1.1,  2.3,  0.0], sector:'energy'    },
-  { name:'Oslo',       pos:[ 0.1,  2.7, -0.4], sector:'energy'    },
-  { name:'Copenhagen', pos:[ 0.7,  1.9, -0.2], sector:'utilities' },
-  { name:'Helsinki',   pos:[ 2.7,  2.5, -0.3], sector:'energy'    },
-  { name:'Vienna',     pos:[ 1.8,  0.1,  0.7], sector:'energy'    },
-  { name:'Zurich',     pos:[ 0.3, -0.2,  1.1], sector:'utilities' },
-  { name:'Prague',     pos:[ 1.9,  0.5,  0.5], sector:'utilities' },
-  { name:'Budapest',   pos:[ 2.4, -0.3,  0.5], sector:'energy'    },
-  { name:'Lisbon',     pos:[-3.1, -1.9,  0.1], sector:'transport' },
-  { name:'Dublin',     pos:[-3.5,  0.9, -0.4], sector:'utilities' },
-  { name:'Athens',     pos:[ 2.3, -2.3,  0.3], sector:'transport' },
-  { name:'Bucharest',  pos:[ 3.1, -0.7,  0.2], sector:'energy'    },
-  { name:'Hamburg',    pos:[ 0.5,  1.3,  0.1], sector:'transport' },
-  { name:'Munich',     pos:[ 1.0, -0.1,  0.9], sector:'transport' },
+// Aliases: news data country string → canonical ISO_TO_NAME key
+var COUNTRY_ALIASES = {
+  'UK': 'United Kingdom', 'Britain': 'United Kingdom', 'England': 'United Kingdom',
+  'Scotland': 'United Kingdom', 'Wales': 'United Kingdom',
+  'Türkiye': 'Turkey', 'Czech': 'Czech Republic', 'Czechia': 'Czech Republic',
+  'Holland': 'Netherlands',
+};
+function normalizeCountry(c) { return COUNTRY_ALIASES[c] || c; }
+
+// ── City nodes ────────────────────────────────────────────────────────────────
+var CITIES = [
+  {name:'London',     lon:-0.1, lat:51.5,  sector:'utilities'},
+  {name:'Paris',      lon: 2.3, lat:48.9,  sector:'energy'   },
+  {name:'Frankfurt',  lon: 8.7, lat:50.1,  sector:'energy'   },
+  {name:'Amsterdam',  lon: 4.9, lat:52.4,  sector:'utilities'},
+  {name:'Brussels',   lon: 4.3, lat:50.8,  sector:'utilities'},
+  {name:'Madrid',     lon:-3.7, lat:40.4,  sector:'transport'},
+  {name:'Barcelona',  lon: 2.2, lat:41.4,  sector:'transport'},
+  {name:'Milan',      lon: 9.2, lat:45.5,  sector:'transport'},
+  {name:'Rome',       lon:12.5, lat:41.9,  sector:'utilities'},
+  {name:'Warsaw',     lon:21.0, lat:52.2,  sector:'energy'   },
+  {name:'Stockholm',  lon:18.1, lat:59.3,  sector:'energy'   },
+  {name:'Oslo',       lon:10.7, lat:59.9,  sector:'energy'   },
+  {name:'Copenhagen', lon:12.6, lat:55.7,  sector:'utilities'},
+  {name:'Helsinki',   lon:25.0, lat:60.2,  sector:'energy'   },
+  {name:'Vienna',     lon:16.4, lat:48.2,  sector:'energy'   },
+  {name:'Zurich',     lon: 8.5, lat:47.4,  sector:'utilities'},
+  {name:'Prague',     lon:14.4, lat:50.1,  sector:'utilities'},
+  {name:'Budapest',   lon:19.0, lat:47.5,  sector:'energy'   },
+  {name:'Lisbon',     lon:-9.1, lat:38.7,  sector:'transport'},
+  {name:'Dublin',     lon:-6.3, lat:53.3,  sector:'utilities'},
+  {name:'Athens',     lon:23.7, lat:38.0,  sector:'transport'},
+  {name:'Bucharest',  lon:26.1, lat:44.4,  sector:'energy'   },
+  {name:'Hamburg',    lon:10.0, lat:53.6,  sector:'transport'},
+  {name:'Munich',     lon:11.6, lat:48.1,  sector:'transport'},
 ];
 
-// ── Scene ─────────────────────────────────────────────────────────────────────
-var canvas = document.getElementById('three-canvas');
+var CITY_COLORS = { energy:'#ff8800', transport:'#4499ff', utilities:'#00bbcc' };
+
+// ── News state ────────────────────────────────────────────────────────────────
+var allNews = [];
+var selectedCountry = null;
+var countryCounts = {};
+
+// ── Map ───────────────────────────────────────────────────────────────────────
 var W = window.innerWidth, H = window.innerHeight;
-var scene = new THREE.Scene();
-scene.background = new THREE.Color(0x000000);
-scene.fog = new THREE.FogExp2(0x000000, 0.028);
+var svg = d3.select('#map-svg');
+var mapTooltip = document.getElementById('map-tooltip');
+var projection, pathGen;
 
-var camera = new THREE.PerspectiveCamera(55, W / H, 0.1, 150);
-camera.position.set(0, 5.5, 14);
-camera.lookAt(0, 0, 0);
+function buildMap(world) {
+  var countries = topojson.feature(world, world.objects.countries).features;
+  var borders   = topojson.mesh(world, world.objects.countries, function(a,b){ return a!==b; });
 
-var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
-renderer.setSize(W, H);
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  // Mercator centred on Europe, offset right of news panel
+  var scale = Math.min((W - 390) * 0.78, H * 0.95);
+  projection = d3.geoMercator()
+    .center([13, 52])
+    .scale(scale)
+    .translate([(390 + W) / 2, H * 0.52]);
 
+  pathGen = d3.geoPath().projection(projection);
+
+  // Ocean
+  svg.append('rect').attr('width', W).attr('height', H).attr('fill', '#00010a');
+
+  // Graticule
+  var grat = d3.geoGraticule().step([10,10]);
+  svg.append('path').datum(grat())
+    .attr('fill','none').attr('stroke','#080d0a').attr('stroke-width',0.4).attr('d', pathGen);
+
+  // Countries
+  svg.selectAll('.country').data(countries).enter()
+    .append('path')
+    .attr('class', function(d){ return EUROPE_IDS.has(+d.id) ? 'country country-europe' : 'country'; })
+    .attr('id', function(d){ return 'iso'+d.id; })
+    .attr('d', pathGen)
+    .attr('fill', '#07100a')
+    .attr('stroke', '#0d180d')
+    .attr('stroke-width', 0.4)
+    .on('mousemove', function(event, d) {
+      if (!EUROPE_IDS.has(+d.id)) return;
+      var name = ISO_TO_NAME[+d.id];
+      var cnt = countryCounts[name] || 0;
+      document.getElementById('tt-country').textContent = name ? name.toUpperCase() : '';
+      document.getElementById('tt-count').textContent = cnt ? cnt + ' article' + (cnt>1?'s':'') : 'No articles';
+      mapTooltip.style.left = (event.clientX + 14) + 'px';
+      mapTooltip.style.top  = (event.clientY - 12) + 'px';
+      mapTooltip.classList.add('show');
+    })
+    .on('mouseleave', function() { mapTooltip.classList.remove('show'); })
+    .on('click', function(event, d) {
+      if (!EUROPE_IDS.has(+d.id)) return;
+      var name = ISO_TO_NAME[+d.id];
+      if (!name) return;
+      if (selectedCountry === name) { clearFilter(); return; }
+      setFilter(name);
+    });
+
+  // Borders
+  svg.append('path').datum(borders)
+    .attr('fill','none').attr('stroke','#122012').attr('stroke-width',0.6).attr('d', pathGen);
+
+  // City connection lines
+  for (var i=0; i<CITIES.length; i++) {
+    for (var j=i+1; j<CITIES.length; j++) {
+      var ci = CITIES[i], cj = CITIES[j];
+      var dx = ci.lon-cj.lon, dy = ci.lat-cj.lat;
+      var dist = Math.sqrt(dx*dx+dy*dy);
+      if (dist > 12) continue;
+      var same = ci.sector === cj.sector;
+      var col = same ? CITY_COLORS[ci.sector] : '#1a2a1a';
+      var pi = projection([ci.lon, ci.lat]);
+      var pj = projection([cj.lon, cj.lat]);
+      if (!pi || !pj) continue;
+      svg.append('line')
+        .attr('x1', pi[0]).attr('y1', pi[1])
+        .attr('x2', pj[0]).attr('y2', pj[1])
+        .attr('stroke', col).attr('stroke-width', 0.5)
+        .attr('stroke-opacity', same ? 0.22 : 0.09);
+    }
+  }
+
+  // City dots
+  svg.selectAll('.city').data(CITIES).enter()
+    .append('circle')
+    .attr('class', 'city city-pulse')
+    .attr('cx', function(d){ var p=projection([d.lon,d.lat]); return p?p[0]:0; })
+    .attr('cy', function(d){ var p=projection([d.lon,d.lat]); return p?p[1]:0; })
+    .attr('r', 2.5)
+    .attr('fill', function(d){ return CITY_COLORS[d.sector]||'#446688'; })
+    .attr('stroke', 'none')
+    .attr('opacity', 0.85)
+    .style('filter','url(#glow-city)')
+    .style('animation-delay', function(_,i){ return (i*0.12)+'s'; });
+
+  // City labels (only major ones)
+  var labelCities = ['London','Paris','Frankfurt','Amsterdam','Madrid','Warsaw','Stockholm','Rome'];
+  svg.selectAll('.city-label').data(CITIES.filter(function(d){ return labelCities.indexOf(d.name)>=0; })).enter()
+    .append('text')
+    .attr('x', function(d){ var p=projection([d.lon,d.lat]); return p?p[0]+6:0; })
+    .attr('y', function(d){ var p=projection([d.lon,d.lat]); return p?p[1]+3:0; })
+    .attr('fill', '#334433')
+    .attr('font-size', '8px')
+    .attr('font-family', 'Courier New, monospace')
+    .attr('letter-spacing', '0.05em')
+    .text(function(d){ return d.name.toUpperCase(); });
+
+  updateMapColors();
+}
+
+function updateMapColors() {
+  // Count articles per normalised country name
+  countryCounts = {};
+  allNews.forEach(function(a) {
+    var c = normalizeCountry(a.country || '');
+    if (c && c !== 'Europe') countryCounts[c] = (countryCounts[c]||0) + 1;
+  });
+
+  // Update unique country count in stat bar
+  var uniqueCountries = Object.keys(countryCounts).filter(function(c){
+    return Object.values(ISO_TO_NAME).indexOf(c) >= 0;
+  });
+  document.getElementById('stat-countries').textContent = uniqueCountries.length || '—';
+
+  d3.selectAll('.country')
+    .attr('fill', function(d) {
+      var id = +d.id;
+      if (!EUROPE_IDS.has(id)) return '#030603';
+      var name = ISO_TO_NAME[id];
+      if (name === selectedCountry) return '#2a1400';
+      if (countryCounts[name]) return '#0d1a08';
+      return '#07100a';
+    })
+    .attr('stroke', function(d) {
+      var id = +d.id;
+      if (!EUROPE_IDS.has(id)) return '#060a06';
+      var name = ISO_TO_NAME[id];
+      if (name === selectedCountry) return '#ff6600';
+      if (countryCounts[name]) return '#1a3a14';
+      return '#0d180d';
+    })
+    .attr('stroke-width', function(d) {
+      return ISO_TO_NAME[+d.id] === selectedCountry ? 1.5 : 0.5;
+    })
+    .style('filter', function(d) {
+      return ISO_TO_NAME[+d.id] === selectedCountry ? 'url(#glow-selected)' : null;
+    });
+}
+
+function setFilter(name) {
+  selectedCountry = name;
+  document.getElementById('filter-val').textContent = name.toUpperCase();
+  document.getElementById('filter-clear').style.display = 'block';
+  updateMapColors();
+  filterAndRender();
+}
+
+function clearFilter() {
+  selectedCountry = null;
+  document.getElementById('filter-val').textContent = 'ALL EUROPE';
+  document.getElementById('filter-clear').style.display = 'none';
+  updateMapColors();
+  filterAndRender();
+}
+
+// ESC to clear
+document.addEventListener('keydown', function(e) { if (e.key==='Escape') clearFilter(); });
+
+// Click on ocean resets filter
+d3.select('#map-svg').on('click', function(event) {
+  if (event.target.tagName === 'rect' || event.target.tagName === 'path' &&
+      !event.target.classList.contains('country-europe')) {
+    clearFilter();
+  }
+});
+
+function filterAndRender() {
+  if (!selectedCountry) { renderNews(allNews); return; }
+  var filtered = allNews.filter(function(a) {
+    var c = normalizeCountry(a.country || '');
+    return c === selectedCountry || c === 'Europe';
+  });
+  renderNews(filtered.length ? filtered : allNews);
+}
+
+// ── Resize ────────────────────────────────────────────────────────────────────
 window.addEventListener('resize', function() {
   W = window.innerWidth; H = window.innerHeight;
-  camera.aspect = W / H;
-  camera.updateProjectionMatrix();
-  renderer.setSize(W, H);
+  // Re-project city dots and labels
+  if (!projection) return;
+  var scale = Math.min((W-390)*0.78, H*0.95);
+  projection.scale(scale).translate([(390+W)/2, H*0.52]);
+  d3.selectAll('.country').attr('d', pathGen);
+  d3.select('.graticule').attr('d', pathGen);
+  d3.select('.borders').attr('d', pathGen);
+  d3.selectAll('.city')
+    .attr('cx', function(d){ var p=projection([d.lon,d.lat]); return p?p[0]:0; })
+    .attr('cy', function(d){ var p=projection([d.lon,d.lat]); return p?p[1]:0; });
+  svg.select('rect').attr('width', W).attr('height', H);
 });
 
-// ── Lights ────────────────────────────────────────────────────────────────────
-scene.add(new THREE.AmbientLight(0x111111, 2.0));
-var keyLight = new THREE.DirectionalLight(0xff6600, 1.2);
-keyLight.position.set(6, 10, 8);
-scene.add(keyLight);
-var fillLight = new THREE.DirectionalLight(0x003366, 0.6);
-fillLight.position.set(-8, 4, -6);
-scene.add(fillLight);
-
-// ── Ground grid ───────────────────────────────────────────────────────────────
-var group = new THREE.Group();
-scene.add(group);
-
-var grid = new THREE.GridHelper(40, 40, 0x1a1a00, 0x111100);
-grid.position.y = -2.2;
-group.add(grid);
-var gridFine = new THREE.GridHelper(40, 80, 0x0d0d00, 0x0a0a00);
-gridFine.position.y = -2.19;
-group.add(gridFine);
-
-// ── Node meshes ───────────────────────────────────────────────────────────────
-var nodeMeshes = [];
-var nodeData   = [];
-
-NODES.forEach(function(nd) {
-  var color = SECTOR_COLORS[nd.sector] || DEFAULT_COLOR;
-
-  var coreMat = new THREE.MeshStandardMaterial({
-    color: color, emissive: color,
-    emissiveIntensity: 0.8, metalness: 0.3, roughness: 0.3,
-  });
-  var core = new THREE.Mesh(new THREE.SphereGeometry(0.12, 16, 16), coreMat);
-  core.position.set(nd.pos[0], nd.pos[1], nd.pos[2]);
-  core.userData = { node: nd };
-  group.add(core);
-  nodeMeshes.push(core);
-
-  var haloMat = new THREE.MeshBasicMaterial({
-    color: color, transparent: true, opacity: 0.06,
-    depthWrite: false, side: THREE.BackSide,
-    blending: THREE.AdditiveBlending,
-  });
-  var halo = new THREE.Mesh(new THREE.SphereGeometry(0.38, 16, 16), haloMat);
-  halo.position.copy(core.position);
-  group.add(halo);
-
-  nodeData.push({
-    core: core, halo: halo,
-    baseY: nd.pos[1], phase: Math.random() * Math.PI * 2,
-  });
-});
-
-// ── Connection lines ──────────────────────────────────────────────────────────
-var MAX_CONN_DIST = 3.4;
-var connections = [];
-
-for (var i = 0; i < NODES.length; i++) {
-  for (var j = i + 1; j < NODES.length; j++) {
-    var a = new THREE.Vector3().fromArray(NODES[i].pos);
-    var b = new THREE.Vector3().fromArray(NODES[j].pos);
-    if (a.distanceTo(b) >= MAX_CONN_DIST) continue;
-
-    var lineColor = (NODES[i].sector === NODES[j].sector)
-      ? (SECTOR_COLORS[NODES[i].sector] || DEFAULT_COLOR)
-      : 0x223344;
-
-    var geo = new THREE.BufferGeometry().setFromPoints([a.clone(), b.clone()]);
-    var mat = new THREE.LineBasicMaterial({
-      color: lineColor, transparent: true, opacity: 0.3,
-      blending: THREE.AdditiveBlending,
-    });
-    var line = new THREE.Line(geo, mat);
-    group.add(line);
-    connections.push({ line: line, from: a.clone(), to: b.clone(), phase: Math.random() * Math.PI * 2 });
-  }
-}
-
-// ── Flowing particles ─────────────────────────────────────────────────────────
-var particles = [];
-for (var p = 0; p < 60; p++) {
-  var ci = Math.floor(Math.random() * connections.length);
-  var conn = connections[ci];
-  var pColor = SECTOR_COLORS[NODES[Math.floor(Math.random() * NODES.length)].sector] || DEFAULT_COLOR;
-  var pMesh = new THREE.Mesh(
-    new THREE.SphereGeometry(0.035, 6, 6),
-    new THREE.MeshBasicMaterial({
-      color: pColor, transparent: true, opacity: 0.85,
-      depthWrite: false, blending: THREE.AdditiveBlending,
-    })
-  );
-  group.add(pMesh);
-  particles.push({ mesh: pMesh, from: conn.from.clone(), to: conn.to.clone(), t: Math.random(), speed: 0.003 + Math.random() * 0.003 });
-}
-
-// ── Raycaster / tooltip ───────────────────────────────────────────────────────
-var raycaster = new THREE.Raycaster();
-var mouse = new THREE.Vector2(-9, -9);
-var tooltip = document.getElementById('tooltip');
-window.addEventListener('mousemove', function(e) {
-  mouse.x =  (e.clientX / W) * 2 - 1;
-  mouse.y = -(e.clientY / H) * 2 + 1;
-  tooltip.style.left = (e.clientX + 14) + 'px';
-  tooltip.style.top  = (e.clientY - 12) + 'px';
-});
-
-// ── Animation ─────────────────────────────────────────────────────────────────
-var frame = 0;
-var orbitAngle = 0;
-var ORBIT_R = 14;
-var ORBIT_S = 0.0003;
-
-function animate() {
-  requestAnimationFrame(animate);
-  frame++;
-  var t = frame * 0.012;
-
-  orbitAngle += ORBIT_S;
-  camera.position.x = Math.sin(orbitAngle) * ORBIT_R;
-  camera.position.z = Math.cos(orbitAngle) * ORBIT_R;
-  camera.position.y = 5 + Math.sin(orbitAngle * 0.3) * 1.5;
-  camera.lookAt(0, 0, 0);
-
-  nodeData.forEach(function(nd) {
-    nd.core.position.y = nd.baseY + Math.sin(t + nd.phase) * 0.09;
-    nd.halo.position.copy(nd.core.position);
-    nd.halo.scale.setScalar(1 + Math.sin(t * 2.2 + nd.phase) * 0.25);
-    nd.core.material.emissiveIntensity = 0.6 + Math.sin(t * 3 + nd.phase) * 0.35;
-  });
-
-  particles.forEach(function(p) {
-    p.t += p.speed;
-    if (p.t > 1) p.t = 0;
-    p.mesh.position.lerpVectors(p.from, p.to, p.t);
-  });
-
-  connections.forEach(function(c) {
-    c.line.material.opacity = 0.2 + Math.sin(t * 1.5 + c.phase) * 0.12;
-  });
-
-  raycaster.setFromCamera(mouse, camera);
-  var hits = raycaster.intersectObjects(nodeMeshes);
-  if (hits.length) {
-    var nd = hits[0].object.userData.node;
-    document.getElementById('tt-name').textContent = nd.name.toUpperCase();
-    document.getElementById('tt-sector').textContent = nd.sector.toUpperCase() + ' HUB';
-    tooltip.classList.add('show');
-    document.body.style.cursor = 'crosshair';
-  } else {
-    tooltip.classList.remove('show');
-    document.body.style.cursor = 'default';
-  }
-
-  renderer.render(scene, camera);
-}
-animate();
-
-// ── News feed ─────────────────────────────────────────────────────────────────
+// ── News rendering ────────────────────────────────────────────────────────────
 var SECTOR_CSS = {
-  energy:    { color: '#ff8800' },
-  transport: { color: '#4499ff' },
-  utilities: { color: '#00bbcc' },
+  energy:    '#ff8800',
+  transport: '#4499ff',
+  utilities: '#00bbcc',
 };
-
-function peColor(s) {
-  return s >= 8 ? '#00cc44' : s >= 6 ? '#ffaa00' : '#666666';
-}
-
+function peColor(s) { return s>=8?'#00cc44':s>=6?'#ffaa00':'#555'; }
 function timeAgo(iso) {
-  var h = Math.floor((Date.now() - new Date(iso).getTime()) / 3600000);
-  if (h < 1) return '<1H';
-  if (h < 24) return h + 'H';
-  return Math.floor(h / 24) + 'D';
+  var h = Math.floor((Date.now()-new Date(iso).getTime())/3600000);
+  if (h<1) return '<1H'; if (h<24) return h+'H'; return Math.floor(h/24)+'D';
 }
-
-function T(s) { return (s || '').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function T(s){ return (s||'').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 function renderNews(items) {
   document.getElementById('panel-count').textContent = items.length;
-  document.getElementById('stat-articles').textContent = items.length;
-  if (items.length > 0) {
-    var d = new Date(items[0].fetched_at || items[0].published);
-    var h = ('0'+d.getUTCHours()).slice(-2) + ':' + ('0'+d.getUTCMinutes()).slice(-2);
+  document.getElementById('stat-articles').textContent = allNews.length;
+  if (allNews.length > 0) {
+    var d = new Date(allNews[0].fetched_at || allNews[0].published);
     document.getElementById('stat-updated').textContent =
-      d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' }).toUpperCase() + ' ' + h;
+      d.toLocaleDateString('en-GB',{day:'2-digit',month:'short'}).toUpperCase() +
+      ' ' + ('0'+d.getUTCHours()).slice(-2)+':'+('0'+d.getUTCMinutes()).slice(-2);
   }
-
-  document.getElementById('news-list').innerHTML = items.map(function(item, idx) {
-    var sc = SECTOR_CSS[item.sector] || { color: '#446688' };
-    var score = parseInt(item.pe_score) || 5;
-    var scoreColor = peColor(score);
-    var ago = timeAgo(item.published || item.fetched_at);
+  if (!items.length) {
+    document.getElementById('news-list').innerHTML =
+      '<div style="color:var(--text-dim);font-size:10px;text-align:center;padding:30px 20px;line-height:2">NO ARTICLES FOR THIS REGION</div>';
+    return;
+  }
+  document.getElementById('news-list').innerHTML = items.map(function(item) {
+    var sc = SECTOR_CSS[item.sector] || '#446688';
+    var score = parseInt(item.pe_score)||5;
     return [
-      '<div class="news-row" onclick="window.open(\'' + encodeURI(item.url||'#') + '\',\'_blank\')">',
+      '<div class="news-row" onclick="window.open(\''+encodeURI(item.url||'#')+'\',\'_blank\')">',
       '<div class="row-top">',
-      '<span class="row-time">' + ago + '</span>',
-      '<span class="row-title">' + T(item.title) + '</span>',
-      '<span class="row-sector" style="color:' + sc.color + '">' + T((item.sector||'').toUpperCase()) + '</span>',
-      '<span class="row-score" style="color:' + scoreColor + '">' + score + '</span>',
+      '<span class="row-time">'+timeAgo(item.published||item.fetched_at)+'</span>',
+      '<span class="row-title">'+T(item.title)+'</span>',
+      '<span class="row-sector" style="color:'+sc+'">'+T((item.sector||'').toUpperCase())+'</span>',
+      '<span class="row-score" style="color:'+peColor(score)+'">'+score+'</span>',
       '</div>',
-      '<div class="row-summary">' + T(item.summary) + '</div>',
+      '<div class="row-summary">'+T(item.summary)+'</div>',
       '<div class="row-meta">',
-      '<span class="row-source">' + T(item.source) + '</span>',
-      item.pe_angle ? '<span class="row-angle">' + T(item.pe_angle) + '</span>' : '',
-      '<span class="row-country">' + T(item.country||'') + '</span>',
-      '</div>',
-      '</div>',
+      '<span class="row-source">'+T(item.source)+'</span>',
+      item.pe_angle?'<span class="row-angle">'+T(item.pe_angle)+'</span>':'',
+      '<span class="row-country">'+T(item.country||'')+'</span>',
+      '</div></div>',
     ].join('');
   }).join('');
 }
 
+// ── Fetch news ────────────────────────────────────────────────────────────────
 function fetchNews() {
-  fetch(NEWS_JSON_URL + '?_=' + Date.now())
-    .then(function(r) { return r.json(); })
+  fetch(NEWS_JSON_URL+'?_='+Date.now())
+    .then(function(r){ return r.json(); })
     .then(function(data) {
-      renderNews(Array.isArray(data) ? data : (data.articles || data.items || []));
+      allNews = Array.isArray(data) ? data : (data.articles||data.items||[]);
+      updateMapColors();
+      filterAndRender();
     })
     .catch(function() {
       document.getElementById('news-list').innerHTML =
-        '<div style="color:#333;font-size:10px;text-align:center;padding:40px 20px;line-height:2;font-family:var(--mono)">' +
-        'NEWS DIGEST UPDATING...<br><span style="font-size:9px;color:#222">NEXT RUN: 06:00 UTC</span></div>';
-      document.getElementById('panel-count').textContent = '–';
+        '<div style="color:#333;font-size:10px;text-align:center;padding:40px 20px;line-height:2">' +
+        'NEWS DIGEST UPDATING...<br><span style="color:#1a1a1a;font-size:9px">NEXT RUN: 06:00 UTC</span></div>';
     });
 }
 
-fetchNews();
-setInterval(fetchNews, 5 * 60 * 1000);
+// ── Boot ──────────────────────────────────────────────────────────────────────
+d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
+  .then(function(world) {
+    buildMap(world);
+    fetchNews();
+    setInterval(fetchNews, 5*60*1000);
+  })
+  .catch(function(err) {
+    console.error('Map load failed:', err);
+    fetchNews();
+    setInterval(fetchNews, 5*60*1000);
+  });
 
 setTimeout(function() {
   document.getElementById('loading').classList.add('fade-out');
-  setTimeout(function() { document.getElementById('loading').style.display = 'none'; }, 500);
-}, 900);
+  setTimeout(function(){ document.getElementById('loading').style.display='none'; }, 500);
+}, 1200);
 </script>
 </body>
 </html>
