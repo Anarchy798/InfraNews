@@ -217,45 +217,39 @@
 var NEWS_JSON_URL = 'https://anarchy798.github.io/infranews/data/news.json';
 
 // ── Sector colours ───────────────────────────────────────────────────────────
-var SC = {
+var SECTOR_COLORS = {
   energy:    0xe07b00,
   transport: 0x1a5fd4,
   utilities: 0x0095bb,
 };
+var DEFAULT_COLOR = 0x5588aa;
 
-// ── European infrastructure hub network (subway-map grid positions) ──────────
-// Positions use a schematic grid: x = west-east, y = slight elevation, z = north-south
+// ── European infrastructure hubs ─────────────────────────────────────────────
 var NODES = [
-  // West Atlantic arc
-  { name:'Dublin',     pos:[-8.0, 0.0,  0.5], sector:'utilities' },
-  { name:'Lisbon',     pos:[-7.0, 0.0,  4.0], sector:'transport' },
-  { name:'Madrid',     pos:[-5.0, 0.0,  3.0], sector:'transport' },
-  // Core West
-  { name:'London',     pos:[-5.0, 0.0,  0.0], sector:'utilities' },
-  { name:'Paris',      pos:[-3.0, 0.0,  1.0], sector:'energy'    },
-  { name:'Barcelona',  pos:[-3.0, 0.0,  4.0], sector:'transport' },
-  // Benelux + Rhine
-  { name:'Brussels',   pos:[-1.0, 0.0,  0.0], sector:'utilities' },
-  { name:'Amsterdam',  pos:[-1.0, 0.0, -1.5], sector:'utilities' },
-  { name:'Frankfurt',  pos:[ 1.0, 0.0,  0.0], sector:'energy'    },
-  { name:'Hamburg',    pos:[ 1.0, 0.0, -2.5], sector:'transport' },
-  { name:'Zurich',     pos:[ 1.0, 0.0,  2.0], sector:'utilities' },
-  { name:'Munich',     pos:[ 2.0, 0.0,  1.5], sector:'transport' },
-  // Northern arc
-  { name:'Copenhagen', pos:[ 1.0, 0.0, -4.0], sector:'utilities' },
-  { name:'Oslo',       pos:[ 0.0, 0.0, -5.5], sector:'energy'    },
-  { name:'Stockholm',  pos:[ 2.5, 0.0, -5.0], sector:'energy'    },
-  { name:'Helsinki',   pos:[ 4.0, 0.0, -5.5], sector:'energy'    },
-  // Central/Eastern
-  { name:'Vienna',     pos:[ 3.0, 0.0,  0.5], sector:'energy'    },
-  { name:'Prague',     pos:[ 2.5, 0.0, -1.0], sector:'utilities' },
-  { name:'Warsaw',     pos:[ 4.0, 0.0, -2.0], sector:'energy'    },
-  { name:'Budapest',   pos:[ 4.0, 0.0,  1.5], sector:'energy'    },
-  { name:'Bucharest',  pos:[ 5.5, 0.0,  1.0], sector:'energy'    },
-  // Southern arc
-  { name:'Milan',      pos:[ 0.5, 0.0,  3.0], sector:'transport' },
-  { name:'Rome',       pos:[ 1.5, 0.0,  5.0], sector:'utilities' },
-  { name:'Athens',     pos:[ 4.0, 0.0,  5.5], sector:'transport' },
+  { name:'London',     pos:[-2.8,  0.6,  0.0], sector:'utilities' },
+  { name:'Paris',      pos:[-1.2,  0.0,  0.4], sector:'energy'    },
+  { name:'Frankfurt',  pos:[ 0.5,  0.4,  0.6], sector:'energy'    },
+  { name:'Amsterdam',  pos:[-0.4,  1.0,  0.2], sector:'utilities' },
+  { name:'Brussels',   pos:[-0.8,  0.5,  0.5], sector:'utilities' },
+  { name:'Madrid',     pos:[-2.2, -1.6,  0.4], sector:'transport' },
+  { name:'Barcelona',  pos:[-1.0, -1.2,  0.7], sector:'transport' },
+  { name:'Milan',      pos:[ 0.8, -0.7,  0.9], sector:'transport' },
+  { name:'Rome',       pos:[ 1.2, -1.5,  0.7], sector:'utilities' },
+  { name:'Warsaw',     pos:[ 2.5,  0.7,  0.3], sector:'energy'    },
+  { name:'Stockholm',  pos:[ 1.1,  2.3,  0.0], sector:'energy'    },
+  { name:'Oslo',       pos:[ 0.1,  2.7, -0.4], sector:'energy'    },
+  { name:'Copenhagen', pos:[ 0.7,  1.9, -0.2], sector:'utilities' },
+  { name:'Helsinki',   pos:[ 2.7,  2.5, -0.3], sector:'energy'    },
+  { name:'Vienna',     pos:[ 1.8,  0.1,  0.7], sector:'energy'    },
+  { name:'Zurich',     pos:[ 0.3, -0.2,  1.1], sector:'utilities' },
+  { name:'Prague',     pos:[ 1.9,  0.5,  0.5], sector:'utilities' },
+  { name:'Budapest',   pos:[ 2.4, -0.3,  0.5], sector:'energy'    },
+  { name:'Lisbon',     pos:[-3.1, -1.9,  0.1], sector:'transport' },
+  { name:'Dublin',     pos:[-3.5,  0.9, -0.4], sector:'utilities' },
+  { name:'Athens',     pos:[ 2.3, -2.3,  0.3], sector:'transport' },
+  { name:'Bucharest',  pos:[ 3.1, -0.7,  0.2], sector:'energy'    },
+  { name:'Hamburg',    pos:[ 0.5,  1.3,  0.1], sector:'transport' },
+  { name:'Munich',     pos:[ 1.0, -0.1,  0.9], sector:'transport' },
 ];
 
 // ── Scene ────────────────────────────────────────────────────────────────────
@@ -263,10 +257,10 @@ var canvas = document.getElementById('three-canvas');
 var W = window.innerWidth, H = window.innerHeight;
 var scene = new THREE.Scene();
 scene.background = new THREE.Color(0xf0f5fa);
-scene.fog = new THREE.Fog(0xeaf2f8, 28, 55);
+scene.fog = new THREE.Fog(0xeaf2f8, 22, 42);
 
-var camera = new THREE.PerspectiveCamera(52, W / H, 0.1, 120);
-camera.position.set(0, 14, 18);
+var camera = new THREE.PerspectiveCamera(55, W / H, 0.1, 150);
+camera.position.set(0, 5.5, 14);
 camera.lookAt(0, 0, 0);
 
 var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
@@ -282,112 +276,94 @@ window.addEventListener('resize', function() {
 
 // ── Lights ───────────────────────────────────────────────────────────────────
 scene.add(new THREE.AmbientLight(0xffffff, 4.0));
-var sun = new THREE.DirectionalLight(0xfff5e0, 1.8);
-sun.position.set(10, 20, 8);
+var sun = new THREE.DirectionalLight(0xfff8f0, 2.0);
+sun.position.set(8, 16, 10);
 scene.add(sun);
+var fill = new THREE.DirectionalLight(0xd0e8ff, 0.8);
+fill.position.set(-6, 6, -6);
+scene.add(fill);
 
-// ── Ground grid (blueprint / transit map feel) ───────────────────────────────
-scene.add(new THREE.GridHelper(40, 20, 0x9ab8d0, 0xc8dcea));
-var fineGrid = new THREE.GridHelper(40, 80, 0xd8eaf4, 0xe6f0f8);
-fineGrid.position.y = 0.001;
-scene.add(fineGrid);
-
-// ── Network group ────────────────────────────────────────────────────────────
+// ── Ground grid ───────────────────────────────────────────────────────────────
 var group = new THREE.Group();
 scene.add(group);
 
-// ── Build connections first (so nodes render on top) ─────────────────────────
-var MAX_D = 3.8;
-var connections = [];
+var grid = new THREE.GridHelper(32, 32, 0x7aaac8, 0xb8d4e4);
+grid.position.y = -2.2;
+group.add(grid);
+var gridFine = new THREE.GridHelper(32, 64, 0xcce0ee, 0xdaeaf4);
+gridFine.position.y = -2.19;
+group.add(gridFine);
 
-for (var i = 0; i < NODES.length; i++) {
-  for (var j = i + 1; j < NODES.length; j++) {
-    var A = new THREE.Vector3(NODES[i].pos[0], 0, NODES[i].pos[2]);
-    var B = new THREE.Vector3(NODES[j].pos[0], 0, NODES[j].pos[2]);
-    if (A.distanceTo(B) > MAX_D) continue;
-
-    // Subway-style orthogonal routing: go along X first, then Z
-    var mid = new THREE.Vector3(B.x, 0, A.z);
-    var pts = [A.clone(), mid.clone(), B.clone()];
-
-    // Colour: shared sector gets that sector's colour, mixed gets a neutral grey-blue
-    var lineColor = (NODES[i].sector === NODES[j].sector)
-      ? SC[NODES[i].sector]
-      : 0x7799bb;
-
-    var geo = new THREE.BufferGeometry().setFromPoints(pts);
-    var mat = new THREE.LineBasicMaterial({ color: lineColor, transparent: true, opacity: 0.7 });
-    var line = new THREE.Line(geo, mat);
-    group.add(line);
-    connections.push({ line: line, from: A.clone(), mid: mid.clone(), to: B.clone(), phase: Math.random() * Math.PI * 2 });
-  }
-}
-
-// ── Station nodes ─────────────────────────────────────────────────────────────
+// ── Node meshes ───────────────────────────────────────────────────────────────
 var nodeMeshes = [];
 var nodeData   = [];
 
 NODES.forEach(function(nd) {
-  var col = SC[nd.sector] || 0x7799bb;
-  var pos = new THREE.Vector3(nd.pos[0], 0, nd.pos[2]);
+  var color = SECTOR_COLORS[nd.sector] || DEFAULT_COLOR;
 
-  // Outer ring (sector colour) — subway station circle
-  var ringMat = new THREE.MeshBasicMaterial({ color: col, side: THREE.DoubleSide });
-  var ring = new THREE.Mesh(new THREE.RingGeometry(0.18, 0.28, 24), ringMat);
-  ring.rotation.x = -Math.PI / 2;
-  ring.position.copy(pos);
-  group.add(ring);
-
-  // White fill centre
-  var fillMat = new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide });
-  var fill = new THREE.Mesh(new THREE.CircleGeometry(0.18, 24), fillMat);
-  fill.rotation.x = -Math.PI / 2;
-  fill.position.set(pos.x, 0.01, pos.z);
-  group.add(fill);
-
-  // Invisible hit sphere for raycasting
-  var hitMesh = new THREE.Mesh(
-    new THREE.SphereGeometry(0.35, 8, 8),
-    new THREE.MeshBasicMaterial({ visible: false })
-  );
-  hitMesh.position.copy(pos);
-  hitMesh.userData = { node: nd };
-  group.add(hitMesh);
-  nodeMeshes.push(hitMesh);
-
-  // Glow disc (additive) — sits just below
-  var glowMat = new THREE.MeshBasicMaterial({
-    color: col, transparent: true, opacity: 0.18,
-    depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide,
+  // Core sphere
+  var coreMat = new THREE.MeshStandardMaterial({
+    color: color, emissive: color,
+    emissiveIntensity: 0.4, metalness: 0.1, roughness: 0.4,
   });
-  var glow = new THREE.Mesh(new THREE.CircleGeometry(0.55, 24), glowMat);
-  glow.rotation.x = -Math.PI / 2;
-  glow.position.set(pos.x, -0.01, pos.z);
-  group.add(glow);
+  var core = new THREE.Mesh(new THREE.SphereGeometry(0.13, 16, 16), coreMat);
+  core.position.set(nd.pos[0], nd.pos[1], nd.pos[2]);
+  core.userData = { node: nd };
+  group.add(core);
+  nodeMeshes.push(core);
 
-  nodeData.push({ ring: ring, fill: fill, glow: glow, pos: pos, phase: Math.random() * Math.PI * 2, col: col });
+  // Halo — softer on bright bg, normal blending so it doesn't wash out
+  var haloMat = new THREE.MeshBasicMaterial({
+    color: color, transparent: true, opacity: 0.18,
+    depthWrite: false, side: THREE.BackSide,
+  });
+  var halo = new THREE.Mesh(new THREE.SphereGeometry(0.32, 16, 16), haloMat);
+  halo.position.copy(core.position);
+  group.add(halo);
+
+  nodeData.push({
+    core: core, halo: halo,
+    baseY: nd.pos[1], phase: Math.random() * Math.PI * 2,
+  });
 });
 
-// ── Animated trains on connections ───────────────────────────────────────────
-var trains = [];
-connections.forEach(function(conn) {
-  // 1–2 trains per connection
-  var count = Math.random() < 0.4 ? 2 : 1;
-  for (var t = 0; t < count; t++) {
-    var trainMesh = new THREE.Mesh(
-      new THREE.SphereGeometry(0.09, 8, 8),
-      new THREE.MeshBasicMaterial({
-        color: conn.line.material.color.getHex(),
-        transparent: true, opacity: 0.95,
-        blending: THREE.AdditiveBlending, depthWrite: false,
-      })
-    );
-    group.add(trainMesh);
-    trains.push({ mesh: trainMesh, conn: conn, t: Math.random(), speed: 0.003 + Math.random() * 0.003 });
+// ── Connection lines ──────────────────────────────────────────────────────────
+var MAX_CONN_DIST = 3.4;
+var connections = [];
+
+for (var i = 0; i < NODES.length; i++) {
+  for (var j = i + 1; j < NODES.length; j++) {
+    var a = new THREE.Vector3().fromArray(NODES[i].pos);
+    var b = new THREE.Vector3().fromArray(NODES[j].pos);
+    if (a.distanceTo(b) >= MAX_CONN_DIST) continue;
+
+    var lineColor = (NODES[i].sector === NODES[j].sector)
+      ? (SECTOR_COLORS[NODES[i].sector] || 0x5588aa)
+      : 0x5588aa;
+
+    var geo = new THREE.BufferGeometry().setFromPoints([a.clone(), b.clone()]);
+    var mat = new THREE.LineBasicMaterial({ color: lineColor, transparent: true, opacity: 0.45 });
+    var line = new THREE.Line(geo, mat);
+    group.add(line);
+    connections.push({ line: line, from: a.clone(), to: b.clone(), phase: Math.random() * Math.PI * 2 });
   }
-});
+}
 
-// ── Raycaster for hover tooltip ───────────────────────────────────────────────
+// ── Flowing particles ─────────────────────────────────────────────────────────
+var particles = [];
+for (var p = 0; p < 90; p++) {
+  var ci = Math.floor(Math.random() * connections.length);
+  var conn = connections[ci];
+  var pColor = SECTOR_COLORS[NODES[Math.floor(Math.random() * NODES.length)].sector] || DEFAULT_COLOR;
+  var pMesh = new THREE.Mesh(
+    new THREE.SphereGeometry(0.042, 6, 6),
+    new THREE.MeshBasicMaterial({ color: pColor, transparent: true, opacity: 0.9, depthWrite: false })
+  );
+  group.add(pMesh);
+  particles.push({ mesh: pMesh, from: conn.from.clone(), to: conn.to.clone(), t: Math.random(), speed: 0.003 + Math.random() * 0.003 });
+}
+
+// ── Raycaster / tooltip ───────────────────────────────────────────────────────
 var raycaster = new THREE.Raycaster();
 var mouse = new THREE.Vector2(-9, -9);
 var tooltip = document.getElementById('tooltip');
@@ -400,50 +376,38 @@ window.addEventListener('mousemove', function(e) {
 
 // ── Animation ────────────────────────────────────────────────────────────────
 var frame = 0;
-var orbitAngle = 0.3;
-var ORBIT_R = 22;
-var ORBIT_S = 0.00018;
+var orbitAngle = 0;
+var ORBIT_R = 14;
+var ORBIT_S = 0.0004;
 
 function animate() {
   requestAnimationFrame(animate);
   frame++;
-  var t = frame * 0.01;
+  var t = frame * 0.012;
 
-  // Slow turntable orbit — high angle so map reads clearly
   orbitAngle += ORBIT_S;
   camera.position.x = Math.sin(orbitAngle) * ORBIT_R;
   camera.position.z = Math.cos(orbitAngle) * ORBIT_R;
-  camera.position.y = 13 + Math.sin(orbitAngle * 0.18) * 2;
+  camera.position.y = 5 + Math.sin(orbitAngle * 0.3) * 1.5;
   camera.lookAt(0, 0, 0);
 
-  // Pulse station glow rings
   nodeData.forEach(function(nd) {
-    var s = 0.9 + Math.sin(t * 1.8 + nd.phase) * 0.12;
-    nd.glow.scale.set(s, s, s);
-    nd.glow.material.opacity = 0.12 + Math.sin(t * 2.2 + nd.phase) * 0.07;
+    nd.core.position.y = nd.baseY + Math.sin(t + nd.phase) * 0.09;
+    nd.halo.position.copy(nd.core.position);
+    nd.halo.scale.setScalar(1 + Math.sin(t * 2.2 + nd.phase) * 0.2);
+    nd.core.material.emissiveIntensity = 0.3 + Math.sin(t * 3 + nd.phase) * 0.2;
   });
 
-  // Pulse connection line opacity
+  particles.forEach(function(p) {
+    p.t += p.speed;
+    if (p.t > 1) p.t = 0;
+    p.mesh.position.lerpVectors(p.from, p.to, p.t);
+  });
+
   connections.forEach(function(c) {
-    c.line.material.opacity = 0.55 + Math.sin(t * 1.2 + c.phase) * 0.18;
+    c.line.material.opacity = 0.35 + Math.sin(t * 1.5 + c.phase) * 0.15;
   });
 
-  // Move trains along their connections
-  trains.forEach(function(tr) {
-    tr.t += tr.speed;
-    if (tr.t > 1) tr.t = 0;
-    var p = tr.t;
-    // Two-segment path: from → mid → to
-    var pos;
-    if (p < 0.5) {
-      pos = tr.conn.from.clone().lerp(tr.conn.mid, p * 2);
-    } else {
-      pos = tr.conn.mid.clone().lerp(tr.conn.to, (p - 0.5) * 2);
-    }
-    tr.mesh.position.set(pos.x, 0.1, pos.z);
-  });
-
-  // Hover detection
   raycaster.setFromCamera(mouse, camera);
   var hits = raycaster.intersectObjects(nodeMeshes);
   if (hits.length) {
