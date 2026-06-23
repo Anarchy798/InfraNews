@@ -26,7 +26,7 @@ log = logging.getLogger(__name__)
 CLAUDE_MODEL    = "claude-haiku-4-5-20251001"   # fast + cheap for batch work
 MAX_OUTPUT      = 30    # articles kept in news.json
 MAX_TO_ANALYSE  = 50    # cap on Claude API calls per run
-MAX_AGE_DAYS    = 3     # ignore articles older than this many days
+MAX_AGE_DAYS    = 7     # ignore articles older than this many days
 
 # ─── RSS Feeds ────────────────────────────────────────────────────────────────────────────
 
