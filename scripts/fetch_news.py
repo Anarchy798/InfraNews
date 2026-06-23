@@ -63,6 +63,8 @@ RSS_FEEDS = [
     {"url": "https://www.infrastructure-intelligence.com/feed/",    "source": "Infrastructure Intelligence"},
     {"url": "https://smartinfrastructuremagazine.com/feed/",        "source": "Smart Infrastructure Magazine"},
     {"url": "https://infrastructurenews.co.za/feed/",               "source": "Infrastructure News"},
+    {"url": "https://constructionmanagement.co.uk/feed/",           "source": "Construction Management"},
+    {"url": "https://www.orr.gov.uk/news.rss",                      "source": "Office of Rail and Road"},
 ]
 
 # ─── Keyword Filters ──────────────────────────────────────────────────────────────────────────
