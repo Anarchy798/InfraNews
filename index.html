@@ -8,10 +8,10 @@
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    background: #0c1d38;
+    background: #eef3f8;
     overflow: hidden;
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    color: #e5e7eb;
+    color: #1a2a3a;
   }
 
   #three-canvas {
@@ -23,7 +23,7 @@
   /* ── Loading Screen ── */
   #loading {
     position: fixed; inset: 0;
-    background: #0c1d38;
+    background: #eef3f8;
     display: flex; align-items: center; justify-content: center;
     z-index: 200;
     transition: opacity 0.6s ease;
@@ -32,13 +32,13 @@
   .loader-inner { text-align: center; }
   .loader-ring {
     width: 56px; height: 56px;
-    border: 2px solid rgba(245,158,11,0.2);
-    border-top-color: #f59e0b;
+    border: 2px solid rgba(26,58,100,0.2);
+    border-top-color: #1a3a64;
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin: 0 auto 18px;
   }
-  .loader-label { color: #f59e0b; font-size: 0.72rem; letter-spacing: 0.25em; text-transform: uppercase; }
+  .loader-label { color: #1a3a64; font-size: 0.72rem; letter-spacing: 0.25em; text-transform: uppercase; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
   /* ── UI Overlay ── */
@@ -53,15 +53,15 @@
   #header {
     display: flex; justify-content: space-between; align-items: center;
     padding: 18px 28px;
-    background: linear-gradient(to bottom, rgba(10,22,45,0.94) 0%, transparent 100%);
+    background: linear-gradient(to bottom, rgba(18,36,72,0.88) 0%, transparent 100%);
   }
   .brand { display: flex; align-items: center; gap: 14px; }
   .brand-icon {
     width: 42px; height: 42px;
-    border: 1.5px solid rgba(245,158,11,0.6);
+    border: 1.5px solid rgba(245,158,11,0.7);
     border-radius: 9px;
     display: flex; align-items: center; justify-content: center;
-    background: rgba(245,158,11,0.08);
+    background: rgba(245,158,11,0.10);
   }
   .brand-text h1 { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.1em; color: #fff; }
   .brand-text p  { font-size: 0.62rem; color: #f59e0b; letter-spacing: 0.22em; text-transform: uppercase; margin-top: 1px; }
@@ -69,7 +69,7 @@
   .header-stats { display: flex; gap: 32px; }
   .stat { text-align: right; }
   .stat-value { font-size: 1.1rem; font-weight: 700; color: #f59e0b; }
-  .stat-label { font-size: 0.6rem; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.12em; margin-top: 1px; }
+  .stat-label { font-size: 0.6rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.12em; margin-top: 1px; }
 
   /* Main content area */
   #content {
@@ -86,18 +86,18 @@
   #news-panel {
     width: 370px;
     flex-shrink: 0;
-    background: rgba(10,24,50,0.82);
+    background: rgba(12,26,52,0.88);
     border: 1px solid rgba(245,158,11,0.28);
     border-radius: 14px;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
     display: flex; flex-direction: column;
     pointer-events: all;
     overflow: hidden;
   }
   .panel-head {
     padding: 14px 18px;
-    border-bottom: 1px solid rgba(245,158,11,0.12);
+    border-bottom: 1px solid rgba(245,158,11,0.14);
     display: flex; align-items: center; justify-content: space-between;
     flex-shrink: 0;
   }
@@ -117,10 +117,10 @@
   }
   #news-list::-webkit-scrollbar { width: 3px; }
   #news-list::-webkit-scrollbar-track { background: transparent; }
-  #news-list::-webkit-scrollbar-thumb { background: rgba(245,158,11,0.25); border-radius: 2px; }
+  #news-list::-webkit-scrollbar-thumb { background: rgba(245,158,11,0.3); border-radius: 2px; }
 
   .news-card {
-    background: rgba(255,255,255,0.04);
+    background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.09);
     border-radius: 10px;
     padding: 13px;
@@ -170,12 +170,12 @@
     margin-top: auto;
     margin-left: auto;
     align-self: flex-end;
-    background: rgba(10,24,50,0.82);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(12,26,52,0.88);
+    border: 1px solid rgba(255,255,255,0.12);
     border-radius: 11px;
     padding: 13px 16px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     pointer-events: all;
   }
   .legend-title { font-size: 0.58rem; color: #6b7a8d; text-transform: uppercase; letter-spacing: 0.16em; margin-bottom: 10px; }
@@ -187,7 +187,7 @@
   /* Tooltip */
   #tooltip {
     position: fixed;
-    background: rgba(10,24,50,0.96);
+    background: rgba(12,26,52,0.96);
     border: 1px solid rgba(245,158,11,0.45);
     border-radius: 9px; padding: 10px 14px;
     backdrop-filter: blur(10px);
@@ -220,7 +220,7 @@
 <!-- Three.js canvas -->
 <canvas id="three-canvas"></canvas>
 
-<!-- Node hover tooltip -->
+<!-- Tooltip -->
 <div id="tooltip">
   <div id="tt-name"></div>
   <div id="tt-sector"></div>
@@ -263,7 +263,7 @@
         <span class="panel-badge" id="panel-count">Loading…</span>
       </div>
       <div id="news-list">
-        <div style="color:#4b5563;font-size:0.78rem;text-align:center;padding:50px 20px;line-height:1.7">
+        <div style="color:#6b7a8d;font-size:0.78rem;text-align:center;padding:50px 20px;line-height:1.7">
           Fetching infrastructure intelligence…
         </div>
       </div>
@@ -273,15 +273,15 @@
       <div class="legend-title">Sector</div>
       <div class="legend-items">
         <div class="legend-item">
-          <div class="legend-dot" style="background:#f59e0b;box-shadow:0 0 5px #f59e0b88"></div>
+          <div class="legend-dot" style="background:#e07b00;box-shadow:0 0 5px #e07b0088"></div>
           <span class="legend-text">Energy</span>
         </div>
         <div class="legend-item">
-          <div class="legend-dot" style="background:#3b82f6;box-shadow:0 0 5px #3b82f688"></div>
+          <div class="legend-dot" style="background:#1a5fd4;box-shadow:0 0 5px #1a5fd488"></div>
           <span class="legend-text">Transport</span>
         </div>
         <div class="legend-item">
-          <div class="legend-dot" style="background:#06b6d4;box-shadow:0 0 5px #06b6d488"></div>
+          <div class="legend-dot" style="background:#0088aa;box-shadow:0 0 5px #0088aa88"></div>
           <span class="legend-text">Utilities</span>
         </div>
       </div>
@@ -289,66 +289,26 @@
   </div>
 </div>
 
-<!-- Three.js UMD build (no ES module imports needed — works in any embed) -->
 <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
 <script>
-// ─────────────────────────────────────────────────────────────────────────────
-// CONFIG — update NEWS_JSON_URL after enabling GitHub Pages on this repo
-// ─────────────────────────────────────────────────────────────────────────────
 var NEWS_JSON_URL = 'https://anarchy798.github.io/infranews/data/news.json';
 
-var SECTOR_COLORS = {
-  energy:    0xf59e0b,
-  transport: 0x3b82f6,
-  utilities: 0x06b6d4,
-};
-var DEFAULT_COLOR = 0x4488aa;
-
-// European infrastructure hub positions (x, y, z)
-var NODES = [
-  { name: 'London',     pos: [-2.8,  0.6,  0.0], sector: 'utilities'  },
-  { name: 'Paris',      pos: [-1.2,  0.0,  0.4], sector: 'energy'     },
-  { name: 'Frankfurt',  pos: [ 0.5,  0.4,  0.6], sector: 'energy'     },
-  { name: 'Amsterdam',  pos: [-0.4,  1.0,  0.2], sector: 'utilities'  },
-  { name: 'Brussels',   pos: [-0.8,  0.5,  0.5], sector: 'utilities'  },
-  { name: 'Madrid',     pos: [-2.2, -1.6,  0.4], sector: 'transport'  },
-  { name: 'Barcelona',  pos: [-1.0, -1.2,  0.7], sector: 'transport'  },
-  { name: 'Milan',      pos: [ 0.8, -0.7,  0.9], sector: 'transport'  },
-  { name: 'Rome',       pos: [ 1.2, -1.5,  0.7], sector: 'utilities'  },
-  { name: 'Warsaw',     pos: [ 2.5,  0.7,  0.3], sector: 'energy'     },
-  { name: 'Stockholm',  pos: [ 1.1,  2.3,  0.0], sector: 'energy'     },
-  { name: 'Oslo',       pos: [ 0.1,  2.7, -0.4], sector: 'energy'     },
-  { name: 'Copenhagen', pos: [ 0.7,  1.9, -0.2], sector: 'utilities'  },
-  { name: 'Helsinki',   pos: [ 2.7,  2.5, -0.3], sector: 'energy'     },
-  { name: 'Vienna',     pos: [ 1.8,  0.1,  0.7], sector: 'energy'     },
-  { name: 'Zurich',     pos: [ 0.3, -0.2,  1.1], sector: 'utilities'  },
-  { name: 'Prague',     pos: [ 1.9,  0.5,  0.5], sector: 'utilities'  },
-  { name: 'Budapest',   pos: [ 2.4, -0.3,  0.5], sector: 'energy'     },
-  { name: 'Lisbon',     pos: [-3.1, -1.9,  0.1], sector: 'transport'  },
-  { name: 'Dublin',     pos: [-3.5,  0.9, -0.4], sector: 'utilities'  },
-  { name: 'Athens',     pos: [ 2.3, -2.3,  0.3], sector: 'transport'  },
-  { name: 'Bucharest',  pos: [ 3.1, -0.7,  0.2], sector: 'energy'     },
-  { name: 'Hamburg',    pos: [ 0.5,  1.3,  0.1], sector: 'transport'  },
-  { name: 'Munich',     pos: [ 1.0, -0.1,  0.9], sector: 'transport'  },
-];
-
-// ─── Scene Setup ─────────────────────────────────────────────────────────────
+// ─── Scene ───────────────────────────────────────────────────────────────────
 var canvas = document.getElementById('three-canvas');
 var W = window.innerWidth, H = window.innerHeight;
 
 var scene = new THREE.Scene();
-scene.background = new THREE.Color(0x0c1d38);
-scene.fog = new THREE.FogExp2(0x0c1d38, 0.018);
+scene.background = new THREE.Color(0xeef3f8);
+scene.fog = new THREE.FogExp2(0xe8f0f8, 0.012);
 
-var camera = new THREE.PerspectiveCamera(55, W / H, 0.1, 150);
-camera.position.set(0, 5.5, 14);
-camera.lookAt(0, 0, 0);
+var camera = new THREE.PerspectiveCamera(48, W / H, 0.1, 200);
+camera.position.set(20, 16, 26);
+camera.lookAt(0, 2, -2);
 
 var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
 renderer.setSize(W, H);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-// Resize handler
 window.addEventListener('resize', function () {
   W = window.innerWidth; H = window.innerHeight;
   camera.aspect = W / H;
@@ -357,246 +317,283 @@ window.addEventListener('resize', function () {
 });
 
 // ─── Lights ──────────────────────────────────────────────────────────────────
-scene.add(new THREE.AmbientLight(0x2244aa, 4.5));
-var keyLight = new THREE.DirectionalLight(0x88aaff, 2.2);
-keyLight.position.set(4, 10, 6);
-scene.add(keyLight);
-// Warm fill from below to simulate ground-reflected infrastructure glow
-var fillLight = new THREE.DirectionalLight(0xffcc66, 0.6);
-fillLight.position.set(-6, -4, 8);
-scene.add(fillLight);
+scene.add(new THREE.AmbientLight(0xffffff, 3.5));
+var sun = new THREE.DirectionalLight(0xfff8f0, 2.2);
+sun.position.set(15, 25, 12);
+scene.add(sun);
+var sky = new THREE.DirectionalLight(0xd0e8ff, 1.0);
+sky.position.set(-10, 12, -8);
+scene.add(sky);
 
-// ─── Network Group (rotates as one unit) ─────────────────────────────────────
-var group = new THREE.Group();
-scene.add(group);
+// ─── Palette ─────────────────────────────────────────────────────────────────
+var C_STRUCT    = 0x1a3050;   // dark navy  — steelwork
+var C_ENERGY    = 0xe07b00;   // amber      — energy recovery
+var C_TRANSPORT = 0x1a5fd4;   // blue       — conveyors / vehicles
+var C_UTILITIES = 0x0088aa;   // teal       — water / utilities pipework
 
-// ─── Ground Grid (topographic map feel) ──────────────────────────────────────
-var grid = new THREE.GridHelper(32, 32, 0x1e4080, 0x122550);
-grid.position.y = -2.2;
-group.add(grid);
-// Secondary finer grid for texture depth
-var gridFine = new THREE.GridHelper(32, 64, 0x0f2a50, 0x0a1e3c);
-gridFine.position.y = -2.19;
-group.add(gridFine);
-
-// ─── Build Node Meshes ───────────────────────────────────────────────────────
-var nodeMeshes = [];
-var nodeData   = [];
-
-NODES.forEach(function (nd, i) {
-  var color = SECTOR_COLORS[nd.sector] || DEFAULT_COLOR;
-
-  // Core sphere — infrastructure node
-  var coreMat = new THREE.MeshStandardMaterial({
-    color: color,
-    emissive: color,
-    emissiveIntensity: 1.4,
-    metalness: 0.35,
-    roughness: 0.35,
-  });
-  var core = new THREE.Mesh(new THREE.SphereGeometry(0.13, 16, 16), coreMat);
-  core.position.set(nd.pos[0], nd.pos[1], nd.pos[2]);
-  core.userData = { node: nd };
-  group.add(core);
-  nodeMeshes.push(core);
-
-  // Glow halo (additive blending = no dark edges)
-  var haloMat = new THREE.MeshBasicMaterial({
-    color: color,
-    transparent: true,
-    opacity: 0.25,
-    depthWrite: false,
-    blending: THREE.AdditiveBlending,
-    side: THREE.BackSide,
-  });
-  var halo = new THREE.Mesh(new THREE.SphereGeometry(0.34, 16, 16), haloMat);
-  halo.position.copy(core.position);
-  group.add(halo);
-
-  // Pulse ring — like a radar ping emanating from the hub
-  var ringGeo = new THREE.RingGeometry(0.18, 0.22, 32);
-  var ringMat = new THREE.MeshBasicMaterial({
-    color: color,
-    transparent: true,
-    opacity: 0.6,
-    depthWrite: false,
-    blending: THREE.AdditiveBlending,
-    side: THREE.DoubleSide,
-  });
-  var ring = new THREE.Mesh(ringGeo, ringMat);
-  ring.position.copy(core.position);
-  ring.lookAt(camera.position);
-  group.add(ring);
-
-  nodeData.push({
-    core: core,
-    halo: halo,
-    ring: ring,
-    baseY: nd.pos[1],
-    phase: Math.random() * Math.PI * 2,
-    ringPhase: Math.random() * Math.PI * 2,
-  });
-});
-
-// ─── Connection Lines (sector-coded infrastructure corridors) ─────────────────
-var MAX_CONN_DIST = 3.4;
-var connections = [];
-// Neutral corridor color when sectors differ
-var CORRIDOR_COLOR = 0x2255bb;
-
-for (var i = 0; i < NODES.length; i++) {
-  for (var j = i + 1; j < NODES.length; j++) {
-    var a = new THREE.Vector3().fromArray(NODES[i].pos);
-    var b = new THREE.Vector3().fromArray(NODES[j].pos);
-    if (a.distanceTo(b) < MAX_CONN_DIST) {
-      var pts = [a.clone(), b.clone()];
-      var geo = new THREE.BufferGeometry().setFromPoints(pts);
-      // Use sector color if both endpoints share a sector, else a bright corridor blue
-      var lineColor = (NODES[i].sector === NODES[j].sector)
-        ? (SECTOR_COLORS[NODES[i].sector] || CORRIDOR_COLOR)
-        : CORRIDOR_COLOR;
-      var mat = new THREE.LineBasicMaterial({
-        color: lineColor,
-        transparent: true,
-        opacity: 0.55,
-        depthWrite: false,
-      });
-      var line = new THREE.Line(geo, mat);
-      group.add(line);
-      connections.push({ line: line, from: a.clone(), to: b.clone(), phase: Math.random() * Math.PI * 2 });
-    }
+// ─── Helper: clean wireframe edges object ────────────────────────────────────
+function wf(geo, color, opacity) {
+  var mat = new THREE.LineBasicMaterial({ color: color });
+  if (opacity !== undefined && opacity < 1) {
+    mat.transparent = true;
+    mat.opacity = opacity;
   }
+  return new THREE.LineSegments(new THREE.EdgesGeometry(geo), mat);
 }
 
-// ─── Flowing Particles ───────────────────────────────────────────────────────
-var PARTICLE_COUNT = 110;
-var particles = [];
+// ─── Helper: line between two points ─────────────────────────────────────────
+function lineSeg(ax, ay, az, bx, by, bz, color, opacity) {
+  var pts = [new THREE.Vector3(ax,ay,az), new THREE.Vector3(bx,by,bz)];
+  var mat = new THREE.LineBasicMaterial({ color: color });
+  if (opacity !== undefined && opacity < 1) { mat.transparent = true; mat.opacity = opacity; }
+  return new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), mat);
+}
 
-for (var p = 0; p < PARTICLE_COUNT; p++) {
-  var ci = Math.floor(Math.random() * connections.length);
-  var conn = connections[ci];
-  var ni = Math.floor(Math.random() * NODES.length);
-  var pColor = SECTOR_COLORS[NODES[ni].sector] || DEFAULT_COLOR;
+// ─── Facility group (slow-rotates for 3D model presentation) ─────────────────
+var facility = new THREE.Group();
+scene.add(facility);
 
-  var pMesh = new THREE.Mesh(
-    new THREE.SphereGeometry(0.046, 6, 6),
-    new THREE.MeshBasicMaterial({
-      color: pColor,
-      transparent: true,
-      opacity: 0.95,
-      blending: THREE.AdditiveBlending,
-      depthWrite: false,
-    })
-  );
-  group.add(pMesh);
-  particles.push({
-    mesh: pMesh,
-    from: conn.from.clone(),
-    to:   conn.to.clone(),
-    t:    Math.random(),
-    speed: 0.0025 + Math.random() * 0.0035,
+// ─── Ground — blueprint grid ─────────────────────────────────────────────────
+facility.add(new THREE.GridHelper(60, 30, 0x7aaac8, 0xc4d8e8));
+facility.add(new THREE.GridHelper(60, 120, 0xddeaf2, 0xe8f2f8)); // fine sub-grid
+
+// Site slab outline
+var slab = wf(new THREE.BoxGeometry(38, 0.04, 22), 0x7aaccf, 0.45);
+slab.position.set(-1, 0.02, 0);
+facility.add(slab);
+
+// ─── MAIN SORTING HALL ───────────────────────────────────────────────────────
+var hall = wf(new THREE.BoxGeometry(12, 5, 8), C_STRUCT);
+hall.position.set(0, 2.5, 0);
+facility.add(hall);
+
+// Pitched roof — rafter lines
+(function () {
+  // Box spans x: -6..6, z: -4..4, eave y=5, ridge y=7 at z=0
+  var segs = [
+    // Main rafters front & back
+    [-6,5,-4, -6,7,0],  [-6,5,4, -6,7,0],
+    [-3,5,-4, -3,7,0],  [-3,5,4, -3,7,0],
+    [ 0,5,-4,  0,7,0],  [ 0,5,4,  0,7,0],
+    [ 3,5,-4,  3,7,0],  [ 3,5,4,  3,7,0],
+    [ 6,5,-4,  6,7,0],  [ 6,5,4,  6,7,0],
+    // Ridge purlin
+    [-6,7,0, 6,7,0],
+    // Eave ties
+    [-6,5,-4, 6,5,-4],  [-6,5,4, 6,5,4],
+    // Purlins along slope (front)
+    [-6,6,-2, 6,6,-2],  [-6,6,2, 6,6,2],
+  ];
+  var verts = [];
+  segs.forEach(function(s) {
+    verts.push(s[0],s[1],s[2], s[3],s[4],s[5]);
   });
-}
+  var geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(verts, 3));
+  facility.add(new THREE.LineSegments(geo, new THREE.LineBasicMaterial({ color: C_STRUCT })));
+})();
 
-// ─── Starfield (distant monitoring stations / satellite points) ───────────────
-var starPositions = [];
-for (var s = 0; s < 2400; s++) {
-  starPositions.push(
-    (Math.random() - 0.5) * 130,
-    (Math.random() - 0.5) * 130,
-    (Math.random() - 0.5) * 130
-  );
-}
-var starGeo = new THREE.BufferGeometry();
-starGeo.setAttribute('position', new THREE.Float32BufferAttribute(starPositions, 3));
-scene.add(new THREE.Points(starGeo, new THREE.PointsMaterial({ color: 0x4488cc, size: 0.1 })));
-// Accent stars — brighter cluster for depth
-var accentStarPos = [];
-for (var as = 0; as < 300; as++) {
-  accentStarPos.push(
-    (Math.random() - 0.5) * 100,
-    (Math.random() - 0.5) * 100,
-    (Math.random() - 0.5) * 100
-  );
-}
-var accentStarGeo = new THREE.BufferGeometry();
-accentStarGeo.setAttribute('position', new THREE.Float32BufferAttribute(accentStarPos, 3));
-scene.add(new THREE.Points(accentStarGeo, new THREE.PointsMaterial({ color: 0xaaccff, size: 0.14 })));
-
-// ─── Raycaster / Tooltip ─────────────────────────────────────────────────────
-var raycaster = new THREE.Raycaster();
-var mouse = new THREE.Vector2(-9, -9);
-var tooltip = document.getElementById('tooltip');
-var ttName   = document.getElementById('tt-name');
-var ttSector = document.getElementById('tt-sector');
-
-window.addEventListener('mousemove', function (e) {
-  mouse.x = (e.clientX / W) * 2 - 1;
-  mouse.y = -(e.clientY / H) * 2 + 1;
-  tooltip.style.left = (e.clientX + 14) + 'px';
-  tooltip.style.top  = (e.clientY - 12) + 'px';
+// Interior columns at rafter feet
+[-6, -3, 0, 3, 6].forEach(function(x) {
+  facility.add(lineSeg(x,0,-3.9, x,5,-3.9, C_STRUCT, 0.5));
+  facility.add(lineSeg(x,0, 3.9, x,5, 3.9, C_STRUCT, 0.5));
 });
 
-// ─── Animation Loop ───────────────────────────────────────────────────────────
+// ─── OVERHEAD CRANE (inside hall) ────────────────────────────────────────────
+// Two rails along X at z=±1.6, y=4.7
+var craneRailL = wf(new THREE.BoxGeometry(10, 0.12, 0.12), C_STRUCT);
+craneRailL.position.set(0, 4.75, -1.6);
+facility.add(craneRailL);
+var craneRailR = craneRailL.clone();
+craneRailR.position.z = 1.6;
+facility.add(craneRailR);
+
+// Crossbeam (animated X position)
+var craneCross = wf(new THREE.BoxGeometry(0.14, 0.14, 3.32), C_TRANSPORT);
+craneCross.position.set(0, 4.62, 0);
+facility.add(craneCross);
+
+// Hook hanger (line — updated in animate)
+var hangerGeo = new THREE.BufferGeometry();
+hangerGeo.setAttribute('position', new THREE.Float32BufferAttribute([0,4.62,0, 0,3.1,0], 3));
+var hanger = new THREE.Line(hangerGeo, new THREE.LineBasicMaterial({ color: C_STRUCT }));
+facility.add(hanger);
+
+// ─── SORTING HOPPERS (inside hall) ───────────────────────────────────────────
+[
+  { x:-3, color: C_ENERGY },
+  { x: 0, color: C_UTILITIES },
+  { x: 3, color: C_ENERGY },
+].forEach(function(h) {
+  // Bin cylinder
+  facility.add(Object.assign(wf(new THREE.CylinderGeometry(0.7, 0.5, 1.8, 8), h.color), { position: new THREE.Vector3(h.x, 3.5, 0) }));
+  // Funnel
+  facility.add(Object.assign(wf(new THREE.ConeGeometry(0.5, 1.0, 8), h.color, 0.8), { position: new THREE.Vector3(h.x, 2.1, 0) }));
+  // Rim cap
+  facility.add(Object.assign(wf(new THREE.CylinderGeometry(0.75, 0.75, 0.12, 8), h.color, 0.5), { position: new THREE.Vector3(h.x, 4.45, 0) }));
+  // Discharge pipe stub
+  facility.add(lineSeg(h.x, 1.55, 0, h.x, 0.85, 0, h.color, 0.7));
+});
+
+// ─── INPUT CONVEYOR (left → hall entrance) ───────────────────────────────────
+var inBelt = wf(new THREE.BoxGeometry(10, 0.16, 1.2), C_TRANSPORT);
+inBelt.position.set(-11, 1.35, 0);
+facility.add(inBelt);
+[-15.5,-13,-10.5,-8].forEach(function(x) {
+  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.6), { position: new THREE.Vector3(x, 0.67, -0.55) }));
+  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.6), { position: new THREE.Vector3(x, 0.67,  0.55) }));
+  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.08, 0.08, 1.1), C_STRUCT, 0.4), { position: new THREE.Vector3(x, 0.3, 0) }));
+});
+
+// ─── OUTPUT CONVEYOR A (right → energy recovery baler) ───────────────────────
+var outBeltA = wf(new THREE.BoxGeometry(9, 0.16, 1.2), C_ENERGY);
+outBeltA.position.set(10.5, 1.35, -2);
+facility.add(outBeltA);
+[7,9.5,12,14.5].forEach(function(x) {
+  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.6), { position: new THREE.Vector3(x, 0.67, -2.55) }));
+  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.6), { position: new THREE.Vector3(x, 0.67, -1.45) }));
+});
+
+// ─── OUTPUT CONVEYOR B (rear → utilities/water treatment) ────────────────────
+var outBeltB = wf(new THREE.BoxGeometry(1.2, 0.16, 9), C_UTILITIES);
+outBeltB.position.set(3.5, 1.35, -8.5);
+facility.add(outBeltB);
+[-5,-7.5,-10,-12.5].forEach(function(z) {
+  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.6), { position: new THREE.Vector3(3.0, 0.67, z) }));
+  facility.add(Object.assign(wf(new THREE.BoxGeometry(0.12, 1.35, 0.12), C_STRUCT, 0.6), { position: new THREE.Vector3(4.0, 0.67, z) }));
+});
+
+// ─── STORAGE SILOS (rear) ────────────────────────────────────────────────────
+[{ x:-4, color: C_UTILITIES }, { x:4, color: C_ENERGY }].forEach(function(s) {
+  // Body
+  facility.add(Object.assign(wf(new THREE.CylinderGeometry(1.5, 1.5, 7, 10), s.color), { position: new THREE.Vector3(s.x, 3.5, -10) }));
+  // Cone cap
+  facility.add(Object.assign(wf(new THREE.ConeGeometry(1.5, 2.0, 10), s.color, 0.85), { position: new THREE.Vector3(s.x, 8.5, -10) }));
+  // Ladder rungs on side
+  for (var r = 0; r < 9; r++) {
+    facility.add(lineSeg(s.x+1.5, 0.4+r*0.78, -10, s.x+1.5, 0.7+r*0.78, -10, s.color, 0.65));
+    facility.add(lineSeg(s.x+1.5, 0.4+r*0.78, -10, s.x+1.8, 0.4+r*0.78, -10, s.color, 0.65));
+  }
+  // Discharge pipe
+  facility.add(Object.assign(wf(new THREE.CylinderGeometry(0.22, 0.22, 3.5, 6), s.color, 0.6), { position: new THREE.Vector3(s.x, 0.25, -8.5) }));
+});
+
+// ─── TRUCK LOADING BAYS (left flank) ─────────────────────────────────────────
+[-4, 0, 4].forEach(function(z) {
+  facility.add(Object.assign(wf(new THREE.BoxGeometry(4.5, 3.5, 4.5), C_STRUCT, 0.45), { position: new THREE.Vector3(-17, 1.75, z) }));
+  // Door opening
+  facility.add(Object.assign(wf(new THREE.BoxGeometry(2.6, 2.8, 0.08), C_TRANSPORT, 0.35), { position: new THREE.Vector3(-14.79, 1.4, z) }));
+});
+
+// ─── BALER / COMPACTOR (right — energy recovery) ─────────────────────────────
+var baler = wf(new THREE.BoxGeometry(3.2, 3, 2.8), C_ENERGY);
+baler.position.set(11, 1.5, 2);
+facility.add(baler);
+facility.add(Object.assign(wf(new THREE.BoxGeometry(2, 1.0, 2.8), C_ENERGY, 0.7), { position: new THREE.Vector3(11, 3.5, 2) }));
+
+// ─── SHREDDER (right — utilities processing) ─────────────────────────────────
+var shredder = wf(new THREE.BoxGeometry(2.6, 4, 2.6), C_UTILITIES);
+shredder.position.set(11, 2, -2.5);
+facility.add(shredder);
+facility.add(Object.assign(wf(new THREE.BoxGeometry(1.6, 1.6, 1.6), C_UTILITIES, 0.7), { position: new THREE.Vector3(11, 5.0, -2.5) }));
+
+// ─── UTILITY PIPEWORK ────────────────────────────────────────────────────────
+// Main header pipe (runs along building south face)
+var mainPipe = wf(new THREE.CylinderGeometry(0.16, 0.16, 22, 6), C_UTILITIES, 0.55);
+mainPipe.rotation.z = Math.PI / 2;
+mainPipe.position.set(0, 0.5, -4.8);
+facility.add(mainPipe);
+// Branch drops
+[-5, 0, 5].forEach(function(x) {
+  facility.add(Object.assign(wf(new THREE.CylinderGeometry(0.1, 0.1, 2.8, 6), C_UTILITIES, 0.5), { position: new THREE.Vector3(x, 1.9, -4.8) }));
+});
+// Elevated return pipe (above conveyor)
+var retPipe = wf(new THREE.CylinderGeometry(0.1, 0.1, 10, 6), C_UTILITIES, 0.4);
+retPipe.rotation.z = Math.PI / 2;
+retPipe.position.set(-11, 2.5, 0.9);
+facility.add(retPipe);
+
+// ─── ANIMATED MATERIAL BOXES ─────────────────────────────────────────────────
+var convItems = [];
+
+// Input conveyor: 10 boxes x = -16 → -6, y=1.55, z=0
+(function() {
+  var colors = [C_ENERGY, C_UTILITIES, C_TRANSPORT];
+  for (var i = 0; i < 10; i++) {
+    var mesh = new THREE.LineSegments(
+      new THREE.EdgesGeometry(new THREE.BoxGeometry(0.55, 0.55, 0.65)),
+      new THREE.LineBasicMaterial({ color: colors[i % 3] })
+    );
+    facility.add(mesh);
+    convItems.push({ mesh: mesh, type: 'in', t: i / 10 });
+  }
+})();
+
+// Output A: 7 boxes x = 6 → 15, y=1.55, z=-2
+(function() {
+  for (var i = 0; i < 7; i++) {
+    var mesh = new THREE.LineSegments(
+      new THREE.EdgesGeometry(new THREE.BoxGeometry(0.55, 0.55, 0.65)),
+      new THREE.LineBasicMaterial({ color: C_ENERGY })
+    );
+    facility.add(mesh);
+    convItems.push({ mesh: mesh, type: 'outA', t: i / 7 });
+  }
+})();
+
+// Output B: 6 boxes z = -4 → -13, y=1.55, x=3.5
+(function() {
+  for (var i = 0; i < 6; i++) {
+    var mesh = new THREE.LineSegments(
+      new THREE.EdgesGeometry(new THREE.BoxGeometry(0.65, 0.55, 0.55)),
+      new THREE.LineBasicMaterial({ color: C_UTILITIES })
+    );
+    facility.add(mesh);
+    convItems.push({ mesh: mesh, type: 'outB', t: i / 6 });
+  }
+})();
+
+// ─── Animation ───────────────────────────────────────────────────────────────
 var frame = 0;
-var orbitAngle = 0;
-var ORBIT_RADIUS = 14;
-var ORBIT_SPEED  = 0.0004;
+var orbitAngle = 0.55; // start at a good viewing angle
+var ORBIT_RADIUS = 30;
+var ORBIT_SPEED  = 0.00025;
 
 function animate() {
   requestAnimationFrame(animate);
   frame++;
-  var t = frame * 0.012;
+  var t = frame * 0.01;
 
-  // Slow camera orbit around the network
+  // Slow orbital camera — like rotating a model on a turntable
   orbitAngle += ORBIT_SPEED;
   camera.position.x = Math.sin(orbitAngle) * ORBIT_RADIUS;
   camera.position.z = Math.cos(orbitAngle) * ORBIT_RADIUS;
-  camera.position.y = 5 + Math.sin(orbitAngle * 0.3) * 1.5;
-  camera.lookAt(0, 0, 0);
+  camera.position.y = 14 + Math.sin(orbitAngle * 0.22) * 3;
+  camera.lookAt(0, 2, -2);
 
-  // Float nodes + pulse glow + expanding radar rings
-  nodeData.forEach(function (nd) {
-    nd.core.position.y = nd.baseY + Math.sin(t + nd.phase) * 0.09;
-    nd.halo.position.copy(nd.core.position);
-    var pulseScale = 1 + Math.sin(t * 2.2 + nd.phase) * 0.25;
-    nd.halo.scale.setScalar(pulseScale);
-    nd.core.material.emissiveIntensity = 1.0 + Math.sin(t * 3 + nd.phase) * 0.4;
+  // Crane crossbeam slides along rails (back and forth)
+  var cx = Math.sin(t * 0.35) * 4.2;
+  craneCross.position.x = cx;
+  // Update hanger geometry to follow crane + bob gently
+  var hp = hangerGeo.attributes.position;
+  var hookY = 3.1 + Math.sin(t * 0.55) * 0.5;
+  hp.setXYZ(0, cx, 4.62, 0);
+  hp.setXYZ(1, cx, hookY,  0);
+  hp.needsUpdate = true;
 
-    // Radar-ping ring: expand outward then reset
-    var rp = (t * 0.55 + nd.ringPhase) % (Math.PI * 2);
-    var ringScale = 1 + (rp / (Math.PI * 2)) * 6;
-    nd.ring.scale.setScalar(ringScale);
-    nd.ring.material.opacity = Math.max(0, 0.55 * (1 - rp / (Math.PI * 2)));
-    nd.ring.position.copy(nd.core.position);
-    nd.ring.lookAt(camera.position);
+  // Animate conveyor material items
+  convItems.forEach(function(item) {
+    item.t += 0.0016;
+    if (item.t > 1) item.t = 0;
+    var p = item.t;
+    if (item.type === 'in') {
+      item.mesh.position.set(-16 + p * 10, 1.55, 0);
+    } else if (item.type === 'outA') {
+      item.mesh.position.set(6 + p * 9, 1.55, -2);
+    } else {
+      item.mesh.position.set(3.5, 1.55, -4 - p * 9);
+    }
   });
-
-  // Move flow particles
-  particles.forEach(function (p) {
-    p.t += p.speed;
-    if (p.t > 1) p.t = 0;
-    p.mesh.position.lerpVectors(p.from, p.to, p.t);
-  });
-
-  // Pulse connection lines (infrastructure corridors breathe)
-  connections.forEach(function (c) {
-    c.line.material.opacity = 0.42 + Math.sin(t * 1.5 + c.phase) * 0.18;
-  });
-
-  // Hover detection
-  raycaster.setFromCamera(mouse, camera);
-  var hits = raycaster.intersectObjects(nodeMeshes);
-  if (hits.length) {
-    var node = hits[0].object.userData.node;
-    ttName.textContent = node.name;
-    ttSector.textContent = node.sector.charAt(0).toUpperCase() + node.sector.slice(1) + ' Hub';
-    tooltip.classList.add('show');
-    document.body.style.cursor = 'pointer';
-  } else {
-    tooltip.classList.remove('show');
-    document.body.style.cursor = 'default';
-  }
 
   renderer.render(scene, camera);
 }
@@ -604,11 +601,11 @@ animate();
 
 // ─── News Feed ────────────────────────────────────────────────────────────────
 var SECTOR_CSS = {
-  energy:    { bg: 'rgba(245,158,11,0.14)',  color: '#f59e0b' },
-  transport: { bg: 'rgba(59,130,246,0.14)',  color: '#3b82f6' },
-  utilities: { bg: 'rgba(6,182,212,0.14)',   color: '#06b6d4' },
+  energy:    { bg: 'rgba(224,123,0,0.14)',   color: '#e07b00' },
+  transport: { bg: 'rgba(26,95,212,0.14)',   color: '#1a5fd4' },
+  utilities: { bg: 'rgba(0,136,170,0.14)',   color: '#0088aa' },
 };
-var DEFAULT_CSS = { bg: 'rgba(68,136,170,0.14)', color: '#4488aa' };
+var DEFAULT_CSS = { bg: 'rgba(26,95,212,0.10)', color: '#1a5fd4' };
 
 function peColor(score) {
   if (score >= 8) return '#10b981';
@@ -621,8 +618,7 @@ function timeAgo(iso) {
   var h = Math.floor(diff / 3600000);
   if (h < 1) return 'Just now';
   if (h < 24) return h + 'h ago';
-  var d = Math.floor(h / 24);
-  return d + 'd ago';
+  return Math.floor(h / 24) + 'd ago';
 }
 
 function renderNews(items) {
@@ -643,11 +639,11 @@ function renderNews(items) {
     var sc    = SECTOR_CSS[item.sector] || DEFAULT_CSS;
     var score = parseInt(item.pe_score) || 5;
     var fill  = peColor(score);
-    var safeTitle   = (item.title   || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    var safeSummary = (item.summary || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    var safeSource  = (item.source  || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    var safeCountry = (item.country || 'Europe').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    var safeAngle   = (item.pe_angle || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    var safeTitle   = (item.title   || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    var safeSummary = (item.summary || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    var safeSource  = (item.source  || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    var safeCountry = (item.country || 'Europe').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    var safeAngle   = (item.pe_angle || '').replace(/</g,'&lt;').replace(/>/g,'&gt;');
     var safeUrl     = encodeURI(item.url || '#');
     return [
       '<div class="news-card" onclick="window.open(\'' + safeUrl + '\',\'_blank\')">',
@@ -675,17 +671,17 @@ function renderNews(items) {
 
 function fetchNews() {
   fetch(NEWS_JSON_URL + '?_=' + Date.now())
-    .then(function (r) { return r.json(); })
-    .then(function (data) {
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
       var items = Array.isArray(data) ? data : (data.articles || data.items || []);
       renderNews(items);
     })
-    .catch(function (err) {
+    .catch(function(err) {
       console.warn('InfraNews: news fetch failed —', err);
       document.getElementById('news-list').innerHTML =
-        '<div style="color:#4b5563;font-size:0.76rem;padding:30px 18px;text-align:center;line-height:1.7">' +
+        '<div style="color:#6b7a8d;font-size:0.76rem;padding:30px 18px;text-align:center;line-height:1.7">' +
         'News digest updating…<br>' +
-        '<span style="font-size:0.68rem;color:#374151">The GitHub Action runs daily at 06:00 UTC</span>' +
+        '<span style="font-size:0.68rem;color:#4a5a6a">The GitHub Action runs daily at 06:00 UTC</span>' +
         '</div>';
       document.getElementById('panel-count').textContent = 'Updating';
       document.getElementById('stat-articles').textContent = '—';
@@ -694,9 +690,8 @@ function fetchNews() {
 }
 
 fetchNews();
-setInterval(fetchNews, 5 * 60 * 1000); // refresh every 5 min
+setInterval(fetchNews, 5 * 60 * 1000);
 
-// Dismiss loading screen
 setTimeout(function () {
   document.getElementById('loading').classList.add('fade-out');
   setTimeout(function () { document.getElementById('loading').style.display = 'none'; }, 700);
