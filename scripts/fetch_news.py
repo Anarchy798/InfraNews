@@ -56,6 +56,10 @@ RSS_FEEDS = [
     # Renewables & utilities
     {"url": "https://www.rechargenews.com/rss",                     "source": "Recharge News"},
     {"url": "https://www.windpowermonthly.com/rss/",                "source": "Wind Power Monthly"},
+
+    # Infrastructure trade press
+    {"url": "https://informedinfrastructure.com/feed/",             "source": "Informed Infrastructure"},
+    {"url": "https://infrastructuremagazine.com.au/feed/",          "source": "Infrastructure Magazine"},
 ]
 
 # ─── Keyword Filters ──────────────────────────────────────────────────────────────────────────
