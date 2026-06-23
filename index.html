@@ -286,8 +286,8 @@
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js" crossorigin="anonymous"></script>
 <script>
 var NEWS_JSON_URL = 'https://raw.githubusercontent.com/anarchy798/infranews/main/data/news.json';
 
@@ -519,6 +519,15 @@ function clearFilter() {
   filterAndRender();
 }
 
+// News row click — safe URL open (validate scheme before opening)
+document.getElementById('news-list').addEventListener('click', function(e) {
+  var row = e.target.closest('.news-row');
+  if (!row) return;
+  var url = row.getAttribute('data-url') || '#';
+  if (!/^https?:\/\//i.test(url)) return;
+  window.open(url, '_blank', 'noopener,noreferrer');
+});
+
 // ESC to clear
 document.addEventListener('keydown', function(e) { if (e.key==='Escape') clearFilter(); });
 
@@ -586,7 +595,7 @@ function renderNews(items) {
     var sc = SECTOR_CSS[item.sector] || '#446688';
     var score = parseInt(item.pe_score)||5;
     return [
-      '<div class="news-row" onclick="window.open(\''+encodeURI(item.url||'#')+'\',\'_blank\')">',
+      '<div class="news-row" data-url="'+((item.url||'#').replace(/"/g,'%22'))+'">',
       '<div class="row-top">',
       '<span class="row-time">'+timeAgo(item.published||item.fetched_at)+'</span>',
       '<span class="row-title">'+T(item.title)+'</span>',
