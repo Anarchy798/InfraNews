@@ -12,10 +12,8 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           ref: main
 
@@ -24,17 +22,11 @@ jobs:
         with:
           python-version: "3.11"
           cache: "pip"
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Fetch and analyse news
-        run: python scripts/fetch_news.py
+      - run: pip install -r requirements.txt
+      - run: python scripts/fetch_news.py
         env:
           CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
-
-      - name: Commit updated news digest
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: daily infrastructure news update"
           file_pattern: "data/news.json"
