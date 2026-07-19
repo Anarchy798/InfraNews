@@ -5,12 +5,12 @@
     "url": "https://www.windpowermonthly.com/article/1964520/eu-backs-french-plan-11gw-offshore-wind-cfd-auction",
     "source": "Wind Power Monthly",
     "published": "2026-07-14T09:20:47+00:00",
-    "summary": "France's EC-approved 11GW offshore wind CfD auction represents a substantial pipeline of contracted renewable assets with revenue certainty, directly applicable to infrastructure funds seeking exposure to European energy transition. This regulatory validation de-risks a major deployment program and signals attractive entry points for both primary asset participation and secondary portfolio consolidation.",
+    "summary": "The EU Commission approval of France's 11GW offshore wind CfD auction represents a significant regulatory milestone enabling substantial capital deployment in European offshore wind development. This de-risks a major project pipeline and signals continued policy support for renewable energy infrastructure, creating potential acquisition and operational investment opportunities for PE funds in the sector.",
     "pe_score": 8,
     "sector": "energy",
     "country": "France",
-    "pe_angle": "Offshore wind CfD deployment",
-    "fetched_at": "2026-07-18T07:49:44.995157+00:00"
+    "pe_angle": "Offshore wind CfD auction pipeline",
+    "fetched_at": "2026-07-19T08:17:32.516360+00:00"
   },
   {
     "id": "720fde072a80",
@@ -18,12 +18,12 @@
     "url": "https://constructionmanagement.co.uk/laing-orourkes-offsite-methods-halve-time-on-nuclear-project-sites/",
     "source": "Construction Management",
     "published": "2026-07-14T09:24:26+00:00",
-    "summary": "Laing O'Rourke's industrialised offsite construction methods are demonstrably reducing nuclear project timelines by 50%, significantly improving project IRRs and de-risking execution for major infrastructure builds. This capability represents a competitive moat for nuclear new-build and decommissioning assets across Europe's energy transition agenda.",
+    "summary": "Laing O'Rourke's industrialized offsite construction methods are cutting nuclear project timelines by 50%, substantially improving project economics and reducing cost overrun risk—a critical operational lever for nuclear infrastructure investments. This capability enhancement increases competitive positioning for major nuclear build-outs across Europe and strengthens the contractor's ability to bid for large-scale, high-margin projects.",
     "pe_score": 8,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Nuclear construction efficiency gains",
-    "fetched_at": "2026-07-18T07:49:42.956210+00:00"
+    "pe_angle": "Nuclear construction productivity gains",
+    "fetched_at": "2026-07-19T08:17:31.072675+00:00"
   },
   {
     "id": "4c379bc48ba1",
@@ -31,12 +31,12 @@
     "url": "https://www.privateequityinternational.com/scrutiny-on-fund-governance-has-intensified-amid-adversity-paul-weiss-report/",
     "source": "PEI Media",
     "published": "2026-07-16T12:48:32+00:00",
-    "summary": "Intensifying LP scrutiny on fund governance is forcing PE managers to concede greater control, improved economics, and enhanced protections against succession and zombie fund risks as fundraising becomes more competitive. European infrastructure funds should expect heightened due diligence on governance structures, fee arrangements, and sustainability planning to secure institutional capital.",
+    "summary": "LP demands for enhanced governance, improved economics, and succession protections are reshaping fund structuring as fundraising becomes increasingly competitive. European infrastructure funds must strengthen their governance frameworks and demonstrate robust risk mitigation to secure capital in this tightening market.",
     "pe_score": 8,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Fund governance and LP protections",
-    "fetched_at": "2026-07-18T07:49:10.249266+00:00"
+    "pe_angle": "Fund governance and LP protection standards",
+    "fetched_at": "2026-07-19T08:16:57.913049+00:00"
   },
   {
     "id": "fb31f427be16",
@@ -44,25 +44,25 @@
     "url": "https://constructionmanagement.co.uk/blue-green-infrastructure-avonmouth-severnside-mott-macdonald/",
     "source": "Construction Management",
     "published": "2026-07-13T08:29:48+00:00",
-    "summary": "Blue-green infrastructure represents a growing market segment combining climate resilience, biodiversity, and landscape value creation—attributes increasingly demanded by regulators and ESG-focused capital. The Avonmouth Severnside project exemplifies revenue-diversification opportunities for infrastructure funds through integrated flood defence and ecological solutions with long-term concession potential.",
+    "summary": "Blue-green infrastructure represents a growing market segment combining climate resilience, biodiversity, and landscape value creation—increasingly required by regulatory frameworks and ESG mandates across European infrastructure projects. The Avonmouth case study demonstrates bankable returns through integrated flood defence and ecology schemes, positioning this as a differentiated asset class for PE portfolios seeking dual climate and nature-based solutions.",
     "pe_score": 7,
     "sector": "utilities",
-    "country": "United Kingdom",
-    "pe_angle": "Climate resilience infrastructure expansion",
-    "fetched_at": "2026-07-18T07:49:54.988222+00:00"
+    "country": "Europe",
+    "pe_angle": "Nature-based climate resilience infrastructure",
+    "fetched_at": "2026-07-19T08:17:42.816503+00:00"
   },
   {
-    "id": "ad7c5de85b74",
-    "title": "Siemens Energy and Siemens Gamesa rebrand under one umbrella",
-    "url": "https://www.windpowermonthly.com/article/1964559/siemens-energy-siemens-gamesa-rebrand-one-umbrella",
-    "source": "Wind Power Monthly",
-    "published": "2026-07-14T13:42:51+00:00",
-    "summary": "Siemens Energy's rebranding and consolidation of Siemens Gamesa signals strategic portfolio rationalization in renewable energy manufacturing, potentially unlocking operational synergies and clarifying market positioning. This move could reshape competitive dynamics in wind turbine OEM consolidation and create M&A opportunities for infrastructure investors seeking exposure to energy transition assets.",
+    "id": "963501087053",
+    "title": "Inflation cools to 3.5% in June in relief brought by brief US-Iran peace deal",
+    "url": "https://www.theguardian.com/business/2026/jul/14/june-cpi-report-inflation-cools-iran-deal",
+    "source": "Guardian Business",
+    "published": "2026-07-14T16:56:56+00:00",
+    "summary": "Geopolitical volatility in the Middle East is creating significant energy price swings that directly impact infrastructure valuations and operating costs across Europe. The brief ceasefire relief followed by renewed strikes demonstrates ongoing macro uncertainty that will pressure utility margins and renewable energy demand dynamics through 2026.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Wind turbine consolidation and energy transition",
-    "fetched_at": "2026-07-18T07:49:39.058593+00:00"
+    "pe_angle": "Commodity hedging and energy volatility",
+    "fetched_at": "2026-07-19T08:17:23.508611+00:00"
   },
   {
     "id": "e451383769ee",
@@ -70,12 +70,12 @@
     "url": "https://www.privateequityinternational.com/side-letter-un-ria-lised-potential/",
     "source": "PEI Media",
     "published": "2026-07-15T11:37:40+00:00",
-    "summary": "A $177trn investor cohort is expanding private markets allocation, signaling sustained capital availability for infrastructure deals. European GPs face competitive pressure from AI adoption gaps, potentially widening performance disparities in deal sourcing and portfolio management.",
+    "summary": "A $177trn investor coalition is expanding private markets exposure, signaling sustained capital availability for infrastructure deals while reshaping competitive dynamics. European GPs face competitive pressure from AI adoption gaps, particularly in deal sourcing and portfolio optimization capabilities.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Institutional capital shift, AI competitiveness",
-    "fetched_at": "2026-07-18T07:49:31.001430+00:00"
+    "pe_angle": "Institutional capital influx, AI-driven GP competition",
+    "fetched_at": "2026-07-19T08:17:16.993693+00:00"
   },
   {
     "id": "1d204874081e",
@@ -83,12 +83,12 @@
     "url": "https://www.privateequityinternational.com/how-the-top-lps-benchmark-their-pe-investments/",
     "source": "PEI Media",
     "published": "2026-07-16T09:41:51+00:00",
-    "summary": "Leading LPs employ diverse benchmarking methodologies for PE performance assessment, creating complexity in portfolio comparisons and return attribution. Understanding these frameworks is critical for European infrastructure funds to align with investor expectations and differentiate performance reporting.",
+    "summary": "Top-tier LPs employ divergent benchmarking methodologies for PE performance evaluation, creating potential misalignment between fund managers and their capital sources. Understanding these benchmarking variations is critical for infrastructure funds seeking to meet LP expectations and optimize portfolio reporting.",
     "pe_score": 7,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "LP benchmarking standards alignment",
-    "fetched_at": "2026-07-18T07:49:24.683664+00:00"
+    "pe_angle": "LP benchmarking and performance metrics",
+    "fetched_at": "2026-07-19T08:17:10.223147+00:00"
   },
   {
     "id": "ff6bd34c032c",
@@ -96,12 +96,12 @@
     "url": "https://www.windpowermonthly.com/article/1964792/sweden-rejects-11-offshore-wind-proposals-security-concerns",
     "source": "Wind Power Monthly",
     "published": "2026-07-16T10:42:09+00:00",
-    "summary": "Sweden's rejection of 11 offshore wind proposals due to security concerns signals tightening regulatory scrutiny in European offshore wind development, potentially impacting project pipelines and capital deployment timelines. This geopolitical shift may create valuation headwinds for offshore assets while favoring onshore alternatives and established projects in less security-sensitive jurisdictions.",
+    "summary": "Sweden's rejection of 11 offshore wind proposals on security grounds signals tightening regulatory scrutiny for renewable projects across Europe, potentially constraining pipeline growth and increasing development risks. This creates both headwinds for new-build offshore opportunities and potential acquisition targets among approved projects with de-risked permits.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Sweden",
-    "pe_angle": "Offshore wind regulatory risk",
-    "fetched_at": "2026-07-18T07:49:21.356186+00:00"
+    "pe_angle": "Offshore wind regulatory de-risking",
+    "fetched_at": "2026-07-19T08:17:06.629246+00:00"
   },
   {
     "id": "1501f5bff1f7",
@@ -109,12 +109,12 @@
     "url": "https://www.privateequityinternational.com/partners-group-warns-evergreen-outflows-could-hit-20bn/",
     "source": "PEI Media",
     "published": "2026-07-16T12:51:42+00:00",
-    "summary": "Partners Group faces potential $20bn in evergreen fund outflows, signaling broader LP confidence issues in the mega-fund model during a period of valuation pressure. With PE representing two-thirds of underperforming assets, this reflects challenging exit environments and J-curve dynamics that may constrain follow-on commitments across infrastructure strategies.",
+    "summary": "Partners Group faces potential $20bn outflows from evergreen funds while managing underperforming PE assets representing two-thirds of troubled holdings, signaling broader LP confidence issues in the PE asset class. For European infrastructure investors, this highlights refinancing risks and the importance of strong operational performance to retain capital in competitive fundraising environments.",
     "pe_score": 7,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Evergreen fund redemption risk",
-    "fetched_at": "2026-07-18T07:49:08.580343+00:00"
+    "pe_angle": "Evergreen fund capital retention risk",
+    "fetched_at": "2026-07-19T08:16:56.378081+00:00"
   },
   {
     "id": "e98d0e5d1f44",
@@ -122,12 +122,12 @@
     "url": "https://www.theguardian.com/business/2026/jul/17/british-steel-nationalisation-china-strongly-dissatisfied",
     "source": "Guardian Business",
     "published": "2026-07-17T06:57:08+00:00",
-    "summary": "The UK government's nationalisation of British Steel signals heightened political intervention in strategic industrial assets and rising geopolitical tensions that could reshape infrastructure investment frameworks across Europe. Chinese investors' retraction from UK infrastructure deals may create competitive opportunities for European PE funds while highlighting regulatory and nationalisation risks in core industries.",
+    "summary": "The UK government's nationalisation of British Steel signals heightened political risk for foreign direct investment in European strategic infrastructure, particularly in heavy industry. China's strong pushback indicates potential retaliatory trade measures and reduced appetite for cross-border infrastructure deals in the UK and potentially broader Europe.",
     "pe_score": 7,
     "sector": "energy",
-    "country": "UK",
+    "country": "United Kingdom",
     "pe_angle": "Strategic asset nationalisation risk",
-    "fetched_at": "2026-07-18T07:49:04.322988+00:00"
+    "fetched_at": "2026-07-19T08:16:52.599162+00:00"
   },
   {
     "id": "91d5c2481285",
@@ -135,12 +135,12 @@
     "url": "https://nordsip.com/2026/07/17/esma-reveals-first-esg-ratings-firms-seeking-eu-authorisation/",
     "source": "NordSIP",
     "published": "2026-07-17T09:15:39+00:00",
-    "summary": "ESMA's new ESG ratings authorization framework will standardize sustainability assessments across European infrastructure assets, directly impacting valuation methodologies and investor due diligence for PE-backed portfolio companies. This regulatory clarity reduces ESG rating fragmentation and creates opportunities for infrastructure funds to differentiate assets through certified sustainability credentials.",
+    "summary": "ESMA's new ESG ratings authorization framework will standardize how infrastructure assets are evaluated on sustainability metrics, directly impacting valuation multiples and exit pricing for PE-backed infra portfolios. This regulatory clarity creates competitive advantages for early movers and establishes uniform ESG criteria that institutional LPs increasingly demand in due diligence.",
     "pe_score": 7,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "ESG ratings standardization and valuations",
-    "fetched_at": "2026-07-18T07:48:56.304913+00:00"
+    "pe_angle": "ESG rating standardization, valuation impact",
+    "fetched_at": "2026-07-19T08:16:45.471663+00:00"
   },
   {
     "id": "f0098fc0871b",
@@ -148,12 +148,12 @@
     "url": "https://www.windpowermonthly.com/article/1964938/scottish-government-approves-2gw-offshore-wind-farm",
     "source": "Wind Power Monthly",
     "published": "2026-07-17T11:22:42+00:00",
-    "summary": "Scotland's approval of a 2GW offshore wind farm signals continued European renewable energy expansion and potential refinancing or acquisition opportunities in mature offshore markets. This development supports long-term ESG-aligned infrastructure returns and de-risks renewable energy portfolios across the UK/EU.",
+    "summary": "Scotland's approval of a 2GW offshore wind farm signals continued regulatory support for large-scale renewables in the UK, creating potential M&A and operational infrastructure investment opportunities. This development reinforces the Scottish corridor as a material market for offshore wind platforms and indicates available capacity for European infrastructure funds seeking North Sea exposure.",
     "pe_score": 7,
     "sector": "energy",
-    "country": "UK",
-    "pe_angle": "Offshore wind capacity expansion",
-    "fetched_at": "2026-07-18T07:48:47.390836+00:00"
+    "country": "Scotland",
+    "pe_angle": "Offshore wind development pipeline",
+    "fetched_at": "2026-07-19T08:16:36.076271+00:00"
   },
   {
     "id": "4c8886e607b8",
@@ -161,12 +161,12 @@
     "url": "https://www.windpowermonthly.com/article/1964377/mingyang-appoints-new-commercial-director-europe",
     "source": "Wind Power Monthly",
     "published": "2026-07-13T09:33:36+00:00",
-    "summary": "Mingyang's appointment of a new commercial director for Europe signals the Chinese turbine manufacturer's strengthened commitment to capturing market share in the region's growing wind capacity additions. This leadership move could indicate accelerated commercialization efforts and potential partnership or supply opportunities for European wind developers and operators.",
+    "summary": "Mingyang's appointment of a new commercial director signals the Chinese turbine manufacturer's strengthened commitment to European market penetration, potentially increasing competitive pressure on incumbent OEMs and creating M&A/partnership opportunities for fund-backed wind developers. This move could accelerate technology transfer and cost deflation in European onshore/offshore wind, affecting asset valuations and refinancing dynamics across existing portfolios.",
     "pe_score": 6,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "OEM expansion and wind supply chain",
-    "fetched_at": "2026-07-18T07:49:51.577926+00:00"
+    "pe_angle": "Wind OEM competitive dynamics",
+    "fetched_at": "2026-07-19T08:17:39.383248+00:00"
   },
   {
     "id": "0eaebe50c4c8",
@@ -174,12 +174,25 @@
     "url": "https://www.privateequityinternational.com/temasek-linked-vertex-scales-back-ambitions-with-new-growth-fund/",
     "source": "PEI Media",
     "published": "2026-07-14T09:12:41+00:00",
-    "summary": "Temasek's Vertex is reducing its growth fund target from ~$417m to $250m, signaling either market headwinds or strategic recalibration in European infrastructure deployment. This 40% downsizing may reflect challenging fundraising conditions, sector-specific challenges, or portfolio optimization that could create secondary opportunities or signal consolidation pressures in the market.",
+    "summary": "Temasek-backed Vertex is downsizing its growth fund to $250m, a 40% reduction from its prior vehicle, signaling potential market headwinds or strategic recalibration in the infrastructure investment landscape. This pullback may indicate tightening LP appetite for growth-stage infra exposure or increased competition for quality assets in the sector.",
     "pe_score": 6,
-    "sector": "utilities",
+    "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Asian LP infrastructure fund retrenchment",
-    "fetched_at": "2026-07-18T07:49:47.123478+00:00"
+    "pe_angle": "Growth fund sizing rationalization",
+    "fetched_at": "2026-07-19T08:17:34.689042+00:00"
+  },
+  {
+    "id": "ad7c5de85b74",
+    "title": "Siemens Energy and Siemens Gamesa rebrand under one umbrella",
+    "url": "https://www.windpowermonthly.com/article/1964559/siemens-energy-siemens-gamesa-rebrand-one-umbrella",
+    "source": "Wind Power Monthly",
+    "published": "2026-07-14T13:42:51+00:00",
+    "summary": "Siemens Energy's rebranding and consolidation of Siemens Gamesa signals organizational restructuring that may affect market positioning in renewable energy assets and potential spin-off valuations. This consolidation could create operational efficiencies or signal portfolio rationalization relevant to infrastructure fund exposure in wind and energy transition assets.",
+    "pe_score": 6,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Renewable energy consolidation strategy",
+    "fetched_at": "2026-07-19T08:17:25.764485+00:00"
   },
   {
     "id": "fa3931f37716",
@@ -187,116 +200,12 @@
     "url": "https://www.windpowermonthly.com/article/1964632/turkey-announces-15gw-onshore-wind-auction",
     "source": "Wind Power Monthly",
     "published": "2026-07-15T07:46:26+00:00",
-    "summary": "Turkey's 1.5GW onshore wind auction through its Yeka program represents a significant renewable energy procurement opportunity in a strategically important market bridging Europe and Asia. This signals continued policy support for wind energy and potential investment entry points for European PE funds seeking geographic diversification and exposure to emerging renewable energy markets with favorable regulatory frameworks.",
+    "summary": "Turkey's 1.5GW Yeka auction represents a significant renewable capacity expansion in a strategically important European-adjacent market, potentially creating acquisition or development partnership opportunities for infrastructure investors. The competitive auction format typically attracts institutional capital and may offer attractive risk-adjusted returns given Turkey's growing energy demand and favorable renewable resource base.",
     "pe_score": 6,
     "sector": "energy",
     "country": "Turkey",
-    "pe_angle": "Emerging market renewable energy",
-    "fetched_at": "2026-07-18T07:49:36.920875+00:00"
-  },
-  {
-    "id": "c67b0e062b39",
-    "title": "‘We’re still near the beginning’: Blackstone’s new EMEA wealth head on the next wave of growth",
-    "url": "https://www.privateequityinternational.com/were-still-near-the-beginning-blackstones-new-emea-wealth-head-on-the-next-wave-of-growth/",
-    "source": "PEI Media",
-    "published": "2026-07-15T10:54:43+00:00",
-    "summary": "Blackstone's wealth division is expanding retail-eligible infrastructure offerings across EMEA, signaling growing institutional appetite for democratized infrastructure investment. Fragmented European regulatory frameworks remain a critical barrier to scaling these products, presenting both compliance challenges and consolidation opportunities for established PE players.",
-    "pe_score": 6,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Retail infrastructure capital mobilization",
-    "fetched_at": "2026-07-18T07:49:32.551355+00:00"
-  },
-  {
-    "id": "7bf7fb72b39b",
-    "title": "Bricklaying robots from the Netherlands target the UK",
-    "url": "https://constructionmanagement.co.uk/bricklaying-robots-from-the-netherlands-target-the-uk/",
-    "source": "Construction Management",
-    "published": "2026-07-16T09:32:02+00:00",
-    "summary": "Dutch construction robotics startup securing $32m funding signals accelerating automation in UK/EU building trades, addressing chronic labor shortages and productivity gaps. This represents a potential consolidation/platform opportunity in the fragmented construction tech space with high margin potential.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "Netherlands",
-    "pe_angle": "Construction automation labor efficiency",
-    "fetched_at": "2026-07-18T07:49:26.504792+00:00"
-  },
-  {
-    "id": "1413e22ae469",
-    "title": "Goldwind to source Turkey turbine towers from CS Wind",
-    "url": "https://www.windpowermonthly.com/article/1964766/goldwind-source-turkey-turbine-towers-cs-wind",
-    "source": "Wind Power Monthly",
-    "published": "2026-07-16T09:44:05+00:00",
-    "summary": "CS Wind's Turkey manufacturing facility is securing major supply contracts with Goldwind, demonstrating the strategic shift of wind turbine component production toward lower-cost Eastern European hubs. This regional consolidation in tower supply creates acquisition and consolidation opportunities for PE investors targeting renewable energy infrastructure and manufacturing assets.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Eastern Europe wind manufacturing consolidation",
-    "fetched_at": "2026-07-18T07:49:23.059762+00:00"
-  },
-  {
-    "id": "370cab0da0d3",
-    "title": "Side Letter: Keeping APAC active",
-    "url": "https://www.privateequityinternational.com/side-letter-keeping-apac-active/",
-    "source": "PEI Media",
-    "published": "2026-07-16T12:09:51+00:00",
-    "summary": "The article examines active investment strategies in APAC markets and highlights BlackRock's substantial LP capital commitments to LatAm, signaling strong institutional appetite for emerging market infrastructure. For European infra PE funds, this underscores competitive dynamics and potential co-investment opportunities in geographically diversified portfolios.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "APAC expansion and emerging market LPs",
-    "fetched_at": "2026-07-18T07:49:15.827399+00:00"
-  },
-  {
-    "id": "8e8312ea14b5",
-    "title": "Fire Safety Cannot Be Left Until The End Of Construction",
-    "url": "https://infrastructurenews.co.za/2026/07/16/fire-safety-cannot-be-left-until-the-end-of-construction/",
-    "source": "Infrastructure News",
-    "published": "2026-07-16T12:21:36+00:00",
-    "summary": "Integrated fire safety protocols throughout construction lifecycles are becoming regulatory requirements across Europe, creating operational complexity and cost exposure for builders and infrastructure developers. PE-backed construction firms must adopt early-stage fire safety embedding to reduce post-completion remediation risks, compliance liabilities, and project delays that typically emerge during handover phases.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Construction compliance risk mitigation",
-    "fetched_at": "2026-07-18T07:49:14.065854+00:00"
-  },
-  {
-    "id": "ce7b9be0af5a",
-    "title": "SA’s Infrastructure Revival Now Hinges On How Projects Are Delivered",
-    "url": "https://infrastructurenews.co.za/2026/07/17/sas-infrastructure-revival-now-hinges-on-how-projects-are-delivered/",
-    "source": "Infrastructure News",
-    "published": "2026-07-17T08:02:32+00:00",
-    "summary": "South Africa's infrastructure recovery depends critically on execution capability, lifecycle planning, and technical expertise—areas where European PE-backed operators can create significant competitive advantages and value through operational improvements. This signals growing opportunities for European infrastructure funds to deploy capital and management expertise in emerging markets with structural infrastructure deficits and execution gaps.",
-    "pe_score": 6,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Emerging market infrastructure execution",
-    "fetched_at": "2026-07-18T07:48:58.275040+00:00"
-  },
-  {
-    "id": "8db6ddcb1b5a",
-    "title": "Meet the LP: InPact Partners",
-    "url": "https://www.privateequityinternational.com/meet-the-lp-inpact-partners/",
-    "source": "PEI Media",
-    "published": "2026-07-14T10:04:37+00:00",
-    "summary": "Swiss LP consultancy InPact Partners is expanding its private equity focus areas and strengthening relationships with GPs, signaling potential shifts in capital allocation strategies for European infrastructure investors. This development may indicate emerging opportunities in underserved infrastructure segments or new geographic markets that merit monitoring by PE fund managers.",
-    "pe_score": 5,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "LP strategy and GP partnership dynamics",
-    "fetched_at": "2026-07-18T07:49:41.422218+00:00"
-  },
-  {
-    "id": "47e3c15c3ad6",
-    "title": "RWE receives federal approval for 1.1GW Australia wind farm",
-    "url": "https://www.windpowermonthly.com/article/1964652/rwe-receives-federal-approval-11gw-australia-wind-farm",
-    "source": "Wind Power Monthly",
-    "published": "2026-07-15T10:11:36+00:00",
-    "summary": "RWE's 1.1GW Australian wind farm approval demonstrates the major European utility's expansion into high-growth renewable markets outside Europe, signaling attractive risk-adjusted returns in developed offshore geographies. This acquisition/development activity reflects the broader energy transition thesis and asset-light operational model that European infra PE funds are increasingly targeting in their renewable energy portfolios.",
-    "pe_score": 5,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Utility renewable expansion APAC",
-    "fetched_at": "2026-07-18T07:49:34.546980+00:00"
+    "pe_angle": "Emerging market wind development",
+    "fetched_at": "2026-07-19T08:17:22.004094+00:00"
   },
   {
     "id": "ba8688d09f5f",
@@ -304,38 +213,64 @@
     "url": "https://infrastructurenews.co.za/2026/07/16/decarbonisation-is-key-to-drc-mining-as-carbon-tax-looms/",
     "source": "Infrastructure News",
     "published": "2026-07-16T03:05:44+00:00",
-    "summary": "DRC mining companies are accelerating decarbonisation investments ahead of incoming carbon tax legislation, creating operational cost pressures and capex opportunities. This regulatory shift presents potential entry points for European infra PE funds focused on clean energy solutions, emissions reduction infrastructure, and transition financing in African mining.",
-    "pe_score": 5,
+    "summary": "DRC mining sector faces imminent carbon taxation, creating urgency for decarbonisation capex investments and operational efficiency upgrades. European infra PE funds can capitalize on financing clean mining technologies, renewable energy integration, and carbon management infrastructure with strong ESG tailwinds and regulatory support.",
+    "pe_score": 6,
     "sector": "energy",
     "country": "Europe",
     "pe_angle": "African mining decarbonisation capex",
-    "fetched_at": "2026-07-18T07:49:29.608836+00:00"
+    "fetched_at": "2026-07-19T08:17:15.498456+00:00"
   },
   {
-    "id": "d8dc90e2ca49",
-    "title": "How Trump’s ‘original oil guy’ boosted US-Israel ties and played down risks of Iran war",
-    "url": "https://www.theguardian.com/us-news/2026/jul/16/harold-hamm-trump-oil-israel-iran",
-    "source": "Guardian Business",
-    "published": "2026-07-16T12:00:39+00:00",
-    "summary": "Harold Hamm's influence on Trump administration energy policy could accelerate US fossil fuel expansion and deregulation, potentially impacting global energy markets and European renewable energy investments. European infra PE funds face headwinds from renewed US oil dominance but may see opportunities in competing clean energy narratives and hedging fossil fuel exposure.",
-    "pe_score": 5,
+    "id": "7bf7fb72b39b",
+    "title": "Bricklaying robots from the Netherlands target the UK",
+    "url": "https://constructionmanagement.co.uk/bricklaying-robots-from-the-netherlands-target-the-uk/",
+    "source": "Construction Management",
+    "published": "2026-07-16T09:32:02+00:00",
+    "summary": "Dutch construction robotics startup has secured $32m in funding and is expanding into the UK market, signaling growing commercialization of automation in labor-constrained European construction. This represents a potential platform investment opportunity in construction tech with significant margin expansion potential and cross-border scaling prospects across Europe.",
+    "pe_score": 6,
+    "sector": "transport",
+    "country": "Netherlands",
+    "pe_angle": "Construction automation technology platform",
+    "fetched_at": "2026-07-19T08:17:12.295378+00:00"
+  },
+  {
+    "id": "1413e22ae469",
+    "title": "Goldwind to source Turkey turbine towers from CS Wind",
+    "url": "https://www.windpowermonthly.com/article/1964766/goldwind-source-turkey-turbine-towers-cs-wind",
+    "source": "Wind Power Monthly",
+    "published": "2026-07-16T09:44:05+00:00",
+    "summary": "CS Wind's Turkish manufacturing facility is securing supply contracts from major turbine OEMs like Goldwind, signaling consolidation in the European wind supply chain and potential investment opportunities in lower-cost production hubs. This shift reflects growing demand for localized turbine tower production in Europe and emerging markets, with implications for regional supply chain resilience and component cost structures.",
+    "pe_score": 6,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "US fossil policy vs European renewables",
-    "fetched_at": "2026-07-18T07:49:17.801729+00:00"
+    "pe_angle": "Wind supply chain localization",
+    "fetched_at": "2026-07-19T08:17:08.777447+00:00"
   },
   {
-    "id": "d43d6acda189",
-    "title": "SA Government, Industry Leaders To Build Moment Behind Catalytic Infrastructure Initiatives",
-    "url": "https://infrastructurenews.co.za/2026/07/17/sa-government-industry-leaders-to-build-moment-behind-catalytic-infrastructure-initiatives/",
-    "source": "Infrastructure News",
-    "published": "2026-07-17T06:42:46+00:00",
-    "summary": "South Africa's SIDSSA symposium in August will convene government and industry to advance major infrastructure programmes worth billions of rands, signaling potential privatization and PPP opportunities in an emerging market with significant capital needs. European infrastructure funds should monitor this event for pipeline visibility into South African concessions and partnerships across multiple sectors.",
-    "pe_score": 5,
+    "id": "370cab0da0d3",
+    "title": "Side Letter: Keeping APAC active",
+    "url": "https://www.privateequityinternational.com/side-letter-keeping-apac-active/",
+    "source": "PEI Media",
+    "published": "2026-07-16T12:09:51+00:00",
+    "summary": "The article highlights strategic opportunities in APAC markets for PE investors and notes BlackRock's significant capital deployment in LatAm, suggesting diversification beyond traditional European infrastructure plays. A ranking of impact managers underscores the growing importance of ESG integration in infrastructure investing.",
+    "pe_score": 6,
     "sector": "utilities",
-    "country": "South Africa",
-    "pe_angle": "Emerging market infrastructure PPPs",
-    "fetched_at": "2026-07-18T07:49:06.816896+00:00"
+    "country": "Europe",
+    "pe_angle": "APAC expansion and impact manager strategies",
+    "fetched_at": "2026-07-19T08:17:03.205707+00:00"
+  },
+  {
+    "id": "8e8312ea14b5",
+    "title": "Fire Safety Cannot Be Left Until The End Of Construction",
+    "url": "https://infrastructurenews.co.za/2026/07/16/fire-safety-cannot-be-left-until-the-end-of-construction/",
+    "source": "Infrastructure News",
+    "published": "2026-07-16T12:21:36+00:00",
+    "summary": "Integrated fire safety protocols throughout construction lifecycles reduce liability exposure, regulatory risk, and costly post-completion remediation—critical for PE-backed infrastructure assets seeking operational resilience and ESG compliance. This trend creates value through de-risked handovers and potential cost savings on rework, particularly relevant for large mixed-use or critical infrastructure portfolios.",
+    "pe_score": 6,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "Building safety compliance risk mitigation",
+    "fetched_at": "2026-07-19T08:17:01.649655+00:00"
   },
   {
     "id": "93be5964eab8",
@@ -343,12 +278,77 @@
     "url": "https://infrastructurenews.co.za/2026/07/17/stage-1-of-the-olifants-management-model-programme-reaches-mezzanine-debt-financial-close-with-climate-fund-managers/",
     "source": "Infrastructure News",
     "published": "2026-07-17T07:06:28+00:00",
-    "summary": "The Olifants Management Model Programme Stage 1 achieving mezzanine debt financial close demonstrates successful blended finance structuring combining grant and debt instruments, a replicable model for water/environmental infrastructure in emerging markets. This milestone signals operational execution capability and de-risking potential for climate-focused infrastructure funds, relevant for European PE investors exploring ESG-aligned emerging market plays.",
-    "pe_score": 5,
+    "summary": "The Olifants Management Model Programme achieved mezzanine debt financial close with climate-focused lenders, demonstrating a blended finance approach combining grants and subordinated debt for infrastructure development. This milestone validates innovative funding structures for climate-aligned infrastructure projects and signals growing availability of concessional capital for staged development models.",
+    "pe_score": 6,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "Blended climate finance infrastructure",
+    "fetched_at": "2026-07-19T08:16:50.885318+00:00"
+  },
+  {
+    "id": "ce7b9be0af5a",
+    "title": "SA’s Infrastructure Revival Now Hinges On How Projects Are Delivered",
+    "url": "https://infrastructurenews.co.za/2026/07/17/sas-infrastructure-revival-now-hinges-on-how-projects-are-delivered/",
+    "source": "Infrastructure News",
+    "published": "2026-07-17T08:02:32+00:00",
+    "summary": "South Africa's infrastructure recovery depends critically on execution capability and technical expertise rather than capital availability, creating opportunities for PE-backed operators with proven project delivery track records. European infra funds can capture value by acquiring or partnering with South African asset operators and contractors who can unlock stalled projects and improve lifecycle economics.",
+    "pe_score": 6,
     "sector": "utilities",
     "country": "South Africa",
-    "pe_angle": "Blended finance water infrastructure",
-    "fetched_at": "2026-07-18T07:49:01.636944+00:00"
+    "pe_angle": "Emerging market infra execution capability",
+    "fetched_at": "2026-07-19T08:16:47.331040+00:00"
+  },
+  {
+    "id": "8db6ddcb1b5a",
+    "title": "Meet the LP: InPact Partners",
+    "url": "https://www.privateequityinternational.com/meet-the-lp-inpact-partners/",
+    "source": "PEI Media",
+    "published": "2026-07-14T10:04:37+00:00",
+    "summary": "InPact Partners, a Swiss LP consultancy, is expanding its private equity focus and strengthening GP relationships, signaling potential shifts in capital allocation strategies for infrastructure investors. This development may indicate emerging opportunities in new infrastructure subsectors or changing deal sourcing dynamics that European infra PE funds should monitor.",
+    "pe_score": 5,
+    "sector": "utilities",
+    "country": "Switzerland",
+    "pe_angle": "LP strategy and GP partnership evolution",
+    "fetched_at": "2026-07-19T08:17:29.172995+00:00"
+  },
+  {
+    "id": "c67b0e062b39",
+    "title": "‘We’re still near the beginning’: Blackstone’s new EMEA wealth head on the next wave of growth",
+    "url": "https://www.privateequityinternational.com/were-still-near-the-beginning-blackstones-new-emea-wealth-head-on-the-next-wave-of-growth/",
+    "source": "PEI Media",
+    "published": "2026-07-15T10:54:43+00:00",
+    "summary": "Blackstone's wealth division expansion in EMEA signals growing institutional capital flowing toward infrastructure assets, with retail-eligible offerings potentially unlocking new dry powder for deals. Fragmented European regulatory frameworks remain a critical barrier to scaled infrastructure deployment, presenting both consolidation opportunities and operational complexity for PE investors.",
+    "pe_score": 5,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "Wealth mobilization for infrastructure capital",
+    "fetched_at": "2026-07-19T08:17:18.685726+00:00"
+  },
+  {
+    "id": "d43d6acda189",
+    "title": "SA Government, Industry Leaders To Build Moment Behind Catalytic Infrastructure Initiatives",
+    "url": "https://infrastructurenews.co.za/2026/07/17/sa-government-industry-leaders-to-build-moment-behind-catalytic-infrastructure-initiatives/",
+    "source": "Infrastructure News",
+    "published": "2026-07-17T06:42:46+00:00",
+    "summary": "South Africa's SIDSSA symposium in August will showcase billions in infrastructure programmes, presenting potential co-investment and cross-border partnership opportunities for European PE funds seeking exposure to emerging market infrastructure. The government-industry alignment signals improving risk profile for greenfield and brownfield infrastructure deployment in sub-Saharan Africa's largest economy.",
+    "pe_score": 5,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "South African infrastructure co-investment",
+    "fetched_at": "2026-07-19T08:16:54.239724+00:00"
+  },
+  {
+    "id": "b3411d8ccc55",
+    "title": "Volkswagen Group Africa Completes Solar Panel Project At Component Plant",
+    "url": "https://infrastructurenews.co.za/2026/07/17/volkswagen-group-africa-completes-solar-panel-project-at-component-plant/",
+    "source": "Infrastructure News",
+    "published": "2026-07-17T09:21:37+00:00",
+    "summary": "Volkswagen Group's 0.88MWp solar installation at its African component plant demonstrates OEM commitment to decarbonizing manufacturing footprints, with potential to drive supply chain resilience and attract ESG-focused capital. This signals growing renewable energy deployment in emerging manufacturing hubs, presenting mid-market solar development and PPE opportunities for infrastructure investors targeting corporate offtake partnerships.",
+    "pe_score": 5,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Corporate solar PPAs, emerging markets",
+    "fetched_at": "2026-07-19T08:16:43.498396+00:00"
   },
   {
     "id": "617d444c608b",
@@ -356,12 +356,12 @@
     "url": "https://www.windpowermonthly.com/article/1964925/bp-veteran-joins-energy-institute-new-ceo",
     "source": "Wind Power Monthly",
     "published": "2026-07-17T10:25:52+00:00",
-    "summary": "A seasoned BP executive's appointment to lead the Energy Institute signals potential shifts in UK energy policy advocacy and industry standards-setting that could affect regulatory frameworks for infrastructure investments. This leadership change may influence decarbonization priorities and asset valuation trends across European energy transition portfolios.",
+    "summary": "A BP veteran's appointment as Energy Institute CEO signals potential industry consolidation and policy influence in UK energy transition. This leadership move may indicate strategic shifts in fossil fuel majors' renewable energy positioning and could shape infrastructure investment priorities.",
     "pe_score": 5,
     "sector": "energy",
-    "country": "UK",
-    "pe_angle": "Energy transition policy influence",
-    "fetched_at": "2026-07-18T07:48:50.717985+00:00"
+    "country": "United Kingdom",
+    "pe_angle": "Energy sector leadership transition influence",
+    "fetched_at": "2026-07-19T08:16:39.274702+00:00"
   },
   {
     "id": "068ee408ab9e",
@@ -369,12 +369,12 @@
     "url": "https://constructionmanagement.co.uk/welsh-firm-fined-and-director-sentenced-after-teenage-apprentice-fatality/",
     "source": "Construction Management",
     "published": "2026-07-13T09:25:21+00:00",
-    "summary": "A Welsh property management company faced significant penalties following a teenage apprentice fatality, underscoring heightened regulatory enforcement and HSE liability exposure in UK construction operations. This incident highlights critical ESG and operational risk management requirements for infrastructure investors acquiring or managing construction-related assets in the UK.",
+    "summary": "A Welsh property management company faced regulatory penalties and director sentencing following a teenage apprentice fatality, highlighting acute H&S compliance risks in UK construction and property sectors. This underscores the operational, reputational, and legal liabilities that PE-backed infrastructure operators face without robust safety governance frameworks.",
     "pe_score": 4,
-    "sector": "energy",
+    "sector": "utilities",
     "country": "United Kingdom",
-    "pe_angle": "Construction safety compliance risk",
-    "fetched_at": "2026-07-18T07:49:53.295096+00:00"
+    "pe_angle": "Health and safety compliance risk",
+    "fetched_at": "2026-07-19T08:17:41.248565+00:00"
   },
   {
     "id": "32a75fbc4262",
@@ -382,11 +382,11 @@
     "url": "https://www.windpowermonthly.com/article/1964504/shell-sell-its-indian-renewable-energy-arm-18bn-deal",
     "source": "Wind Power Monthly",
     "published": "2026-07-14T08:24:35+00:00",
-    "summary": "Shell's $1.8bn divestiture of Sprng Energy to India's Aditya Birla Renewables signals continued portfolio rationalization by majors, creating potential acquisition opportunities in emerging renewable platforms. The transaction underscores accelerating consolidation in Asian renewables and validates valuations for similar-stage assets, relevant to European PE funds evaluating international renewable expansion strategies.",
+    "summary": "Shell's $1.8bn divestment of Indian renewable assets to Aditya Birla Renewables signals oil majors' accelerating exit from renewables, potentially freeing capital for upstream oil/gas or shareholder returns rather than energy transition. This trend may create consolidation opportunities for dedicated renewables players in emerging markets, but highlights the structural challenges incumbent energy companies face competing with pure-play renewables operators.",
     "pe_score": 4,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Asian renewables consolidation trends",
-    "fetched_at": "2026-07-18T07:49:49.908053+00:00"
+    "pe_angle": "Oil major renewable asset divestment trend",
+    "fetched_at": "2026-07-19T08:17:37.369940+00:00"
   }
 ]
