@@ -1,16 +1,16 @@
 [
   {
-    "id": "f3da0dec1788",
-    "title": "Germany’s renewables and grids reforms slammed by industry groups",
-    "url": "https://www.windpowermonthly.com/article/1966128/germanys-renewables-grids-reforms-slammed-industry-groups",
-    "source": "Wind Power Monthly",
-    "published": "2026-07-30T11:33:48+00:00",
-    "summary": "German grid and renewable energy reforms are facing significant industry pushback, creating potential regulatory risk for existing renewable assets and grid infrastructure investments. This regulatory uncertainty may present both challenges to current portfolios and acquisition opportunities as market consolidation accelerates among stressed operators.",
+    "id": "143477ec0ef1",
+    "title": "Sweden’s Alecta: Purchase multiples are the new DPI",
+    "url": "https://www.privateequityinternational.com/swedens-alecta-purchase-multiples-are-the-new-dpi/",
+    "source": "PEI Media",
+    "published": "2026-07-30T13:02:09+00:00",
+    "summary": "Alecta, Europe's largest pension fund, emphasizes disciplined entry pricing as the primary driver of value creation in infrastructure deals, signaling a shift away from traditional DPI metrics. This approach suggests institutional capital will increasingly demand lower purchase multiples and stronger operational upside, pressuring valuations across European infrastructure assets.",
     "pe_score": 8,
-    "sector": "energy",
-    "country": "Germany",
-    "pe_angle": "German energy transition regulatory risk",
-    "fetched_at": "2026-08-01T08:20:33.524350+00:00"
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "Entry pricing discipline and value creation",
+    "fetched_at": "2026-08-02T08:23:34.739526+00:00"
   },
   {
     "id": "3fee939c0f09",
@@ -18,12 +18,12 @@
     "url": "https://www.windpowermonthly.com/article/1966240/romania-maps-sites-115gw-offshore-wind",
     "source": "Wind Power Monthly",
     "published": "2026-07-31T10:22:54+00:00",
-    "summary": "Romania's approval of 11.5GW of offshore wind capacity in the Black Sea represents a significant greenfield opportunity in an underexploited European offshore market, with potential for build-to-own or development partnerships. This positions early movers to capture subsidy-backed renewable generation assets in a geography with favorable EU support and lower competitive saturation than Western European offshore markets.",
+    "summary": "Romania's approval of 11.5GW of offshore wind capacity in the Black Sea represents a significant greenfield development opportunity in an underexploited European market, with substantial potential for infrastructure fund deployment across development, construction, and long-term operational assets. This initiative aligns with EU renewable energy mandates and offers attractive risk-adjusted returns through concession-stage investments or portfolio company acquisitions.",
     "pe_score": 8,
     "sector": "energy",
     "country": "Romania",
-    "pe_angle": "Greenfield offshore wind development",
-    "fetched_at": "2026-08-01T08:20:09.962078+00:00"
+    "pe_angle": "Black Sea offshore wind development",
+    "fetched_at": "2026-08-02T08:23:19.058774+00:00"
   },
   {
     "id": "ab5af28be3dd",
@@ -31,12 +31,12 @@
     "url": "https://www.theguardian.com/business/2026/jul/27/rising-oil-prices-could-force-up-uk-interest-rates-say-economists",
     "source": "Guardian Business",
     "published": "2026-07-26T23:01:23+00:00",
-    "summary": "Rising oil prices driven by Middle East tensions could force the Bank of England to raise interest rates, increasing cost of capital for European infrastructure assets and potentially impacting refinancing schedules. This macroeconomic headwind creates both risks to leveraged portfolio companies and potential opportunities in inflation-hedged energy and utility infrastructure with long-term contracted revenues.",
+    "summary": "Oil price volatility driven by Middle East geopolitical risks could force Bank of England rate hikes, increasing refinancing costs and reducing valuations for European infrastructure assets. Rising interest rates would compress returns on both operational infrastructure portfolios and new deployment capital, while potentially creating opportunities in inflation-hedged energy infrastructure.",
     "pe_score": 7,
     "sector": "energy",
     "country": "UK",
-    "pe_angle": "Geopolitical inflation and cost of capital",
-    "fetched_at": "2026-08-01T08:21:18.268054+00:00"
+    "pe_angle": "Macroeconomic rate headwinds to returns",
+    "fetched_at": "2026-08-02T08:24:40.502580+00:00"
   },
   {
     "id": "b3343af33965",
@@ -44,12 +44,12 @@
     "url": "https://www.windpowermonthly.com/article/1965724/nordex-secures-%E2%82%AC2475-billion-facility-guarantee-projects",
     "source": "Wind Power Monthly",
     "published": "2026-07-27T09:49:53+00:00",
-    "summary": "Nordex has secured a €2.475 billion facility to backstop project financing, strengthening its balance sheet and enabling increased capacity for wind turbine installations across Europe. This financing enhancement positions the company to capture market share in the growing renewable energy infrastructure space, particularly relevant for PE investors evaluating exposure to wind energy value chains.",
+    "summary": "Nordex has secured a €2.475 billion facility to backstop project financing, strengthening its balance sheet and enabling accelerated wind turbine order fulfillment across European markets. This capital structure move enhances Nordex's competitive positioning and reduces refinancing risk, creating opportunities for PE investors to assess portfolio companies' exposure to wind OEM consolidation and supply chain dynamics.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Wind turbine manufacturer financing",
-    "fetched_at": "2026-08-01T08:21:16.482149+00:00"
+    "pe_angle": "Wind OEM project financing",
+    "fetched_at": "2026-08-02T08:24:29.179625+00:00"
   },
   {
     "id": "0b7df517fc38",
@@ -57,12 +57,12 @@
     "url": "https://www.windpowermonthly.com/article/1965738/siemens-energy-save-hundreds-millions-euros-omterra-rebrand",
     "source": "Wind Power Monthly",
     "published": "2026-07-27T09:59:37+00:00",
-    "summary": "Siemens Energy's merger of its wind operations under the Omterra brand is projected to generate hundreds of millions in annual cost savings, likely through elimination of duplicate functions and streamlined operations. This restructuring enhances operational efficiency and cash generation, potentially improving the asset's attractiveness for future infrastructure monetization or refinancing.",
+    "summary": "Siemens Energy's merger of its wind subsidiary Siemens Gamesa into Omterra is projected to unlock hundreds of millions in annual cost synergies, demonstrating significant operational efficiency gains through consolidation. This structural optimization could enhance margins and cash generation, making the combined entity more attractive for potential infrastructure fund investments or partnerships.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Wind consolidation cost synergies",
-    "fetched_at": "2026-08-01T08:21:14.902705+00:00"
+    "pe_angle": "Wind sector consolidation synergies",
+    "fetched_at": "2026-08-02T08:24:27.233652+00:00"
   },
   {
     "id": "23d60fa0f01e",
@@ -70,12 +70,12 @@
     "url": "https://www.windpowermonthly.com/article/1965852/galp-beats-rival-acquire-onshore-wind-portfolio-spain",
     "source": "Wind Power Monthly",
     "published": "2026-07-28T10:03:26+00:00",
-    "summary": "Galp's acquisition of an operational Spanish onshore wind portfolio demonstrates consolidation momentum in European renewable energy assets, where established energy companies are strategically expanding wind holdings. This deal highlights the competitive M&A environment for stabilized renewable infrastructure with contracted cash flows, a core target for PE-backed energy transition portfolios.",
+    "summary": "Galp's acquisition of an operational onshore wind portfolio in Spain demonstrates continued consolidation in European renewable energy, with strategic buyers leveraging portfolio scale to enhance cash generation and grid stability credentials. This M&A activity in mature wind assets reflects strong investor appetite for de-risked renewable infrastructure yielding stable returns across Iberia.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Spain",
     "pe_angle": "Renewable energy portfolio consolidation",
-    "fetched_at": "2026-08-01T08:21:10.700327+00:00"
+    "fetched_at": "2026-08-02T08:24:22.782826+00:00"
   },
   {
     "id": "30fb5f90c15d",
@@ -83,12 +83,12 @@
     "url": "https://constructionmanagement.co.uk/ucls-breakthrough-solar-window-generates-power-from-inside-and-out/",
     "source": "Construction Management",
     "published": "2026-07-29T07:23:58+00:00",
-    "summary": "UCL's dual-sided solar windows enable continuous power generation from building envelopes, potentially transforming retrofit and new-build markets across Europe. This technology could underpin significant value creation in building-integrated PV platforms and energy services consolidation.",
+    "summary": "UCL's dual-sided solar windows enable continuous power generation from building interiors and exteriors, potentially transforming building-integrated photovoltaics (BIPV) into a scalable revenue stream. This technology could unlock significant retrofitting opportunities across European real estate portfolios while improving grid resilience through distributed generation.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Building-integrated photovoltaic innovation",
-    "fetched_at": "2026-08-01T08:21:04.230711+00:00"
+    "pe_angle": "Building-integrated solar retrofit",
+    "fetched_at": "2026-08-02T08:24:15.590181+00:00"
   },
   {
     "id": "adacc9353a98",
@@ -96,12 +96,12 @@
     "url": "https://www.windpowermonthly.com/article/1965966/vestas-blade-breaks-german-north-sea-wind-farm",
     "source": "Wind Power Monthly",
     "published": "2026-07-29T08:30:53+00:00",
-    "summary": "A Vestas rotor blade failure at a German offshore wind farm highlights operational and warranty risk in mature offshore portfolios, with potential implications for turbine maintenance costs and asset values across European PE-backed wind funds. This incident may trigger extended inspections, warranty claims, and refinancing pressure on leveraged offshore wind platforms.",
+    "summary": "A Vestas rotor blade failure at a German offshore wind farm highlights equipment reliability risks in operating assets and potential liability exposure for wind farm operators. This incident underscores the need for rigorous maintenance protocols and supplier accountability in offshore wind portfolios, with implications for asset valuation and insurance costs.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Germany",
-    "pe_angle": "Offshore wind asset quality risk",
-    "fetched_at": "2026-08-01T08:21:02.836646+00:00"
+    "pe_angle": "Offshore wind asset integrity risk",
+    "fetched_at": "2026-08-02T08:24:14.131355+00:00"
   },
   {
     "id": "8d79148738ee",
@@ -109,12 +109,12 @@
     "url": "https://constructionmanagement.co.uk/winvics-mammoth-logistics-park-crosses-finish-line-amid-industry-accolades/",
     "source": "Construction Management",
     "published": "2026-07-29T14:04:17+00:00",
-    "summary": "Winvic has completed the Segro Logistics Park Northampton, a major UK rail-connected logistics hub that addresses structural supply chain demand and infrastructure capacity constraints. This asset class demonstrates strong risk-adjusted returns through long-term contracted tenant relationships and strategic positioning in supply chain decarbonization trends.",
+    "summary": "Winvic has completed the Segro Logistics Park Northampton, a major UK rail-connected logistics hub positioned to benefit from e-commerce growth and supply chain reshoring trends. The project's completion signals strong demand for modern logistics infrastructure and represents a significant asset for institutional capital deployment in last-mile distribution networks.",
     "pe_score": 7,
     "sector": "transport",
     "country": "United Kingdom",
-    "pe_angle": "Rail-connected logistics real estate",
-    "fetched_at": "2026-08-01T08:20:48.799563+00:00"
+    "pe_angle": "Rail-connected logistics hub development",
+    "fetched_at": "2026-08-02T08:24:01.181807+00:00"
   },
   {
     "id": "c028c7250d5c",
@@ -122,12 +122,12 @@
     "url": "https://www.privateequityinternational.com/number-crunch-the-uk-remains-private-equitys-cup-of-tea/",
     "source": "PEI Media",
     "published": "2026-07-29T14:13:21+00:00",
-    "summary": "Global macroeconomic uncertainty is redirecting capital flows toward Europe, with the UK capturing an increased share of private equity activity. This reallocation presents opportunities for European infrastructure investors to access quality UK assets amid competitive but selective deal flow.",
+    "summary": "Macroeconomic headwinds are redirecting global PE capital flows toward Europe, with the UK capturing an elevated share of transaction activity. This shift presents tactical opportunities for infrastructure investors to deploy capital in a relatively attractive risk-adjusted environment amid broader market uncertainty.",
     "pe_score": 7,
-    "sector": "energy",
+    "sector": "utilities",
     "country": "UK",
-    "pe_angle": "Capital rotation to UK infrastructure",
-    "fetched_at": "2026-08-01T08:20:47.516476+00:00"
+    "pe_angle": "UK infrastructure capital reallocation",
+    "fetched_at": "2026-08-02T08:23:59.721277+00:00"
   },
   {
     "id": "b629d04a10ef",
@@ -135,12 +135,25 @@
     "url": "https://www.theguardian.com/business/2026/jul/29/federal-reserve-interest-rates",
     "source": "Guardian Business",
     "published": "2026-07-29T21:06:08+00:00",
-    "summary": "The Fed's hawkish hold amid renewed inflation pressures and geopolitical tensions (Iran peace deal fragility) signals sustained higher-for-longer US rates, which increases refinancing costs for European infrastructure assets with dollar-denominated debt. Energy price volatility from Middle East uncertainty creates headwinds for infrastructure valuations and project IRRs across the continent, particularly for assets with long-duration cash flows.",
+    "summary": "The Fed's hawkish hold and internal dissent signal persistent inflation pressures, while geopolitical tensions (Iran peace deal fragility) are pushing energy prices higher—creating headwinds for infrastructure refinancing and operational leverage across European utility and energy assets. Rising US rates could also attract capital away from European infra yields, pressuring valuations and cost of capital for PE-backed portfolio companies.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "USD refinancing risk, energy volatility",
-    "fetched_at": "2026-08-01T08:20:44.380741+00:00"
+    "pe_angle": "US rate cycle impacts on European infra valuations",
+    "fetched_at": "2026-08-02T08:23:55.959223+00:00"
+  },
+  {
+    "id": "f3da0dec1788",
+    "title": "Germany’s renewables and grids reforms slammed by industry groups",
+    "url": "https://www.windpowermonthly.com/article/1966128/germanys-renewables-grids-reforms-slammed-industry-groups",
+    "source": "Wind Power Monthly",
+    "published": "2026-07-30T11:33:48+00:00",
+    "summary": "Germany's grid and renewables management reforms face industry pushback citing job and transition risks, potentially creating regulatory uncertainty for existing wind/solar assets and delaying infrastructure consolidation opportunities. This signals implementation headwinds that could impact valuations of German renewable energy platforms and grid modernization projects in near-term exits or add-on acquisitions.",
+    "pe_score": 7,
+    "sector": "energy",
+    "country": "Germany",
+    "pe_angle": "German renewables regulatory risk",
+    "fetched_at": "2026-08-02T08:23:45.273852+00:00"
   },
   {
     "id": "1ce78541f1dd",
@@ -148,25 +161,12 @@
     "url": "https://www.privateequityinternational.com/side-letter-cvcs-biggest-flagship-yet/",
     "source": "PEI Media",
     "published": "2026-07-30T11:38:25+00:00",
-    "summary": "CVC is preparing a substantial flagship fund raise that could set records for the firm, signaling continued strong LP appetite for large-scale infrastructure deployment despite macro headwinds. Concurrent realizations by Tikehau and GTCR's focus on unlocking PE-held assets suggest robust exit opportunities and potential for compressed valuation multiples to ease portfolio transitions.",
+    "summary": "CVC is preparing a substantial new flagship fund that could exceed the scale of previous vehicles, signaling continued institutional dry powder deployment in infrastructure. The article also highlights portfolio exit activity and competitive fund-raising dynamics, suggesting active market conditions for infrastructure PE exits and capital recycling.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Large-cap fund formation and exit timing",
-    "fetched_at": "2026-08-01T08:20:31.744815+00:00"
-  },
-  {
-    "id": "143477ec0ef1",
-    "title": "Sweden’s Alecta: Purchase multiples are the new DPI",
-    "url": "https://www.privateequityinternational.com/swedens-alecta-purchase-multiples-are-the-new-dpi/",
-    "source": "PEI Media",
-    "published": "2026-07-30T13:02:09+00:00",
-    "summary": "Alecta's head of alternatives emphasizes that disciplined entry pricing is critical to PE value creation, suggesting a shift away from traditional DPI metrics as performance benchmarks. This reflects the current market environment where purchase multiples directly correlate with ultimate returns, particularly relevant for infrastructure investors competing in tighter markets.",
-    "pe_score": 7,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Entry pricing discipline and value creation",
-    "fetched_at": "2026-08-01T08:20:24.638606+00:00"
+    "pe_angle": "Mega-fund infrastructure capital deployment",
+    "fetched_at": "2026-08-02T08:23:43.526664+00:00"
   },
   {
     "id": "6849c314e254",
@@ -174,12 +174,12 @@
     "url": "https://nordsip.com/2026/07/31/summer-rules-the-eu-regulation-catch-up/",
     "source": "NordSIP",
     "published": "2026-07-31T09:26:18+00:00",
-    "summary": "EU sustainability regulation tightened across banking, corporate reporting, and ESG ratings in July 2026, increasing compliance costs and disclosure requirements for portfolio companies. Infrastructure assets will face stricter environmental reporting standards and potential collateral/financing impacts, affecting deal structuring and refinancing timelines.",
+    "summary": "EU sustainability regulation tightened across banking disclosures, central-bank collateral frameworks, and ESG ratings in July 2026, increasing compliance costs and reporting requirements for infrastructure portfolio companies. These regulatory changes will likely compress valuations for non-compliant assets while creating M&A opportunities for well-positioned, ESG-aligned infrastructure platforms.",
     "pe_score": 7,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "ESG compliance and regulatory risk",
-    "fetched_at": "2026-08-01T08:20:15.708258+00:00"
+    "pe_angle": "ESG compliance regulatory tailwinds",
+    "fetched_at": "2026-08-02T08:23:24.781397+00:00"
   },
   {
     "id": "75c6c57bd30d",
@@ -187,12 +187,12 @@
     "url": "https://nordsip.com/2026/07/31/another-us-manager-loses-mandate-after-climate-retreat/",
     "source": "NordSIP",
     "published": "2026-07-31T10:12:39+00:00",
-    "summary": "European institutional investors are systematically divesting from US asset managers perceived as weakening on climate commitments, creating reputational and capital access risks for US-headquartered PE competitors. This trend strengthens the competitive position of European infrastructure funds that maintain robust ESG/climate mandates and could reshape capital allocation flows toward EU-domiciled managers.",
+    "summary": "European institutional investors are systematically divesting from US asset managers perceived as weakening on climate commitments, creating manager selection risk for cross-Atlantic infrastructure fund-raising. This trend signals strengthening ESG mandates among Nordic and European LPs that could reshape capital flows and valuation multiples in the infrastructure PE market.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Climate mandate impact on manager selection",
-    "fetched_at": "2026-08-01T08:20:11.967156+00:00"
+    "pe_angle": "LP climate mandates reshaping manager selection",
+    "fetched_at": "2026-08-02T08:23:21.793182+00:00"
   },
   {
     "id": "f75000ce6250",
@@ -200,12 +200,12 @@
     "url": "https://www.privateequityinternational.com/family-office-greenbear-reducing-pe-exposure-favours-smas/",
     "source": "PEI Media",
     "published": "2026-07-28T14:14:14+00:00",
-    "summary": "A significant family office is shifting capital allocation away from private equity funds toward separately managed accounts, citing superior cost efficiency and disappointing PE returns. This trend could pressure European infrastructure PE funds to justify fees and returns, particularly among established LPs managing large portfolios.",
+    "summary": "A major family office is shifting capital away from traditional PE funds toward separately managed accounts, citing cost efficiency and underwhelming PE returns. This trend signals potential LP capital flight from PE vehicles and suggests investors are increasingly scrutinizing fee structures and performance in the current market environment.",
     "pe_score": 6,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "LP capital reallocation pressure",
-    "fetched_at": "2026-08-01T08:21:09.162543+00:00"
+    "pe_angle": "LP capital reallocation away from PE",
+    "fetched_at": "2026-08-02T08:24:20.993362+00:00"
   },
   {
     "id": "aba922cdb4bd",
@@ -213,25 +213,12 @@
     "url": "https://www.windpowermonthly.com/article/1965980/wreckage-300-year-old-dutch-ship-found-during-offshore-wind-cable-laying",
     "source": "Wind Power Monthly",
     "published": "2026-07-29T09:22:46+00:00",
-    "summary": "Archaeological discoveries during offshore wind infrastructure development can cause project delays and cost overruns, as evidenced by this 300-year-old wreck discovery in German North Sea operations. Investors should factor heritage compliance risks and remediation timelines into underwriting models for European offshore renewable energy projects.",
+    "summary": "Archaeological discoveries during offshore wind infrastructure development can trigger project delays, cost escalations, and regulatory complexities that materially impact IRR and timeline certainty. This incident underscores hidden execution risks in North Sea wind-to-grid projects that PE sponsors must factor into due diligence and contingency planning.",
     "pe_score": 6,
     "sector": "energy",
     "country": "Germany",
-    "pe_angle": "Offshore wind execution risk mitigation",
-    "fetched_at": "2026-08-01T08:21:01.246706+00:00"
-  },
-  {
-    "id": "5bd8ef60c68c",
-    "title": "What The Temporary Withholding Of Equitable Shares Actually Teaches Us About Municipalities",
-    "url": "https://infrastructurenews.co.za/2026/07/29/what-the-temporary-withholding-of-equitable-shares-actually-teaches-us-about-municipalities/",
-    "source": "Infrastructure News",
-    "published": "2026-07-29T10:24:45+00:00",
-    "summary": "Municipal finance stress, particularly equitable share withholding mechanisms, reveals systemic funding gaps and service delivery deficiencies across local governments. This creates both refinancing risks for existing municipal infrastructure assets and acquisition opportunities for operators willing to improve collection efficiency and financial discipline.",
-    "pe_score": 6,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Municipal finance restructuring",
-    "fetched_at": "2026-08-01T08:20:53.673096+00:00"
+    "pe_angle": "Offshore wind execution risks",
+    "fetched_at": "2026-08-02T08:24:12.644663+00:00"
   },
   {
     "id": "91a1e5897244",
@@ -239,142 +226,12 @@
     "url": "https://constructionmanagement.co.uk/heathrow-adopts-geospatial-platform-for-operational-resilience/",
     "source": "Construction Management",
     "published": "2026-07-29T11:20:39+00:00",
-    "summary": "Heathrow's adoption of Esri's geospatial platform demonstrates how critical infrastructure operators are digitizing asset management to improve operational efficiency and resilience—a capability increasingly valued in infrastructure valuations and operational benchmarking. This technology deployment reflects broader industry trends toward real-time monitoring and data-driven decision-making that can reduce downtime, optimize capex deployment, and enhance risk management in large-scale transport infrastructure.",
+    "summary": "Heathrow's adoption of Esri's geospatial platform demonstrates how critical infrastructure operators are digitizing asset management and operational decision-making, a trend that creates value through improved efficiency and reduced downtime. This signals strong demand for enterprise software and digital infrastructure solutions among large-cap transport assets, presenting acquisition and operational improvement opportunities for PE investors in the infrastructure tech space.",
     "pe_score": 6,
     "sector": "transport",
     "country": "United Kingdom",
-    "pe_angle": "Airport digital infrastructure optimization",
-    "fetched_at": "2026-08-01T08:20:50.830443+00:00"
-  },
-  {
-    "id": "9357ea389cb7",
-    "title": "Rayner remains committed to the 1.5 million homes target. Is that realistic?",
-    "url": "https://constructionmanagement.co.uk/angela-rayner-housebuilding-1-5-million-homes-target/",
-    "source": "Construction Management",
-    "published": "2026-07-30T10:12:06+00:00",
-    "summary": "The UK government's 1.5 million homes target faces significant execution risks that could impact residential infrastructure development opportunities and construction-related asset valuations. Policy delivery challenges and planning barriers may create selective opportunities for PE investors in modular housing, land platforms, and construction services supporting this agenda.",
-    "pe_score": 6,
-    "sector": "utilities",
-    "country": "United Kingdom",
-    "pe_angle": "UK residential infrastructure development",
-    "fetched_at": "2026-08-01T08:20:35.478739+00:00"
-  },
-  {
-    "id": "d11600dd4404",
-    "title": "Bank of England holds interest rates at 3.75% as inflation fears mount",
-    "url": "https://www.theguardian.com/business/2026/jul/30/bank-of-england-holds-interest-rates-inflation-fears-mount",
-    "source": "Guardian Business",
-    "published": "2026-07-30T15:47:35+00:00",
-    "summary": "The BoE's hawkish hold at 3.75% amid geopolitical risks signals extended high-rate environment in UK, pressuring infrastructure asset valuations and refinancing costs. Oil price volatility near $90/barrel creates both headwinds for transport/logistics assets and tailwinds for energy infrastructure with inflation-linked contracts.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "UK",
-    "pe_angle": "Inflation hedges amid rate persistence",
-    "fetched_at": "2026-08-01T08:20:23.100781+00:00"
-  },
-  {
-    "id": "a202f41a4c16",
-    "title": "Blue Owl reaches $10.6bn for latest GP stakes fund",
-    "url": "https://www.privateequityinternational.com/blue-owl-reaches-10-6bn-for-latest-gp-stakes-fund/",
-    "source": "PEI Media",
-    "published": "2026-07-30T16:14:59+00:00",
-    "summary": "Blue Owl's $10.6bn GP stakes fund closing signals continued institutional appetite for secondary GP-led deals, a trend reshaping European infrastructure fund dynamics as GPs seek liquidity without full exits. The repeated timeline extensions suggest market headwinds in deploying capital at target valuations, relevant for European infra PE firms evaluating GP stake opportunities and fund timing strategies.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Secondary GP stakes fund consolidation",
-    "fetched_at": "2026-08-01T08:20:21.166797+00:00"
-  },
-  {
-    "id": "28a61fa14cf1",
-    "title": "DWS And VOCMA Engage Water Users On Proposed 2027/2028 Raw Water Tariffs Through Public Consultation",
-    "url": "https://infrastructurenews.co.za/2026/07/31/dws-and-vocma-engage-water-users-on-proposed-2027-2028-raw-water-tariffs-through-public-consultation/",
-    "source": "Infrastructure News",
-    "published": "2026-07-31T09:33:51+00:00",
-    "summary": "DWS and VOCMA's public consultation on 2027/28 raw water tariffs signals potential regulatory rate adjustments in the water utility sector, which could impact operational margins and cash flow visibility for existing water infrastructure assets. The emphasis on transparency and stakeholder engagement suggests a measured regulatory approach, though tariff outcomes remain uncertain and could affect valuations of water utility investments in the region.",
-    "pe_score": 6,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Water tariff regulatory risk management",
-    "fetched_at": "2026-08-01T08:20:13.632674+00:00"
-  },
-  {
-    "id": "00b8b4dacbc7",
-    "title": "AtkinsRéalis recommits to digital contract management",
-    "url": "https://constructionmanagement.co.uk/atkinsrealis-recommits-to-digital-contract-management/",
-    "source": "Construction Management",
-    "published": "2026-07-30T12:13:04+00:00",
-    "summary": "AtkinsRéalis, a major engineering/construction player, has renewed its Sypro digital contract management platform for five years, signaling commitment to operational digitalization and software-enabled efficiency gains. This reflects broader infrastructure sector trends toward software integration and managed services, relevant for PE firms evaluating digital transformation value-add in portfolio companies.",
-    "pe_score": 5,
-    "sector": "transport",
-    "country": "Europe",
-    "pe_angle": "Digital transformation in engineering services",
-    "fetched_at": "2026-08-01T08:20:27.927245+00:00"
-  },
-  {
-    "id": "1b4b3cb60134",
-    "title": "Japan’s Government Pension to Assess Asset Managers’ Stewardship",
-    "url": "https://nordsip.com/2026/07/31/japans-government-pension-to-assess-asset-managers-stewardship/",
-    "source": "NordSIP",
-    "published": "2026-07-31T13:24:06+00:00",
-    "summary": "GPIF's enhanced stewardship assessment of external asset managers signals increased ESG scrutiny and governance expectations from the world's largest pension fund, potentially affecting capital allocation to European infrastructure assets. This development could create competitive pressure on PE firms to demonstrate robust stewardship practices and may influence valuations and exit multiples in infrastructure deals backed by institutional capital.",
-    "pe_score": 5,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Institutional capital governance standards",
-    "fetched_at": "2026-08-01T08:20:04.478807+00:00"
-  },
-  {
-    "id": "765ad8deb509",
-    "title": "SpaceX Falls Below IPO Price as Nordic Abstainers Stay Ahead",
-    "url": "https://nordsip.com/2026/07/31/spacex-falls-below-ipo-price-as-nordic-abstainers-stay-ahead/",
-    "source": "NordSIP",
-    "published": "2026-07-31T13:57:38+00:00",
-    "summary": "SpaceX's post-IPO underperformance seven weeks after its record listing suggests market skepticism about space infrastructure valuations, a relevant signal for PE firms evaluating satellite and launch service assets. Nordic institutional restraint from this mega-deal may reflect regional capital allocation preferences toward proven infrastructure sectors, potentially creating opportunities in overlooked European space-tech and telecom infrastructure plays.",
-    "pe_score": 5,
-    "sector": "transport",
-    "country": "Europe",
-    "pe_angle": "Space infrastructure IPO market discipline",
-    "fetched_at": "2026-08-01T08:20:02.423208+00:00"
-  },
-  {
-    "id": "d5672710f74f",
-    "title": "The Resilient Pivot: Why South Africa’s Small Towns Are Returning To Nature-Based Wastewater Treatment",
-    "url": "https://infrastructurenews.co.za/2026/07/29/the-resilient-pivot-why-south-africas-small-towns-are-returning-to-nature-based-wastewater-treatment/",
-    "source": "Infrastructure News",
-    "published": "2026-07-29T03:10:51+00:00",
-    "summary": "South African small towns are adopting nature-based wastewater treatment solutions, exemplified by BVi Consulting's work on Magareng WWTW relocation in Warrenton, presenting a lower-capex, lower-opex alternative to conventional treatment infrastructure. This trend offers European PE investors potential exposure to emerging-market water infrastructure consolidation and ESG-aligned treatment technologies with replicable scaling across similar markets.",
-    "pe_score": 4,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Nature-based water treatment tech",
-    "fetched_at": "2026-08-01T08:21:07.487321+00:00"
-  },
-  {
-    "id": "7ca8ab4c3ec8",
-    "title": "Standard Bank Leads US$175 Million Sustainable Finance Deal for Wilderness Holdings",
-    "url": "https://infrastructurenews.co.za/2026/07/29/standard-bank-leads-us175-million-sustainable-finance-deal-for-wilderness-holdings/",
-    "source": "Infrastructure News",
-    "published": "2026-07-29T03:32:23+00:00",
-    "summary": "Standard Bank has led a US$175 million sustainable financing syndicate for Wilderness Holdings, demonstrating significant capital mobilization in African infrastructure under ESG frameworks. This deal highlights growing cross-border sustainable finance opportunities and potential co-investment vehicles for European PE funds seeking ESG-aligned exposure in emerging markets.",
-    "pe_score": 4,
-    "sector": "utilities",
-    "country": "Africa",
-    "pe_angle": "African sustainable infrastructure financing",
-    "fetched_at": "2026-08-01T08:21:05.590489+00:00"
-  },
-  {
-    "id": "c1abd3ae4f1c",
-    "title": "President Ramaphosa Unveils National Water Action Plan To Reform Municipal Water Services",
-    "url": "https://infrastructurenews.co.za/2026/07/29/president-ramaphosa-unveils-national-water-action-plan-to-reform-municipal-water-services/",
-    "source": "Infrastructure News",
-    "published": "2026-07-29T11:14:12+00:00",
-    "summary": "South Africa's National Water Action Plan signals government commitment to municipal water service reform, creating potential infrastructure upgrade and operational improvement opportunities for international investors. This initiative may unlock PPP and concession models for water utilities, though execution risks and municipal capacity constraints remain significant considerations for deal structuring.",
-    "pe_score": 4,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Emerging market water infrastructure reform",
-    "fetched_at": "2026-08-01T08:20:52.282701+00:00"
+    "pe_angle": "Digital asset management transformation",
+    "fetched_at": "2026-08-02T08:24:03.259356+00:00"
   },
   {
     "id": "78038c7e28e8",
@@ -382,11 +239,154 @@
     "url": "https://www.privateequityinternational.com/tjc-eyes-november-final-close-for-seventh-flagship/",
     "source": "PEI Media",
     "published": "2026-07-29T20:46:57+00:00",
-    "summary": "The Jordan Company is targeting a November close for its seventh flagship fund with a $2bn hard-cap above its target, signaling strong LP demand for large-scale infrastructure commitments. This fund sizing reflects the robust capital availability for established infra managers, though geographic focus details and sector specifics require further analysis to assess European relevance.",
-    "pe_score": 4,
+    "summary": "TJC's Resolute Fund VII is targeting a November close with a $2bn larger hard-cap than its $8bn target, signaling strong LP demand for infrastructure assets in the current market. This oversubscription suggests robust appetite for large-check infrastructure commitments despite macro headwinds.",
+    "pe_score": 6,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Large-cap infra fund deployment",
-    "fetched_at": "2026-08-01T08:20:46.068055+00:00"
+    "pe_angle": "Large-cap infra fund fundraising",
+    "fetched_at": "2026-08-02T08:23:58.144656+00:00"
+  },
+  {
+    "id": "d11600dd4404",
+    "title": "Bank of England holds interest rates at 3.75% as inflation fears mount",
+    "url": "https://www.theguardian.com/business/2026/jul/30/bank-of-england-holds-interest-rates-inflation-fears-mount",
+    "source": "Guardian Business",
+    "published": "2026-07-30T15:47:35+00:00",
+    "summary": "UK interest rates remain at 3.75% amid geopolitical tensions, with the Bank of England warning that escalating Middle East conflict could push inflation above 4% and necessitate further rate hikes. This inflation pressure and elevated oil prices near $90/barrel create headwinds for infrastructure assets with inflation-linked revenues while potentially benefiting energy transition investments.",
+    "pe_score": 6,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Inflation impact on infra valuations",
+    "fetched_at": "2026-08-02T08:23:33.135560+00:00"
+  },
+  {
+    "id": "a202f41a4c16",
+    "title": "Blue Owl reaches $10.6bn for latest GP stakes fund",
+    "url": "https://www.privateequityinternational.com/blue-owl-reaches-10-6bn-for-latest-gp-stakes-fund/",
+    "source": "PEI Media",
+    "published": "2026-07-30T16:14:59+00:00",
+    "summary": "Blue Owl's $10.6bn GP stakes fund demonstrates continued institutional appetite for secondary private equity investments, validating the GP stakes strategy as a core asset class. For European infra PE investors, this signals robust dry powder availability and potential competition for GP stake deals in the coming years.",
+    "pe_score": 6,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Secondary GP stakes fundraising trends",
+    "fetched_at": "2026-08-02T08:23:30.241454+00:00"
+  },
+  {
+    "id": "28a61fa14cf1",
+    "title": "DWS And VOCMA Engage Water Users On Proposed 2027/2028 Raw Water Tariffs Through Public Consultation",
+    "url": "https://infrastructurenews.co.za/2026/07/31/dws-and-vocma-engage-water-users-on-proposed-2027-2028-raw-water-tariffs-through-public-consultation/",
+    "source": "Infrastructure News",
+    "published": "2026-07-31T09:33:51+00:00",
+    "summary": "DWS and VOCMA's public consultation on 2027/28 raw water tariffs signals regulatory engagement and potential rate increases for water infrastructure assets. This forward-looking tariff process reflects the sector's shift toward sustainability-driven pricing mechanisms, which could enhance cash flow visibility for water utility investors.",
+    "pe_score": 6,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "Water tariff regulation and pricing",
+    "fetched_at": "2026-08-02T08:23:23.286700+00:00"
+  },
+  {
+    "id": "765ad8deb509",
+    "title": "SpaceX Falls Below IPO Price as Nordic Abstainers Stay Ahead",
+    "url": "https://nordsip.com/2026/07/31/spacex-falls-below-ipo-price-as-nordic-abstainers-stay-ahead/",
+    "source": "NordSIP",
+    "published": "2026-07-31T13:57:38+00:00",
+    "summary": "SpaceX's post-IPO underperformance seven weeks after its record listing suggests market skepticism about space infrastructure valuations, relevant for PE firms evaluating satellite and launch service investments. Nordic institutions' abstention from the deal provides a cautionary signal on institutional appetite for high-growth, capital-intensive space assets.",
+    "pe_score": 6,
+    "sector": "transport",
+    "country": "Europe",
+    "pe_angle": "Space infrastructure valuation risk",
+    "fetched_at": "2026-08-02T08:23:11.722332+00:00"
+  },
+  {
+    "id": "d5672710f74f",
+    "title": "The Resilient Pivot: Why South Africa’s Small Towns Are Returning To Nature-Based Wastewater Treatment",
+    "url": "https://infrastructurenews.co.za/2026/07/29/the-resilient-pivot-why-south-africas-small-towns-are-returning-to-nature-based-wastewater-treatment/",
+    "source": "Infrastructure News",
+    "published": "2026-07-29T03:10:51+00:00",
+    "summary": "South African small towns are adopting nature-based wastewater treatment solutions, as exemplified by BVi Consulting's redesign of Magareng WWTW in Warrenton, presenting a scalable, low-capex infrastructure model for emerging markets. This trend signals growing demand for sustainable, decentralized water treatment technologies that European PE funds could replicate across underserved regions in Africa and Eastern Europe.",
+    "pe_score": 5,
+    "sector": "utilities",
+    "country": "South Africa",
+    "pe_angle": "Nature-based wastewater treatment expansion",
+    "fetched_at": "2026-08-02T08:24:18.750680+00:00"
+  },
+  {
+    "id": "9357ea389cb7",
+    "title": "Rayner remains committed to the 1.5 million homes target. Is that realistic?",
+    "url": "https://constructionmanagement.co.uk/angela-rayner-housebuilding-1-5-million-homes-target/",
+    "source": "Construction Management",
+    "published": "2026-07-30T10:12:06+00:00",
+    "summary": "The UK government's 1.5 million homes target faces significant execution risks that could create opportunities for infrastructure developers and operators managing housing-adjacent utilities and transport. Regulatory barriers, land constraints, and construction capacity limitations may reshape the competitive landscape and influence valuations of residential-linked infrastructure assets.",
+    "pe_score": 5,
+    "sector": "utilities",
+    "country": "United Kingdom",
+    "pe_angle": "UK residential infrastructure demand",
+    "fetched_at": "2026-08-02T08:23:46.872072+00:00"
+  },
+  {
+    "id": "00b8b4dacbc7",
+    "title": "AtkinsRéalis recommits to digital contract management",
+    "url": "https://constructionmanagement.co.uk/atkinsrealis-recommits-to-digital-contract-management/",
+    "source": "Construction Management",
+    "published": "2026-07-30T12:13:04+00:00",
+    "summary": "AtkinsRéalis, a major engineering services player, has renewed its five-year contract with Sypro for digital contract management, signaling sustained investment in operational efficiency and digitalization across its infrastructure project portfolio. This commitment reflects the industry trend toward software-enabled project delivery, which typically improves margins and reduces delivery risk—key value drivers for infrastructure PE investors in engineering and construction services.",
+    "pe_score": 5,
+    "sector": "transport",
+    "country": "Europe",
+    "pe_angle": "Engineering services digitalization",
+    "fetched_at": "2026-08-02T08:23:41.782919+00:00"
+  },
+  {
+    "id": "1b4b3cb60134",
+    "title": "Japan’s Government Pension to Assess Asset Managers’ Stewardship",
+    "url": "https://nordsip.com/2026/07/31/japans-government-pension-to-assess-asset-managers-stewardship/",
+    "source": "NordSIP",
+    "published": "2026-07-31T13:24:06+00:00",
+    "summary": "GPIF's enhanced stewardship assessment of external asset managers signals stricter ESG and governance standards that will cascade through global infrastructure allocations, potentially affecting PE fund valuations and exit multiples. This development reinforces the institutional investor trend toward impact-linked returns, creating opportunities for PE managers demonstrating robust stewardship practices in European infrastructure assets.",
+    "pe_score": 5,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "Institutional ESG governance scrutiny",
+    "fetched_at": "2026-08-02T08:23:13.560497+00:00"
+  },
+  {
+    "id": "5bd8ef60c68c",
+    "title": "What The Temporary Withholding Of Equitable Shares Actually Teaches Us About Municipalities",
+    "url": "https://infrastructurenews.co.za/2026/07/29/what-the-temporary-withholding-of-equitable-shares-actually-teaches-us-about-municipalities/",
+    "source": "Infrastructure News",
+    "published": "2026-07-29T10:24:45+00:00",
+    "summary": "Municipal equitable share withholding in South Africa reveals systemic budget and debt crises affecting local infrastructure delivery—a cautionary case study for European PE investors evaluating municipal concessions or PPPs. Such fiscal stress patterns may signal heightened counterparty risk and payment default exposure in emerging-market infrastructure allocations.",
+    "pe_score": 4,
+    "sector": "utilities",
+    "country": "South Africa",
+    "pe_angle": "Municipal fiscal stress and payment risk",
+    "fetched_at": "2026-08-02T08:24:10.939963+00:00"
+  },
+  {
+    "id": "25de45754a41",
+    "title": "Old school site in Telford to get 86 new homes for social rent",
+    "url": "https://constructionmanagement.co.uk/old-school-site-in-telford-to-get-86-new-homes-for-social-rent/",
+    "source": "Construction Management",
+    "published": "2026-07-30T06:38:18+00:00",
+    "summary": "A £2m West Midlands Mayor investment in converting a former school site into 86 social rent homes signals continued UK government commitment to affordable housing infrastructure, creating potential opportunities for PE-backed residential development platforms. This reflects broader European trends toward mixed-use regeneration and social housing as defensive, long-duration infrastructure assets with stable, government-backed returns.",
+    "pe_score": 4,
+    "sector": "utilities",
+    "country": "United Kingdom",
+    "pe_angle": "Social housing regeneration development",
+    "fetched_at": "2026-08-02T08:23:53.650788+00:00"
+  },
+  {
+    "id": "838f58add54e",
+    "title": "Rail’s Revival Can Move More Than Trains",
+    "url": "https://infrastructurenews.co.za/2026/07/30/rails-revival-can-move-more-than-trains/",
+    "source": "Infrastructure News",
+    "published": "2026-07-30T06:55:14+00:00",
+    "summary": "South Africa's rail sector presents a bifurcated investment opportunity with distinct market dynamics that could reshape regional transport infrastructure and unlock value across freight and passenger segments. European PE funds may find acquisition or operational improvement angles in either segment, particularly if privatization or concession models emerge.",
+    "pe_score": 4,
+    "sector": "transport",
+    "country": "Europe",
+    "pe_angle": "Emerging market rail infrastructure revival",
+    "fetched_at": "2026-08-02T08:23:52.019163+00:00"
   }
 ]
