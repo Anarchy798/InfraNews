@@ -1,42 +1,16 @@
 [
   {
-    "id": "9c3f4cbd2ac3",
-    "title": "Germany’s renewables and grids reforms ‘unconstitutional’ – law firm",
-    "url": "https://www.windpowermonthly.com/article/1967196/germanys-renewables-grids-reforms-unconstitutional-%E2%80%93-law-firm",
-    "source": "Wind Power Monthly",
-    "published": "2026-08-12T10:05:49+00:00",
-    "summary": "A German wind energy association has challenged the federal government's grid and renewables reform plans as unconstitutional, creating legal uncertainty that could delay or reshape major energy infrastructure investments. This constitutional risk threatens the execution timeline and regulatory framework for renewable energy projects and grid modernization across Germany's €billions in planned infrastructure spending.",
+    "id": "f0868eb10bb4",
+    "title": "Blurred lines: How fund finance is reinventing the sub-line",
+    "url": "https://www.privateequityinternational.com/blurred-lines-how-fund-finance-is-reinventing-the-sub-line/",
+    "source": "PEI Media",
+    "published": "2026-08-17T09:47:35+00:00",
+    "summary": "Fund finance structures are evolving to blend sub-line mechanics with parallel vehicles, enabling PE sponsors to extract additional leverage from uncalled commitments as capital deployment becomes increasingly constrained. This innovation directly impacts portfolio company financing strategies and LP return profiles for European infrastructure funds navigating tighter lending conditions.",
     "pe_score": 8,
-    "sector": "energy",
-    "country": "Germany",
-    "pe_angle": "Regulatory risk to German renewables rollout",
-    "fetched_at": "2026-08-19T06:42:34.835489+00:00"
-  },
-  {
-    "id": "024728183a57",
-    "title": "Updated: Ørsted profits hit by US impairments in second quarter",
-    "url": "https://www.windpowermonthly.com/article/1967269/updated-orsted-profits-hit-us-impairments-second-quarter",
-    "source": "Wind Power Monthly",
-    "published": "2026-08-13T06:24:31+00:00",
-    "summary": "Ørsted's €161m US offshore wind impairment signals refinancing risk and valuation pressure across high-leverage renewable projects in rising rate environments. This highlights the vulnerability of long-duration green infrastructure assets to interest rate shocks, a critical consideration for European PE portfolios with US exposure.",
-    "pe_score": 8,
-    "sector": "energy",
+    "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Offshore wind refinancing risk",
-    "fetched_at": "2026-08-19T06:42:33.106024+00:00"
-  },
-  {
-    "id": "67b371be246f",
-    "title": "Wind sector threatens legal action over 'disastrous' plans in Germany",
-    "url": "https://www.windpowermonthly.com/article/1967661/wind-sector-threatens-legal-action-disastrous-plans-germany",
-    "source": "Wind Power Monthly",
-    "published": "2026-08-18T09:47:19+00:00",
-    "summary": "German wind sector is escalating opposition to federal grid and renewable regulations reform, creating legal and political uncertainty for existing and planned wind infrastructure investments. This threatens project timelines, regulatory clarity, and asset valuations for PE investors with German renewable energy exposure.",
-    "pe_score": 8,
-    "sector": "energy",
-    "country": "Germany",
-    "pe_angle": "Regulatory risk in German renewables",
-    "fetched_at": "2026-08-19T06:41:44.739627+00:00"
+    "pe_angle": "Fund finance structuring innovation",
+    "fetched_at": "2026-08-20T06:44:05.010801+00:00"
   },
   {
     "id": "47e269936d22",
@@ -44,12 +18,38 @@
     "url": "https://www.theguardian.com/business/2026/aug/18/governments-borrowing-costs-us-iran-bond-yields-trump",
     "source": "Guardian Business",
     "published": "2026-08-18T10:54:43+00:00",
-    "summary": "Rising government bond yields across major economies signal increased financing costs that will compress infrastructure project returns and refinancing availability across Europe. Geopolitical instability and inflation concerns are creating a challenging capital markets environment for leveraged infrastructure deals in 2026.",
+    "summary": "Rising government bond yields across major economies signal higher refinancing costs for infrastructure projects, pressuring returns on leveraged deals. The geopolitical escalation and Strait of Hormuz closure threaten energy inflation and project timelines, particularly for European utilities dependent on stable commodity pricing.",
     "pe_score": 8,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Rising cost of capital pressure",
-    "fetched_at": "2026-08-19T06:41:41.392435+00:00"
+    "pe_angle": "Rising rates, energy inflation hedging",
+    "fetched_at": "2026-08-20T06:43:44.074816+00:00"
+  },
+  {
+    "id": "170e96d5b91c",
+    "title": "Analysis: Spanish wind repowering gets battery boost",
+    "url": "https://www.windpowermonthly.com/article/1967796/analysis-spanish-wind-repowering-gets-battery-boost",
+    "source": "Wind Power Monthly",
+    "published": "2026-08-19T10:03:03+00:00",
+    "summary": "Spain's €500M Repoten 2 subsidy programme targets wind farm repowering, creating potential acquisition and consolidation opportunities for PE investors in the mature Spanish renewables market. The initiative addresses aging turbine portfolios while supporting operational performance improvements, offering attractive entry points for platforms seeking cash-generative infrastructure assets.",
+    "pe_score": 8,
+    "sector": "energy",
+    "country": "Spain",
+    "pe_angle": "Wind repowering and battery integration",
+    "fetched_at": "2026-08-20T06:43:30.583667+00:00"
+  },
+  {
+    "id": "e8d859469350",
+    "title": "German union IG Metall warns wind and grid proposals put jobs at risk",
+    "url": "https://www.windpowermonthly.com/article/1967803/german-union-ig-metall-warns-wind-grid-proposals-put-jobs-risk",
+    "source": "Wind Power Monthly",
+    "published": "2026-08-19T10:21:58+00:00",
+    "summary": "German grid regulation changes risk tens of thousands of renewable energy jobs, signaling potential policy headwinds for wind and solar infrastructure investments in Europe's largest economy. This regulatory uncertainty could impact asset valuations, operating costs, and project viability for PE-backed renewable energy platforms and grid operators.",
+    "pe_score": 8,
+    "sector": "energy",
+    "country": "Germany",
+    "pe_angle": "Renewable energy regulatory risk",
+    "fetched_at": "2026-08-20T06:43:27.546025+00:00"
   },
   {
     "id": "1e55dd1bd3f5",
@@ -57,12 +57,12 @@
     "url": "https://www.windpowermonthly.com/article/1967284/probe-launched-wind-farm-power-line-blamed-wildfire",
     "source": "Wind Power Monthly",
     "published": "2026-08-13T09:14:49+00:00",
-    "summary": "A Greek fire service investigation into wind farm power line failures linked to wildfires creates regulatory and liability risks for European wind assets. This signals potential tightening of grid connection standards and increased operational compliance costs across Southern European wind portfolios.",
+    "summary": "Greek authorities are investigating criminal liability related to wind farm power lines following a wildfire, creating potential regulatory and operational risks for renewable energy assets. This development signals heightened scrutiny of grid infrastructure safety standards and could drive increased capex requirements for compliance and liability mitigation across European wind portfolios.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Greece",
-    "pe_angle": "Wind infrastructure regulatory & liability risk",
-    "fetched_at": "2026-08-19T06:42:30.980266+00:00"
+    "pe_angle": "Wind farm liability and grid infrastructure risk",
+    "fetched_at": "2026-08-20T06:44:21.033948+00:00"
   },
   {
     "id": "ffacadeba3fd",
@@ -70,25 +70,12 @@
     "url": "https://www.windpowermonthly.com/article/1967301/rwes-offshore-wind-earnings-soar-higher-generation",
     "source": "Wind Power Monthly",
     "published": "2026-08-13T09:57:31+00:00",
-    "summary": "RWE's offshore wind earnings surge in H1 2026 driven by favorable wind conditions across Europe, signaling strong operational performance and cash generation in the sector. This demonstrates the attractive risk-adjusted returns available in European offshore wind assets, particularly relevant for PE investors seeking stable, long-duration infrastructure investments with improving supply-side tailwinds.",
+    "summary": "RWE's H1 2026 offshore wind earnings growth, driven by improved European wind conditions, demonstrates the operational upside in mature offshore portfolios during favorable resource years. This validates the cash generation potential of established offshore assets and suggests refinancing or dividend recapitalization opportunities for PE-backed infrastructure vehicles.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Offshore wind operational leverage",
-    "fetched_at": "2026-08-19T06:42:27.134436+00:00"
-  },
-  {
-    "id": "290c6cce0627",
-    "title": "Our mid-year take on the market’s hottest topics",
-    "url": "https://www.privateequityinternational.com/our-mid-year-take-on-the-markets-hottest-topics/",
-    "source": "PEI Media",
-    "published": "2026-08-13T15:56:47+00:00",
-    "summary": "This mid-year market review covers six critical PE trends that will shape infrastructure deal flow and valuations through 2026. European infra funds should assess which themes align with their thesis, as market conditions are diverging significantly across sectors and geographies.",
-    "pe_score": 7,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Mid-year PE market sentiment check",
-    "fetched_at": "2026-08-19T06:42:22.769697+00:00"
+    "pe_angle": "Offshore wind cash generation",
+    "fetched_at": "2026-08-20T06:44:17.630787+00:00"
   },
   {
     "id": "3324b419ee9e",
@@ -96,25 +83,12 @@
     "url": "https://nordsip.com/2026/08/14/the-shortest-route-to-more-stuff/",
     "source": "NordSIP",
     "published": "2026-08-14T14:40:04+00:00",
-    "summary": "The article examines logistics and last-mile delivery efficiency in European e-commerce, highlighting infrastructure bottlenecks that create investment opportunities in warehouse automation, regional distribution networks, and delivery optimization. Rising parcel volumes and customer expectations are driving demand for modernized logistics infrastructure, presenting attractive consolidation and operational improvement targets for infrastructure investors.",
+    "summary": "The article examines logistics and last-mile delivery challenges in e-commerce, highlighting infrastructure bottlenecks in European distribution networks. This presents investment opportunities in warehouse automation, regional fulfillment centers, and logistics infrastructure to address supply chain inefficiencies.",
     "pe_score": 7,
     "sector": "transport",
     "country": "Europe",
-    "pe_angle": "Last-mile delivery infrastructure modernization",
-    "fetched_at": "2026-08-19T06:42:16.702097+00:00"
-  },
-  {
-    "id": "f0868eb10bb4",
-    "title": "Blurred lines: How fund finance is reinventing the sub-line",
-    "url": "https://www.privateequityinternational.com/blurred-lines-how-fund-finance-is-reinventing-the-sub-line/",
-    "source": "PEI Media",
-    "published": "2026-08-17T09:47:35+00:00",
-    "summary": "Fund finance structures are evolving to combine sub-line mechanics with parallel vehicles, enabling PE funds to extract additional leverage from uncalled commitments as capital deployment becomes more competitive. European infrastructure funds should monitor these hybrid approaches as they may offer enhanced returns but also introduce complexity in financing arrangements and potential covenant trade-offs.",
-    "pe_score": 7,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Fund financing structure innovation",
-    "fetched_at": "2026-08-19T06:42:09.075940+00:00"
+    "pe_angle": "Last-mile logistics infrastructure",
+    "fetched_at": "2026-08-20T06:44:12.379677+00:00"
   },
   {
     "id": "38d548c59825",
@@ -122,12 +96,12 @@
     "url": "https://www.windpowermonthly.com/article/1967526/norway-accelerates-floating-wind-subsidy-review",
     "source": "Wind Power Monthly",
     "published": "2026-08-17T10:11:17+00:00",
-    "summary": "Norway is accelerating its subsidy review for commercial-scale floating offshore wind to prevent further project delays, signaling regulatory momentum in a nascent market segment with significant capex requirements. This de-risks timing and capital deployment for floating wind developers and presents attractive entry/growth opportunities for infrastructure investors in early-stage offshore renewables.",
+    "summary": "Norway is accelerating its subsidy review for its first commercial-scale floating offshore wind farm to prevent further project delays, signaling potential near-term deployment and revenue certainty for investors. This regulatory action de-risks floating wind as a scalable asset class across Northern Europe, with implications for future FID timelines and cost-of-capital improvements in this high-growth segment.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Norway",
-    "pe_angle": "Floating offshore wind subsidy clarity",
-    "fetched_at": "2026-08-19T06:42:07.166810+00:00"
+    "pe_angle": "Floating offshore wind deployment acceleration",
+    "fetched_at": "2026-08-20T06:44:03.325258+00:00"
   },
   {
     "id": "cd8dee14daa5",
@@ -135,25 +109,25 @@
     "url": "https://www.theguardian.com/environment/2026/aug/17/european-farmers-unprecedented-crisis-successive-heatwaves",
     "source": "Guardian Business",
     "published": "2026-08-17T16:01:47+00:00",
-    "summary": "Severe drought across Europe is decimating agricultural yields (25-100% crop losses reported in France), creating urgent infrastructure investment opportunities in water management, irrigation systems, and climate resilience solutions. This crisis signals accelerating demand for advanced water infrastructure assets, desalination, and agricultural technology platforms as climate adaptation becomes economically critical.",
+    "summary": "Severe drought across Europe is causing catastrophic agricultural losses (25-100% crop failures), creating urgent demand for irrigation infrastructure and water management solutions. This climate-driven supply shock presents acquisition opportunities in water treatment, irrigation technology, and agricultural water infrastructure assets.",
     "pe_score": 7,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Water infrastructure and climate resilience",
-    "fetched_at": "2026-08-19T06:41:59.475542+00:00"
+    "pe_angle": "Agricultural water infrastructure resilience",
+    "fetched_at": "2026-08-20T06:43:54.646308+00:00"
   },
   {
-    "id": "5fd02660fe72",
-    "title": "Mini-Grids and Decentralised Energy Supply to Feature in Key Discussion Panel at Africa Energy Indaba 2027",
-    "url": "https://infrastructurenews.co.za/2026/08/18/mini-grids-and-decentralised-energy-supply-to-feature-in-key-discussion-panel-at-africa-energy-indaba-2027/",
-    "source": "Infrastructure News",
-    "published": "2026-08-18T04:14:40+00:00",
-    "summary": "Africa's growing focus on mini-grids and decentralized energy solutions at the 19th Africa Energy Indaba signals accelerating market maturation and investment readiness in off-grid electrification. This represents a significant opportunity for European infrastructure PE funds to deploy capital in emerging distributed renewable energy platforms across the continent.",
+    "id": "67b371be246f",
+    "title": "Wind sector threatens legal action over 'disastrous' plans in Germany",
+    "url": "https://www.windpowermonthly.com/article/1967661/wind-sector-threatens-legal-action-disastrous-plans-germany",
+    "source": "Wind Power Monthly",
+    "published": "2026-08-18T09:47:19+00:00",
+    "summary": "German wind sector is threatening litigation against federal government over grid reform and renewable regulations, creating regulatory uncertainty for infrastructure investors. This signals potential delays in renewable energy deployment and grid modernization projects, impacting near-term returns on wind and grid assets in Germany's energy transition.",
     "pe_score": 7,
     "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "African mini-grid decentralization",
-    "fetched_at": "2026-08-19T06:41:54.513658+00:00"
+    "country": "Germany",
+    "pe_angle": "Regulatory risk in grid transition",
+    "fetched_at": "2026-08-20T06:43:47.402167+00:00"
   },
   {
     "id": "991ea629c72f",
@@ -161,12 +135,12 @@
     "url": "https://www.privateequityinternational.com/side-letter-rare-stakes/",
     "source": "PEI Media",
     "published": "2026-08-18T10:26:45+00:00",
-    "summary": "The article examines strategic GP stake acquisitions in European infrastructure, offering insights into portfolio performance measurement during market stress. This trend reflects consolidation opportunities and operational control benefits for large PE investors navigating challenging market conditions.",
+    "summary": "The article explores European GP stake acquisition as an alternative investment strategy, examining portfolio stress measurement methodologies relevant to infrastructure valuations. A regional GP's expansion into Middle Eastern assets signals diversification trends that may impact European fund deployment and return expectations.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "GP stake consolidation strategies",
-    "fetched_at": "2026-08-19T06:41:42.679528+00:00"
+    "pe_angle": "GP stakes and portfolio diversification",
+    "fetched_at": "2026-08-20T06:43:45.586403+00:00"
   },
   {
     "id": "41245459dbda",
@@ -174,25 +148,12 @@
     "url": "https://www.windpowermonthly.com/article/1967678/german-offshore-wind-body-warns-substantial-risk-cfd-plans",
     "source": "Wind Power Monthly",
     "published": "2026-08-18T11:08:32+00:00",
-    "summary": "Germany's transition to contracts for difference (CfDs) for offshore wind faces implementation challenges that could impact project economics and investment returns. The BWO's warnings of 'substantial risk' signal potential policy uncertainty affecting asset valuations and development timelines for existing and future offshore portfolios.",
+    "summary": "Germany's transition to contracts for difference (CfDs) for offshore wind faces implementation risks that could affect project economics and investor returns. The BWO's warning signals potential policy uncertainty that may delay projects or increase costs for infrastructure funds holding German offshore wind assets.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Germany",
-    "pe_angle": "Offshore wind CfD policy risk",
-    "fetched_at": "2026-08-19T06:41:39.890522+00:00"
-  },
-  {
-    "id": "139c25b65aba",
-    "title": "He Dreiht offshore wind turbine installation complete after Vestas blade break",
-    "url": "https://www.windpowermonthly.com/article/1967171/dreiht-offshore-wind-turbine-installation-complete-vestas-blade-break",
-    "source": "Wind Power Monthly",
-    "published": "2026-08-12T08:22:22+00:00",
-    "summary": "He Dreiht offshore wind project has completed turbine installation despite a Vestas blade failure, signaling project resilience and potential for operational asset acquisition or refinancing. The incident highlights supply chain risks in offshore wind development, relevant for funds evaluating operational wind assets or EPC contractor exposure in their portfolios.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Offshore wind operational risk",
-    "fetched_at": "2026-08-19T06:42:36.378030+00:00"
+    "pe_angle": "Offshore wind policy risk",
+    "fetched_at": "2026-08-20T06:43:42.436029+00:00"
   },
   {
     "id": "03e51e87cac4",
@@ -200,25 +161,12 @@
     "url": "https://constructionmanagement.co.uk/solar-panel-fires-are-rising-sharply-across-uk-insurer-warns/",
     "source": "Construction Management",
     "published": "2026-08-13T09:39:49+00:00",
-    "summary": "Rising solar panel fire incidents across the UK present emerging liability and insurance cost risks for distributed solar assets and rooftop installations, potentially impacting returns on renewable energy infrastructure portfolios. This trend may create opportunities in fire prevention technologies, enhanced panel standards, and specialized insurance products serving the solar sector.",
+    "summary": "Rising solar panel fire incidents across the UK represent an emerging liability and insurance cost burden for distributed solar assets, potentially impacting returns on residential and commercial PV portfolios. This trend signals demand for enhanced safety standards, retrofit services, and specialized insurance products—creating operational challenges and M&A consolidation opportunities in the solar services sector.",
     "pe_score": 6,
     "sector": "energy",
-    "country": "UK",
-    "pe_angle": "Solar asset risk management and liability",
-    "fetched_at": "2026-08-19T06:42:28.880876+00:00"
-  },
-  {
-    "id": "a892f78ea3ae",
-    "title": "California investigating RWE-Trump offshore wind deal",
-    "url": "https://www.windpowermonthly.com/article/1967303/california-investigating-rwe-trump-offshore-wind-deal",
-    "source": "Wind Power Monthly",
-    "published": "2026-08-13T10:16:41+00:00",
-    "summary": "California's investigation into RWE's offshore wind deal with Trump administration signals potential regulatory and political headwinds for European developers in US markets, with implications for deal structuring and risk premiums on transatlantic renewable investments. This development underscores how geopolitical shifts and state-level scrutiny can materially impact project economics and timelines for European PE-backed infrastructure platforms seeking US exposure.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Regulatory risk in US offshore wind",
-    "fetched_at": "2026-08-19T06:42:25.268918+00:00"
+    "country": "United Kingdom",
+    "pe_angle": "Solar asset safety and retrofit",
+    "fetched_at": "2026-08-20T06:44:19.396300+00:00"
   },
   {
     "id": "471f59c41202",
@@ -226,12 +174,12 @@
     "url": "https://www.windpowermonthly.com/article/1967404/scottish-leader-urges-uk-rethink-mingyang-wind-factory-rejection-%E2%80%93-media-reports",
     "source": "Wind Power Monthly",
     "published": "2026-08-14T10:04:13+00:00",
-    "summary": "Scotland's first minister is pushing the UK government to reverse its rejection of a Mingyang wind turbine manufacturing facility, signaling potential policy reversal that could unlock onshore renewable manufacturing capacity in Europe. This represents a significant opportunity for infrastructure-adjacent manufacturing assets and supply chain consolidation in the wind energy sector.",
+    "summary": "Scotland's First Minister is lobbying the UK government to reverse its rejection of Mingyang's proposed wind turbine manufacturing facility, signaling potential industrial policy reversal that could unlock manufacturing capacity for European renewable energy supply chains. This political shift could create factory development and operational opportunities for infrastructure investors in clean energy manufacturing and related supply chain assets.",
     "pe_score": 6,
     "sector": "energy",
     "country": "Scotland",
-    "pe_angle": "Renewable manufacturing capex opportunity",
-    "fetched_at": "2026-08-19T06:42:21.164869+00:00"
+    "pe_angle": "Renewable energy manufacturing infrastructure",
+    "fetched_at": "2026-08-20T06:44:14.212331+00:00"
   },
   {
     "id": "16e96c234914",
@@ -239,12 +187,12 @@
     "url": "https://www.windpowermonthly.com/article/1967456/wind-developer-boralex-goes-private-65-billion-acquisition",
     "source": "Wind Power Monthly",
     "published": "2026-08-14T15:16:00+00:00",
-    "summary": "Brookfield and La Caisse's €6.5B acquisition of Boralex signals continued consolidation in renewable energy, with major institutional capital targeting scale in wind development. This transaction demonstrates robust exit valuations for renewables infrastructure and underscores competitive tension between global and pension-backed buyers for quality wind assets.",
+    "summary": "Brookfield and La Caisse's $6.5B acquisition of Boralex demonstrates continued consolidation in renewables development, with major asset managers acquiring pure-play wind operators at significant scale. This transaction signals competitive pressure on standalone renewable developers and validates the strategic value of operational wind portfolios in the current energy transition landscape.",
     "pe_score": 6,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Renewable energy consolidation M&A",
-    "fetched_at": "2026-08-19T06:42:15.099393+00:00"
+    "pe_angle": "Renewables developer consolidation",
+    "fetched_at": "2026-08-20T06:44:11.178385+00:00"
   },
   {
     "id": "f07095ee29be",
@@ -252,12 +200,12 @@
     "url": "https://nordsip.com/2026/08/14/norways-trillion-kroner-paradox/",
     "source": "NordSIP",
     "published": "2026-08-14T16:17:57+00:00",
-    "summary": "Norway's sovereign wealth fund is generating outsized returns from non-traditional assets (Asian semiconductors) while facing structural headwinds from commodity dependence, signaling potential portfolio rebalancing and infrastructure investment opportunities. This creates a favorable macro environment for European infrastructure PE seeking anchor LPs and alternative asset allocation from Nordic wealth pools.",
+    "summary": "Norway's sovereign wealth fund achieved strong returns from Asian semiconductor exposure, but the CEO warns of structural risks from Norway's over-reliance on market-dependent revenue streams rather than diversified infrastructure assets. This highlights a strategic gap in Nordic portfolio composition that European infra PE funds could exploit through targeted infrastructure acquisitions in underserved Norwegian sectors.",
     "pe_score": 6,
-    "sector": "energy",
+    "sector": "utilities",
     "country": "Norway",
-    "pe_angle": "Commodity-linked SWF portfolio rotation",
-    "fetched_at": "2026-08-19T06:42:13.414053+00:00"
+    "pe_angle": "Nordic infrastructure diversification opportunity",
+    "fetched_at": "2026-08-20T06:44:09.183335+00:00"
   },
   {
     "id": "5cc87dfd3f33",
@@ -265,12 +213,12 @@
     "url": "https://nordsip.com/2026/08/14/flows-return-as-transition-economics-eclipse-esg-politics/",
     "source": "NordSIP",
     "published": "2026-08-14T16:32:42+00:00",
-    "summary": "US sustainable fund flows have resumed after previous outflows, signaling renewed investor appetite for ESG-oriented assets as transition economics increasingly drive capital allocation over ESG sentiment. This trend suggests European infrastructure PE funds focused on energy transition and decarbonization assets may see improved exit multiples and fundraising conditions as institutional capital reflows to sustainability-themed investments.",
+    "summary": "US sustainable fund inflows have resumed in Q2 2026 after previous outflows, signaling renewed investor appetite for transition-focused infrastructure assets over pure ESG mandates. This shift suggests European infra PE funds should prioritize climate transition economics and real asset backing over ESG narrative positioning to capture LP capital flows.",
     "pe_score": 6,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "ESG capital reflow to transition assets",
-    "fetched_at": "2026-08-19T06:42:11.044482+00:00"
+    "pe_angle": "Transition economics over ESG positioning",
+    "fetched_at": "2026-08-20T06:44:06.900656+00:00"
   },
   {
     "id": "28c4d56abfc1",
@@ -278,12 +226,12 @@
     "url": "https://www.windpowermonthly.com/article/1967552/former-vsb-chief-joins-german-renewables-firm-cube-green-energy",
     "source": "Wind Power Monthly",
     "published": "2026-08-17T11:11:31+00:00",
-    "summary": "A former VSB executive has joined Cube Green Energy, signaling potential leadership consolidation and strategic repositioning within Germany's renewables sector. This move may indicate M&A activity or operational restructuring among mid-market renewable energy platforms.",
+    "summary": "A former VSB executive joining Cube Green Energy signals leadership strengthening and potential consolidation activity in the German renewables sector. This move suggests operational maturation at a growing renewables firm, relevant to PE investors tracking management quality and competitive positioning in onshore/offshore wind development.",
     "pe_score": 6,
     "sector": "energy",
     "country": "Germany",
-    "pe_angle": "German renewables platform consolidation",
-    "fetched_at": "2026-08-19T06:42:05.574641+00:00"
+    "pe_angle": "German renewables leadership transition",
+    "fetched_at": "2026-08-20T06:44:01.640110+00:00"
   },
   {
     "id": "3c8188f7f558",
@@ -291,38 +239,12 @@
     "url": "https://www.privateequityinternational.com/side-letter-sector-selectors/",
     "source": "PEI Media",
     "published": "2026-08-17T11:40:47+00:00",
-    "summary": "A major $66 billion LP advocates delegating sector selection to specialized GPs rather than directing allocations, signaling potential shift in LP-GP dynamics and portfolio construction. The article highlights LP support for climate-focused investments, which could reshape capital deployment patterns across infrastructure sectors.",
+    "summary": "A major $66 billion LP advocates delegating sector selection to specialized fund managers rather than attempting direct sector bets, signaling confidence in expert GP stock-picking within infrastructure. This LP positioning may influence capital allocation trends toward established infrastructure GPs with demonstrated sector expertise, particularly relevant for European funds seeking institutional commitments.",
     "pe_score": 6,
-    "sector": "energy",
+    "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "LP delegation and climate capital allocation",
-    "fetched_at": "2026-08-19T06:42:04.294256+00:00"
-  },
-  {
-    "id": "831be65bf836",
-    "title": "Small-Scale, Big Solutions: Why Biogas Is Rural South Africa’s Answer To Sustainable Energy",
-    "url": "https://infrastructurenews.co.za/2026/08/18/small-scale-big-solutions-why-biogas-is-rural-south-africas-answer-to-sustainable-energy/",
-    "source": "Infrastructure News",
-    "published": "2026-08-18T07:46:04+00:00",
-    "summary": "South Africa's rural biogas opportunity represents an underexploited infrastructure investment thesis, with small-scale distributed energy solutions capturing funding typically concentrated in metro-centric projects. European PE can leverage technical expertise and capital to build scalable biogas platforms in underserved agricultural regions, offering both ESG alignment and emerging-market return potential.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Distributed biogas in emerging markets",
-    "fetched_at": "2026-08-19T06:41:49.698109+00:00"
-  },
-  {
-    "id": "616bc813b369",
-    "title": "Oil prices jump after US-Iran ceasefire expires and Trump threatens Oman",
-    "url": "https://www.theguardian.com/business/2026/aug/18/oil-prices-rise-us-iran-brent-crude-donald-trump",
-    "source": "Guardian Business",
-    "published": "2026-08-18T11:50:40+00:00",
-    "summary": "Brent crude has surged above $90/barrel as US-Iran ceasefire negotiations collapsed, with geopolitical tensions escalating under Trump's administration. This energy price volatility presents both headwinds for European utility and transport infrastructure valuations and potential tailwinds for energy transition and renewable infrastructure assets.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Geopolitical risk premium on renewables",
-    "fetched_at": "2026-08-19T06:41:38.006538+00:00"
+    "pe_angle": "LP capital allocation to sector specialists",
+    "fetched_at": "2026-08-20T06:43:59.974749+00:00"
   },
   {
     "id": "1c9193d5332f",
@@ -330,12 +252,12 @@
     "url": "https://infrastructurenews.co.za/2026/08/18/last-chance-wastecon-2026-registrations-payments-close-20-august/",
     "source": "Infrastructure News",
     "published": "2026-08-18T08:35:39+00:00",
-    "summary": "Wastecon 2026 conference registrations close August 20, representing a key industry networking event for waste management infrastructure professionals. The conference provides critical market insights and deal sourcing opportunities for PE investors evaluating waste management and circular economy assets across Europe.",
-    "pe_score": 5,
+    "summary": "Wastecon 2026 conference registrations close August 20, representing a key industry networking and deal-sourcing event for waste management infrastructure. Attendance provides critical market intelligence on consolidation trends, regulatory developments, and investment opportunities within European waste and circular economy sectors.",
+    "pe_score": 6,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Waste management networking and sourcing",
-    "fetched_at": "2026-08-19T06:41:48.215213+00:00"
+    "pe_angle": "Waste management sector networking",
+    "fetched_at": "2026-08-20T06:43:50.398161+00:00"
   },
   {
     "id": "3b24efa883eb",
@@ -343,25 +265,77 @@
     "url": "https://www.privateequityinternational.com/denmarks-novo-holdings-seeks-asian-managers-in-regional-push/",
     "source": "PEI Media",
     "published": "2026-08-18T09:36:17+00:00",
-    "summary": "Novo Holdings, the $37bn investment arm of Denmark's Novo Nordisk Foundation, is expanding its GP roster in Asia and increasing regional headcount, signaling a strategic pivot toward Asian infrastructure opportunities. This represents a significant capital reallocation that European infrastructure PE funds may need to monitor as a competitor for deal flow and talent in the region.",
-    "pe_score": 5,
-    "sector": "utilities",
+    "summary": "Novo Holdings, the $37bn investment arm of Novo Nordisk Foundation, is expanding its GP roster in Asia and increasing regional headcount, signaling a major capital reallocation away from traditional European markets. This shift could intensify LP competition in European infrastructure deals and reshape regional fund-raising dynamics as mega-anchors diversify geographically.",
+    "pe_score": 6,
+    "sector": "energy",
     "country": "Denmark",
-    "pe_angle": "Asian infrastructure GP network expansion",
-    "fetched_at": "2026-08-19T06:41:46.575066+00:00"
+    "pe_angle": "Mega-LP geographic diversification Asia",
+    "fetched_at": "2026-08-20T06:43:48.943479+00:00"
   },
   {
-    "id": "f73db3784c22",
-    "title": "Investor Intentions: Weymouth Retirement Board issues RFP for private equity co-investment managers",
-    "url": "https://www.privateequityinternational.com/investor-intentions-weymouth-retirement-board-issues-rfp-for-private-equity-co-investment-managers/",
-    "source": "PEI Media",
-    "published": "2026-08-14T13:59:37+00:00",
-    "summary": "Weymouth Retirement Board's RFP for private equity co-investment managers signals continued institutional demand for PE fund access, particularly relevant for European infrastructure funds seeking to demonstrate co-investment capabilities to North American LPs. This procurement opportunity underscores the structural shift toward dedicated co-investment vehicles as a competitive differentiator in the PE fundraising landscape.",
-    "pe_score": 4,
+    "id": "616bc813b369",
+    "title": "Oil prices jump after US-Iran ceasefire expires and Trump threatens Oman",
+    "url": "https://www.theguardian.com/business/2026/aug/18/oil-prices-rise-us-iran-brent-crude-donald-trump",
+    "source": "Guardian Business",
+    "published": "2026-08-18T11:50:40+00:00",
+    "summary": "Brent crude has breached $90/barrel following expiration of the US-Iran ceasefire, with escalating geopolitical tensions creating significant commodity price volatility. This energy market shock presents both refinancing risks for leveraged infrastructure portfolios and potential opportunities in renewable energy transition acceleration across European markets.",
+    "pe_score": 6,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Institutional co-investment platform expansion",
-    "fetched_at": "2026-08-19T06:42:18.450343+00:00"
+    "pe_angle": "Energy transition acceleration opportunity",
+    "fetched_at": "2026-08-20T06:43:40.738643+00:00"
+  },
+  {
+    "id": "616cb631822e",
+    "title": "US treasury doubles debt buyback to steady bond market amid inflation fears",
+    "url": "https://www.theguardian.com/business/2026/aug/19/us-treasury-doubles-debt-buyback-bond-market",
+    "source": "Guardian Business",
+    "published": "2026-08-19T14:57:21+00:00",
+    "summary": "US Treasury debt buybacks and elevated long-term yields (30-year at 20-year highs) signal persistent inflation concerns and rising US borrowing costs, which will increase refinancing pressure on dollar-denominated infrastructure debt globally. European infra PE funds with US exposure or dollar liabilities face headwinds from higher cost-of-capital and potential yield compression, while the Fed's divided stance creates near-term volatility in refinancing windows.",
+    "pe_score": 6,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "US inflation impact on refinancing costs",
+    "fetched_at": "2026-08-20T06:43:22.398965+00:00"
+  },
+  {
+    "id": "d9e82a793caf",
+    "title": "Piling specialists hail first-ever embodied carbon dataset for UK foundations",
+    "url": "https://constructionmanagement.co.uk/piling-specialists-hail-first-ever-embodied-carbon-dataset-for-uk-foundations/",
+    "source": "Construction Management",
+    "published": "2026-08-19T19:30:18+00:00",
+    "summary": "The UK's first embodied carbon dataset for foundations, compiled from 63 projects in 2025, enables standardized measurement and potential carbon pricing mechanisms in the piling sector. This creates competitive differentiation opportunities for contractors with lower-carbon practices and regulatory tailwinds for infrastructure operators managing Scope 3 emissions.",
+    "pe_score": 6,
+    "sector": "utilities",
+    "country": "United Kingdom",
+    "pe_angle": "ESG standardization in construction",
+    "fetched_at": "2026-08-20T06:43:20.292959+00:00"
+  },
+  {
+    "id": "a892f78ea3ae",
+    "title": "California investigating RWE-Trump offshore wind deal",
+    "url": "https://www.windpowermonthly.com/article/1967303/california-investigating-rwe-trump-offshore-wind-deal",
+    "source": "Wind Power Monthly",
+    "published": "2026-08-13T10:16:41+00:00",
+    "summary": "California's investigation into RWE's offshore wind partnership with Trump administration could signal regulatory headwinds for large-scale offshore wind development in the US market. This may impact European utility majors' North American renewable expansion strategies and could affect project economics for similar deals pursued by European PE-backed infrastructure funds.",
+    "pe_score": 5,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "US offshore wind regulatory risk",
+    "fetched_at": "2026-08-20T06:44:16.007297+00:00"
+  },
+  {
+    "id": "cb82885f02f2",
+    "title": "Cape Town’s Water Supply Remains Stable, But City Prepares For A More Uncertain Future",
+    "url": "https://infrastructurenews.co.za/2026/08/19/cape-towns-water-supply-remains-stable-but-city-prepares-for-a-more-uncertain-future/",
+    "source": "Infrastructure News",
+    "published": "2026-08-19T10:31:45+00:00",
+    "summary": "Cape Town's 2026 Water Outlook signals stable near-term supply but elevated future restriction risks, reflecting climate vulnerability and infrastructure stress that could drive concession/PPP opportunities in water management and desalination. This presents potential entry points for European infra funds in emerging market water security and resilience infrastructure, though regulatory and political risks require careful underwriting.",
+    "pe_score": 5,
+    "sector": "utilities",
+    "country": "South Africa",
+    "pe_angle": "Water scarcity infrastructure resilience",
+    "fetched_at": "2026-08-20T06:43:26.022858+00:00"
   },
   {
     "id": "3e572f80c404",
@@ -369,24 +343,50 @@
     "url": "https://constructionmanagement.co.uk/willmott-dixon-and-rioja-estates-submit-150m-plan-for-great-yarmouth-regeneration/",
     "source": "Construction Management",
     "published": "2026-08-17T13:26:36+00:00",
-    "summary": "Willmott Dixon and Rioja Estates are developing a £150m mixed-use regeneration project in Great Yarmouth with retail, leisure, hospitality, and residential components adjacent to the railway station, representing a substantial urban infrastructure opportunity. This type of station-adjacent development offers potential for long-term yield from diversified revenue streams and aligns with UK regeneration priorities, though PE exposure would depend on asset acquisition or development partnership structures.",
+    "summary": "Willmott Dixon and Rioja Estates are advancing a £150m mixed-use regeneration project in Great Yarmouth featuring retail, leisure, hospitality, hotel, and residential components adjacent to the railway station, positioning the development to capitalize on transport connectivity and regional revitalization trends. This represents a potential infrastructure play in UK real estate development with operational management and long-term yield characteristics typical of regional regeneration assets.",
     "pe_score": 4,
     "sector": "transport",
     "country": "United Kingdom",
-    "pe_angle": "Station-adjacent mixed-use regeneration",
-    "fetched_at": "2026-08-19T06:42:02.771972+00:00"
+    "pe_angle": "Regional mixed-use transport-linked regeneration",
+    "fetched_at": "2026-08-20T06:43:58.006285+00:00"
   },
   {
-    "id": "1a8d270ee42d",
-    "title": "National Water Action Plan Must Prioritise Technical Skills, Says CESA",
-    "url": "https://infrastructurenews.co.za/2026/08/18/national-water-action-plan-must-prioritise-technical-skills-says-cesa/",
+    "id": "831be65bf836",
+    "title": "Small-Scale, Big Solutions: Why Biogas Is Rural South Africa’s Answer To Sustainable Energy",
+    "url": "https://infrastructurenews.co.za/2026/08/18/small-scale-big-solutions-why-biogas-is-rural-south-africas-answer-to-sustainable-energy/",
     "source": "Infrastructure News",
-    "published": "2026-08-18T04:24:40+00:00",
-    "summary": "South Africa's National Water Action Plan signals government commitment to infrastructure investment in water services, with industry bodies emphasizing the need for technical workforce development. This presents potential M&A and operational improvement opportunities for European infra PE funds in emerging market water utilities, particularly around skills-intensive asset management.",
+    "published": "2026-08-18T07:46:04+00:00",
+    "summary": "Biogas represents an underserved small-scale renewable energy opportunity in rural South Africa, where funding concentration in major metros leaves significant white space for distributed generation projects. This market gap presents entry points for European PE investors seeking exposure to emerging market renewables with lower competition and high ESG credentials.",
     "pe_score": 4,
-    "sector": "utilities",
+    "sector": "energy",
     "country": "South Africa",
-    "pe_angle": "Emerging market water infrastructure development",
-    "fetched_at": "2026-08-19T06:41:52.990688+00:00"
+    "pe_angle": "Distributed biogas in emerging markets",
+    "fetched_at": "2026-08-20T06:43:52.947297+00:00"
+  },
+  {
+    "id": "60c816b2ae3b",
+    "title": "Inox Energy closes deal for Vena Energy's Indian renewables business",
+    "url": "https://www.windpowermonthly.com/article/1967706/inox-energy-closes-deal-vena-energys-indian-renewables-business",
+    "source": "Wind Power Monthly",
+    "published": "2026-08-18T12:57:17+00:00",
+    "summary": "Inox Energy has acquired Vena Energy's Indian renewables portfolio, representing significant consolidation in India's high-growth renewable energy market. This deal demonstrates the strategic value of established renewable assets in emerging markets and highlights competitive dynamics in Asia's energy transition.",
+    "pe_score": 4,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Asian renewables portfolio consolidation",
+    "fetched_at": "2026-08-20T06:43:37.263326+00:00"
+  },
+  {
+    "id": "ac8204d9e3dc",
+    "title": "Trump pauses Canada tariffs threat, and hints at revival of Keystone XL pipeline",
+    "url": "https://www.theguardian.com/us-news/2026/aug/19/trump-delay-canada-tariffs-keystone-xl-oil-pipeline",
+    "source": "Guardian Business",
+    "published": "2026-08-19T03:47:12+00:00",
+    "summary": "Trump's pause on Canadian tariffs and hints at Keystone XL revival signal potential de-escalation in North American trade tensions, which could stabilize cross-border infrastructure investment and energy markets. However, the three-day pause remains precarious, creating near-term uncertainty for European investors with North American energy or infrastructure exposure.",
+    "pe_score": 4,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "North American energy infrastructure risk",
+    "fetched_at": "2026-08-20T06:43:32.248818+00:00"
   }
 ]
