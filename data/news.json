@@ -1,42 +1,16 @@
 [
   {
-    "id": "58038120cc29",
-    "title": "Von der Leyen ‘doubles down’ on EU's renewables drive",
-    "url": "https://www.windpowermonthly.com/article/1970153/von-der-leyen-doubles-down-eus-renewables-drive",
-    "source": "Wind Power Monthly",
-    "published": "2026-09-16T10:44:36+00:00",
-    "summary": "Von der Leyen's renewed commitment to accelerating renewable and nuclear energy deployment across EU member states signals strengthened policy tailwinds and de-risking for portfolio companies in generation and grid infrastructure. This endorsement of 'homegrown' energy suggests sustained capital allocation priorities and potential for asset consolidation in the renewables space.",
-    "pe_score": 8,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "EU renewable energy acceleration",
-    "fetched_at": "2026-09-22T11:02:39.939754+00:00"
-  },
-  {
     "id": "c711f44f21e2",
     "title": "WMO: Recent Water Trends Have Serious Future Implications",
     "url": "https://infrastructurenews.co.za/2026/09/18/wmo-recent-water-trends-have-serious-future-implications/",
     "source": "Infrastructure News",
     "published": "2026-09-18T04:40:47+00:00",
-    "summary": "The WMO's water resources assessment signals accelerating hydrological stress across regions, creating urgent investment demand for water treatment, distribution, and climate adaptation infrastructure. European utilities and water operators face both regulatory pressure and pricing power to upgrade aging systems, presenting attractive consolidation and modernization opportunities for infrastructure funds.",
+    "summary": "WMO's 2025 water resources assessment signals accelerating hydrological stress across Europe, creating urgent infrastructure investment needs in water treatment, storage, and distribution systems. This trend validates thesis for utility modernization, resilience infrastructure, and climate adaptation assets in water-stressed regions.",
     "pe_score": 8,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Water infrastructure resilience build-out",
-    "fetched_at": "2026-09-22T11:02:20.121210+00:00"
-  },
-  {
-    "id": "c51965e51825",
-    "title": "New podcast: German renewables chief dissects controversial grid and auction reforms",
-    "url": "https://www.windpowermonthly.com/article/1970296/new-podcast-german-renewables-chief-dissects-controversial-grid-auction-reforms",
-    "source": "Wind Power Monthly",
-    "published": "2026-09-18T07:00:00+00:00",
-    "summary": "German government's proposed reforms to onshore and offshore wind sectors could materially reshape regulatory frameworks and investment economics for renewable assets. BWE leadership analysis signals industry concerns about grid integration and auction mechanisms that directly impact project viability and returns in Europe's largest wind market.",
-    "pe_score": 8,
-    "sector": "energy",
-    "country": "Germany",
-    "pe_angle": "German wind sector regulatory reform",
-    "fetched_at": "2026-09-22T11:02:18.558321+00:00"
+    "pe_angle": "Water infrastructure resilience investment",
+    "fetched_at": "2026-09-23T10:51:53.631988+00:00"
   },
   {
     "id": "82a4a1dbbc75",
@@ -44,12 +18,12 @@
     "url": "https://nordsip.com/2026/09/18/eus-first-full-scale-co%e2%82%82-storage-chain-opens-in-denmark/",
     "source": "NordSIP",
     "published": "2026-09-18T12:55:49+00:00",
-    "summary": "Denmark's Greensand represents the EU's first operational full-scale CO₂ storage facility, establishing a critical infrastructure asset for carbon capture and storage (CCS) value chains across Europe. This milestone de-risks CCS infrastructure investment thesis and creates potential for fund participation in similar regional storage hubs as EU climate regulations tighten.",
+    "summary": "Denmark's Greensand represents the EU's first operational full-scale CO₂ storage facility, validating carbon capture and storage (CCS) as a scalable infrastructure asset class with long-term contracted revenue potential. This de-risks the CCS value chain for infrastructure investors and signals strong policy/subsidy support for permanent CO₂ sequestration projects across Europe.",
     "pe_score": 8,
     "sector": "energy",
     "country": "Denmark",
-    "pe_angle": "CO₂ storage infrastructure development",
-    "fetched_at": "2026-09-22T11:02:10.411379+00:00"
+    "pe_angle": "Carbon storage infrastructure monetization",
+    "fetched_at": "2026-09-23T10:51:43.804034+00:00"
   },
   {
     "id": "62863e6a4210",
@@ -57,12 +31,12 @@
     "url": "https://www.windpowermonthly.com/article/1970471/gazelle-wind-power-develops-floating-platform-18mw-plus-turbines",
     "source": "Wind Power Monthly",
     "published": "2026-09-21T09:57:43+00:00",
-    "summary": "Gazelle Wind Power's 18MW+ floating platform addresses the critical infrastructure gap for extreme-weather offshore wind sites, opening new development geographies previously deemed economically unfeasible. This technology advancement presents acquisition targets and licensing opportunities for PE-backed offshore wind portfolios seeking to expand capacity in challenging Northern European waters.",
+    "summary": "Gazelle Wind Power's 18MW+ floating platform addresses a critical bottleneck in offshore wind deployment, enabling projects at deep-water and extreme-weather sites with higher capacity factors. This technology represents a de-risking opportunity for European funds to acquire or co-invest in next-generation offshore wind assets with improved economics and reduced development risk.",
     "pe_score": 8,
     "sector": "energy",
     "country": "Europe",
     "pe_angle": "Floating offshore wind technology",
-    "fetched_at": "2026-09-22T11:01:50.318692+00:00"
+    "fetched_at": "2026-09-23T10:51:20.925760+00:00"
   },
   {
     "id": "f8b77beaac9b",
@@ -70,25 +44,25 @@
     "url": "https://constructionmanagement.co.uk/data-centre-boom-reinforces-a-digital-first-approach/",
     "source": "Construction Management",
     "published": "2026-09-17T16:31:11+00:00",
-    "summary": "The data centre sector's rapid expansion is driving adoption of digital-first project delivery methodologies, which reduces execution risk and improves operational efficiency—key value drivers for infrastructure investors. This operational shift creates competitive advantages for platform companies that can modernize legacy infrastructure and positions digital infrastructure as an increasingly attractive asset class within European PE portfolios.",
+    "summary": "The data centre sector's rapid expansion is driving adoption of digital-first project delivery methodologies, creating operational efficiency gains and competitive advantages for infrastructure operators. This modernization trend presents attractive investment opportunities for PE funds seeking to deploy capital in high-growth digital infrastructure assets with enhanced execution capabilities.",
     "pe_score": 7,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Digital infrastructure modernization",
-    "fetched_at": "2026-09-22T11:02:27.373859+00:00"
+    "pe_angle": "Digital infrastructure operational excellence",
+    "fetched_at": "2026-09-23T10:51:57.928798+00:00"
   },
   {
-    "id": "cf572324e27d",
-    "title": "UK pledges support for community-owned renewables",
-    "url": "https://www.windpowermonthly.com/article/1970365/uk-pledges-support-community-owned-renewables",
+    "id": "c51965e51825",
+    "title": "New podcast: German renewables chief dissects controversial grid and auction reforms",
+    "url": "https://www.windpowermonthly.com/article/1970296/new-podcast-german-renewables-chief-dissects-controversial-grid-auction-reforms",
     "source": "Wind Power Monthly",
-    "published": "2026-09-18T09:50:47+00:00",
-    "summary": "UK government backing for community-owned renewables creates potential acquisition and consolidation opportunities for PE investors seeking operational assets with stable, long-term cashflows and policy support. This policy shift may also reduce development risk and accelerate capital deployment in decentralized renewable infrastructure across the UK.",
+    "published": "2026-09-18T07:00:00+00:00",
+    "summary": "German renewable energy reforms under government consideration could reshape onshore and offshore wind sector economics and investment returns. BWE leadership analysis of grid and auction reforms signals potential regulatory shifts affecting asset valuation, development timelines, and competitive dynamics for infrastructure investors.",
     "pe_score": 7,
     "sector": "energy",
-    "country": "UK",
-    "pe_angle": "Community renewable asset consolidation",
-    "fetched_at": "2026-09-22T11:02:16.991394+00:00"
+    "country": "Germany",
+    "pe_angle": "German wind sector regulatory reform",
+    "fetched_at": "2026-09-23T10:51:52.116666+00:00"
   },
   {
     "id": "eb3c8e41ab9f",
@@ -96,12 +70,12 @@
     "url": "https://nordsip.com/2026/09/18/nordic-space-resilience-contingent-on-collaboration/",
     "source": "NordSIP",
     "published": "2026-09-18T13:05:34+00:00",
-    "summary": "Nordic space infrastructure presents a compelling investment thesis given the region's structural dependence on satellite systems for communications, navigation, and emergency services across vast, sparsely populated territories. Cross-border Nordic collaboration could unlock consolidation opportunities and improve operational efficiency in an increasingly critical infrastructure segment.",
+    "summary": "Nordic space infrastructure presents a compelling investment opportunity driven by region-specific demand for satellite communications and Arctic resilience, with collaboration frameworks potentially de-risking long-term concession structures. The sparse geography and critical dependency on space-based services create stable, mission-critical revenue streams attractive to infrastructure investors seeking defensive assets with government support.",
     "pe_score": 7,
     "sector": "utilities",
-    "country": "Nordic region",
-    "pe_angle": "Satellite infrastructure consolidation play",
-    "fetched_at": "2026-09-22T11:02:09.033556+00:00"
+    "country": "Nordic Region",
+    "pe_angle": "Satellite infrastructure consolidation",
+    "fetched_at": "2026-09-23T10:51:41.759993+00:00"
   },
   {
     "id": "4a7e14a51cbe",
@@ -109,12 +83,12 @@
     "url": "https://nordsip.com/2026/09/18/are-sovereign-bond-indices-the-next-frontier-of-eu-defence/",
     "source": "NordSIP",
     "published": "2026-09-18T13:40:54+00:00",
-    "summary": "The European Commission is pursuing sovereign bond index recognition for EU-issued debt, which could lower borrowing costs and unlock capital for infrastructure financing across the bloc. This development directly impacts PE fund returns by reducing cost of capital for EU-backed infrastructure projects and potentially creating new refinancing opportunities.",
+    "summary": "The EU is lobbying for its bonds to be classified as sovereign debt in major international indices, a move that could lower EU borrowing costs and unlock significant capital for infrastructure financing across member states. This development has material implications for PE-backed infrastructure funds seeking to deploy capital in EU projects, as cheaper sovereign funding could improve project economics and competition dynamics.",
     "pe_score": 7,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "EU debt capital markets expansion",
-    "fetched_at": "2026-09-22T11:02:07.532775+00:00"
+    "pe_angle": "EU sovereign financing for infrastructure",
+    "fetched_at": "2026-09-23T10:51:40.101230+00:00"
   },
   {
     "id": "79b10b129594",
@@ -122,12 +96,12 @@
     "url": "https://nordsip.com/2026/09/18/commission-announces-new-climate-insurance-alliance/",
     "source": "NordSIP",
     "published": "2026-09-18T14:35:38+00:00",
-    "summary": "The EU Commission is launching a new Climate Insurance Alliance, likely creating standardized risk transfer mechanisms for climate-related infrastructure assets across Europe. This could unlock significant refinancing opportunities and improve bankability for renewable energy, grid modernization, and resilience projects by reducing climate-related insurance costs and availability gaps.",
+    "summary": "The EU Commission's new Climate Insurance Alliance creates a framework for risk transfer mechanisms in climate-resilient infrastructure, potentially opening significant underwriting and securitization opportunities for infrastructure funds. This initiative could drive capital deployment into climate-adapted assets across energy, transport, and utilities, while creating new revenue streams through insurance partnerships and parametric risk products.",
     "pe_score": 7,
-    "sector": "energy",
+    "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Climate risk insurance infrastructure",
-    "fetched_at": "2026-09-22T11:02:04.416431+00:00"
+    "pe_angle": "Climate risk transfer infrastructure",
+    "fetched_at": "2026-09-23T10:51:36.739775+00:00"
   },
   {
     "id": "4e162716d0a2",
@@ -135,12 +109,12 @@
     "url": "https://www.theguardian.com/world/2026/sep/18/flight-chaos-affecting-hundreds-of-thousands-caused-in-millisecond-by-software-error-uk",
     "source": "Guardian Business",
     "published": "2026-09-18T15:45:18+00:00",
-    "summary": "A critical software failure in UK air traffic control caused a 6-hour national outage affecting hundreds of thousands of passengers, exposing significant operational and governance risks in essential infrastructure systems. This incident highlights the vulnerability of legacy critical infrastructure to software defects and the regulatory gaps in incident detection/response protocols, creating potential acquisition and operational improvement opportunities for infrastructure investors.",
+    "summary": "A critical software failure in UK air traffic control caused a six-hour outage affecting hundreds of thousands of passengers, exposing significant operational and governance gaps in mission-critical infrastructure. This incident highlights substantial infrastructure modernization and system redundancy investment opportunities, as well as regulatory pressure likely to drive capex requirements across European ATC systems.",
     "pe_score": 7,
     "sector": "transport",
     "country": "United Kingdom",
-    "pe_angle": "Critical infrastructure resilience upgrades",
-    "fetched_at": "2026-09-22T11:02:02.795619+00:00"
+    "pe_angle": "Air traffic infrastructure modernization",
+    "fetched_at": "2026-09-23T10:51:35.096386+00:00"
   },
   {
     "id": "d666884ac315",
@@ -148,12 +122,12 @@
     "url": "https://www.theguardian.com/environment/2026/sep/20/china-stranglehold-rare-earths-hopeful-supplier-eu-viridis",
     "source": "Guardian Business",
     "published": "2026-09-20T11:00:14+00:00",
-    "summary": "A Brazilian rare earths supplier is positioning to capture EU market share within two years as geopolitical tensions around China's export restrictions create supply diversification opportunities. Trump-Xi summit outcomes could materially impact rare earths pricing and accelerate European infrastructure projects' need for alternative sourcing.",
+    "summary": "A Brazilian rare earths supplier targets EU market entry within two years, capitalizing on geopolitical tensions and China's export restrictions that create supply security concerns for European green energy and defense sectors. Market volatility around Trump-Xi negotiations presents both near-term uncertainty and medium-term opportunity for European infrastructure investors in supply chain diversification plays.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
     "pe_angle": "Critical minerals supply chain diversification",
-    "fetched_at": "2026-09-22T11:01:59.567337+00:00"
+    "fetched_at": "2026-09-23T10:51:31.508493+00:00"
   },
   {
     "id": "dfbb7ba344c7",
@@ -161,25 +135,38 @@
     "url": "https://www.windpowermonthly.com/article/1970457/new-swedish-government-urged-accelerate-electrification",
     "source": "Wind Power Monthly",
     "published": "2026-09-21T08:00:19+00:00",
-    "summary": "Sweden's new government is facing industry pressure to accelerate electrification and improve wind power investment conditions, signaling potential policy tailwinds for renewable energy infrastructure assets. This political shift could unlock deal opportunities in Swedish wind development and grid modernization, particularly for PE firms positioned in Nordic clean energy.",
+    "summary": "Sweden's post-election political environment presents a window for accelerated renewable energy investment, with industry bodies advocating for improved regulatory conditions and electrification targets that could unlock substantial wind power project pipelines. This signals potential deal flow in Swedish renewable infrastructure and grid modernization, particularly for investors positioned to capitalize on policy-driven capacity expansion.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Sweden",
-    "pe_angle": "Nordic wind power acceleration",
-    "fetched_at": "2026-09-22T11:01:55.086498+00:00"
+    "pe_angle": "Swedish wind power project pipeline",
+    "fetched_at": "2026-09-23T10:51:26.283273+00:00"
   },
   {
-    "id": "34b4d873eef4",
-    "title": "Devolution risks delaying decisions on regional work, warns Arcadis",
-    "url": "https://constructionmanagement.co.uk/devolution-risks-delaying-decisions-on-regional-work-warns-arcadis/",
-    "source": "Construction Management",
-    "published": "2026-09-17T08:57:14+00:00",
-    "summary": "Greater devolution in England is expected to create near-term uncertainty and decision-making delays across regional construction and infrastructure projects, potentially affecting project timelines and investment returns. PE investors should monitor regulatory fragmentation risks and potential delays in infrastructure procurement cycles across English regions.",
-    "pe_score": 6,
-    "sector": "transport",
-    "country": "United Kingdom",
-    "pe_angle": "UK devolution governance complexity",
-    "fetched_at": "2026-09-22T11:02:36.828825+00:00"
+    "id": "b736fd0373a6",
+    "title": "ZF Wind Power launches modular powertrain platform",
+    "url": "https://www.windpowermonthly.com/article/1970573/zf-wind-power-launches-modular-powertrain-platform",
+    "source": "Wind Power Monthly",
+    "published": "2026-09-22T09:35:02+00:00",
+    "summary": "ZF Wind Power's modular powertrain platform addresses a critical bottleneck in wind turbine manufacturing, potentially enabling faster deployment and reducing capex for OEMs and operators. This technology standardization could unlock consolidation opportunities and improve margins across the onshore/offshore wind supply chain.",
+    "pe_score": 7,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Wind turbine supply chain efficiency",
+    "fetched_at": "2026-09-23T10:51:10.323569+00:00"
+  },
+  {
+    "id": "998ae256caf2",
+    "title": "Trump says he backs diesel export ban to curb soaring energy costs",
+    "url": "https://www.theguardian.com/us-news/2026/sep/22/trump-diesel-export-ban",
+    "source": "Guardian Business",
+    "published": "2026-09-22T19:48:39+00:00",
+    "summary": "US diesel export ban proposal could reduce global supply and sustain elevated European diesel prices above $6.53/gallon, supporting margin expansion for European refining and fuel distribution assets. Geopolitical supply disruptions from Iran-Ukraine conflicts are creating structural pricing support that favors long-duration infrastructure investments in energy storage and distribution networks.",
+    "pe_score": 7,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Diesel supply scarcity premium",
+    "fetched_at": "2026-09-23T10:51:02.427043+00:00"
   },
   {
     "id": "fe67043a62e3",
@@ -187,12 +174,12 @@
     "url": "https://constructionmanagement.co.uk/industry-figures-launch-council-to-tackle-youth-skills-gap-through-major-infrastructure/",
     "source": "Construction Management",
     "published": "2026-09-17T11:33:13+00:00",
-    "summary": "A new industry council is mobilizing major infrastructure projects to address Europe's youth skills gap and NEET populations, creating structured employment and training pathways that could enhance project ROI through stable labor pipelines and reduce execution risks. This regulatory and social trend may drive infrastructure operators to embed workforce development programs, potentially unlocking ESG-linked financing benefits and justifying premium valuations for compliant assets.",
+    "summary": "A new industry council aims to leverage major infrastructure projects to address Europe's youth employment crisis by creating training and career pathways, potentially improving project labor availability and reducing skills bottlenecks. This initiative could enhance ESG credentials and workforce resilience for infrastructure operators while creating demand for training services and apprenticeship programs within portfolio companies.",
     "pe_score": 6,
     "sector": "transport",
     "country": "Europe",
-    "pe_angle": "Infrastructure workforce development monetization",
-    "fetched_at": "2026-09-22T11:02:30.942372+00:00"
+    "pe_angle": "Infrastructure workforce development opportunity",
+    "fetched_at": "2026-09-23T10:52:01.627197+00:00"
   },
   {
     "id": "2ade7413835d",
@@ -200,51 +187,12 @@
     "url": "https://constructionmanagement.co.uk/can-ai-powered-vr-improve-safety-by-tracking-where-workers-look/",
     "source": "Construction Management",
     "published": "2026-09-17T16:37:23+00:00",
-    "summary": "Researchers are developing AI-powered VR safety training tools that track worker eye-gaze to improve hazard recognition on construction sites, potentially reducing accidents and liability costs. This represents an emerging digital safety compliance market that could enhance operational safety across European infrastructure portfolios and create competitive advantages in portfolio company valuations.",
+    "summary": "UK-led research into AI-powered VR safety training for construction workers represents an emerging operational risk mitigation technology with potential to reduce accident rates and insurance costs across European infrastructure projects. Early adoption of such tools could become a competitive differentiator and ESG value driver for portfolio companies managing large-scale construction programs.",
     "pe_score": 6,
     "sector": "transport",
     "country": "Europe",
-    "pe_angle": "Digital safety training technology",
-    "fetched_at": "2026-09-22T11:02:25.688420+00:00"
-  },
-  {
-    "id": "7f82531822a2",
-    "title": "How Tiger Brands Used RDF And Composting To Eliminate Factory Landfill Waste",
-    "url": "https://infrastructurenews.co.za/2026/09/18/how-tiger-brands-used-rdf-and-composting-to-eliminate-factory-landfill-waste/",
-    "source": "Infrastructure News",
-    "published": "2026-09-18T10:33:44+00:00",
-    "summary": "Tiger Brands has achieved zero-waste-to-landfill across three manufacturing facilities by implementing RDF (refuse-derived fuel) and composting solutions, demonstrating a scalable waste-to-value model applicable across European industrial assets. This operational efficiency play reduces environmental liability, unlocks tipping-fee savings, and positions waste infrastructure as an attractive add-on acquisition or operational upgrade for portfolio companies.",
-    "pe_score": 6,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Industrial waste-to-energy optimization",
-    "fetched_at": "2026-09-22T11:02:15.523318+00:00"
-  },
-  {
-    "id": "485d7db899f8",
-    "title": "Brazil’s wind farms have been a huge success. So why isn’t everybody reaping the benefits?",
-    "url": "https://www.theguardian.com/global-development/2026/sep/19/brazils-wind-farms-have-been-a-huge-success-so-why-isnt-everybody-reaping-the-benefits",
-    "source": "Guardian Business",
-    "published": "2026-09-19T12:00:46+00:00",
-    "summary": "Brazil's rapid wind energy expansion is generating significant social and environmental externalities in rural communities, creating regulatory and reputational risks for operators. European PE investors should assess ESG compliance frameworks and community benefit-sharing models before deploying capital into emerging market renewable projects.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Emerging market renewable ESG risk",
-    "fetched_at": "2026-09-22T11:02:01.151213+00:00"
-  },
-  {
-    "id": "1d5c71340cfb",
-    "title": "GE Vernova and Vineyard Wind settle offshore wind legal dispute",
-    "url": "https://www.windpowermonthly.com/article/1970241/ge-vernova-vineyard-wind-settle-offshore-wind-legal-dispute",
-    "source": "Wind Power Monthly",
-    "published": "2026-09-17T09:24:11+00:00",
-    "summary": "GE Vernova and Vineyard Wind have resolved their dispute over a troubled US offshore wind project, removing legal uncertainty but highlighting operational and regulatory risks in the sector. The settlement signals potential opportunities for European PE to acquire distressed offshore wind assets or consolidate with experienced operators facing US market headwinds.",
-    "pe_score": 5,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Offshore wind project risk mitigation",
-    "fetched_at": "2026-09-22T11:02:35.572952+00:00"
+    "pe_angle": "Construction safety tech & risk reduction",
+    "fetched_at": "2026-09-23T10:51:56.580528+00:00"
   },
   {
     "id": "af6f70a793b4",
@@ -252,25 +200,51 @@
     "url": "https://infrastructurenews.co.za/2026/09/18/the-single-most-important-rule-in-paper-recycling/",
     "source": "Infrastructure News",
     "published": "2026-09-18T04:25:51+00:00",
-    "summary": "With a 63% national recycling rate slightly above global average, there is meaningful upside potential for operational improvements and volume capture in paper recycling infrastructure. This suggests underutilized capacity and optimization opportunities typical of consolidation targets in the waste management/circular economy space.",
-    "pe_score": 5,
+    "summary": "At 63% recycling rate, the country demonstrates above-average performance but signals untapped upside potential in paper waste recovery infrastructure. This gap presents operational improvement and capacity expansion opportunities for PE-backed recycling platform consolidation across Europe.",
+    "pe_score": 6,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Paper recycling rate optimization",
-    "fetched_at": "2026-09-22T11:02:21.483602+00:00"
+    "pe_angle": "Paper recycling capacity optimization",
+    "fetched_at": "2026-09-23T10:51:55.007005+00:00"
   },
   {
-    "id": "147ddb327d7a",
-    "title": "Sacred Springs Of South Africa: Pure Waters Or Polluted? We Found Tiny Bits Of Plastic In The Samples We Tested",
-    "url": "https://infrastructurenews.co.za/2026/09/18/sacred-springs-of-south-africa-pure-waters-or-polluted-we-found-tiny-bits-of-plastic-in-the-samples-we-tested/",
+    "id": "cf572324e27d",
+    "title": "UK pledges support for community-owned renewables",
+    "url": "https://www.windpowermonthly.com/article/1970365/uk-pledges-support-community-owned-renewables",
+    "source": "Wind Power Monthly",
+    "published": "2026-09-18T09:50:47+00:00",
+    "summary": "UK government backing for community-owned renewables expands the addressable market for distributed generation assets and creates potential co-investment or platform consolidation opportunities. This policy shift may attract institutional capital to fragmented community energy projects, though regulatory complexity and smaller ticket sizes could limit traditional PE returns.",
+    "pe_score": 6,
+    "sector": "energy",
+    "country": "UK",
+    "pe_angle": "Community renewable platform consolidation",
+    "fetched_at": "2026-09-23T10:51:50.708842+00:00"
+  },
+  {
+    "id": "7f82531822a2",
+    "title": "How Tiger Brands Used RDF And Composting To Eliminate Factory Landfill Waste",
+    "url": "https://infrastructurenews.co.za/2026/09/18/how-tiger-brands-used-rdf-and-composting-to-eliminate-factory-landfill-waste/",
     "source": "Infrastructure News",
-    "published": "2026-09-18T11:14:07+00:00",
-    "summary": "South African water contamination research reveals systemic microplastic pollution affecting even remote sacred springs, signaling broader freshwater infrastructure vulnerabilities across African markets. This underscores significant de-risking and remediation opportunities for European PE investors in water treatment and purification technologies targeting emerging markets.",
-    "pe_score": 5,
-    "sector": "utilities",
+    "published": "2026-09-18T10:33:44+00:00",
+    "summary": "Tiger Brands has achieved zero waste to landfill at three manufacturing sites through RDF (Refuse-Derived Fuel) and composting, demonstrating operational efficiency gains and ESG value creation in the food & beverage sector. This case study validates waste-to-energy infrastructure as a scalable platform play, with potential for consolidation across fragmented European food manufacturing.",
+    "pe_score": 6,
+    "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Water treatment capex in emerging markets",
-    "fetched_at": "2026-09-22T11:02:12.198987+00:00"
+    "pe_angle": "Waste-to-energy infrastructure monetization",
+    "fetched_at": "2026-09-23T10:51:48.930614+00:00"
+  },
+  {
+    "id": "485d7db899f8",
+    "title": "Brazil’s wind farms have been a huge success. So why isn’t everybody reaping the benefits?",
+    "url": "https://www.theguardian.com/global-development/2026/sep/19/brazils-wind-farms-have-been-a-huge-success-so-why-isnt-everybody-reaping-the-benefits",
+    "source": "Guardian Business",
+    "published": "2026-09-19T12:00:46+00:00",
+    "summary": "Brazil's rapid wind energy expansion is creating significant community externalities and potential regulatory/reputational risks that could impact asset valuations and operational licenses. European PE investors considering Brazilian renewable exposure or Latin American infrastructure funds should assess ESG compliance frameworks and community benefit-sharing mechanisms to mitigate stranded asset risk.",
+    "pe_score": 6,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Emerging market renewable ESG risks",
+    "fetched_at": "2026-09-23T10:51:33.323278+00:00"
   },
   {
     "id": "d052c6e6601f",
@@ -278,12 +252,51 @@
     "url": "https://infrastructurenews.co.za/2026/09/21/the-tug-of-war-over-south-africas-governance-future/",
     "source": "Infrastructure News",
     "published": "2026-09-21T07:13:58+00:00",
-    "summary": "South Africa faces critical governance deficits in municipal management and water infrastructure, creating both distressed asset opportunities and regulatory risk for European infra investors. The governance conference signals potential institutional reforms that could unlock infrastructure privatization or PPP restructuring in underperforming utilities.",
-    "pe_score": 5,
+    "summary": "South Africa's governance deficiencies—particularly in municipal management and water infrastructure—present both risks and restructuring opportunities for European infrastructure investors entering or expanding in emerging markets. Addressing accountability gaps through governance reforms could unlock significant value in underfunded water and municipal service concessions.",
+    "pe_score": 6,
     "sector": "utilities",
+    "country": "South Africa",
+    "pe_angle": "Emerging market governance-led turnarounds",
+    "fetched_at": "2026-09-23T10:51:27.809516+00:00"
+  },
+  {
+    "id": "4286ab9ee13f",
+    "title": "GWEC: Wind power ‘in a good place – despite the bad press’",
+    "url": "https://www.windpowermonthly.com/article/1970579/gwec-wind-power-in-good-place-%E2%80%93-despite-bad-press",
+    "source": "Wind Power Monthly",
+    "published": "2026-09-22T10:09:43+00:00",
+    "summary": "GWEC's positive sentiment on wind industry fundamentals suggests underlying market strength despite negative media narratives, potentially signaling attractive entry valuations for PE investors. This optimism supports the case for renewable energy infrastructure investments across Europe, where wind assets remain core portfolio holdings.",
+    "pe_score": 6,
+    "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Emerging market infra governance arbitrage",
-    "fetched_at": "2026-09-22T11:01:56.638474+00:00"
+    "pe_angle": "Wind sector sentiment and M&A readiness",
+    "fetched_at": "2026-09-23T10:51:08.918261+00:00"
+  },
+  {
+    "id": "862f1b7faf34",
+    "title": "EU spends three times more on imports from China than bloc exports there",
+    "url": "https://www.theguardian.com/business/2026/sep/22/eu-imports-china-exports-trade-deficit-xi-jinping-donald-trump",
+    "source": "Guardian Business",
+    "published": "2026-09-22T11:54:08+00:00",
+    "summary": "The EU's €1bn daily trade deficit with China signals structural competitiveness gaps that may drive infrastructure investment in domestic manufacturing, renewable energy, and supply chain resilience. This trade imbalance creates policy tailwinds for European infrastructure funds focused on industrial connectivity, grid modernization, and transport corridors supporting reshoring initiatives.",
+    "pe_score": 6,
+    "sector": "transport",
+    "country": "Europe",
+    "pe_angle": "Supply chain resilience infrastructure",
+    "fetched_at": "2026-09-23T10:51:04.094403+00:00"
+  },
+  {
+    "id": "1d5c71340cfb",
+    "title": "GE Vernova and Vineyard Wind settle offshore wind legal dispute",
+    "url": "https://www.windpowermonthly.com/article/1970241/ge-vernova-vineyard-wind-settle-offshore-wind-legal-dispute",
+    "source": "Wind Power Monthly",
+    "published": "2026-09-17T09:24:11+00:00",
+    "summary": "GE Vernova and Vineyard Wind have resolved their dispute over a US offshore wind project plagued by technical failures and regulatory headwinds, signaling potential cost stabilization for the troubled asset. This settlement may reduce further liability exposure and clarify the commercial viability of offshore wind platforms, relevant for European PE investors evaluating similar technology and project risks.",
+    "pe_score": 5,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Offshore wind technology risk management",
+    "fetched_at": "2026-09-23T10:52:03.598656+00:00"
   },
   {
     "id": "583189447fe1",
@@ -291,38 +304,25 @@
     "url": "https://www.privateequityinternational.com/how-top-lps-incentivise-their-pe-investment-teams/",
     "source": "PEI Media",
     "published": "2026-09-21T12:41:09+00:00",
-    "summary": "US public pensions are experimenting with diverse compensation structures for PE teams, reflecting evolving talent dynamics and benchmark challenges that may influence LP-GP alignment globally. These approaches could signal emerging best practices for incentivizing infrastructure investment professionals across transatlantic funds.",
+    "summary": "US public pension compensation strategies reveal evolving approaches to talent retention in PE, with implications for European fund manager competitiveness in recruitment and LP alignment structures. Differences in incentive design suggest European infra PE funds should review their own compensation frameworks to remain competitive for top investment talent amid tightening labor markets.",
     "pe_score": 5,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "LP compensation and talent retention",
-    "fetched_at": "2026-09-22T11:01:43.593600+00:00"
+    "pe_angle": "PE talent retention strategies",
+    "fetched_at": "2026-09-23T10:51:13.934974+00:00"
   },
   {
-    "id": "124ed84e13fe",
-    "title": "Neuberger smashes debut Japan target by more than 50%",
-    "url": "https://www.privateequityinternational.com/neuberger-smashes-debut-japan-target-by-more-than-50/",
-    "source": "PEI Media",
-    "published": "2026-09-17T07:00:50+00:00",
-    "summary": "Neuberger's Japan PE fund exceeded its debut fundraising target by over 50%, driven by strong APAC LP demand, signaling robust appetite for Japan-focused private equity vehicles. This success may intensify competition for Japan infrastructure assets and could prompt European PE funds to establish dedicated Japan platforms to capture similar momentum.",
-    "pe_score": 4,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Japan market entry competition",
-    "fetched_at": "2026-09-22T11:02:38.409574+00:00"
-  },
-  {
-    "id": "36a7e1d96524",
-    "title": "Mubadala: Healthcare PE’s real test is patients, not just returns",
-    "url": "https://www.privateequityinternational.com/mubadala-healthcare-pes-real-test-is-patients-not-just-returns/",
-    "source": "PEI Media",
-    "published": "2026-09-17T11:02:44+00:00",
-    "summary": "Mubadala's healthcare PE expansion, with up to $2bn ticket sizes, signals major capital inflow into healthcare infrastructure but is outside traditional European infra PE focus areas. This represents a competitive threat for diversified infrastructure funds seeking healthcare assets, particularly in ancillary services and facility management.",
-    "pe_score": 4,
+    "id": "f34de136cf3e",
+    "title": "Calls For Stronger Investment Commitments Ahead Of UN Water Conference",
+    "url": "https://infrastructurenews.co.za/2026/09/22/calls-for-stronger-investment-commitments-ahead-of-un-water-conference/",
+    "source": "Infrastructure News",
+    "published": "2026-09-22T11:31:02+00:00",
+    "summary": "African water sector is receiving renewed political attention with ministerial calls for sustained investment commitments ahead of a UN Water Conference, signaling potential policy tailwinds for infrastructure privatization and PPP opportunities. European PE funds with emerging market exposure should monitor this for greenfield water utilities, treatment facilities, and sanitation infrastructure deals across the continent.",
+    "pe_score": 5,
     "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Healthcare infrastructure capital competition",
-    "fetched_at": "2026-09-22T11:02:32.417266+00:00"
+    "country": "Africa",
+    "pe_angle": "African water utilities infrastructure",
+    "fetched_at": "2026-09-23T10:51:05.745233+00:00"
   },
   {
     "id": "eb734dde367e",
@@ -330,12 +330,25 @@
     "url": "https://www.privateequityinternational.com/pie-or-good-government-pay-to-plays-unintended-consequences/",
     "source": "PEI Media",
     "published": "2026-09-17T16:00:18+00:00",
-    "summary": "The SEC's potential scrapping of pay-to-play rules could increase political lobbying costs and regulatory uncertainty for infrastructure fund managers operating in the US and Europe. European infra PE firms should assess how relaxed US political donation rules might affect their portfolio companies' compliance frameworks and public utility concession negotiations.",
+    "summary": "The SEC's potential removal of pay-to-play rules could increase political lobbying costs and regulatory uncertainty for infrastructure fund managers operating in the US and Europe. European PE funds should assess how weakened US governance standards might affect cross-border infrastructure deals and their own ESG/compliance frameworks.",
     "pe_score": 4,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Regulatory compliance and political risk",
-    "fetched_at": "2026-09-22T11:02:28.978409+00:00"
+    "pe_angle": "US regulatory risk to infra governance",
+    "fetched_at": "2026-09-23T10:51:59.705477+00:00"
+  },
+  {
+    "id": "147ddb327d7a",
+    "title": "Sacred Springs Of South Africa: Pure Waters Or Polluted? We Found Tiny Bits Of Plastic In The Samples We Tested",
+    "url": "https://infrastructurenews.co.za/2026/09/18/sacred-springs-of-south-africa-pure-waters-or-polluted-we-found-tiny-bits-of-plastic-in-the-samples-we-tested/",
+    "source": "Infrastructure News",
+    "published": "2026-09-18T11:14:07+00:00",
+    "summary": "South African water quality issues, including microplastic contamination in sacred springs, signal rising regulatory pressure and investment requirements for water treatment and purification infrastructure across emerging markets. This highlights potential opportunities for European infrastructure funds in water remediation technologies and utilities expansion in Africa, though it also underscores environmental compliance risks in remote or underserved regions.",
+    "pe_score": 4,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "African water quality remediation",
+    "fetched_at": "2026-09-23T10:51:45.732214+00:00"
   },
   {
     "id": "982799f048c7",
@@ -343,12 +356,12 @@
     "url": "https://nordsip.com/2026/09/18/new-initiative-seeks-to-bring-sustainable-transparency-to-defence-industry/",
     "source": "NordSIP",
     "published": "2026-09-18T14:31:57+00:00",
-    "summary": "A €140bn institutional investor coalition is driving ESG transparency standards in defence contracting, creating potential compliance costs and operational restructuring for defence-linked infrastructure assets. PE investors with exposure to defence supply chains or dual-use infrastructure should monitor regulatory developments that could affect valuations and exit timelines.",
+    "summary": "A €140bn institutional investor coalition is pushing for sustainability transparency standards in the defence industry, potentially reshaping ESG compliance requirements for defence-related infrastructure assets. This regulatory shift could create both valuation headwinds for non-compliant defence contractors and opportunities for PE sponsors to add ESG value through operational improvements.",
     "pe_score": 4,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Defence sector ESG compliance risk",
-    "fetched_at": "2026-09-22T11:02:06.066702+00:00"
+    "pe_angle": "Defence contractor ESG standardization",
+    "fetched_at": "2026-09-23T10:51:38.478952+00:00"
   },
   {
     "id": "ba64fe97ad88",
@@ -356,12 +369,12 @@
     "url": "https://infrastructurenews.co.za/2026/09/21/demolishing-lagos-informal-settlements-also-destroys-the-citys-best-defences-against-climate-change/",
     "source": "Infrastructure News",
     "published": "2026-09-21T09:31:42+00:00",
-    "summary": "Lagos's informal settlements provide climate resilience infrastructure that formal demolition programs are destroying, creating a critical gap in adaptive capacity for a megacity of 15+ million. This highlights an emerging investment opportunity in climate-adapted urban infrastructure and the risks of top-down development approaches that neglect existing community-led adaptation systems.",
+    "summary": "Lagos informal settlements provide natural climate resilience infrastructure that formal demolition programs are destroying, creating future liability exposure and missed adaptation investment opportunities. This represents a cautionary market signal for European PE infrastructure funds considering climate adaptation plays in emerging markets where informal solutions may outperform planned interventions.",
     "pe_score": 4,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Climate resilience in informal settlements",
-    "fetched_at": "2026-09-22T11:01:53.449529+00:00"
+    "pe_angle": "Climate adaptation infrastructure risk",
+    "fetched_at": "2026-09-23T10:51:24.273454+00:00"
   },
   {
     "id": "c04e2b780230",
@@ -369,24 +382,11 @@
     "url": "https://infrastructurenews.co.za/2026/09/21/south-africa-has-good-water-laws-but-bad-services-whats-stopping-fair-access/",
     "source": "Infrastructure News",
     "published": "2026-09-21T09:47:07+00:00",
-    "summary": "South Africa's water sector presents a significant infrastructure investment gap where regulatory frameworks exist but operational execution and asset quality lag, creating opportunities for experienced operators to capture value through PPPs and concessions. The identified challenges—aging infrastructure, governance weaknesses, and service delivery failures—align with typical European PE infrastructure fund capabilities in asset rehabilitation and operational improvement.",
+    "summary": "South Africa's water sector presents a significant infrastructure gap between regulatory framework and service delivery, creating potential opportunities for operational improvement and capital deployment in emerging market utilities. The combination of aging infrastructure, governance challenges, and unequal access indicates attractive risk-adjusted returns for experienced infra investors willing to tackle operational turnarounds and ESG-aligned water management solutions.",
     "pe_score": 4,
     "sector": "utilities",
     "country": "South Africa",
-    "pe_angle": "Water infrastructure rehabilitation and governance",
-    "fetched_at": "2026-09-22T11:01:51.891960+00:00"
-  },
-  {
-    "id": "4bf1d47f7c74",
-    "title": "Side Letter: Hawaii losing aloha for PE",
-    "url": "https://www.privateequityinternational.com/side-letter-hawaii-losing-aloha-for-pe/",
-    "source": "PEI Media",
-    "published": "2026-09-21T11:12:41+00:00",
-    "summary": "ERS Hawaii's potential PE allocation reduction signals investor caution in the market, while Schroders' co-investment fund outperformance demonstrates selective opportunity. Loan valuation volatility presents both refinancing risks and entry points for opportunistic infrastructure investors.",
-    "pe_score": 4,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "LP allocation trends and fund performance",
-    "fetched_at": "2026-09-22T11:01:46.983344+00:00"
+    "pe_angle": "Emerging market water infrastructure turnaround",
+    "fetched_at": "2026-09-23T10:51:22.630809+00:00"
   }
 ]
