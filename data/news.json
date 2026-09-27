@@ -1,16 +1,29 @@
 [
   {
+    "id": "dfbb7ba344c7",
+    "title": "New Swedish government urged to accelerate electrification",
+    "url": "https://www.windpowermonthly.com/article/1970457/new-swedish-government-urged-accelerate-electrification",
+    "source": "Wind Power Monthly",
+    "published": "2026-09-21T08:00:19+00:00",
+    "summary": "Sweden's newly elected government faces industry pressure to accelerate electrification and improve wind power investment conditions, signaling potential policy tailwinds for renewable energy projects. This creates near-term opportunities for PE-backed wind developers and grid infrastructure operators to capitalize on regulatory support and increased capex commitments.",
+    "pe_score": 8,
+    "sector": "energy",
+    "country": "Sweden",
+    "pe_angle": "Wind power acceleration and grid investment",
+    "fetched_at": "2026-09-27T11:30:04.183140+00:00"
+  },
+  {
     "id": "3224a9de15a7",
     "title": "'We cannot keep going to these conferences and not talk factual buildout' – Vestas CEO",
     "url": "https://www.windpowermonthly.com/article/1970681/we-cannot-keep-going-conferences-not-talk-factual-buildout-%E2%80%93-vestas-ceo",
     "source": "Wind Power Monthly",
     "published": "2026-09-23T07:33:59+00:00",
-    "summary": "Grid infrastructure bottlenecks and coordination failures between private developers and public authorities are constraining European wind deployment, creating both operational risks and potential infrastructure investment opportunities. Vestas's public frustration signals industry-wide frustration that may accelerate consolidation and drive demand for grid modernization and interconnection assets.",
+    "summary": "Grid infrastructure bottlenecks and coordination failures between private developers and public authorities are creating systemic barriers to wind deployment across Europe, signaling substantial capex requirements for grid modernization and interconnection projects. This presents both a risk to renewable energy buildout returns and a direct investment opportunity in transmission and distribution infrastructure upgrades critical to unlocking stalled wind capacity.",
     "pe_score": 8,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Grid constraint mitigation infrastructure",
-    "fetched_at": "2026-09-26T10:53:29.487916+00:00"
+    "pe_angle": "Grid bottleneck mitigation infrastructure",
+    "fetched_at": "2026-09-27T11:29:46.358858+00:00"
   },
   {
     "id": "6f3bd0fbc658",
@@ -18,12 +31,12 @@
     "url": "https://www.privateequityinternational.com/blackstone-targets-8-5bn-for-latest-energy-transition-fund/",
     "source": "PEI Media",
     "published": "2026-09-23T14:40:29+00:00",
-    "summary": "Blackstone is raising $8.5bn for its latest energy transition fund, representing a 52% increase from the previous $5.58bn vintage closed in February 2025, signaling strong LP appetite for decarbonization infrastructure. This fund size expansion underscores the accelerating capital deployment in European energy transition assets and competitive fundraising dynamics in the sector.",
+    "summary": "Blackstone is raising $8.5bn for its latest energy transition fund, a 52% increase from the previous $5.58bn vintage closed in February 2025, signaling strong LP appetite for decarbonization infrastructure. This deployment scale underscores competitive fundraising dynamics in the energy transition space and may accelerate exit timelines for European infra PE portfolios in renewable assets.",
     "pe_score": 8,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Energy transition capital deployment acceleration",
-    "fetched_at": "2026-09-26T10:53:21.300200+00:00"
+    "pe_angle": "Energy transition fund expansion",
+    "fetched_at": "2026-09-27T11:29:37.854462+00:00"
   },
   {
     "id": "7fd65a1db7db",
@@ -31,12 +44,12 @@
     "url": "https://www.windpowermonthly.com/article/1970789/floating-wind-reach-commercial-scale-in-two-years",
     "source": "Wind Power Monthly",
     "published": "2026-09-24T08:08:12+00:00",
-    "summary": "Floating offshore wind is approaching commercial viability with first FID-stage projects expected within 24 months, opening a new infrastructure asset class for PE deployment. This represents a significant de-risking milestone that could unlock substantial capital deployment opportunities in renewable energy across European waters.",
+    "summary": "Floating offshore wind is approaching commercial viability with major projects expected to reach final investment decisions within two years, creating significant deployment and consolidation opportunities. This represents a critical inflection point for European infrastructure funds to position in a nascent but rapidly scaling renewable energy segment with substantial long-term contracted cash flows.",
     "pe_score": 8,
     "sector": "energy",
     "country": "Europe",
     "pe_angle": "Floating offshore wind commercialization",
-    "fetched_at": "2026-09-26T10:53:11.089989+00:00"
+    "fetched_at": "2026-09-27T11:29:27.457114+00:00"
   },
   {
     "id": "2f42d55fa5cc",
@@ -44,12 +57,12 @@
     "url": "https://nordsip.com/2026/09/25/eu-moves-to-make-carbon-market-more-predictable/",
     "source": "NordSIP",
     "published": "2026-09-25T14:29:41+00:00",
-    "summary": "EU regulatory reforms to increase carbon market predictability will reduce policy risk for infrastructure investors and create more stable long-term cash flows for decarbonization assets. This framework shift enhances valuations for portfolio companies in emissions-intensive sectors and improves IRR visibility for clean energy and transition infrastructure investments.",
+    "summary": "EU regulatory clarity on carbon pricing mechanisms reduces policy risk and improves long-term cash flow visibility for infrastructure assets benefiting from decarbonization incentives. Enhanced market predictability likely increases valuations and attracts institutional capital to carbon-intensive transition projects across energy and utilities sectors.",
     "pe_score": 8,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Carbon market stability and pricing",
-    "fetched_at": "2026-09-26T10:52:50.369697+00:00"
+    "pe_angle": "Carbon market regulatory certainty",
+    "fetched_at": "2026-09-27T11:29:06.637253+00:00"
   },
   {
     "id": "fa0d526c2212",
@@ -57,12 +70,12 @@
     "url": "https://nordsip.com/2026/09/25/what-role-for-nordic-minerals-in-europes-strategic-supply-chain/",
     "source": "NordSIP",
     "published": "2026-09-25T14:35:30+00:00",
-    "summary": "Europe's green energy transition is creating acute supply chain vulnerabilities for critical minerals, with heavy reliance on China and Russia creating both strategic risk and infrastructure investment opportunities. Nordic mineral assets and downstream processing capacity represent a defensible, geopolitically advantaged investment thesis for securing EV battery, renewable energy, and grid infrastructure supply chains.",
+    "summary": "Europe's green energy transition is creating critical supply-chain vulnerabilities in strategic minerals, with heavy reliance on China and Russia presenting both geopolitical risk and investment opportunity. Nordic mineral resources represent a potential de-risking asset for infrastructure investors seeking exposure to domestically-secured battery metals and EV supply chains.",
     "pe_score": 8,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Nordic critical minerals sovereignty",
-    "fetched_at": "2026-09-26T10:52:48.826852+00:00"
+    "pe_angle": "Nordic mineral supply chain resilience",
+    "fetched_at": "2026-09-27T11:29:04.987949+00:00"
   },
   {
     "id": "b50465b3e2ad",
@@ -70,38 +83,12 @@
     "url": "https://nordsip.com/2026/09/25/commission-proposes-sustainability-ratings-for-ai-data-centres/",
     "source": "NordSIP",
     "published": "2026-09-25T14:37:58+00:00",
-    "summary": "The EU's proposed sustainability ratings framework for data centres creates standardized ESG metrics that will likely become mandatory compliance requirements, affecting valuations and operational costs across existing and greenfield data centre portfolios. This regulatory clarity could drive consolidation opportunities among compliant operators while creating refinancing risks for non-compliant assets, particularly those with high energy intensity.",
+    "summary": "The EU's proposed sustainability ratings framework for data centres creates standardized ESG metrics that will likely become mandatory for large operators, establishing new compliance costs and competitive differentiation opportunities. This regulatory clarity could accelerate consolidation among compliant operators while creating valuation uplift for assets meeting sustainability standards.",
     "pe_score": 8,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Data centre ESG standardization",
-    "fetched_at": "2026-09-26T10:52:47.228915+00:00"
-  },
-  {
-    "id": "d666884ac315",
-    "title": "China’s stranglehold on rare earths must be ended, says hopeful supplier to EU",
-    "url": "https://www.theguardian.com/environment/2026/sep/20/china-stranglehold-rare-earths-hopeful-supplier-eu-viridis",
-    "source": "Guardian Business",
-    "published": "2026-09-20T11:00:14+00:00",
-    "summary": "China's dominance in rare earth supply poses strategic risk to European infrastructure, with a Brazilian supplier targeting EU market entry within two years as geopolitical tensions escalate around Trump-Xi negotiations. Supply diversification represents a critical infrastructure security investment opportunity for European PE funds seeking exposure to critical materials supply chains.",
-    "pe_score": 7,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Rare earths supply chain diversification",
-    "fetched_at": "2026-09-26T10:53:54.320079+00:00"
-  },
-  {
-    "id": "dfbb7ba344c7",
-    "title": "New Swedish government urged to accelerate electrification",
-    "url": "https://www.windpowermonthly.com/article/1970457/new-swedish-government-urged-accelerate-electrification",
-    "source": "Wind Power Monthly",
-    "published": "2026-09-21T08:00:19+00:00",
-    "summary": "Sweden's post-election political window presents a critical opportunity to accelerate wind power investment through improved regulatory frameworks and electrification targets. Industry advocacy for expedited conditions signals potential asset acquisition and development pipeline expansion for European infra PE investors.",
-    "pe_score": 7,
-    "sector": "energy",
-    "country": "Sweden",
-    "pe_angle": "Wind power acceleration policy",
-    "fetched_at": "2026-09-26T10:53:48.303063+00:00"
+    "pe_angle": "Data centre sustainability compliance",
+    "fetched_at": "2026-09-27T11:29:02.839617+00:00"
   },
   {
     "id": "62863e6a4210",
@@ -109,12 +96,12 @@
     "url": "https://www.windpowermonthly.com/article/1970471/gazelle-wind-power-develops-floating-platform-18mw-plus-turbines",
     "source": "Wind Power Monthly",
     "published": "2026-09-21T09:57:43+00:00",
-    "summary": "Gazelle Wind Power's 18MW+ floating platform addresses the high-capacity, extreme-weather offshore wind segment, reducing deployment constraints and unlocking new sites with superior wind resources. This technology advancement could drive consolidation opportunities and asset valuations in floating offshore wind, a key growth vector for European infrastructure portfolios targeting energy transition exposure.",
+    "summary": "Gazelle Wind Power's 18MW+ floating platform addresses a critical capability gap in extreme-weather offshore wind sites, expanding the addressable market for European offshore projects. This technology enables development of previously inaccessible high-wind sites, potentially enhancing IRRs and project feasibility across Northern European waters.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
     "pe_angle": "Floating offshore wind technology",
-    "fetched_at": "2026-09-26T10:53:43.151494+00:00"
+    "fetched_at": "2026-09-27T11:29:59.234011+00:00"
   },
   {
     "id": "b736fd0373a6",
@@ -122,12 +109,12 @@
     "url": "https://www.windpowermonthly.com/article/1970573/zf-wind-power-launches-modular-powertrain-platform",
     "source": "Wind Power Monthly",
     "published": "2026-09-22T09:35:02+00:00",
-    "summary": "ZF Wind Power's modular powertrain platform reduces manufacturing complexity and capital expenditure for turbine OEMs, potentially creating consolidation opportunities in the €15B+ global wind drivetrain market. The platform's standardization across onshore/offshore applications could drive margin expansion and recurring revenue streams for PE-backed wind component suppliers.",
+    "summary": "ZF Wind Power's modular powertrain platform addresses a critical operational efficiency bottleneck in onshore/offshore wind turbines, reducing capex and accelerating deployment timelines for wind farm developers. This platform standardization creates attractive acquisition and consolidation opportunities for European infrastructure funds investing in renewable energy manufacturing and supply chain resilience.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Wind drivetrain technology standardization",
-    "fetched_at": "2026-09-26T10:53:37.904484+00:00"
+    "pe_angle": "Wind turbine supply chain optimization",
+    "fetched_at": "2026-09-27T11:29:54.276334+00:00"
   },
   {
     "id": "30245da3f26e",
@@ -135,12 +122,12 @@
     "url": "https://www.windpowermonthly.com/article/1970607/windenergy-hamburg-year-reminder-renewables-cheapest-solution-society",
     "source": "Wind Power Monthly",
     "published": "2026-09-22T12:06:47+00:00",
-    "summary": "WindEnergy Hamburg conference highlights investor demand for predictability mechanisms and government backing in renewable energy projects, signaling strengthening policy support for long-term infrastructure returns. The focus on energy security and cost competitiveness of renewables suggests accelerating deployment opportunities and potential M&A activity in European wind assets.",
+    "summary": "The WindEnergy Hamburg conference highlights investor demand for predictability in renewable energy investments and government focus on energy security, creating opportunities for long-term contracted assets. Renewables being positioned as the cheapest societal solution reinforces favorable policy tailwinds for European infrastructure PE deployment in wind projects.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Germany",
-    "pe_angle": "Renewable energy policy certainty",
-    "fetched_at": "2026-09-26T10:53:31.120308+00:00"
+    "pe_angle": "Wind energy investor certainty frameworks",
+    "fetched_at": "2026-09-27T11:29:47.974065+00:00"
   },
   {
     "id": "81fa5eb3711e",
@@ -148,12 +135,12 @@
     "url": "https://www.windpowermonthly.com/article/1970687/offshore-wind-coexist-sea-users",
     "source": "Wind Power Monthly",
     "published": "2026-09-23T08:30:00+00:00",
-    "summary": "Offshore wind developers must engage early with maritime stakeholders to de-risk permitting and operational conflicts, with tailored solutions improving project viability. This creates opportunities for infrastructure funds to invest in proven coexistence frameworks that reduce project delays and enhance asset valuations.",
+    "summary": "Successful offshore wind projects require early stakeholder engagement and customized coexistence frameworks with fisheries, shipping, and other marine users—a critical operational consideration for portfolio companies seeking development permits and social license. This positions experienced operators with established multi-stakeholder relationships as premium acquisition targets, while highlighting regulatory and community management as key value drivers.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Offshore wind stakeholder risk mitigation",
-    "fetched_at": "2026-09-26T10:53:27.886388+00:00"
+    "pe_angle": "Offshore wind permitting and stakeholder risk",
+    "fetched_at": "2026-09-27T11:29:44.627762+00:00"
   },
   {
     "id": "04401d08c7e6",
@@ -161,12 +148,12 @@
     "url": "https://www.privateequityinternational.com/side-letter-eqts-gulf-stream/",
     "source": "PEI Media",
     "published": "2026-09-23T11:53:59+00:00",
-    "summary": "EQT's expansion into emerging markets is becoming a competitive requirement for large PE firms seeking growth, while a liquidity squeeze is emerging in late-stage assets as the 'private for longer' trend extends holding periods. European infrastructure funds should monitor how extended fund lifecycles and competitive pressure for non-traditional geographies impact deployment timelines and exit strategies.",
+    "summary": "EQT's expansion into Eastern European infrastructure has become a competitive necessity for major PE firms seeking growth, while the 'private for longer' trend is creating liquidity challenges for late-stage assets requiring timely exits. Advent's $3 billion fundraise signals continued appetite for infrastructure strategies despite market headwinds affecting deployment timelines.",
     "pe_score": 7,
-    "sector": "energy",
+    "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Emerging market infra deployment pressure",
-    "fetched_at": "2026-09-26T10:53:24.904902+00:00"
+    "pe_angle": "Eastern European infrastructure expansion race",
+    "fetched_at": "2026-09-27T11:29:41.175596+00:00"
   },
   {
     "id": "d16ced1659f4",
@@ -174,12 +161,12 @@
     "url": "https://www.windpowermonthly.com/article/1970716/germanys-two-stage-offshore-wind-auction-plans-useless-dangerous",
     "source": "Wind Power Monthly",
     "published": "2026-09-23T12:17:53+00:00",
-    "summary": "Germany's proposed two-stage offshore wind auction process faces significant industry pushback, with developers warning of implementation risks that could delay project deployment and reduce asset quality. This regulatory uncertainty may create M&A opportunities for well-capitalized funds to consolidate distressed or delayed projects, but also signals potential delays in pipeline monetization.",
+    "summary": "Germany's proposed two-stage offshore wind auction process faces significant developer pushback at WindEnergy Hamburg 2026, with industry criticism that it could impede project viability and capital deployment. This regulatory uncertainty directly impacts deal flow and asset valuation for offshore wind portfolios in Europe's largest economy.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Germany",
-    "pe_angle": "Offshore wind auction risk mitigation",
-    "fetched_at": "2026-09-26T10:53:23.003357+00:00"
+    "pe_angle": "Offshore wind auction framework risk",
+    "fetched_at": "2026-09-27T11:29:39.398760+00:00"
   },
   {
     "id": "81d18da7bf1b",
@@ -187,77 +174,12 @@
     "url": "https://www.windpowermonthly.com/article/1970757/chinese-wind-giant-calls-competition-cut-european-costs",
     "source": "Wind Power Monthly",
     "published": "2026-09-24T07:07:59+00:00",
-    "summary": "Mingyang's push for increased turbine supplier competition signals potential market consolidation risks and pricing pressure in European offshore wind, directly impacting portfolio company margins and exit valuations. Incumbent manufacturers' resistance suggests competitive dynamics may favor new entrants, presenting both disruption risks and acquisition opportunities for PE-backed wind operators.",
+    "summary": "Mingyang Smart Energy's push for market consolidation suggests offshore wind turbine pricing remains under pressure despite technology maturity, creating potential M&A opportunities as smaller suppliers face margin compression. Incumbent manufacturers' defensive response indicates market fragmentation and competitive intensity that could drive consolidation or force strategic partnerships among European wind asset holders.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Offshore wind supply chain competition",
-    "fetched_at": "2026-09-26T10:53:12.996839+00:00"
-  },
-  {
-    "id": "541d0fe73fd5",
-    "title": "EU says Trump’s plan to ban US diesel exports would ‘negatively impact both sides’",
-    "url": "https://www.theguardian.com/business/2026/sep/24/eu-trump-diesel-export-ban-fuel-prices-europe",
-    "source": "Guardian Business",
-    "published": "2026-09-24T14:46:44+00:00",
-    "summary": "A potential US diesel export ban could create supply disruptions and price spikes across Europe, significantly impacting energy costs for infrastructure operators and logistics companies. This geopolitical trade action presents both headwind risks to portfolio companies and potential valuation opportunities in European refining and energy transition infrastructure.",
-    "pe_score": 7,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Fuel supply disruption risk hedging",
-    "fetched_at": "2026-09-26T10:53:02.136675+00:00"
-  },
-  {
-    "id": "fcf19d8b3f39",
-    "title": "‘Data is extremely important’ for offshore wind’s longevity",
-    "url": "https://www.windpowermonthly.com/article/1970863/data-extremely-important-offshore-winds-longevity",
-    "source": "Wind Power Monthly",
-    "published": "2026-09-24T15:19:57+00:00",
-    "summary": "Data analytics and digital tools are becoming critical operational assets for offshore wind farm lifecycle management, directly impacting EBITDA margins through optimized maintenance and reduced downtime. This insight presents an acquisition opportunity for PE funds to invest in specialized O&M service providers or digital platforms that enhance profitability of existing wind farm portfolios.",
-    "pe_score": 7,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Offshore wind O&M digitalization",
-    "fetched_at": "2026-09-26T10:53:00.314761+00:00"
-  },
-  {
-    "id": "74f9a775e709",
-    "title": "Bondholders are Back in the Tech Room",
-    "url": "https://nordsip.com/2026/09/25/bondholders-are-back-in-the-tech-room/",
-    "source": "NordSIP",
-    "published": "2026-09-25T14:26:03+00:00",
-    "summary": "Bond markets are re-entering technology infrastructure financing after a 25-year hiatus, creating new capital availability for tech-enabled infrastructure projects. This shift presents refinancing and growth opportunities for European infra PE portfolios, particularly in digital and connectivity assets.",
-    "pe_score": 7,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Tech infrastructure debt financing revival",
-    "fetched_at": "2026-09-26T10:52:51.786798+00:00"
-  },
-  {
-    "id": "4286ab9ee13f",
-    "title": "GWEC: Wind power ‘in a good place – despite the bad press’",
-    "url": "https://www.windpowermonthly.com/article/1970579/gwec-wind-power-in-good-place-%E2%80%93-despite-bad-press",
-    "source": "Wind Power Monthly",
-    "published": "2026-09-22T10:09:43+00:00",
-    "summary": "GWEC's positive outlook on wind power fundamentals suggests resilient sector dynamics despite media scrutiny, creating potential entry points for infrastructure PE through asset acquisitions or refinancing. Industry sentiment from a credible source indicates stabilizing returns and reduced regulatory risk, supporting thesis for mid-market wind portfolio consolidation across Europe.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Wind sector sentiment and M&A readiness",
-    "fetched_at": "2026-09-26T10:53:36.296261+00:00"
-  },
-  {
-    "id": "f34de136cf3e",
-    "title": "Calls For Stronger Investment Commitments Ahead Of UN Water Conference",
-    "url": "https://infrastructurenews.co.za/2026/09/22/calls-for-stronger-investment-commitments-ahead-of-un-water-conference/",
-    "source": "Infrastructure News",
-    "published": "2026-09-22T11:31:02+00:00",
-    "summary": "African water infrastructure faces a critical investment gap, with government calls for sustained capital ahead of UN discussions creating potential deal flow opportunities. European PE funds can position themselves to capitalize on concessional financing, PPP structuring, and operational improvements in water utilities across the continent.",
-    "pe_score": 6,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "African water utility consolidation",
-    "fetched_at": "2026-09-26T10:53:32.640530+00:00"
+    "pe_angle": "Offshore wind supply chain consolidation",
+    "fetched_at": "2026-09-27T11:29:29.215321+00:00"
   },
   {
     "id": "337b2e936ce4",
@@ -265,25 +187,38 @@
     "url": "https://www.windpowermonthly.com/article/1970798/envision-targets-european-offshore-wind-167mw-turbine",
     "source": "Wind Power Monthly",
     "published": "2026-09-24T09:32:26+00:00",
-    "summary": "Envision Energy's entry into European offshore wind with a competitive 16.7MW turbine presents both market opportunity and headwinds, as Chinese manufacturers face adoption barriers in Europe despite technical capabilities. This signals potential consolidation risk for incumbent OEMs and opening for European turbine makers or acquisition targets seeking technology partnerships.",
-    "pe_score": 6,
+    "summary": "Envision Energy's entry into European offshore wind with a competitive 16.7MW turbine presents both market opportunity and competitive risk, as Chinese OEMs attempt to overcome recent setbacks in securing European contracts. This signals potential supply chain consolidation, technology cost pressures, and pricing competition that could impact European turbine manufacturers and offshore wind project economics.",
+    "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Offshore wind supply chain competition",
-    "fetched_at": "2026-09-26T10:53:07.520232+00:00"
+    "pe_angle": "Offshore wind supply competition",
+    "fetched_at": "2026-09-27T11:29:24.099600+00:00"
   },
   {
-    "id": "c104026d7536",
-    "title": "US states sue Trump over offshore wind lease buybacks",
-    "url": "https://www.windpowermonthly.com/article/1970803/us-states-sue-trump-offshore-wind-lease-buybacks",
-    "source": "Wind Power Monthly",
-    "published": "2026-09-24T09:34:38+00:00",
-    "summary": "US offshore wind faces regulatory uncertainty as California and New York sue to block Trump administration lease buybacks, creating potential distressed asset opportunities and supply chain disruptions for European offshore wind developers with US exposure. Political risk around renewable energy policy may affect project finance costs and refinancing timelines for cross-Atlantic infrastructure investments.",
-    "pe_score": 6,
+    "id": "541d0fe73fd5",
+    "title": "EU says Trump’s plan to ban US diesel exports would ‘negatively impact both sides’",
+    "url": "https://www.theguardian.com/business/2026/sep/24/eu-trump-diesel-export-ban-fuel-prices-europe",
+    "source": "Guardian Business",
+    "published": "2026-09-24T14:46:44+00:00",
+    "summary": "A potential US diesel export ban could significantly increase fuel costs across Europe, creating headwinds for infrastructure operators dependent on stable energy pricing and potentially triggering demand for alternative energy infrastructure solutions. This geopolitical trade action increases energy price volatility and regulatory risk for European infrastructure assets tied to fossil fuel exposure.",
+    "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "US offshore wind regulatory risk",
-    "fetched_at": "2026-09-26T10:53:05.789448+00:00"
+    "pe_angle": "Fuel price volatility and energy security",
+    "fetched_at": "2026-09-27T11:29:18.825761+00:00"
+  },
+  {
+    "id": "fcf19d8b3f39",
+    "title": "‘Data is extremely important’ for offshore wind’s longevity",
+    "url": "https://www.windpowermonthly.com/article/1970863/data-extremely-important-offshore-winds-longevity",
+    "source": "Wind Power Monthly",
+    "published": "2026-09-24T15:19:57+00:00",
+    "summary": "Data analytics and digital infrastructure are becoming critical competitive advantages in offshore wind operations, directly impacting long-term asset performance and IRR across multi-decade fund holding periods. PE investors should prioritize portfolio companies developing O&M data capabilities, as this emerging value driver can materially reduce operational costs and extend asset lifecycles.",
+    "pe_score": 7,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Offshore wind digital O&M",
+    "fetched_at": "2026-09-27T11:29:17.017471+00:00"
   },
   {
     "id": "479027add88e",
@@ -291,25 +226,12 @@
     "url": "https://www.privateequityinternational.com/the-thorny-issue-of-lp-incentivisation/",
     "source": "PEI Media",
     "published": "2026-09-24T19:56:06+00:00",
-    "summary": "LP bonus structures are increasingly divergent across major institutional investors, creating complexity in fund structuring and alignment discussions for GPs. European infrastructure funds must tailor incentive packages to different LP profiles to remain competitive in capital raising.",
-    "pe_score": 6,
+    "summary": "Divergent LP bonus structures across major institutional investors create complexity in fund structuring and alignment negotiations for European infrastructure PE funds. Understanding these varied incentive schemes is critical for optimizing GP-LP terms and managing performance expectations in competitive fundraising environments.",
+    "pe_score": 7,
     "sector": "utilities",
     "country": "Europe",
     "pe_angle": "LP alignment and fund structuring",
-    "fetched_at": "2026-09-26T10:52:58.368665+00:00"
-  },
-  {
-    "id": "c0c28d2d1756",
-    "title": "What Asia Pacific can learn from Europe’s offshore wind successes and failures",
-    "url": "https://www.windpowermonthly.com/article/1970908/asia-pacific-learn-europes-offshore-wind-successes-failures",
-    "source": "Wind Power Monthly",
-    "published": "2026-09-25T07:57:38+00:00",
-    "summary": "European offshore wind developers are sharing regional supply chain strategies with Asia Pacific markets, indicating maturation of European capabilities and potential export opportunities for portfolio companies. This knowledge transfer suggests European developers may license technology, provide services, or pursue joint ventures in high-growth Asian markets.",
-    "pe_score": 6,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Offshore wind supply chain export",
-    "fetched_at": "2026-09-26T10:52:55.239325+00:00"
+    "fetched_at": "2026-09-27T11:29:15.256018+00:00"
   },
   {
     "id": "c7bac33fc044",
@@ -317,12 +239,25 @@
     "url": "https://www.windpowermonthly.com/article/1970859/asian-manufacturers-look-bridge-gap-localisation-new-markets",
     "source": "Wind Power Monthly",
     "published": "2026-09-25T09:02:42+00:00",
-    "summary": "Asian wind manufacturers are pursuing localized production strategies to overcome market entry barriers and expand beyond domestic markets, creating potential acquisition targets and partnership opportunities for European PE investors. This trend signals increasing competitive pressure in renewable energy supply chains and potential consolidation opportunities as Asian players establish European manufacturing footprints.",
-    "pe_score": 6,
+    "summary": "Asian wind manufacturers are pursuing localized production strategies to penetrate new markets and circumvent rising trade barriers, signaling potential consolidation and partnership opportunities for European infrastructure investors. This geographic diversification by Asian competitors may drive valuations and M&A activity among European wind OEMs and supply chain players seeking to defend market share.",
+    "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Asian wind OEM European expansion",
-    "fetched_at": "2026-09-26T10:52:53.606289+00:00"
+    "pe_angle": "Asian wind competition localization",
+    "fetched_at": "2026-09-27T11:29:09.877421+00:00"
+  },
+  {
+    "id": "74f9a775e709",
+    "title": "Bondholders are Back in the Tech Room",
+    "url": "https://nordsip.com/2026/09/25/bondholders-are-back-in-the-tech-room/",
+    "source": "NordSIP",
+    "published": "2026-09-25T14:26:03+00:00",
+    "summary": "The bond market's renewed appetite for tech-enabled infrastructure assets after a 25-year hiatus creates new financing opportunities for PE-backed infrastructure plays. This shift improves capital availability and potentially valuation multiples for digital infrastructure and tech-integrated assets across European markets.",
+    "pe_score": 7,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "Tech infrastructure bond refinancing",
+    "fetched_at": "2026-09-27T11:29:08.139608+00:00"
   },
   {
     "id": "d052c6e6601f",
@@ -330,12 +265,25 @@
     "url": "https://infrastructurenews.co.za/2026/09/21/the-tug-of-war-over-south-africas-governance-future/",
     "source": "Infrastructure News",
     "published": "2026-09-21T07:13:58+00:00",
-    "summary": "South Africa's governance crisis presents infrastructure investment headwinds, with municipal failures and water security gaps indicating elevated operational risks and delayed capex deployment. European PE players with South African exposure should monitor regulatory frameworks and accountability mechanisms that could affect asset valuations and exit timelines.",
-    "pe_score": 5,
+    "summary": "South Africa's governance crisis, highlighted at the 16th Premier Corporate Governance Conference, exposes critical infrastructure vulnerabilities in municipal management and water security that create both operational risks and restructuring opportunities for infrastructure investors. Weak accountability mechanisms and service delivery failures present potential entry points for professional management and operational improvements in underperforming South African infrastructure assets.",
+    "pe_score": 6,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Emerging market governance risk mitigation",
-    "fetched_at": "2026-09-26T10:53:49.882941+00:00"
+    "pe_angle": "South Africa infrastructure governance risk",
+    "fetched_at": "2026-09-27T11:30:05.781553+00:00"
+  },
+  {
+    "id": "4286ab9ee13f",
+    "title": "GWEC: Wind power ‘in a good place – despite the bad press’",
+    "url": "https://www.windpowermonthly.com/article/1970579/gwec-wind-power-in-good-place-%E2%80%93-despite-bad-press",
+    "source": "Wind Power Monthly",
+    "published": "2026-09-22T10:09:43+00:00",
+    "summary": "Despite negative media narrative, the wind power sector is fundamentally sound, suggesting strong underlying fundamentals for infrastructure PE investment opportunities. This positive industry sentiment indicates resilient demand and operational stability that could support valuations and returns in wind energy portfolios.",
+    "pe_score": 6,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Wind sector sentiment and fundamentals",
+    "fetched_at": "2026-09-27T11:29:52.482559+00:00"
   },
   {
     "id": "a00d5b819f9a",
@@ -343,12 +291,51 @@
     "url": "https://www.privateequityinternational.com/side-letter-schwarzmans-us-ai-play/",
     "source": "PEI Media",
     "published": "2026-09-22T11:19:19+00:00",
-    "summary": "Schwarzman's focus on US AI infrastructure opportunities signals major capital allocation shifts that could reduce dry powder available for European infrastructure assets. The article's mention of UK net-zero policy reversal suggests European infra valuations and regulatory frameworks may face near-term headwinds affecting deal fundamentals.",
-    "pe_score": 5,
+    "summary": "Schwarzman's positioning of US AI infrastructure as a major opportunity signals potential capital reallocation away from traditional European infrastructure plays. European PE funds may face intensified competition for limited LP capital as US AI buildout attracts mega-fund attention and returns.",
+    "pe_score": 6,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "US AI capex competition for LP capital",
+    "fetched_at": "2026-09-27T11:29:50.878748+00:00"
+  },
+  {
+    "id": "f34de136cf3e",
+    "title": "Calls For Stronger Investment Commitments Ahead Of UN Water Conference",
+    "url": "https://infrastructurenews.co.za/2026/09/22/calls-for-stronger-investment-commitments-ahead-of-un-water-conference/",
+    "source": "Infrastructure News",
+    "published": "2026-09-22T11:31:02+00:00",
+    "summary": "African water sector is attracting renewed policy attention ahead of a UN conference, with government officials signaling increased investment appetite. This represents a potential market-opening opportunity for European infrastructure funds to deploy capital in underserved African water and sanitation assets.",
+    "pe_score": 6,
+    "sector": "utilities",
+    "country": "Africa",
+    "pe_angle": "African water infrastructure development",
+    "fetched_at": "2026-09-27T11:29:49.378749+00:00"
+  },
+  {
+    "id": "c104026d7536",
+    "title": "US states sue Trump over offshore wind lease buybacks",
+    "url": "https://www.windpowermonthly.com/article/1970803/us-states-sue-trump-offshore-wind-lease-buybacks",
+    "source": "Wind Power Monthly",
+    "published": "2026-09-24T09:34:38+00:00",
+    "summary": "US offshore wind leases face regulatory uncertainty as California and New York challenge Trump administration buyback plans, creating potential asset repricing and investment risk for developers. European PE investors with US offshore wind exposure or acquisition targets should monitor litigation outcomes, as policy reversals could affect comparable project valuations and refinancing terms.",
+    "pe_score": 6,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "UK energy transition policy risk",
-    "fetched_at": "2026-09-26T10:53:34.334505+00:00"
+    "pe_angle": "US wind policy litigation risk",
+    "fetched_at": "2026-09-27T11:29:22.286257+00:00"
+  },
+  {
+    "id": "c0c28d2d1756",
+    "title": "What Asia Pacific can learn from Europe’s offshore wind successes and failures",
+    "url": "https://www.windpowermonthly.com/article/1970908/asia-pacific-learn-europes-offshore-wind-successes-failures",
+    "source": "Wind Power Monthly",
+    "published": "2026-09-25T07:57:38+00:00",
+    "summary": "European offshore wind developers are sharing operational insights with Asia Pacific markets, emphasizing regional supply chain optimization over localized redundancy. This knowledge transfer presents potential deal opportunities for European PE funds seeking to expand offshore wind platforms into emerging Asian markets or to partner with regional developers.",
+    "pe_score": 6,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Offshore wind supply chain optimization",
+    "fetched_at": "2026-09-27T11:29:11.551690+00:00"
   },
   {
     "id": "19a09e606135",
@@ -356,12 +343,12 @@
     "url": "https://www.theguardian.com/business/2026/sep/24/eu-sales-chinese-hybrid-cars-rocket",
     "source": "Guardian Business",
     "published": "2026-09-24T08:34:46+00:00",
-    "summary": "Chinese hybrid vehicle imports to the EU have surged 24,000% since 2022, exploiting a regulatory gap in EV tariffs and threatening European OEM market share and profitability. This regulatory arbitrage presents both a headwind for traditional automotive assets and potential opportunities in EV infrastructure and charging networks as the industry transitions.",
+    "summary": "Chinese hybrid vehicle imports to the EU surged 24,000% since 2022, exploiting a regulatory gap in EV tariffs and threatening European OEM competitiveness and local supply chain economics. This tariff arbitrage creates urgency around potential protective measures, industrial consolidation, or alternative powertrain infrastructure investments within Europe.",
     "pe_score": 5,
     "sector": "transport",
     "country": "Europe",
-    "pe_angle": "EV tariff arbitrage, automotive disruption",
-    "fetched_at": "2026-09-26T10:53:09.579415+00:00"
+    "pe_angle": "Automotive supply chain disruption risk",
+    "fetched_at": "2026-09-27T11:29:26.002362+00:00"
   },
   {
     "id": "ba64fe97ad88",
@@ -369,12 +356,12 @@
     "url": "https://infrastructurenews.co.za/2026/09/21/demolishing-lagos-informal-settlements-also-destroys-the-citys-best-defences-against-climate-change/",
     "source": "Infrastructure News",
     "published": "2026-09-21T09:31:42+00:00",
-    "summary": "Lagos's informal settlements represent de facto climate resilience infrastructure that municipal demolition programs risk destroying, creating both liability exposure and lost social infrastructure value for infrastructure investors operating in West African markets. This highlights tension between urban formalization projects and climate adaptation, presenting opportunities for integrated resilience-focused urban development funds.",
+    "summary": "Lagos's informal settlements have developed resilient climate adaptation infrastructure that formal demolition programs are destroying, creating risk for catastrophic infrastructure failure and social disruption. This highlights a critical gap in African climate resilience strategy where informal communities outperform formal planning—a potential investment thesis for adaptive infrastructure solutions in vulnerable emerging markets.",
     "pe_score": 4,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Climate resilience urban infrastructure",
-    "fetched_at": "2026-09-26T10:53:46.821491+00:00"
+    "pe_angle": "Climate resilience in emerging markets",
+    "fetched_at": "2026-09-27T11:30:02.626536+00:00"
   },
   {
     "id": "c04e2b780230",
@@ -382,11 +369,24 @@
     "url": "https://infrastructurenews.co.za/2026/09/21/south-africa-has-good-water-laws-but-bad-services-whats-stopping-fair-access/",
     "source": "Infrastructure News",
     "published": "2026-09-21T09:47:07+00:00",
-    "summary": "South Africa's water infrastructure gap presents a significant market opportunity for private capital to bridge service delivery deficits, despite robust regulatory frameworks that enable infrastructure investment and operational improvement. Weak governance and aging assets create both risks and potential for value creation through operational efficiency gains and capacity expansion in an underserved market.",
+    "summary": "South Africa's water sector presents a paradox: strong regulatory frameworks exist but poor service delivery persists due to infrastructure decay and governance failures, creating significant operational and reputational risks for infrastructure investors. European PE funds entering African water assets must account for regulatory-implementation gaps and the capital intensity required to bridge service delivery deficits.",
     "pe_score": 4,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Emerging market water infrastructure gaps",
-    "fetched_at": "2026-09-26T10:53:44.953969+00:00"
+    "pe_angle": "African water infrastructure risk mitigation",
+    "fetched_at": "2026-09-27T11:30:01.009399+00:00"
+  },
+  {
+    "id": "ba27d25c4f73",
+    "title": "South African Suppliers Are Financing Their Own Customers",
+    "url": "https://infrastructurenews.co.za/2026/09/23/south-african-suppliers-are-financing-their-own-customers/",
+    "source": "Infrastructure News",
+    "published": "2026-09-23T19:00:30+00:00",
+    "summary": "South African suppliers are extending payment terms to customers, effectively becoming involuntary lenders and creating working capital financing gaps. This highlights structural liquidity challenges in emerging market infrastructure supply chains that European PE firms could address through supply chain financing platforms or receivables solutions.",
+    "pe_score": 4,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "Supply chain financing in emerging markets",
+    "fetched_at": "2026-09-27T11:29:34.285717+00:00"
   }
 ]
