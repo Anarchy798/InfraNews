@@ -1,55 +1,16 @@
 [
   {
-    "id": "faff7db36be8",
-    "title": "Vestas eyes collaboration with deepwater offshore wind tech company",
-    "url": "https://www.windpowermonthly.com/article/1971824/vestas-eyes-collaboration-deepwater-offshore-wind-tech-company",
-    "source": "Wind Power Monthly",
-    "published": "2026-10-06T16:01:44+00:00",
-    "summary": "Vestas is exploring strategic collaboration with a deepwater offshore wind technology company, potentially unlocking access to higher-capacity turbines and deeper-water sites that expand the addressable market for offshore wind assets. This move signals consolidation in advanced offshore wind technology and could create attractive acquisition or co-investment opportunities for PE investors positioned in the renewable energy infrastructure space.",
-    "pe_score": 8,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Offshore wind technology consolidation",
-    "fetched_at": "2026-10-13T13:39:39.193974+00:00"
-  },
-  {
-    "id": "c897f256748f",
-    "title": "Floating offshore wind specialist Eolink put up for sale",
-    "url": "https://www.windpowermonthly.com/article/1971877/floating-offshore-wind-specialist-eolink-put-sale",
-    "source": "Wind Power Monthly",
-    "published": "2026-10-07T10:26:52+00:00",
-    "summary": "Eolink, a specialized floating offshore wind developer, is being divested through court-ordered restructuring, potentially signaling distress in the sector but creating a strategic acquisition opportunity for consolidation-focused infrastructure investors. This sale could attract large PE funds seeking exposure to floating offshore wind, a high-growth subsector critical to Europe's renewable energy transition.",
-    "pe_score": 8,
-    "sector": "energy",
-    "country": "France",
-    "pe_angle": "Floating offshore wind distressed M&A",
-    "fetched_at": "2026-10-13T13:39:37.579803+00:00"
-  },
-  {
     "id": "75b6aaede373",
     "title": "Hundreds of European wind assets at risk of cyber attacks – report",
     "url": "https://www.windpowermonthly.com/article/1972007/hundreds-european-wind-assets-risk-cyber-attacks-%E2%80%93-report",
     "source": "Wind Power Monthly",
     "published": "2026-10-08T11:04:40+00:00",
-    "summary": "Over 600 European wind assets face material cyber vulnerability, creating immediate operational and liability risks for portfolio companies and threatening asset valuations. This cybersecurity exposure represents both a compliance/insurance cost headwind and a potential consolidation opportunity for buyers with robust security infrastructure.",
+    "summary": "Over 600 European wind assets face material cyber vulnerability, creating immediate operational and liability risks for portfolio companies and potential acquisition targets. This exposure could necessitate significant remediation capex and insurance adjustments, while also presenting consolidation opportunities for acquirers with strong cyber infrastructure.",
     "pe_score": 8,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Wind asset cyber risk remediation",
-    "fetched_at": "2026-10-13T13:39:34.499628+00:00"
-  },
-  {
-    "id": "7bacd8db73bc",
-    "title": "DOWNLOAD: Private equity fundraising turns a corner",
-    "url": "https://www.privateequityinternational.com/download-private-equity-fundraising-turns-a-corner/",
-    "source": "PEI Media",
-    "published": "2026-10-08T11:38:15+00:00",
-    "summary": "PE fundraising momentum has accelerated significantly in 2026, with Q1-Q3 raising $702bn—a 17% year-over-year increase—suggesting improved LP appetite and potentially higher dry powder for infrastructure deployment. This fundraising strength indicates a favorable environment for European infra PE funds to deploy capital into operational assets and platform acquisitions.",
-    "pe_score": 7,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "PE fundraising recovery and capital availability",
-    "fetched_at": "2026-10-13T13:39:33.050773+00:00"
+    "pe_angle": "Wind asset cyber risk mitigation",
+    "fetched_at": "2026-10-14T11:18:18.831599+00:00"
   },
   {
     "id": "add101f4681a",
@@ -57,12 +18,12 @@
     "url": "https://www.privateequityinternational.com/data-snapshot-regional-and-strategy-differences-emerge-amid-fundraising-slowdown/",
     "source": "PEI Media",
     "published": "2026-10-08T15:29:29+00:00",
-    "summary": "European infrastructure funds are demonstrating relative strength compared to venture capital and Asia-Pacific peers during the current fundraising downturn, suggesting a defensive positioning of capital toward established assets. This regional resilience may create attractive deployment opportunities for European infra PE investors with dry powder.",
+    "summary": "European infrastructure funds are demonstrating resilience relative to global peers as venture capital and Asia-Pacific markets face sustained fundraising headwinds. This regional outperformance may create selective deployment opportunities for European infra investors with dry powder amid broader market dislocation.",
     "pe_score": 7,
-    "sector": "utilities",
+    "sector": "energy",
     "country": "Europe",
-    "pe_angle": "European infra resilience amid VC slowdown",
-    "fetched_at": "2026-10-13T13:39:31.496326+00:00"
+    "pe_angle": "European infra fundraising resilience",
+    "fetched_at": "2026-10-14T11:18:17.210519+00:00"
   },
   {
     "id": "ca7e3c1c83db",
@@ -70,12 +31,12 @@
     "url": "https://nordsip.com/2026/10/09/nordic-investors-join-push-back-against-eu-methane-delay/",
     "source": "NordSIP",
     "published": "2026-10-09T08:25:49+00:00",
-    "summary": "The EU's one-year methane compliance extension for fossil fuel exporters faces investor resistance, potentially delaying infrastructure monetization and ESG-linked valuations in the energy transition space. This regulatory uncertainty may impact asset valuations and refinancing terms for PE-backed energy transition and renewables portfolios across Europe.",
+    "summary": "The EU's one-year methane compliance delay for fossil-fuel exporters faces institutional investor opposition, potentially creating regulatory uncertainty and market timing challenges for European infrastructure assets in energy transition. This pushback could accelerate stricter enforcement timelines, favoring near-term investment in methane abatement and renewable infrastructure projects with faster compliance pathways.",
     "pe_score": 7,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Methane regulation enforcement risk",
-    "fetched_at": "2026-10-13T13:39:27.141772+00:00"
+    "pe_angle": "Methane regulation compliance acceleration",
+    "fetched_at": "2026-10-14T11:18:12.463997+00:00"
   },
   {
     "id": "89a9e998130f",
@@ -83,12 +44,25 @@
     "url": "https://www.privateequityinternational.com/data-snapshot-dry-powder-builds-up-in-post-2021-pe-funds/",
     "source": "PEI Media",
     "published": "2026-10-12T11:48:21+00:00",
-    "summary": "Recent PE vintage funds are accumulating significantly more dry powder than historical cohorts, indicating either slower deployment pace or larger fund sizes that create capital availability challenges. This buildup suggests potential deployment pressure, competitive bidding dynamics, and opportunities for well-positioned infrastructure assets across European markets.",
+    "summary": "Recent PE fund vintages are accumulating significantly higher dry powder levels compared to historical norms at equivalent deployment stages, suggesting extended deployment timelines and potentially more selective deal activity ahead. This capital overhang may compress valuations and deal multiples as funds compete for quality infrastructure assets, creating both challenges for exit timing and opportunities for operational improvements.",
+    "pe_score": 7,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Dry powder deployment timing risk",
+    "fetched_at": "2026-10-14T11:17:56.127509+00:00"
+  },
+  {
+    "id": "5a39d9023aaf",
+    "title": "Fund performance: Is the worst over or yet to come?",
+    "url": "https://www.privateequityinternational.com/fund-performance-is-the-worst-over-or-yet-to-come/",
+    "source": "PEI Media",
+    "published": "2026-10-14T10:19:52+00:00",
+    "summary": "Smaller infrastructure fund managers face material headwinds in exiting mature assets, signaling potential valuation pressures and extended hold periods across the sector. This trend may create both competitive disadvantages for smaller players and selective opportunities for larger, better-capitalized funds to acquire distressed assets.",
     "pe_score": 7,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Capital deployment and fund maturation",
-    "fetched_at": "2026-10-13T13:39:05.155421+00:00"
+    "pe_angle": "Aging asset disposition challenges",
+    "fetched_at": "2026-10-14T11:17:29.509390+00:00"
   },
   {
     "id": "80ccc08981a5",
@@ -96,12 +70,12 @@
     "url": "https://www.privateequityinternational.com/private-equitys-growing-complexity-calls-for-inclusive-expertise/",
     "source": "PEI Media",
     "published": "2026-10-08T16:00:29+00:00",
-    "summary": "Gender diversity in PE remains a competitive disadvantage, with senior female leaders offering strategic insights to navigate market volatility and operational complexity. Building inclusive teams could enhance deal sourcing, portfolio company governance, and talent retention across infrastructure assets.",
+    "summary": "Gender diversity in PE remains a competitive disadvantage, with firms that leverage senior female leadership better positioned to navigate market volatility and attract institutional capital. Infrastructure funds improving representation may enhance decision-making quality and stakeholder confidence during economic uncertainty.",
     "pe_score": 6,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Talent and governance risk management",
-    "fetched_at": "2026-10-13T13:39:30.041141+00:00"
+    "pe_angle": "Organizational capability and talent strategy",
+    "fetched_at": "2026-10-14T11:18:15.658636+00:00"
   },
   {
     "id": "7b0d9b62e411",
@@ -109,12 +83,12 @@
     "url": "https://nordsip.com/2026/10/08/ingrid-capacity-appoints-gilles-lafleuriel-as-cfo/",
     "source": "NordSIP",
     "published": "2026-10-08T17:09:50+00:00",
-    "summary": "Ingrid Capacity, a Swedish energy storage company, has appointed an experienced CFO, signaling potential scaling or fundraising activity as energy storage becomes critical European infrastructure. This leadership move suggests the company may be preparing for growth acceleration or exit opportunities amid rising demand for grid-scale battery solutions.",
+    "summary": "Ingrid Capacity, a Swedish energy storage company, has strengthened its leadership team by appointing an experienced CFO, signaling operational maturation and potential preparation for growth or exit activities. This move reflects increasing institutional focus on the Nordic energy storage market, which is critical infrastructure for grid decarbonization and renewable integration across Northern Europe.",
     "pe_score": 6,
     "sector": "energy",
     "country": "Sweden",
-    "pe_angle": "Energy storage scaling and financing",
-    "fetched_at": "2026-10-13T13:39:28.595938+00:00"
+    "pe_angle": "Energy storage infrastructure scaling",
+    "fetched_at": "2026-10-14T11:18:14.216311+00:00"
   },
   {
     "id": "805bc7b41e2b",
@@ -122,12 +96,12 @@
     "url": "https://nordsip.com/2026/10/09/from-the-european-alternative-investment-conference-the-gnu-in-the-middle/",
     "source": "NordSIP",
     "published": "2026-10-09T10:32:45+00:00",
-    "summary": "The article uses the metaphor of crossing rivers to warn against assuming historical patterns will repeat in infrastructure investment, particularly relevant for European PE firms evaluating market conditions and deal assumptions. This cautionary framing suggests infrastructure investors must reassess traditional valuation and risk models as market dynamics shift.",
+    "summary": "The article uses river crossing as a metaphor to caution against assuming historical patterns will repeat in infrastructure investment, particularly relevant for European PE given changing regulatory and climate dynamics. This suggests infrastructure investors must reassess traditional valuation and risk models as market conditions diverge from historical benchmarks.",
     "pe_score": 6,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Risk model reassessment amid market volatility",
-    "fetched_at": "2026-10-13T13:39:25.509590+00:00"
+    "pe_angle": "Adaptive risk modeling infrastructure",
+    "fetched_at": "2026-10-14T11:18:10.665081+00:00"
   },
   {
     "id": "19a94fd90b07",
@@ -135,12 +109,12 @@
     "url": "https://www.theguardian.com/us-news/2026/oct/09/anti-private-equity-comedy-influencers",
     "source": "Guardian Business",
     "published": "2026-10-09T11:00:26+00:00",
-    "summary": "Social media influencers are creating viral satire targeting private equity firms, with millions of views depicting PE professionals negatively and potentially damaging industry reputation. This emerging reputational risk may impact talent acquisition, LP relationships, and public sentiment toward PE-backed infrastructure assets.",
+    "summary": "Social media influencers are increasingly mocking private equity through satirical content that has gone viral, reflecting growing public criticism of PE's wealth concentration and operational practices. This reputational headwind could complicate future fundraising, LP relations, and stakeholder engagement for infrastructure PE investors across Europe.",
     "pe_score": 6,
-    "sector": "utilities",
+    "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Reputation risk and social media backlash",
-    "fetched_at": "2026-10-13T13:39:22.308466+00:00"
+    "pe_angle": "PE reputational risk and social backlash",
+    "fetched_at": "2026-10-14T11:18:09.037256+00:00"
   },
   {
     "id": "58132cc75dd2",
@@ -148,12 +122,25 @@
     "url": "https://infrastructurenews.co.za/2026/10/12/south-africa-need-not-wait-for-corruption-convictions/",
     "source": "Infrastructure News",
     "published": "2026-10-12T10:21:19+00:00",
-    "summary": "South Africa's infrastructure sector faces governance risks that could impact project delivery and asset valuations; proactive anti-corruption enforcement mechanisms offer potential to de-risk future investments and improve operational environments. European PE investors considering South African infrastructure exposure should monitor regulatory improvements, as strengthened compliance frameworks could enhance risk-adjusted returns and portfolio resilience.",
+    "summary": "South Africa's infrastructure sector faces governance risks that could impair asset valuations and operational performance for foreign investors. The article highlights underutilized anti-corruption enforcement mechanisms, suggesting regulatory uncertainty and potential for sudden policy shifts affecting infrastructure concessions and contracts.",
     "pe_score": 6,
     "sector": "utilities",
     "country": "Europe",
     "pe_angle": "Emerging market governance risk mitigation",
-    "fetched_at": "2026-10-13T13:39:06.754362+00:00"
+    "fetched_at": "2026-10-14T11:17:59.228331+00:00"
+  },
+  {
+    "id": "d67f6b6f9ffa",
+    "title": "EU to limit Chinese hybrid vehicle imports to 350,000 a year",
+    "url": "https://www.theguardian.com/environment/2026/oct/12/eu-deal-china-limit-imports-hybrid-electric-vehicles",
+    "source": "Guardian Business",
+    "published": "2026-10-12T11:23:55+00:00",
+    "summary": "The EU has imposed a 350,000 unit annual quota on Chinese hybrid vehicle imports, effectively halving Chinese market share to 3% and protecting domestic European automakers. This protectionist measure creates consolidation opportunities for European OEMs and supply chain operators, while potentially supporting EV charging infrastructure demand across the continent.",
+    "pe_score": 6,
+    "sector": "transport",
+    "country": "Europe",
+    "pe_angle": "EV infrastructure and OEM consolidation",
+    "fetched_at": "2026-10-14T11:17:57.796087+00:00"
   },
   {
     "id": "d88621899df3",
@@ -161,38 +148,12 @@
     "url": "https://www.windpowermonthly.com/article/1972285/us-wind-veteran-hardy-leaves-ge-vernova-solar-firm",
     "source": "Wind Power Monthly",
     "published": "2026-10-12T15:25:58+00:00",
-    "summary": "A senior executive departure from GE Vernova to a solar competitor signals potential strategic shifts in the renewable energy talent market and may indicate consolidation pressures or management challenges at a major wind turbine manufacturer. This move underscores growing cross-sector mobility between wind and solar, reflecting the broader energy transition and potential valuation arbitrage opportunities in clean energy infrastructure.",
+    "summary": "A senior GE Vernova wind executive's departure to a solar firm signals potential strategic shifts in renewable energy leadership and possible talent drain concerns at a major wind turbine manufacturer. This move reflects competitive pressures in the clean energy sector and could have implications for wind project pipelines and M&A dynamics in European renewable infrastructure.",
     "pe_score": 6,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Renewable energy talent migration dynamics",
-    "fetched_at": "2026-10-13T13:39:00.763531+00:00"
-  },
-  {
-    "id": "0a3b853de07f",
-    "title": "Talbot Opens SANAS-Accredited Laboratory To Lead Environmental Testing Across Africa",
-    "url": "https://infrastructurenews.co.za/2026/10/12/talbot-opens-sanas-accredited-laboratory-to-lead-environmental-testing-across-africa/",
-    "source": "Infrastructure News",
-    "published": "2026-10-12T07:17:58+00:00",
-    "summary": "Talbot's SANAS-accredited laboratory at Dube TradePort establishes a significant environmental testing hub across Africa, addressing critical compliance and risk assessment needs for infrastructure projects. This represents a platform opportunity for European PE investors seeking exposure to African infrastructure development and environmental services, where regulatory testing is increasingly mandatory for project bankability.",
-    "pe_score": 5,
-    "sector": "utilities",
-    "country": "South Africa",
-    "pe_angle": "African environmental testing infrastructure",
-    "fetched_at": "2026-10-13T13:39:08.180544+00:00"
-  },
-  {
-    "id": "7678c45d0fd7",
-    "title": "WasteCon 2026 to Bring Waste Management Leaders Together",
-    "url": "https://infrastructurenews.co.za/2026/10/13/wastecon-2026-to-bring-waste-management-leaders-together/",
-    "source": "Infrastructure News",
-    "published": "2026-10-13T08:04:11+00:00",
-    "summary": "WasteCon 2026 convenes senior waste management leaders and government officials, signaling active policy engagement and potential regulatory developments in the sector. The gathering of incoming IWMSA leadership presents opportunities to monitor industry consolidation trends and emerging infrastructure investment priorities in waste management.",
-    "pe_score": 5,
-    "sector": "utilities",
-    "country": "South Africa",
-    "pe_angle": "Waste sector leadership transition",
-    "fetched_at": "2026-10-13T13:38:56.252774+00:00"
+    "pe_angle": "Renewable energy leadership churn",
+    "fetched_at": "2026-10-14T11:17:51.014082+00:00"
   },
   {
     "id": "4241cfbbe46b",
@@ -200,25 +161,25 @@
     "url": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
     "source": "Guardian Business",
     "published": "2026-10-13T12:30:01+00:00",
-    "summary": "The IMF warns of elevated systemic risks from overvalued AI companies with high debt loads, which could trigger a market correction affecting global financial conditions and credit availability for infrastructure financing. European infra PE investors should monitor potential contagion effects on deal financing costs and valuations, particularly if a tech sector correction constrains debt markets.",
+    "summary": "The IMF warns of elevated systemic risks from AI sector overvaluation and rising leverage, which could trigger a market correction affecting broader capital availability and valuations across all asset classes including infrastructure. European infra PE funds face potential denominator effects and compressed exit multiples if a correction occurs, while cost of debt may rise, impacting refinancing and new deployment strategies.",
+    "pe_score": 6,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "Macroeconomic risk to valuations",
+    "fetched_at": "2026-10-14T11:17:39.919131+00:00"
+  },
+  {
+    "id": "1e83a0500ae5",
+    "title": "WellsForAll Completes 26th Borehole, Bringing Safe Water to More Than 800 People in Rural Ghana",
+    "url": "https://infrastructurenews.co.za/2026/10/14/wellsforall-completes-26th-borehole-bringing-safe-water-to-more-than-800-people-in-rural-ghana/",
+    "source": "Infrastructure News",
+    "published": "2026-10-14T04:07:22+00:00",
+    "summary": "WellsForAll's completion of its 26th borehole demonstrates proven execution capability in rural water infrastructure with strong social impact metrics (800+ beneficiaries, 30-minute time savings). This represents a replicable sub-Saharan Africa model that European infra PE funds are increasingly targeting for ESG-aligned portfolio construction and potential blended finance structures.",
     "pe_score": 5,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "Macro risk to debt financing",
-    "fetched_at": "2026-10-13T13:38:49.832207+00:00"
-  },
-  {
-    "id": "80c62374ef8f",
-    "title": "China agrees to ‘halve’ hybrid car exports to EU in landmark deal",
-    "url": "https://www.theguardian.com/business/2026/oct/09/china-agrees-to-curb-hybrid-car-exports-to-eu-in-landmark-deal",
-    "source": "Guardian Business",
-    "published": "2026-10-09T15:05:57+00:00",
-    "summary": "The EU has negotiated a landmark deal to halve Chinese hybrid car exports over four years, addressing a €1.18bn daily trade deficit and protecting European automotive manufacturing. This protectionist measure could reshape European EV/hybrid supply chains and create consolidation opportunities among domestic OEMs and component suppliers.",
-    "pe_score": 4,
-    "sector": "transport",
-    "country": "Europe",
-    "pe_angle": "Automotive supply chain consolidation",
-    "fetched_at": "2026-10-13T13:39:19.241776+00:00"
+    "pe_angle": "Sub-Saharan water infrastructure scaling",
+    "fetched_at": "2026-10-14T11:17:34.757438+00:00"
   },
   {
     "id": "5030c8a50523",
@@ -226,12 +187,12 @@
     "url": "https://www.theguardian.com/uk-news/2026/oct/11/farmers-uk-food-security-producers-supply-chains",
     "source": "Guardian Business",
     "published": "2026-10-11T11:00:24+00:00",
-    "summary": "UK food producers face severe financing pressures threatening crop financing and farm viability, signaling potential consolidation opportunities and supply chain infrastructure gaps. This vulnerability highlights investment potential in agricultural financing infrastructure, logistics networks, and food supply chain resilience across Europe.",
+    "summary": "UK farming sector faces acute financing and viability crisis, threatening domestic food production capacity and supply chain resilience. This creates potential infrastructure investment opportunities in agricultural logistics, cold chain storage, and food processing consolidation as fragmented farm operations consolidate or exit.",
     "pe_score": 4,
     "sector": "utilities",
-    "country": "UK",
+    "country": "United Kingdom",
     "pe_angle": "Agricultural supply chain infrastructure",
-    "fetched_at": "2026-10-13T13:39:15.984929+00:00"
+    "fetched_at": "2026-10-14T11:18:04.196035+00:00"
   },
   {
     "id": "2d50fa972fe9",
@@ -239,25 +200,25 @@
     "url": "https://www.theguardian.com/us-news/2026/oct/11/trump-russia-diesel-deal-putin-little-impact-prices",
     "source": "Guardian Business",
     "published": "2026-10-11T15:56:25+00:00",
-    "summary": "Trump's sanctions relief on Russian diesel imports is unlikely to materially impact US fuel prices due to logistics delays and limited supply volumes, particularly given damage to Russian refining capacity. The geopolitical tensions surrounding the deal and its minimal market effect suggest limited downside risk to European energy infrastructure assets, though energy price volatility remains a consideration.",
+    "summary": "Trump's sanctioning relief on Russian diesel imports is unlikely to materially impact US fuel prices due to shipping delays and limited volumes, while damage to Russian refineries makes full deal execution questionable. This geopolitical move has limited direct implications for European energy markets but signals continued US-Russia sanctions volatility affecting global commodity pricing.",
     "pe_score": 4,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "US-Russia energy sanctions volatility",
-    "fetched_at": "2026-10-13T13:39:14.343427+00:00"
+    "pe_angle": "Geopolitical risk to energy markets",
+    "fetched_at": "2026-10-14T11:18:02.642653+00:00"
   },
   {
-    "id": "4d9272fa0519",
-    "title": "Yellow Door Energy Breaks Ground on 49 MWp Lion Thorn Solar Park, Advancing South Africa’s Just Energy Transition",
-    "url": "https://infrastructurenews.co.za/2026/10/12/yellow-door-energy-breaks-ground-on-49-mwp-lion-thorn-solar-park-advancing-south-africas-just-energy-transition/",
+    "id": "0a3b853de07f",
+    "title": "Talbot Opens SANAS-Accredited Laboratory To Lead Environmental Testing Across Africa",
+    "url": "https://infrastructurenews.co.za/2026/10/12/talbot-opens-sanas-accredited-laboratory-to-lead-environmental-testing-across-africa/",
     "source": "Infrastructure News",
-    "published": "2026-10-12T04:30:13+00:00",
-    "summary": "Yellow Door Energy's 49 MWp Lion Thorn Solar development in South Africa demonstrates the commercial viability of utility-scale renewables in emerging markets with structural electricity deficits. This project exemplifies the just energy transition opportunity set that European infrastructure investors are increasingly targeting in EMEA regions seeking to diversify power supply and attract foreign capital.",
+    "published": "2026-10-12T07:17:58+00:00",
+    "summary": "Talbot's SANAS-accredited laboratory at Dube TradePort establishes a critical environmental testing hub across Africa with 250+ accredited tests, creating potential acquisition or partnership opportunities for European infrastructure funds seeking African market exposure. This positions Talbot as a consolidation platform in environmental compliance services, a growing regulatory requirement across African infrastructure projects.",
     "pe_score": 4,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "Emerging market renewables development",
-    "fetched_at": "2026-10-13T13:39:11.326892+00:00"
+    "sector": "utilities",
+    "country": "South Africa",
+    "pe_angle": "African environmental compliance infrastructure",
+    "fetched_at": "2026-10-14T11:18:01.017665+00:00"
   },
   {
     "id": "cb29bcf3c4b6",
@@ -265,12 +226,12 @@
     "url": "https://constructionmanagement.co.uk/scotlands-construction-talent-celebrated-at-ciob-awards/",
     "source": "Construction Management",
     "published": "2026-10-12T12:03:55+00:00",
-    "summary": "Scotland's construction sector is recognizing top talent through CIOB Awards, signaling a maturing professional ecosystem that supports infrastructure project delivery. This reflects strong demand for skilled construction management in Scotland, relevant for PE investors evaluating infrastructure development and operational capabilities in UK markets.",
+    "summary": "Scotland's construction sector is recognizing top talent and professionals, signaling a maturing market with qualified management capacity for infrastructure projects. This talent celebration indicates robust activity levels and skilled workforce availability critical for PE-backed infrastructure development and operational excellence in Scotland.",
     "pe_score": 4,
     "sector": "transport",
     "country": "Scotland",
     "pe_angle": "Scottish construction talent pipeline",
-    "fetched_at": "2026-10-13T13:39:03.708045+00:00"
+    "fetched_at": "2026-10-14T11:17:54.331537+00:00"
   },
   {
     "id": "e1d325043d67",
@@ -278,12 +239,25 @@
     "url": "https://constructionmanagement.co.uk/mclarens-westminster-housing-scheme-gets-gateway-2-approval/",
     "source": "Construction Management",
     "published": "2026-10-12T12:58:29+00:00",
-    "summary": "McLaren Construction has secured Gateway 2 approval for a £229m second phase of the Ebury Bridge Estate regeneration in Westminster, demonstrating regulatory progress in a major central London mixed-use development. This milestone suggests de-risking of the project timeline and potential for infrastructure/real estate PE involvement in UK urban regeneration schemes with strong government oversight.",
+    "summary": "McLaren Construction's Gateway 2 approval for the £229m second phase of Ebury Bridge Estate regeneration in Westminster signals continued momentum in UK urban regeneration and mixed-use development pipelines. This milestone de-risks a major London infrastructure asset and demonstrates regulatory progress in building safety compliance, relevant for PE portfolios exposed to UK real estate development and construction services.",
+    "pe_score": 4,
+    "sector": "transport",
+    "country": "United Kingdom",
+    "pe_angle": "UK urban regeneration development",
+    "fetched_at": "2026-10-14T11:17:52.686575+00:00"
+  },
+  {
+    "id": "7678c45d0fd7",
+    "title": "WasteCon 2026 to Bring Waste Management Leaders Together",
+    "url": "https://infrastructurenews.co.za/2026/10/13/wastecon-2026-to-bring-waste-management-leaders-together/",
+    "source": "Infrastructure News",
+    "published": "2026-10-13T08:04:11+00:00",
+    "summary": "WasteCon 2026 convenes senior waste management leadership including IWMSA officials and government representatives, signaling industry consolidation and policy alignment opportunities. The gathering presents potential deal flow visibility for infrastructure PE focused on waste management platform acquisitions and regulatory positioning in Southern Africa.",
     "pe_score": 4,
     "sector": "utilities",
-    "country": "United Kingdom",
-    "pe_angle": "UK urban regeneration infrastructure",
-    "fetched_at": "2026-10-13T13:39:02.266520+00:00"
+    "country": "South Africa",
+    "pe_angle": "Waste management sector consolidation",
+    "fetched_at": "2026-10-14T11:17:46.239863+00:00"
   },
   {
     "id": "ab741e099496",
@@ -291,38 +265,25 @@
     "url": "https://www.privateequityinternational.com/lazard-to-reshuffle-apac-advisory-leadership-following-acquisition-of-campbell-lutyens/",
     "source": "PEI Media",
     "published": "2026-10-13T08:55:52+00:00",
-    "summary": "Lazard's reshuffling of APAC advisory leadership following its Campbell Lutyens acquisition signals consolidation in the secondary fundraising space, a critical exit channel for mature infrastructure assets. The departure of Patrick No, who manages secondary and primary fundraising in the region, may create near-term uncertainty for LP fund continuation vehicles and GP-led secondaries targeting Asian infrastructure portfolios.",
+    "summary": "Lazard's acquisition of Campbell Lutyens and subsequent leadership reshuffle in APAC signals consolidation in the secondary advisory market, with Patrick No's departure potentially impacting fundraising dynamics for European PE funds targeting Asian LPs. This reorganization may reshape competitive positioning for cross-border infrastructure capital deployment and secondary market access in the region.",
     "pe_score": 4,
     "sector": "energy",
     "country": "Europe",
-    "pe_angle": "Secondary infrastructure fundraising dynamics",
-    "fetched_at": "2026-10-13T13:38:54.858180+00:00"
+    "pe_angle": "APAC fundraising and secondaries advisory",
+    "fetched_at": "2026-10-14T11:17:44.606706+00:00"
   },
   {
-    "id": "b75ffb36d7a5",
-    "title": "Is punishing the poor Trump’s last hand to play?",
-    "url": "https://www.theguardian.com/us-news/2026/oct/13/trump-aca-healthcare-politics-midterms",
-    "source": "Guardian Business",
-    "published": "2026-10-13T11:00:56+00:00",
-    "summary": "US policy volatility under Trump administration is creating unpredictable regulatory environments affecting energy, transport, and utilities sectors through rapid policy reversals on fuel standards, diesel exports, and import barriers. European infrastructure PE funds should monitor potential spillover effects on transatlantic supply chains, energy pricing, and regulatory arbitrage opportunities in allied markets.",
-    "pe_score": 4,
-    "sector": "energy",
-    "country": "Europe",
-    "pe_angle": "US policy risk and regulatory arbitrage",
-    "fetched_at": "2026-10-13T13:38:53.147366+00:00"
-  },
-  {
-    "id": "fdb12c6aac46",
-    "title": "Intersite Awards Six Western Cape Developments To Private-sector Partners In A Proposed R3.6 Billion Investment Pipeline",
-    "url": "https://infrastructurenews.co.za/2026/10/09/intersite-awards-six-western-cape-developments-to-private-sector-partners-in-a-proposed-r3-6-billion-investment-pipeline/",
+    "id": "34d91b3f6030",
+    "title": "Record Fuel Prices Make The Case For Fuel-Efficient Vehicles And Electric Transport, Says ICCT",
+    "url": "https://infrastructurenews.co.za/2026/10/14/record-fuel-prices-make-the-case-for-fuel-efficient-vehicles-and-electric-transport-says-icct/",
     "source": "Infrastructure News",
-    "published": "2026-10-09T10:51:09+00:00",
-    "summary": "Intersite is deploying R3.6 billion (~€190 million) across six Western Cape residential and student housing developments with private-sector partners, targeting 790 apartments and 4,466 student beds on rail-linked sites. This represents a significant mixed-use urban densification play in an emerging market with favorable demographic tailwinds, though geographic focus on South Africa limits direct relevance to European infra PE mandates.",
-    "pe_score": 3,
+    "published": "2026-10-14T03:43:28+00:00",
+    "summary": "Record fuel prices in South Africa are accelerating demand for electric transport and fuel-efficient vehicles, creating near-term investment opportunities in EV infrastructure, charging networks, and clean mobility solutions. European PE funds with African exposure should monitor this market inflection as regulatory tailwinds (cleaner fuels, stricter vehicle standards) converge with commodity-driven consumer behavior shifts.",
+    "pe_score": 4,
     "sector": "transport",
-    "country": "South Africa",
-    "pe_angle": "Rail-linked mixed-use residential development",
-    "fetched_at": "2026-10-13T13:39:24.068958+00:00"
+    "country": "Europe",
+    "pe_angle": "African EV infrastructure buildout",
+    "fetched_at": "2026-10-14T11:17:37.999407+00:00"
   },
   {
     "id": "778bd708e298",
@@ -330,51 +291,12 @@
     "url": "https://www.theguardian.com/us-news/2026/oct/10/tsa-union-agency-checkpoints-chairs",
     "source": "Guardian Business",
     "published": "2026-10-10T11:00:55+00:00",
-    "summary": "TSA's removal of checkpoint seating to enforce professionalism has triggered union backlash and plummeting staff morale, signaling potential operational inefficiencies at U.S. airport infrastructure. While U.S.-focused, this highlights labor cost-cutting pressures and workforce management risks that European infrastructure operators managing concessions or PPP contracts should monitor for similar regulatory/political interventions.",
+    "summary": "US TSA workplace policy changes highlight labor relations risks in airport operations, relevant to European airport concessionaires and security services operators managing similar staff. Rising worker dissatisfaction signals potential operational disruptions and cost pressures for airport security and checkpoint management contracts across Europe.",
     "pe_score": 3,
     "sector": "transport",
     "country": "Europe",
-    "pe_angle": "Labor relations risk in transport ops",
-    "fetched_at": "2026-10-13T13:39:17.946164+00:00"
-  },
-  {
-    "id": "50b1d8e5bf4e",
-    "title": "Water Leaks Drop As eThekwini Accelerates Repairs",
-    "url": "https://infrastructurenews.co.za/2026/10/12/water-leaks-drop-as-ethekwini-accelerates-repairs/",
-    "source": "Infrastructure News",
-    "published": "2026-10-12T04:20:39+00:00",
-    "summary": "eThekwini Municipality's water infrastructure repair acceleration demonstrates operational improvement in a major African metro, with leak reduction indicating enhanced asset management and potential cost savings. While based in South Africa, this model reflects broader African infrastructure challenges and opportunities that European PE funds increasingly target through emerging market infrastructure platforms.",
-    "pe_score": 3,
-    "sector": "utilities",
-    "country": "South Africa",
-    "pe_angle": "African water infrastructure optimization",
-    "fetched_at": "2026-10-13T13:39:12.827993+00:00"
-  },
-  {
-    "id": "152db4b7c86d",
-    "title": "Protest Later Or Push For Better Planning Now? 7 Actions South African Voters Can Take Before Local Elections",
-    "url": "https://infrastructurenews.co.za/2026/10/12/protest-later-or-push-for-better-planning-now-7-actions-south-african-voters-can-take-before-local-elections/",
-    "source": "Infrastructure News",
-    "published": "2026-10-12T04:46:39+00:00",
-    "summary": "South African municipalities face systemic planning failures driving infrastructure deterioration, creating both operational risks and potential intervention opportunities for infrastructure investors. Voter engagement on planning standards ahead of local elections signals growing demand for professional municipal management, relevant to PE firms considering African utility or municipal services assets.",
-    "pe_score": 3,
-    "sector": "utilities",
-    "country": "South Africa",
-    "pe_angle": "Municipal infrastructure governance reform",
-    "fetched_at": "2026-10-13T13:39:09.783518+00:00"
-  },
-  {
-    "id": "2e58c37c8db0",
-    "title": "Joburg Water Depot Upgrade To Strengthen Service Delivery",
-    "url": "https://infrastructurenews.co.za/2026/10/13/joburg-water-depot-upgrade-to-strengthen-service-delivery/",
-    "source": "Infrastructure News",
-    "published": "2026-10-13T03:36:25+00:00",
-    "summary": "Johannesburg Water's depot upgrade in Randburg demonstrates municipal infrastructure modernization efforts in South Africa, a key emerging market for infrastructure investment. While not directly European, this project highlights service delivery enhancement opportunities in water utilities across African markets accessible to European PE firms with emerging market mandates.",
-    "pe_score": 3,
-    "sector": "utilities",
-    "country": "Europe",
-    "pe_angle": "Emerging market water infrastructure",
-    "fetched_at": "2026-10-13T13:38:59.118638+00:00"
+    "pe_angle": "Airport labor relations risk management",
+    "fetched_at": "2026-10-14T11:18:05.799956+00:00"
   },
   {
     "id": "ddefe0ecb89c",
@@ -382,11 +304,89 @@
     "url": "https://infrastructurenews.co.za/2026/10/13/past-presidents-of-the-iwmsa/",
     "source": "Infrastructure News",
     "published": "2026-10-13T06:50:44+00:00",
-    "summary": "The IWMSA's 50-year milestone reflects the maturation of waste management infrastructure across Southern Africa, a region with growing privatization and consolidation opportunities. This institutional longevity signals established regulatory frameworks and operational expertise that could attract European PE capital to emerging market waste assets.",
+    "summary": "The IWMSA's 50-year milestone reflects the maturation of waste management infrastructure in Southern Africa, a region with growing infrastructure investment appetite. This institutional longevity signals established regulatory frameworks and operational expertise that could attract European PE capital for cross-border waste management platform consolidation.",
     "pe_score": 3,
     "sector": "utilities",
     "country": "Europe",
-    "pe_angle": "African waste management institutional development",
-    "fetched_at": "2026-10-13T13:38:57.589054+00:00"
+    "pe_angle": "African waste infrastructure institutional development",
+    "fetched_at": "2026-10-14T11:17:47.809088+00:00"
+  },
+  {
+    "id": "b75ffb36d7a5",
+    "title": "Is punishing the poor Trump’s last hand to play?",
+    "url": "https://www.theguardian.com/us-news/2026/oct/13/trump-aca-healthcare-politics-midterms",
+    "source": "Guardian Business",
+    "published": "2026-10-13T11:00:56+00:00",
+    "summary": "Trump's pre-midterm policy reversals on trade, energy exports, and fuel standards signal political instability and potential regulatory unpredictability in US infrastructure markets. European PE investors should monitor how these policy vacillations might affect transatlantic infrastructure investments and create opportunities in policy-resilient sectors.",
+    "pe_score": 3,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "US regulatory risk exposure assessment",
+    "fetched_at": "2026-10-14T11:17:42.999641+00:00"
+  },
+  {
+    "id": "0bb1fcd8af4d",
+    "title": "Johannesburg’s Green Champions Honoured With 7 International Awards At The 2026 World Urban Parks Symposium In Istanbul, Türkiye.",
+    "url": "https://infrastructurenews.co.za/2026/10/13/johannesburgs-green-champions-honoured-with-7-international-awards-at-the-2026-world-urban-parks-symposium-in-istanbul-turkiye/",
+    "source": "Infrastructure News",
+    "published": "2026-10-13T12:24:09+00:00",
+    "summary": "Johannesburg's recognition for urban green infrastructure and parks management demonstrates growing investment opportunities in African cities' sustainable development. This signals potential PE entry points for environmental asset management and urban regeneration projects in emerging African markets with international credibility.",
+    "pe_score": 3,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "African urban sustainability infrastructure",
+    "fetched_at": "2026-10-14T11:17:41.436161+00:00"
+  },
+  {
+    "id": "2b5b02ebe1ee",
+    "title": "South Africa’s Communal Farmers Are Becoming Employers",
+    "url": "https://infrastructurenews.co.za/2026/10/14/south-africas-communal-farmers-are-becoming-employers/",
+    "source": "Infrastructure News",
+    "published": "2026-10-14T03:55:17+00:00",
+    "summary": "Meat Naturally Africa's EcoRanger programme is professionalizing communal farming operations in South Africa through structured employment and skills development, creating scalable agribusiness models. While geographically outside Europe, this demonstrates emerging market agricultural infrastructure consolidation trends relevant to PE funds seeking international diversification and ESG-aligned impact investments.",
+    "pe_score": 3,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "Emerging market agribusiness professionalization",
+    "fetched_at": "2026-10-14T11:17:36.358118+00:00"
+  },
+  {
+    "id": "8e3472f91595",
+    "title": "South African Plastics Pact Elects A New Steering Committee To Drive 2030 Circular Economy Targets",
+    "url": "https://infrastructurenews.co.za/2026/10/14/south-african-plastics-pact-elects-a-new-steering-committee-to-drive-2030-circular-economy-targets/",
+    "source": "Infrastructure News",
+    "published": "2026-10-14T04:21:14+00:00",
+    "summary": "South Africa's Plastics Pact has established new governance to meet 2030 circular economy targets, signaling regulatory momentum in waste management and recycling infrastructure. This indicates growing investment opportunities in recycling facilities and circular economy solutions across emerging markets, though European PE funds would need to assess regional expansion or portfolio company exposure to African waste management trends.",
+    "pe_score": 3,
+    "sector": "utilities",
+    "country": "Europe",
+    "pe_angle": "Emerging market circular economy exposure",
+    "fetched_at": "2026-10-14T11:17:33.032033+00:00"
+  },
+  {
+    "id": "94f5c9f22d7a",
+    "title": "New Zealand looks to award first offshore wind feasibility permits",
+    "url": "https://www.windpowermonthly.com/article/1972456/new-zealand-looks-award-first-offshore-wind-feasibility-permits",
+    "source": "Wind Power Monthly",
+    "published": "2026-10-14T09:13:12+00:00",
+    "summary": "New Zealand's move to award first offshore wind feasibility permits signals emerging market opportunities in the Asia-Pacific region, potentially attracting European PE capital seeking geographic diversification beyond mature EU markets. While geographically distant, this development may create joint-venture or technology-transfer opportunities for European offshore wind operators with established expertise.",
+    "pe_score": 3,
+    "sector": "energy",
+    "country": "Europe",
+    "pe_angle": "Geographic expansion into Asia-Pacific",
+    "fetched_at": "2026-10-14T11:17:31.268080+00:00"
+  },
+  {
+    "id": "d90845ff469f",
+    "title": "Canada’s Weston family buys Boots for $8.9bn",
+    "url": "https://www.theguardian.com/business/2026/oct/07/canada-weston-family-buys-boots-uk",
+    "source": "Guardian Business",
+    "published": "2026-10-07T15:12:09+00:00",
+    "summary": "The Weston family's $8.9bn acquisition of Boots represents a significant retail consolidation outside traditional European infrastructure, combining UK pharmacy operations with North American pharmacy assets under one owner. While not a core infrastructure asset, the deal signals potential consolidation opportunities in European healthcare retail and logistics networks that could emerge as secondary considerations.",
+    "pe_score": 2,
+    "sector": "energy",
+    "country": "United Kingdom",
+    "pe_angle": "Retail M&A, non-core to infra",
+    "fetched_at": "2026-10-14T11:18:20.580598+00:00"
   }
 ]
